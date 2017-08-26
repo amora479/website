@@ -2,6 +2,7 @@
 title: "CPS 230 Lab 1"
 ---
 
+# CpS 230 Lab 1
 # Goals
 
 * Successfully compile and run a provided C program
