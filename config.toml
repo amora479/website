@@ -1,0 +1,63 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Ethan McGee"
+theme = "minimal"
+
+[params]
+    author = "Ethan McGee"
+    description = "I'm a researcher, teacher, developer, writer and student. When not in the lab or classroom, I am an avid runner, cyclist and hiker."
+    accent = "red"
+    showBorder = true
+    backgroundColor = "white"
+    highlight = true
+    highlightStyle = "solarized-dark"
+    highlightLanguages = []
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/publications"
+    name = "Publications"
+    weight = 2
+
+[[menu.main]]
+    url = "/courses"
+    name = "Courses"
+    weight = 3
+
+[[menu.main]]
+    url = "/about"
+    name = "About"
+    weight = 3
+
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
+
+[[menu.icon]]
+    url = "mailto:bulletshot60@gmail.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://facebook.com/bulletshot60/"
+    name = "facebook"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/bulletshot60/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/bulletshot60/"
+    name = "twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "http://www.linkedin.com/in/ethan-mcgee-75b54733"
+    name = "linkedin"
+    weight = 4
