@@ -6,6 +6,7 @@ theme = "minimal"
 [params]
     author = "Ethan McGee"
     description = "I'm a researcher, teacher, developer, writer and student. When not in the lab or classroom, I am an avid runner, cyclist and hiker."
+    font="Roboto"
     accent = "red"
     showBorder = true
     backgroundColor = "white"
