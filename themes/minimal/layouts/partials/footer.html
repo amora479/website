@@ -6,4 +6,8 @@
 
     </body>
 
+    {{ if .GetParam "hasMath"}}
+	  <script>renderMathInElement(document.body);</script>
+	{{ end }}
+
 </html>
