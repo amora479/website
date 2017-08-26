@@ -12,9 +12,7 @@ title: "CPS 230 Lab 1"
 
 * Gain confidence in your ability to compile C code via both the command line and the *Visual Studio* IDE
 
-* **BONUS**: Demonstrate 1337 haxx0r skilz (a.k.a. obsessive-compulsive nerd cred) by stepping through your
-    program using the extremely-powerful-but-terrifyingly-cryptic standalone *WinDBG* system debugger
-    (affectionately pronounced "wind-bag")
+* **BONUS**: Use the *WinDBG* system debugger (affectionately pronounced "wind-bag")
 
 # Getting Started
 
@@ -22,8 +20,7 @@ title: "CPS 230 Lab 1"
 
 1. [Recommendation] Create a new folder to contain all your Lab 1 work (you could name it, e.g., "lab1")
 
-1. Open "your favorite text editor" (e.g., *SciTE*, *Notepad++*, the mighty *Vim*, or the sinister *Emacs*)
-    and create a new file named "hello.c" in your Lab 1 folder
+1. Open "your favorite text editor" (e.g., *SciTE*, *Notepad++*, the mighty *Vim*, or the sinister *Emacs*) and create a new file named "hello.c" in your Lab 1 folder
 
 1. Paste the following code into "hello.c" and save the file:
 
@@ -65,9 +62,7 @@ title: "CPS 230 Lab 1"
 
         C> 
 
-    If so, congratulations, you've compiled a C program at the command line!  If *not*, seek experienced help
-    immediately (e.g., a lab monitor, a veteran student, or your instructor).  **Don't** try to proceed until
-    this step is working!
+    If so, congratulations, you've compiled a C program at the command line!  If *not*, seek experienced help immediately (e.g., a lab monitor, a veteran student, or your instructor).  **Don't** try to proceed until this step is working!
 
 1. Run the program, like this:
 
@@ -79,11 +74,9 @@ title: "CPS 230 Lab 1"
 
         C> 
 
-    **Note** that your command prompt (which, again, probably isn't exactly `C> `) appears after a blank line
-    following the "hello, world!" bit.
+    **Note** that your command prompt (which, again, probably isn't exactly `C> `) appears after a blank line following the "hello, world!" bit.
 
-1. Experiment with "hello.c".  After each suggested change, save the file, recompile it, and re-run "hello".
-    Restore the file to its original state (i.e., like the original provided code) after each "experiment."
+1. Experiment with "hello.c".  After each suggested change, save the file, recompile it, and re-run "hello". Restore the file to its original state (i.e., like the original provided code) after each "experiment."
 
     * What is different about the output when you remove the "\n" from the "hello, world!\n" part?
 
@@ -100,8 +93,7 @@ title: "CPS 230 Lab 1"
         sincerely,
         Alice B. College-Student (acoll555)
 
-    Unless you happen to be named Alice B. College-Student and/or your BJU login is in fact `acoll555`,
-    you will need to change both of those, of course...
+    Unless you happen to be named Alice B. College-Student and/or your BJU login is in fact `acoll555`, you will need to change both of those, of course...
 
 # Visual Studio
 
@@ -113,8 +105,7 @@ title: "CPS 230 Lab 1"
 
         * Paste into your new `hello.c` the contents of your old `hello.c` file and save
 
-    * Click in the "gutter" to the left of the code next to the `int main() {` line; a solid red circle
-        should appear in the gutter next to that line, indicating you have set a breakpoint there (see the screenshot)
+    * Click in the "gutter" to the left of the code next to the `int main() {` line; a solid red circle should appear in the gutter next to that line, indicating you have set a breakpoint there (see the screenshot)
 
         ![Setting a breakpoint](/course/bju/content/cps230/images/lab1_vs_breakpoint.png)
 
@@ -130,31 +121,25 @@ title: "CPS 230 Lab 1"
 
         * Right click in the Disassembly view and make sure that all the "Show" options are enabled/selected
 
-        * Note the "disassembled instruction" lines, containing an *address* (in hexadecimal), a series
-            of *instruction bytes* (also in hex), and then a "human readable" (haha) assembly code statement
+        * Note the "disassembled instruction" lines, containing an *address* (in hexadecimal), a series of *instruction bytes* (also in hex), and then a "human readable" (haha) assembly code statement
 
         * Note that each line of C source code may result in 0, 1, or *many* lines of machine/assembly code
 
-        * Step through your program in Disassembly view; notice that you can now advance *machine instruction by machine instruction*
-            instead of just *line by line*
+        * Step through your program in Disassembly view; notice that you can now advance *machine instruction by machine instruction* instead of just *line by line*
 
 > **Note**
 >
-> You can also use Visual Studio to debug EXE files you created at the command line (like you created with `cl` at the beginning
-> of the lab).  See how [in this MSDN How-To article](https://msdn.microsoft.com/en-us/library/0bxe8ytt.aspx).
+> You can also use Visual Studio to debug EXE files you created at the command line (like you created with `cl` at the beginning of the lab).  See how [in this MSDN How-To article](https://msdn.microsoft.com/en-us/library/0bxe8ytt.aspx).
 >
-> For best results, you should compile your EXE with the `/Zi` flag (e.g., `cl /Zi hello.c`) to make
-> sure it has debugging information embedded in it.
+> For best results, you should compile your EXE with the `/Zi` flag (e.g., `cl /Zi hello.c`) to make sure it has debugging information embedded in it.
 
-# For 1337 haxx0rs Only
+# WinDBG System Debugger
 
 1. Use your favorite search engine to find out how to download and install WinDBG (or find it on the CSLAB workstations).
 
     * Download it *from Microsoft* (don't trust random websites offering you debuggers)
 
-    * Be aware that Microsoft *no longer makes WinDBG available as a separate product*; you must download
-        an SDK installer that offers to install 5 kitchen sinks and 2 dishwashers in addition to "debugging tools for windows" (that's WinDBG),
-        but you can safely uncheck all that extra unneeded stuff and install *only* WinDBG and friends
+    * Be aware that Microsoft *no longer makes WinDBG available as a separate product*; you must download an SDK installer that offers to install 5 kitchen sinks and 2 dishwashers in addition to "debugging tools for windows" (that's WinDBG), but you can safely uncheck all that extra unneeded stuff and install *only* WinDBG and friends
 
 1. Launch the x86 version of WinDBG (the x64 version will work, but it will show you things you are not ready to see; avoid it for now).
     
@@ -170,7 +155,7 @@ title: "CPS 230 Lab 1"
 
 1. Experiment with the rather . . . *special* . . . WinDBG user interface.  See if you can find/arrange the necessary debugging windows to match the following screenshot:
 
-    ![Using WinDBG like a 1337 haxx0r b055](/course/bju/content/cps230/images/lab1_windbg.png)
+    ![Using WinDBG](/course/bju/content/cps230/images/lab1_windbg.png)
 
 1. Now experiment with running/stepping through your program.  See if you can retrace all the steps you took in Visual Studio (your search engine is your friend).
 
@@ -182,15 +167,11 @@ For this and all subsequent labs (unless otherwise indicated), you will turn in 
 
 I accept neatly formatted reports in the following formats:
 
-* Pandoc Markdown (`*.md`) *[the simple plain text format I used to create these instructions]*
-* Microsoft Word (`*.docx`) *[which can be generated from Markdown using Pandoc]*
+* Microsoft Word (`*.docx`)
 * Adobe PDF (`*.pdf`)
-
-Any other format will be ignored (i.e., if you submit anything else, you officially did not submit a report).  Bletcherously sloppy/unreadable reports may be similarly ignored.
 
 Follow the format established by the standard lab report template, available in:
 
-* [Pandoc Markdown](/course/bju/content/cps230/downloads/lab_report_template.md)
 * [Microsoft Word (DOCX)](/course/bju/content/cps230/downloads/lab_report_template.docx)
 
 If you need to include any images (e.g., screenshots) in your report, you *must* submit either a `*.docx` or a PDF so that your report comprises a single file.
@@ -198,7 +179,7 @@ If you need to include any images (e.g., screenshots) in your report, you *must*
 # Submission
 
 Submit the following files to your Lab 1 submission repository:
-- `report.md` (or `report.docx`, or `report.pdf`)
+- `report.docx` or `report.pdf`
 - `hello.c` (with any/all modifications made)
 
 See [this](/course/bju/content/cps230/notes/submission) for information about how to do that.
