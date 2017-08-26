@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Lab 1
+title: "CPS 230 Lab 1"
+hasMath: true
 ---
 
 # Goals
@@ -28,24 +28,24 @@ title: Lab 1
 
 1. Paste the following code into "hello.c" and save the file:
 
-    {% highlight c %}
-    #include <stdio.h>
+    ```
+    #include "stdio.h"
 
     int main() {
         printf("hello, world!\n");
         return 0;
     }
-    {% endhighlight %}
+    ```
 
 # Command-Line Fun
 
 1. Open a **VS2015 x86 Native Tools Command Prompt** window (do *not* use the x64 version; it will "work" but not the way you want).  Like this...
 
-    ![Finding the command prompt...]({{ site.baseurl }}/images/lab1_vs_native_prompt.png)
+    ![Finding the command prompt...](/course/bju/content/cps230/images/lab1_vs_native_prompt.png)
 
 1. ...and use the `cd` command to navigate to your Lab 1 folder.
 
-    ![Finding your folder...]({{ site.baseurl }}/images/lab1_vs_prompt_cd.png)
+    ![Finding your folder...](/course/bju/content/cps230/images/lab1_vs_prompt_cd.png)
 
 1. Run the following command *(don't type the `C> `; that's a placeholder to represent your command prompt)*:
 
@@ -98,8 +98,8 @@ title: Lab 1
 
         hello, world!
 
-                sincerely,
-                Alice B. College-Student (acoll555)
+        sincerely,
+        Alice B. College-Student (acoll555)
 
     Unless you happen to be named Alice B. College-Student and/or your BJU login is in fact `acoll555`,
     you will need to change both of those, of course...
@@ -108,7 +108,7 @@ title: Lab 1
 
 1. Let's try compiling and debugging your program usinig the **Visual Studio Integrated Development Environment (IDE)**
 
-    * Follow [these instructions]({{site.baseurl}}/notes/visualstudio) to create a new C project in Visual Studio 2015
+    * Follow [these instructions](/course/bju/content/cps230/notes/visualstudio) to create a new C project in Visual Studio 2015
     
         * When you create your C file, be sure to name it `hello.c` for consistency here
 
@@ -117,7 +117,7 @@ title: Lab 1
     * Click in the "gutter" to the left of the code next to the `int main() {` line; a solid red circle
         should appear in the gutter next to that line, indicating you have set a breakpoint there (see the screenshot)
 
-        ![Setting a breakpoint]({{site.baseurl}}/images/lab1_vs_breakpoint.png)
+        ![Setting a breakpoint](/course/bju/content/cps230/images/lab1_vs_breakpoint.png)
 
     * Click the "Run" button (i.e., the big green "play" button) to run the program in debug mode
 
@@ -171,7 +171,7 @@ title: Lab 1
 
 1. Experiment with the rather . . . *special* . . . WinDBG user interface.  See if you can find/arrange the necessary debugging windows to match the following screenshot:
 
-    ![Using WinDBG like a 1337 haxx0r b055]({{ site.baseurl }}/images/lab1_windbg.png)
+    ![Using WinDBG like a 1337 haxx0r b055](/course/bju/content/cps230/images/lab1_windbg.png)
 
 1. Now experiment with running/stepping through your program.  See if you can retrace all the steps you took in Visual Studio (your search engine is your friend).
 
@@ -191,8 +191,8 @@ Any other format will be ignored (i.e., if you submit anything else, you officia
 
 Follow the format established by the standard lab report template, available in:
 
-* [Pandoc Markdown]({{site.baseurl}}/downloads/lab_report_template.md)
-* [Microsoft Word (DOCX)]({{site.baseurl}}/downloads/lab_report_template.docx)
+* [Pandoc Markdown](/course/bju/content/cps230/downloads/lab_report_template.md)
+* [Microsoft Word (DOCX)](/course/bju/content/cps230/downloads/lab_report_template.docx)
 
 If you need to include any images (e.g., screenshots) in your report, you *must* submit either a `*.docx` or a PDF so that your report comprises a single file.
 
@@ -202,7 +202,7 @@ Submit the following files to your Lab 1 submission repository:
 - `report.md` (or `report.docx`, or `report.pdf`)
 - `hello.c` (with any/all modifications made)
 
-See [this]({{ site.baseurl}}/notes/submission) for information about how to do that.
+See [this](/course/bju/content/cps230/notes/submission) for information about how to do that.
 
 # Grading
 
