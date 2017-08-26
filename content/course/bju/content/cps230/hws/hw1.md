@@ -1,56 +1,17 @@
-\documentclass{article}
-\usepackage[margin=2cm,nohead]{geometry}
+---
+title: "CPS 230 HW 1"
+hasMath: true
+---
 
-\title{CpS 230 Homework 1: Base Conversions}
-\author{Specially prepared for Mr. Carter (acart976)}
-\date{~}
+# CpS 230 Homework 1: Base Conversions
 
-\twocolumn
-\pagenumbering{gobble}
-
-\begin{document}
-
-\maketitle
-
-\noindent
-1. $ \mbox{558} _{9} = \underline{\phantom{\mbox{458}}} _{10} $
-\vspace{1in}
-
-\noindent
-2. $ \mbox{1453} _{6} = \underline{\phantom{\mbox{393}}} _{10} $
-\vspace{1in}
-
-\noindent
-3. $ \mbox{2122221} _{3} = \underline{\phantom{\mbox{1942}}} _{10} $
-\vspace{1in}
-
-\noindent
-4. $ \mbox{228} _{9} = \underline{\phantom{\mbox{188}}} _{10} $
-\vspace{1in}
-
-\noindent
-5. $ \mbox{897} _{11} = \underline{\phantom{\mbox{1074}}} _{10} $
-\vspace{1in}
-
-\noindent
-6. $ \mbox{2121221} _{3} = \underline{\phantom{\mbox{1915}}} _{10} $
-\vspace{1in}
-
-\pagebreak
-\noindent
-7. $ \mbox{027} _{10} = \underline{\phantom{\mbox{25}}} _{11} $
-\vspace{2in}
-
-\noindent
-8. $ \mbox{923} _{10} = \underline{\phantom{\mbox{1235}}} _{9} $
-\vspace{2in}
-
-\noindent
-9. $ \mbox{883} _{10} = \underline{\phantom{\mbox{617}}} _{12} $
-\vspace{2in}
-
-\noindent
-10. $ \mbox{825} _{10} = \underline{\phantom{\mbox{11300}}} _{5} $
-\vspace{2in}
-
-\end{document}
+1. {{< tex "558_{9}" >}} in base 10
+2. {{< tex "1453_{6}" >}} in base 10 
+3. {{< tex "2122221_{3}" >}} in base 10
+4. {{< tex "228_{9}" >}} in base 10
+5. {{< tex "897_{11}" >}} in base 10
+6. {{< tex "2121221_{3}" >}} in base 10
+7. {{< tex "027_{10}" >}} in base 11
+8. {{< tex "923_{10}" >}} in base 9
+9. {{< tex "883_{10}" >}} in base 12
+10. {{< tex "825_{10}" >}} in base 5

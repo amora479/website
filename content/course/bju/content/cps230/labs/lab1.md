@@ -1,6 +1,5 @@
 ---
 title: "CPS 230 Lab 1"
-hasMath: true
 ---
 
 # Goals

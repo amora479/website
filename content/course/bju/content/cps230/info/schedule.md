@@ -15,7 +15,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 9/6 | Words (and Words) | Ch. 2 (to 2.1.7) | |
 | | | [Unicode Article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | |
 | 9/8 | Bit Manipulation (*) | Ch. 2 (to 2.2) | |
-| 9/11 | Two’s Complement | Ch. 2 (to 2.3) | HW 1 |
+| 9/11 | Two’s Complement | Ch. 2 (to 2.3) | [HW 1](/course/bju/content/cps230/labs/hw1/) |
 | | | | Lab 2 |
 | 9/13 | Two’s Complement | Ch. 2 (to 2.4) | |
 | 9/15 | Floating Point | Ch. 2 (finish) | |
