@@ -14,7 +14,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 9/4 | Number Systems | Ch. 2 (to 2.1.2) | Lab 1 |
 | 9/6 | Words (and Words) | Ch. 2 (to 2.1.7) | |
 | | | [Unicode Article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | |
-| 9/8 | Bit Manipulation | Ch. 2 (to 2.2) | |
+| 9/8 | Bit Manipulation (*) | Ch. 2 (to 2.2) | |
 | 9/11 | Two’s Complement | Ch. 2 (to 2.3) | HW 1 |
 | | | | Lab 2 |
 | 9/13 | Two’s Complement | Ch. 2 (to 2.4) | |
@@ -22,9 +22,9 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 9/18 | MOVing into Assembly | Ch. 3 (3.2 to 3.4.2) | HW 2 |
 | | | | Lab 3 |
 | 9/20 | MOVing into Assembly | Ch. 3 (to 3.6) | Program 1 |
-| 9/22 | Test 1 | | Float HW (EC) |
-| 9/25 | Flags and Bit Operations | Ch. 3 (to 3.6.3) | Lab 4 |
-| 9/27 | JMPing Around | Ch. 3 (to 3.6.5) | |
+| 9/22 | Test 1 (*) | | Float HW (EC) |
+| 9/25 | Flags and Bit Operations (*) | Ch. 3 (to 3.6.3) | Lab 4 |
+| 9/27 | JMPing Around (*) | Ch. 3 (to 3.6.5) | |
 | 9/29 | While This Then JMP | Ch. 3 (to 3.6.6) |
 | 10/2 | The Stack | Ch. 3 (3.7 to 3.7.4) | Lab 5 |
 | 10/4 | Stack Frames | Ch. 3 (to 3.8) | |
@@ -64,7 +64,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 11/22 - 11/27 | _Thanksgiving Break_ | | |
 | 11/29 | Preemptive Task Switching | | Lab 10 |
 | 12/1 | Work Day | | Team Project Release |
-| 12/4 | IA-32 Protected Mode | Ch. 9 (stop at 9.6) |
+| 12/4 | IA-32 Protected Mode (*) | Ch. 9 (stop at 9.6) |
 | 12/6 | Crash Course in x64 | Ch. 3 (3.13) | |
 | 12/8 | Brief Tour of 32-bit ARM | ARM Assembly Intro | |
 | 12/7 | Final Exam (8:00 - 9:10) | | Lab 11 (EC) |
