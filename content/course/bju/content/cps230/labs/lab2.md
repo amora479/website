@@ -1,20 +1,20 @@
 ---
-layout: page
-title: Lab 2
+title: "CPS 230 Lab 2"
 ---
 
-# Goals
+# Lab 2
+## Goals
 
 * Learn how to use `printf` and `scanf`, two workhorse functions in the standard C library
 
 * Learn basic C control structures like `if/else`, `while` loops, and `for` loops
 
-* Become aware of the wild and wonderful behavior that is possible in a "low level" language like C
+* Become aware of the behavior that is possible in a "low level" language like C
 
 # Instructions
 
 ## Starting Code
-{% highlight c linenos %}
+```
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -38,7 +38,7 @@ int main() {
 
     return 0;
 }
-{% endhighlight %}
+```
 
 ## Steps
 
@@ -73,17 +73,18 @@ int main() {
     * Use padding to make all the columns line up perfectly
 
 
-# Report
+## Report
 
-Follow the standard template (either Markdown or DOCX).  Be sure to identify any surprising or potentially dangerous results from your experiments on the starting code. 
+Follow the standard template (either DOCX or PDF).  Be sure to identify any surprising or potentially dangerous results from your experiments on the starting code. 
 
-# Submission
+## Submission
 
 Turn in:
-- `report.md/docx/pdf`
-- `lab2.c`
 
-# Grading
+* `report.docx/pdf`
+* `lab2.c`
+
+## Grading
 
 * 5 points for a well-formed submission (and report)
 * 5 points for the functionality of your ASCII printing program

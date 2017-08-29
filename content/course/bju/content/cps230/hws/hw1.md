@@ -3,7 +3,7 @@ title: "CPS 230 HW 1"
 hasMath: true
 ---
 
-# CpS 230 Homework 1: Base Conversions
+# Homework 1: Base Conversions
 
 1. {{< tex "558_{9}" >}} in base 10
 1. {{< tex "1453_{6}" >}} in base 10 

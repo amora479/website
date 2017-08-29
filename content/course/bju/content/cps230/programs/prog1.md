@@ -1,9 +1,9 @@
 ---
-layout: page
 title: "Program 1: Big Boy Computer"
 ---
 
-# Overview
+# Program 1
+## Overview
 
 You will write a program in C to simulate the operations of our hypthetical "Big Boy Computer."
 
@@ -11,11 +11,11 @@ The advanced version will feature an interactive "debugger" that allows direct u
 
 The extra credit version will require you to explore features of C and its standard library we haven't covered yet.
 
-# Background
+## Background
 
 BBC (Big Boy Computer) is a bits-and-bytes oriented spinoff of the venerable
 [Little Man Computer](https://en.wikipedia.org/wiki/Little_man_computer).  BBC consists of the components
-listed on your [handout]({{site.baseurl}}/downloads/bbc_handout.pdf); a single "step" of execution consists of
+listed on your [handout](/course/bju/content/cps230/downloads/bbc_handout.pdf); a single "step" of execution consists of
 
 * "fetching" 2 bytes from `RAM` starting at the address currently held in `PC`
     * so read byte `PC` and byte `PC + 1`
@@ -88,7 +88,7 @@ but do not run it right away.  Instead:
         + Then, print out a "hex dump" of all the bytes from "start" to "start + length"
         + A picture is worth 2048 bytes:
 
-            ![bbc hexdump]({{site.baseurl}}/images/prog1_hexdump.png)
+            ![bbc hexdump](/course/bju/content/cps230/images/prog1_hexdump.png)
 
     - If `e`, edit a single byte of `RAM` to contain a new value
         + First, read 2 hex integers, "address" and "value", without printing any further prompts
@@ -113,15 +113,15 @@ and terminate without doing anything else.
 To get you started on using command line arguments in C, see the following snippet (notice
 the change made to the "normal" `main` function):
 
-`````c
+```
 int main(int argc, char *argv[]) {
     // you have <argc> command-line arguments
     // starting at argv[0]
     // ending at argv[argc - 1]
 }
-`````
+```
 
-# Tips
+## Tips
 
 * Use `char` to store/represent a byte, and use `short` to store/represent a 16-bit word
 * Any time you are peforming bit manipulation (especially shifts), prefer `unsigned` integer types (e.g., `unsigned short`)
@@ -138,16 +138,16 @@ int main(int argc, char *argv[]) {
 * Bit manipulation is your friend; e.g., an easy way to force a potentially large integer
     into the range \[`0x000`, `0xfff`\] is an `AND` operation: `value & 0xfff` *(in C notation)*
 
-# Report
+## Report
 
-Fill out the [standard program report template]({{site.baseurl}}/downloads/report_template.docx) DOCX file and print it out.
+Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) DOCX file and print it out.
 
 Also print out your source code using a fixed-width font; if the code takes up more than one page, be sure to print it out "two up" (2 logical pages of code printed side-by-side on each physical page of paper).
 
 Visual Studio does a nice job of printing code in a good monospace font with nice touches like page numbers and the name of the file being printed.
 
-# Submission
+## Submission
 
-Use the submission system to submit your code in a single C file named `prog1.c`.
+Use the submission system to submit your code in a single C file named `prog1.c` by the due date.
 
-Turn in your printed report in person at the beginning of class on the due date.
+Turn in your printed report in person at the beginning of the next class after the due date.

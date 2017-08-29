@@ -1,9 +1,9 @@
 ---
-layout: page
-title: Lab 3
+title: "CPS 230 Lab 2"
 ---
 
-# Overview
+# Lab 3
+## Overview
 
 For this lab you will write C code to solve several bit-manipulation puzzles from your textbook.  Namely:
 
@@ -11,9 +11,9 @@ For this lab you will write C code to solve several bit-manipulation puzzles fro
 * 2.66: `leftmost_one`
 * 2.68: `lower_one_mask`
 
-# Procedure
+## Procedure
 
-Use the [starting code]({{site.baseurl}}/downloads/lab3.c).  Your job is to
+Use the [starting code](/course/bju/content/cps230/downloads/lab3.c).  Your job is to
 
 * Fill out the function bodies (i.e., replace the `/* TODO */` comments)
 * Add a few more tests for each function implemented (see the existing comments in the code for more)
@@ -24,15 +24,15 @@ Use the [starting code]({{site.baseurl}}/downloads/lab3.c).  Your job is to
 
 * 2.66 is the hardest of the 3; save it for last
 
-# Report
+## Report
 
 Follow the standard template, and make sure you explain how you solved each puzzle (i.e., your thought process, not your code).
 
-# Submission
+## Submission
 
-Submit `report.md/docx/pdf` and your completed `lab3.c`.
+Submit `report.docx/pdf` and your completed `lab3.c`.
 
-# Grading
+## Grading
 
 This lab is worth **15 points** total:
 

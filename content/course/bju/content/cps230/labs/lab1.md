@@ -2,8 +2,8 @@
 title: "CPS 230 Lab 1"
 ---
 
-# CpS 230 Lab 1
-# Goals
+# Lab 1
+## Goals
 
 * Successfully compile and run a provided C program
 
@@ -15,7 +15,7 @@ title: "CPS 230 Lab 1"
 
 * **BONUS**: Use the *WinDBG* system debugger (affectionately pronounced "wind-bag")
 
-# Getting Started
+## Getting Started
 
 0. Make sure you have installed Visual Studio 2015 (the Community Edition is sufficient)
 
@@ -34,7 +34,7 @@ title: "CPS 230 Lab 1"
     }
     ```
 
-# Command-Line Fun
+## Command-Line Fun
 
 1. Open a **VS2015 x86 Native Tools Command Prompt** window (do *not* use the x64 version; it will "work" but not the way you want).  Like this...
 
@@ -96,7 +96,7 @@ title: "CPS 230 Lab 1"
 
     Unless you happen to be named Alice B. College-Student and/or your BJU login is in fact `acoll555`, you will need to change both of those, of course...
 
-# Visual Studio
+## Visual Studio
 
 1. Let's try compiling and debugging your program usinig the **Visual Studio Integrated Development Environment (IDE)**
 
@@ -134,7 +134,7 @@ title: "CPS 230 Lab 1"
 >
 > For best results, you should compile your EXE with the `/Zi` flag (e.g., `cl /Zi hello.c`) to make sure it has debugging information embedded in it.
 
-# WinDBG System Debugger
+## WinDBG System Debugger
 
 1. Use your favorite search engine to find out how to download and install WinDBG (or find it on the CSLAB workstations).
 
@@ -177,7 +177,7 @@ Follow the format established by the standard lab report template, available in:
 
 If you need to include any images (e.g., screenshots) in your report, you *must* submit either a `*.docx` or a PDF so that your report comprises a single file.
 
-# Submission
+## Submission
 
 Submit the following files to your Lab 1 submission repository:
 - `report.docx` or `report.pdf`
@@ -185,6 +185,6 @@ Submit the following files to your Lab 1 submission repository:
 
 See [this](/course/bju/content/cps230/notes/submission) for information about how to do that.
 
-# Grading
+## Grading
 
 * 10 points: completion and presentation

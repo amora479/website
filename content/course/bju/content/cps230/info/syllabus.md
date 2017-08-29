@@ -81,7 +81,9 @@ Final grades will be computed on a 10% scale with rounding:
 | 0 | 59.49 | F |
 
 ## Deadlines and Late Work
-Unless otherwise specified by the instructor, assignments can receive full credit only if **submitted in full by the beginning of class on the day due**. A 25% penalty will be applied if the assignment is not turned in on time. No credit is possible after one week. If you anticipate trouble on an assignment, see the instructor as soon as possible for assistance.
+Unless otherwise specified by the instructor, assignments can receive full credit only if **submitted in full by midnight of the due date**. A 25% penalty will be applied if the assignment is not turned in on time and a free late is not used. No credit is possible after one week. If you anticipate trouble on an assignment, see the instructor as soon as possible for assistance.
+
+Students receive **1** free late which can be used, at their discretion, on homeworks and labs, but not programs.  This allows a student to turn the assignment in, up to one week late, with no penalty applied.  After one week, no credit is possible. **The free late may not be used on Lab 11.**
 
 Programs may be submitted late only by approval of the instructor. The instructor will allow this only for students who formally request permission to submit the program late. The request must be made by email, and should report the number of hours invested, summarize the work completed to date, include a description of problems encountered, and include a copy of the program code. The request must be submitted by the original assignment deadline. Requests indicating little effort invested will be denied.
 
