@@ -183,8 +183,6 @@ Submit the following files to your Lab 1 submission repository:
 - `report.docx` or `report.pdf`
 - `hello.c` (with any/all modifications made)
 
-See [this](/course/bju/content/cps230/notes/submission) for information about how to do that.
-
 ## Grading
 
 * 10 points: completion and presentation
