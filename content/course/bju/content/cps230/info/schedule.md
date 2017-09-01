@@ -10,7 +10,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | Date | Topic | Reading | Due |
 | --- | --- | --- | --- |
 | 8/30 | [Policies/Terms](/course/bju/content/cps230/lessons/lec0/) | | |
-| 9/1 | Crash Course in C | Ch. 1 |
+| 9/1 | [Crash Course in C](/course/bju/content/cps230/lessons/lec1/) | Ch. 1 |
 | 9/4 | Number Systems | Ch. 2 (to 2.1.2) | [Lab 1](/course/bju/content/cps230/labs/lab1/) |
 | 9/6 | Words (and Words) | Ch. 2 (to 2.1.7) | |
 | | | [Unicode Article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | |
