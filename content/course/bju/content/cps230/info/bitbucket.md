@@ -35,7 +35,7 @@ First, click pull.  This will download any new submission folders that are avail
 
 ![Finding the command prompt...](/course/bju/content/cps230/images/sourcetree_2.png)
 
-Notice, how all changes files are listed, and if you click a file, you can see what has changed.  Drag all the files you wish to submit to the staged files area.  Then enter a message detailing what you changed in the box at the bottom.  Finally click commit.
+Notice, how all changed files are listed, and if you click a file, you can see what has changed.  Drag all the files you wish to submit to the staged files area.  Then enter a message detailing what you changed in the box at the bottom.  Finally click commit.
 
 Once you are finished commiting, click Push.  This will upload your changes to Bitbucket so that I can see them.
 
