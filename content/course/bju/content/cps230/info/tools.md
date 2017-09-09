@@ -9,10 +9,11 @@ title: "CPS 230 Tools"
     - If you don't wish to install it natively, you can run it in a VM
     - Available to you free of charge via MSDNAA (see the CS lab monitors for details)
 
-* Microsoft Visual Studio 2015
-    - The free [community edition](https://www.visualstudio.com/products/visual-studio-community-vs) is fine
+* Microsoft Visual Studio 2017
+    - The free [community edition](https://www.visualstudio.com/downloads/) is fine
     - Or you can get the professional/enterprise versions, also for free, via MSDNAA (see the CS lab monitors for details)
     - Make sure you install the C++ tools and project templates (which are not enabled by default)
+    - [VS 2017 Build Tools](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
 
 ## Needed Before Too Long
 

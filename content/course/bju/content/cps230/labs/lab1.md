@@ -17,7 +17,7 @@ title: "CPS 230 Lab 1"
 
 ## Getting Started
 
-0. Make sure you have installed Visual Studio 2015 (the Community Edition is sufficient)
+0. Make sure you have installed Visual Studio 2017 (the Community Edition is sufficient) as well as the [Build Tools](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017).
 
 1. [Recommendation] Create a new folder to contain all your Lab 1 work (you could name it, e.g., "lab1")
 
