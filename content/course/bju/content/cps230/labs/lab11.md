@@ -3,12 +3,12 @@ title: "CPS 230 Lab 11"
 ---
 
 # Lab 11
-# Overview
+## Overview
 
 In this lab you will return to the protected mode world of Windows and convert your [Lab 6]({{site.baseurl}}/labs/lab6)
 Towers of Hanoi implementation into x86-64 assembly code.
 
-# Example
+## Example
 
 For some tips on what changes from Win32 to Win64, see the following "hello world" program:
 
@@ -42,11 +42,11 @@ section .data
 hello_world	db	`hello, world\n`, 0
 ```
 
-# Report
+## Report
 
 Usual lab report.
 
-# Submission
+## Submission
 
 Submit your completed `lab11.asm` and your report file, which must be named either:
 

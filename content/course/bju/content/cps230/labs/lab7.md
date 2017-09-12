@@ -3,7 +3,7 @@ title: "CPS 230 Lab 7"
 ---
 
 # Lab 7
-# Overview
+## Overview
 
 In this lab you will complete a bare-bones implementation of the ubiquitous `printf` function!
 
@@ -109,11 +109,11 @@ For example, if your `uprintf` code encounters a `%d` format specifier, it would
 
 * Take baby steps!  Add one feature at a time; if the code works, go ahead and submit it!  (Or just `commit` if you are directly using Git.)
 
-# Report
+## Report
 
 Per usual.
 
-# Submission
+## Submission
 
 Submit your *both* `uprintf.asm` *and* `uhelpers.c` as well as a report file (either `report.docx`, or `report.pdf`, as appropriate).
 

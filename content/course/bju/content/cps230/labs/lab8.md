@@ -3,7 +3,7 @@ title: "CPS 230 Lab 8"
 ---
 
 # Lab 8
-# Overview
+## Overview
 
 Welcome to assembly programming *for DOS*!  As we turn downwards toward the "bare metal" of the hardware, we will study
 the architecture of the classic PC (IBM Model 5150 and compatibles).  Our first step on the road to "zero-operating-system"
@@ -12,7 +12,7 @@ as provided by DOSBox).
 
 In this lab, you will extend a provided 16-bit assembly program for DOS.
 
-# Procedure
+## Procedure
 
 Before starting, make sure you have the required tools:
 
@@ -112,7 +112,7 @@ With, of course, the appropriate modifications to the name/login. :-)
 
 **Find the TODO comments** and complete the listed tasks.  You will want to linked "HelpPC" resources most useful here.
 
-# Report
+## Report
 
 Document your completion of the lab, including
 
@@ -122,16 +122,14 @@ Document your completion of the lab, including
 * Stepping through the program with the DOSBox debugger
 
 
-# Submission
+## Submission
 
 Submit your completed `lab8.asm` and your report file, which must be named either:
 
 * `report.docx` (Microsoft Word file)
 * `report.pdf` (Adobe PDF file)
 
-Case matters. :-)
-
-# Grading
+## Grading
 
 * 5 points for a well-formed submission (including report)
 * 5 points for a working/personalized `lab8.asm` 

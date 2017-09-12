@@ -3,11 +3,11 @@ title: "CPS 230 Lab 4"
 ---
 
 # Lab 4
-# Overview
+## Overview
 
 Welcome to assembly programming!  In this lab, you will experiment with and [slightly] modify a provided assembly program.
 
-# Procedure
+## Procedure
 
 Before starting, make sure you have the required tools:
 
@@ -129,7 +129,7 @@ Now, **add the necessary code/data to print your name/etc.** *before* the prompt
 
 With, of course, the appropriate modifications to the name/login. :-)
 
-# Report
+## Report
 
 Document your completion of the lab, including
 
@@ -137,16 +137,14 @@ Document your completion of the lab, including
 * Stepping through the program with a debugger (either VS or WinDBG)
 * Modifying the program to print your name/information
 
-# Submission
+## Submission
 
 Submit your completed `lab4.asm` and your report file, which must be named either:
 
 * `report.docx` (Microsoft Word file)
 * `report.pdf` (Adobe PDF file)
 
-Case matters. :-)
-
-# Grading
+## Grading
 
 * 6 points for a well-formed submission (including report)
 * 4 points for a working `lab4.asm` 

@@ -1,13 +1,13 @@
 ---
-layout: page
-title: "Program 2: RPN Calculator"
+title: "CPS 230 Program 2"
 ---
 
-# Overview
+# Program 2
+## Overview
 
 You will write a Reverse Polish Notation (RPN) calculator program in NASM assembly.
 
-# RPN
+## RPN
 
 RPN is a *postfix* math notation, in which the operators come *after* the operands, not between them.  For example:
 
@@ -161,7 +161,7 @@ Your program should not have to change all that much:
 > including some that are basically insurmountable.  Trust me, I'm actually trying to make your life *easier* here...
 
 
-# Extra Credit Requirements (+10%)
+## Extra Credit Requirements (+10%)
 
 For some extra credit, add support for simple *variables* to your calculator.
 
@@ -183,9 +183,9 @@ For simplicity/sanity, keep your input integer-only.  Output should use the `%f`
 The best way to do this is to write some C code performing floating point operations (addition, etc.), compile, debug, and look at the disassembly.
 Find the floating point instructions (including the supporting ones like convert-int-to-float) and look up the details in the Intel manual.
 
-# Report
+## Report
 
-Fill out the [standard program report template]({{site.baseurl}}/downloads/report_template.docx) DOCX file and print it out.
+Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) DOCX file and print it out.
 
 Also print out your source code using a fixed-width font; if the code takes up more than one page, be sure to print it out "two up" (2 logical pages of code printed side-by-side on each physical page of paper).
 
