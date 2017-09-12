@@ -11,22 +11,28 @@ You will write a Reverse Polish Notation (RPN) calculator program in NASM assemb
 
 RPN is a *postfix* math notation, in which the operators come *after* the operands, not between them.  For example:
 
-        1 1 +
+``` text
+1 1 +
+```
 
 is the RPN equivalent of the more familiar *infix* notation
 
-        1 + 1
+``` text
+1 + 1
+```
 
 Despite its strangeness (to most of us), RPN has a fascinating advantage over *infix*: it doesn't need parentheses!
 The following expressions (with the equivalent *infix* version) demonstrate this:
 
-        234+*  -->  2 * (3 + 4)
+``` text
+234+*  -->  2 * (3 + 4)
 
-        234*+  -->  2 + (3 * 4)
+234*+  -->  2 + (3 * 4)
 
-        23+4*  -->  (2 + 3) * 4
+23+4*  -->  (2 + 3) * 4
 
-        23*4+  -->  (2 * 3) + 4
+23*4+  -->  (2 * 3) + 4
+```
 
 RPN is particularly straightforward to implement in computers by using a stack to store operands and results.  E.g.,
 the RPN expression `2 1 + 4 -` could be evaluated using the following sequence of operations:
@@ -134,18 +140,23 @@ onto the stack, *not* the number 123.
 This might seem like a problem, and it is an inconvenience, but it's not a deal-breaker.  
 For example, to enter the number 17, you could write:
 
-        125**7+
+``` text
+125**7+
+```
 
 Try it!  123 is longer but not much harder:
 
-        125**2+25**3+
+``` text
+125**2+25**3+
+```
 
 See the pattern?  Cool!  If you're a programmer.  But for Joe User, erm...  Not so much.  Let's add multi-digit number support!
 
 Modify your input loop to support multi-digit numbers.  Any non-digit character (e.g., a space) will signal the "end" of a given number.  To add 11 and 17, for example, you could say
 
-        11 17+
-
+``` text
+11 17+
+```
 
 Your program should not have to change all that much:
 
