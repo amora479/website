@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Lab 10
+title: "CPS 230 Lab 10"
 ---
 
+# Lab 10
 # Overview
 
 In this lab you will *hook* the timer interrupt so that you can execute a small snippet of code 18.2 times per second,
@@ -10,7 +10,7 @@ In this lab you will *hook* the timer interrupt so that you can execute a small 
 
 # Procedure
 
-Grab the [starting code]({{site.baseurl}}/downloads/lab10.asm) and have a read.  Try assembling and running it as-is.
+Grab the [starting code](/course/bju/content/cps230/downloads/lab10.asm) and have a read.  Try assembling and running it as-is.
 It's a boring little program that repeatedly asks you to type in your name (with personalized greetings between prompts).
 Enter nothing (i.e., just hit `ENTER` without typing anything) at one of the prompts to quit.
 
@@ -60,9 +60,6 @@ Find the  TODO comments in `lab10.asm`.  I recommend the following approach:
     * Remember how array indexing works in x86 assembly?
     * Now ask yourself "how would I convert the *most-significant* nybble [4 bits] of this 16-bit number into an ASCII digit"?
     * Perhaps `ROL` is your friend
-    
-    
-
 
 # Report
 
@@ -72,7 +69,6 @@ Usual lab report.
 
 Submit your completed `lab10.asm` and your report file, which must be named either:
 
-* `report.md` (plain-text Markdown file)
 * `report.docx` (Microsoft Word file)
 * `report.pdf` (Adobe PDF file)
 

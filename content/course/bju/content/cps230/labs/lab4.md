@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Lab 4
+title: "CPS 230 Lab 4"
 ---
 
+# Lab 4
 # Overview
 
 Welcome to assembly programming!  In this lab, you will experiment with and [slightly] modify a provided assembly program.
@@ -12,17 +12,15 @@ Welcome to assembly programming!  In this lab, you will experiment with and [sli
 Before starting, make sure you have the required tools:
 
 * NASM 2.x
-* Visual Studio 2015 with C++ tools installed
+* Visual Studio 2017 with C++ tools installed
 
 ## Orientation
  
-Download and familiarize yourself the [starting code]({{site.baseurl}}/downloads/lab4.asm).  Go ahead and change the comments at the top to reflect your identity.
-
-> **Pro Tip**: You should always have an identifying comment at the top of any ASM files you submit!
+Download and familiarize yourself the [starting code](/course/bju/content/cps230/downloads/lab4.asm).  Go ahead and change the comments at the top to reflect your identity.
 
 Compare the starting ASM program to its equivalent version in C:
 
-~~~~ c
+``` c
 #include <stdio.h>
 
 unsigned int the_integer = 0;
@@ -37,7 +35,7 @@ int main() {
 	
 	return 0;
 }
-~~~~
+```
 
 Try to identify (without the aid of any compilers/tools) which lines of C correspond to which lines of ASM.  Are there ASM lines that don't seem to correspond to anything in the C program?  What about vice-versa?
 
@@ -48,7 +46,7 @@ Just like C code has to be *compiled* in order to run, so assembly code must be 
 
 * Open a NASM command prompt (search for `nasm-shell` in the Start menu)
 
-* Navigate to the folder where you saved `lab4.asm` using the `cd` command (revisit [Lab 1]({{site.baseurl}}/labs/lab1) if you need reminders on how that works)
+* Navigate to the folder where you saved `lab4.asm` using the `cd` command (revisit [Lab 1](/course/bju/content/cps230/labs/lab1) if you need reminders on how that works)
 
 * Run the following command (again, don't type the `C> ` part):
 
@@ -73,10 +71,10 @@ Your *object file* is not actually executable yet--it needs to be *linked* with 
 
 Either
 
-* Open a Visual Studio 2015 **x86** native tools command prompt (as you've done before) and navigate to your Lab 4 folder, *OR*
+* Open a Visual Studio 2017 **x86** native tools command prompt (as you've done before) and navigate to your Lab 4 folder, *OR*
 * Run the following command in your already-open NASM command prompt window (this has the effect of turning your NASM command prompt into a hybrid NASM/Visual Studio command prompt; cool, huh?)
 
-        C> "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"
+        C> "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Auxiliary\Build\vcvarsall.bat"
 
 Now that you can run `cl` (remember: `cee-ell`, not `cee-one`!), do this
 
@@ -108,7 +106,7 @@ You can debug your EXE file in Visual Studio by
 so we need to help it out.  Open the `Debug / Options` menu option, select `Debugging / General` in the list box on the *left*, and find the `Use Native Compatibility Mode` option in the list box on the *right*.  Make sure the
 checkbox next to that option is checked/filled-in!  Like this:
 
-![Turning on debugging support]({{site.baseurl}}/images/vs_debug_native.png)
+![Turning on debugging support](/course/bju/content/cps230/images/vs_debug_native.png)
 
 *Now* try setting a breakpoint in your `lab4.asm` code and clicking the `Debug` button to kick off your program!
 
@@ -143,7 +141,6 @@ Document your completion of the lab, including
 
 Submit your completed `lab4.asm` and your report file, which must be named either:
 
-* `report.md` (plain-text Markdown file)
 * `report.docx` (Microsoft Word file)
 * `report.pdf` (Adobe PDF file)
 

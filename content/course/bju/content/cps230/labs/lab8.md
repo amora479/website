@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Lab 8
+title: "CPS 230 Lab 8"
 ---
 
+# Lab 8
 # Overview
 
 Welcome to assembly programming *for DOS*!  As we turn downwards toward the "bare metal" of the hardware, we will study
@@ -17,13 +17,13 @@ In this lab, you will extend a provided 16-bit assembly program for DOS.
 Before starting, make sure you have the required tools:
 
 * NASM 2.x
-* [DOSBox 0.74 (with integrated system debugger)]({{site.baseurl}}/downloads/dbd.zip)
+* [DOSBox 0.74 (with integrated system debugger)](/course/bju/content/cps230/downloads/dbd.zip)
 
 ## Orientation
  
-Download and familiarize yourself the [starting code]({{site.baseurl}}/downloads/lab8.asm).  Go ahead and change the comments at the top to reflect your identity.
+Download and familiarize yourself the [starting code](/course/bju/content/cps230/downloads/lab8.asm).  Go ahead and change the comments at the top to reflect your identity.
 
-Compare this starting code to the starting code from [Lab 4]({{site.baseurl}}/labs/lab4).  Besides the fact that the programs do different things (one reads a number,
+Compare this starting code to the starting code from [Lab 4](/course/bju/content/cps230/labs/lab4).  Besides the fact that the programs do different things (one reads a number,
 the other doesn't read anything \[yet\]), what significant syntactic differences do you notice?  *Summarize in your report...*
 
 ## Assembling
@@ -90,7 +90,7 @@ Now let's turn to debugging.  Type the following into your DOSBox console window
 
 Everything should freeze.  That's because the debugger is waiting for your input!  Select the *other* DOSBox window.  It should look like this:
 
-![The DOSBox Debugger Window]({{site.baseurl}}/images/lab8_debugger_annotated.png)
+![The DOSBox Debugger Window](/course/bju/content/cps230/images/lab8_debugger_annotated.png)
 
 Type `help` and press Enter.  You can see the output in the lower window pane; you can scroll it up and down (to read it all) with the `Home` and `End` keys.
 
@@ -126,7 +126,6 @@ Document your completion of the lab, including
 
 Submit your completed `lab8.asm` and your report file, which must be named either:
 
-* `report.md` (plain-text Markdown file)
 * `report.docx` (Microsoft Word file)
 * `report.pdf` (Adobe PDF file)
 
