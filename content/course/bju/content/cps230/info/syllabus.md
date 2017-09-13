@@ -12,7 +12,7 @@ title: "CPS 230 Syllabus"
 | Email | emcgee@bju.edu |
 | Phone | 864.201.2635
 | Text | _Computer Systems: A Programmer’s Perspective (2nd ed.)_ by Bryant & O’Hallaron |
-| Meets | ML 3 (MWF 8:00 - 8:50 a.m.) |
+| Meets | ML 2A (MWF 8:00 - 8:50 a.m.) |
 | Credit Load | 3/3 |
 
 ## Description

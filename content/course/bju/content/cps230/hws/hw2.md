@@ -1,5 +1,5 @@
 ---
-title: "CPS 230 HW 1"
+title: "CPS 230 HW 2"
 hasMath: true
 ---
 

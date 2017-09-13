@@ -1,5 +1,5 @@
 ---
-title: "CPS 230 Lab 2"
+title: "CPS 230 Lab 3"
 ---
 
 # Lab 3
