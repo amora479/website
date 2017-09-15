@@ -1,9 +1,9 @@
 ---
-layout: page
-title: Lab 9
+title: "CPS 230 Lab 9"
 ---
 
-# Overview
+# Lab 9
+## Overview
 
 Welcome to *bootloading*: the process of programming the PC to pull itself up by its own bootstraps.
 
@@ -13,10 +13,10 @@ memory at address `0000:7C00` and then jumps into.
 Your goal will be to load a chunk of code from disk sector 2 into memory at address `0800:0000` and jump to it
 (the "payload" program to be loaded from sector 2 is provided to you already).
 
-# Procedure
+## Procedure
 
-You will start with some code; download [both]({{site.baseurl}}/downloads/lab9_mbr.asm)
-[files]({{site.baseurl}}/downloads/lab9_payload.asm).  The payload program doesn't need to
+You will start with some code; download [both](/course/bju/content/cps230/downloads/lab9_mbr.asm)
+[files](/course/bju/content/cps230/downloads/lab9_payload.asm).  The payload program doesn't need to
 change at all (unless you feel the creative urge to spruce up its victory message).
 Your focus will be on getting the bootloader (`lab9_mbr.asm`) working.
 
@@ -68,23 +68,22 @@ When you `boot <filename>` and your code is loaded/executed, DOSBox will sit and
 You can then "break" into the debugger with `Alt` + `Pause` and manually set `IP` (see the built-in help
 for details) to point to the next instruction, stepping past your poor man's breakpoint.
 
-# Report
+## Report
 
 Usual lab report.
 
-# Submission
+## Submission
 
 Submit your completed `lab9_mbr.asm` and your report file, which must be named either:
 
-* `report.md` (plain-text Markdown file)
 * `report.docx` (Microsoft Word file)
 * `report.pdf` (Adobe PDF file)
 
 Case matters. :-)
 
-# Appendix: mkfloppy.c
+## Appendix: mkfloppy.c
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -156,4 +155,4 @@ cleanup:
     if (output) { fclose(output); }
     return 0;
 }
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```

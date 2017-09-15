@@ -17,7 +17,7 @@ title: "CPS 230 Lab 1"
 
 ## Getting Started
 
-0. Make sure you have installed Visual Studio 2015 (the Community Edition is sufficient)
+0. Make sure you have installed Visual Studio 2017 (the Community Edition is sufficient) as well as the [Build Tools](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017).
 
 1. [Recommendation] Create a new folder to contain all your Lab 1 work (you could name it, e.g., "lab1")
 
@@ -36,17 +36,18 @@ title: "CPS 230 Lab 1"
 
 ## Command-Line Fun
 
-1. Open a **VS2015 x86 Native Tools Command Prompt** window (do *not* use the x64 version; it will "work" but not the way you want).  Like this...
+1. Open a **x86 Native Tools Command Prompt for VS 2017** window (do *not* use the x64 version; it will "work" but not the way you want).  Like this...
+1. ...and use the `cd` command to navigate to your Lab 1 folder. *(don't type the `C> `; that's a placeholder to represent your command prompt)*
 
-    ![Finding the command prompt...](/course/bju/content/cps230/images/lab1_vs_native_prompt.png)
+    ``` cmd
+    C> cd "C:\Users\Ethan McGee\Documents\emcgee\lab1"
+    ```
 
-1. ...and use the `cd` command to navigate to your Lab 1 folder.
+1. Run the following command:
 
-    ![Finding your folder...](/course/bju/content/cps230/images/lab1_vs_prompt_cd.png)
-
-1. Run the following command *(don't type the `C> `; that's a placeholder to represent your command prompt)*:
-
-        C> cl hello.c
+    ``` cmd
+    C> cl hello.c
+    ```
 
     That's `cl` as in "cee ell", not "cee one".
     You should see output like the following, culminating in the command prompt appearing again:
@@ -100,7 +101,7 @@ title: "CPS 230 Lab 1"
 
 1. Let's try compiling and debugging your program usinig the **Visual Studio Integrated Development Environment (IDE)**
 
-    * Follow [these instructions](/course/bju/content/cps230/notes/visualstudio) to create a new C project in Visual Studio 2015
+    * Follow [these instructions](/course/bju/content/cps230/notes/visualstudio) to create a new C project in Visual Studio 2017
     
         * When you create your C file, be sure to name it `hello.c` for consistency here
 
@@ -138,11 +139,13 @@ title: "CPS 230 Lab 1"
 
 1. Use your favorite search engine to find out how to download and install WinDBG (or find it on the CSLAB workstations).
 
-    * Download it *from Microsoft* (don't trust random websites offering you debuggers)
+    * Download it *from [Microsoft](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk)* (don't trust random websites offering you debuggers)
 
     * Be aware that Microsoft *no longer makes WinDBG available as a separate product*; you must download an SDK installer that offers to install 5 kitchen sinks and 2 dishwashers in addition to "debugging tools for windows" (that's WinDBG), but you can safely uncheck all that extra unneeded stuff and install *only* WinDBG and friends
 
-1. Launch the x86 version of WinDBG (the x64 version will work, but it will show you things you are not ready to see; avoid it for now).
+    * Occasionally, the SDK install will miss the debuggers (this seems to depend on what you choose to install).  Go into `C:\Users\<username>\Downloads\Windows Kits\10\WindowsSDK\Installers` and run `SDK Debuggers-x86_en-us.msi` if you can't find WinDBG during step 1.
+
+1. Launch the x86 version of WinDBG (the x64 version will work, but it will show you things you are not ready to see; avoid it for now)., usually found under `C:\Program Files (x86)\Windows Kits\10\Debuggers\x86`.
     
 1. WinDBG knows nothing about projects, only EXE files (and maybe their source code, if it's available)
 
@@ -174,8 +177,6 @@ I accept neatly formatted reports in the following formats:
 Follow the format established by the standard lab report template, available in:
 
 * [Microsoft Word (DOCX)](/course/bju/content/cps230/downloads/lab_report_template.docx)
-
-If you need to include any images (e.g., screenshots) in your report, you *must* submit either a `*.docx` or a PDF so that your report comprises a single file.
 
 ## Submission
 

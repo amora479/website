@@ -1,9 +1,9 @@
 ---
-layout: page
-title: Lab 6
+title: "CPS 230 Lab 6"
 ---
 
-# Overview
+# Lab 6
+## Overview
 
 In this lab you will port a C implementation of the the mathematical game "Towers of Hanoi" to x86 assembly.
 
@@ -17,7 +17,7 @@ The goal is to gain familiarity with how C functions work, including
 
 **This lab is challenging.**  It is therefore worth **25 points**.
 
-# Procedure
+## Procedure
 
 ## Reference Implementation
 
@@ -119,7 +119,7 @@ The precise sequence of operations (w.r.t. the stack) is typically:
     a known/fixed size.*
 
 
-# Submission
+## Submission
 
-Submit your completed `lab6.asm` as well as a report file (either `report.md`, `report.docx`, or `report.pdf`, as appropriate).
+Submit your completed `lab6.asm` as well as a report file (either `report.docx`, or `report.pdf`, as appropriate).
 

@@ -1,15 +1,13 @@
 ---
-layout: page
-title: Lab 5
+title: "CPS 230 Lab 5"
 ---
 
-# Overview
+# Lab 5
+## Overview
 
 In this lab you will write a simple "guess the number I'm thinking of" game in x86 assembly!
 
 This lab is worth **15 points** (and significant bonus points are available).
-
-# Procedure
 
 ## Goal
 
@@ -41,7 +39,6 @@ int main() {
 ```
 
 You should, of course, pick your own "magic" number rather than leaving it at 42.
-(If everyone uses 42, the instructor will get *bored* when grading this lab, and you *never* want the instructor bored...)
 
 ## Getting Started
 
@@ -130,4 +127,4 @@ Note that
 Submit the following files
 
 * your finished `lab5.asm` file
-* your report, named either `report.md` (for a Markdown report), `report.docx` (for a Word report), or `report.pdf` (for a PDF report)
+* your report, named either `report.docx` (for a Word report), or `report.pdf` (for a PDF report)

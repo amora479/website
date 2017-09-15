@@ -1,9 +1,9 @@
 ---
-layout: page
-title: Lab 7
+title: "CPS 230 Lab 7"
 ---
 
-# Overview
+# Lab 7
+## Overview
 
 In this lab you will complete a bare-bones implementation of the ubiquitous `printf` function!
 
@@ -13,7 +13,7 @@ Along the way, you will gain experience creating one program written in two lang
 
 ## Starting Code
 
-Download the starting code bundle [here]({{site.baseurl}}/downloads/lab7_starting_code.zip).  Extract it into a folder (e.g., named `lab7`).  It contains
+Download the starting code bundle [here](/course/bju/content/cps230/downloads/lab7_starting_code.zip).  Extract it into a folder (e.g., named `lab7`).  It contains
 several files:
 
 * `uprintf.asm`: the only ASM file in the project; in here you will implement the core "brains" of `uprintf` (i.e., micro-`printf`)
@@ -109,13 +109,13 @@ For example, if your `uprintf` code encounters a `%d` format specifier, it would
 
 * Take baby steps!  Add one feature at a time; if the code works, go ahead and submit it!  (Or just `commit` if you are directly using Git.)
 
-# Report
+## Report
 
 Per usual.
 
-# Submission
+## Submission
 
-Submit your *both* `uprintf.asm` *and* `uhelpers.c` as well as a report file (either `report.md`, `report.docx`, or `report.pdf`, as appropriate).
+Submit your *both* `uprintf.asm` *and* `uhelpers.c` as well as a report file (either `report.docx`, or `report.pdf`, as appropriate).
 
 You do *not* need to submit `demo_uprintf.c` or any other files.
 

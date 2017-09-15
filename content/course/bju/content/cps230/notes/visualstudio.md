@@ -1,10 +1,10 @@
 ---
-title: "Visual Studio 2015"
+title: "Visual Studio 2017"
 ---
 
 # Creating a New C Project
 
-1. Open VS2015
+1. Open VS2017
 
 1. Select the `File / New / Project...` menu option
 

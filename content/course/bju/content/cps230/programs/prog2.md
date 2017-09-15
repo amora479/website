@@ -1,32 +1,38 @@
 ---
-layout: page
-title: "Program 2: RPN Calculator"
+title: "CPS 230 Program 2"
 ---
 
-# Overview
+# Program 2
+## Overview
 
 You will write a Reverse Polish Notation (RPN) calculator program in NASM assembly.
 
-# RPN
+## RPN
 
 RPN is a *postfix* math notation, in which the operators come *after* the operands, not between them.  For example:
 
-        1 1 +
+``` text
+1 1 +
+```
 
 is the RPN equivalent of the more familiar *infix* notation
 
-        1 + 1
+``` text
+1 + 1
+```
 
 Despite its strangeness (to most of us), RPN has a fascinating advantage over *infix*: it doesn't need parentheses!
 The following expressions (with the equivalent *infix* version) demonstrate this:
 
-        234+*  -->  2 * (3 + 4)
+``` text
+234+*  -->  2 * (3 + 4)
 
-        234*+  -->  2 + (3 * 4)
+234*+  -->  2 + (3 * 4)
 
-        23+4*  -->  (2 + 3) * 4
+23+4*  -->  (2 + 3) * 4
 
-        23*4+  -->  (2 * 3) + 4
+23*4+  -->  (2 * 3) + 4
+```
 
 RPN is particularly straightforward to implement in computers by using a stack to store operands and results.  E.g.,
 the RPN expression `2 1 + 4 -` could be evaluated using the following sequence of operations:
@@ -134,18 +140,23 @@ onto the stack, *not* the number 123.
 This might seem like a problem, and it is an inconvenience, but it's not a deal-breaker.  
 For example, to enter the number 17, you could write:
 
-        125**7+
+``` text
+125**7+
+```
 
 Try it!  123 is longer but not much harder:
 
-        125**2+25**3+
+``` text
+125**2+25**3+
+```
 
 See the pattern?  Cool!  If you're a programmer.  But for Joe User, erm...  Not so much.  Let's add multi-digit number support!
 
 Modify your input loop to support multi-digit numbers.  Any non-digit character (e.g., a space) will signal the "end" of a given number.  To add 11 and 17, for example, you could say
 
-        11 17+
-
+``` text
+11 17+
+```
 
 Your program should not have to change all that much:
 
@@ -161,7 +172,7 @@ Your program should not have to change all that much:
 > including some that are basically insurmountable.  Trust me, I'm actually trying to make your life *easier* here...
 
 
-# Extra Credit Requirements (+10%)
+## Extra Credit Requirements (+10%)
 
 For some extra credit, add support for simple *variables* to your calculator.
 
@@ -183,9 +194,9 @@ For simplicity/sanity, keep your input integer-only.  Output should use the `%f`
 The best way to do this is to write some C code performing floating point operations (addition, etc.), compile, debug, and look at the disassembly.
 Find the floating point instructions (including the supporting ones like convert-int-to-float) and look up the details in the Intel manual.
 
-# Report
+## Report
 
-Fill out the [standard program report template]({{site.baseurl}}/downloads/report_template.docx) DOCX file and print it out.
+Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) DOCX file and print it out.
 
 Also print out your source code using a fixed-width font; if the code takes up more than one page, be sure to print it out "two up" (2 logical pages of code printed side-by-side on each physical page of paper).
 
