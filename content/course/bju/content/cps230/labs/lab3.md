@@ -18,7 +18,7 @@ Use the [starting code](/course/bju/content/cps230/downloads/lab3.c).  Your job 
 * Fill out the function bodies (i.e., replace the `/* TODO */` comments)
 * Add a few more tests for each function implemented (see the existing comments in the code for more)
 
-**Be sure to follow the rules specified on p. 120!**  Among other things, these rules *prohibit loops and conditionals* (since you don't need them).
+**Be sure to follow the rules specified on p. 120!**  Among other things, these rules *prohibit loops* (since you don't need them).
 
 ## Hints
 
