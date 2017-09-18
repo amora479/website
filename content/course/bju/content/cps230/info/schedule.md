@@ -18,11 +18,11 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 9/11 | [Two’s Complement](/course/bju/content/cps230/lessons/lec5/) | Ch. 2 (to 2.3) | [HW 1](/course/bju/content/cps230/hws/hw1/) |
 | | | | [Lab 2](/course/bju/content/cps230/labs/lab2/) |
 | 9/13 | [Two’s Complement](/course/bju/content/cps230/lessons/lec5/) | Ch. 2 (to 2.4) | |
-| 9/15 | Floating Point | Ch. 2 (finish) | |
-| 9/18 | MOVing into Assembly | Ch. 3 (3.2 to 3.4.2) | [HW 2](/course/bju/content/cps230/hws/hw2/) |
+| 9/15 | [Floating Point](/course/bju/content/cps230/lessons/lec6/) | Ch. 2 (finish) | |
+| 9/18 | [MOVing into Assembly](/course/bju/content/cps230/lessons/lec7/) | Ch. 3 (3.2 to 3.4.2) | [HW 2](/course/bju/content/cps230/hws/hw2/) |
 | | | | [Lab 3](/course/bju/content/cps230/labs/lab3/) |
-| 9/20 | MOVing into Assembly | Ch. 3 (to 3.6) | [Program 1](/course/bju/content/cps230/programs/prog1/) |
-| 9/22 | Test 1 (*) | | |
+| 9/20 | [MOVing into Assembly](/course/bju/content/cps230/lessons/lec7/) | Ch. 3 (to 3.6) | [Program 1](/course/bju/content/cps230/programs/prog1/) |
+| 9/22 | [Test 1](/course/bju/content/cps230/reviews/test1/) (*) | | |
 | 9/25 | Flags and Bit Operations (*) | Ch. 3 (to 3.6.3) | [Lab 4](/course/bju/content/cps230/labs/lab4/) |
 | 9/27 | JMPing Around (*) | Ch. 3 (to 3.6.5) | |
 | 9/29 | While This Then JMP | Ch. 3 (to 3.6.6) |
