@@ -24,7 +24,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 9/20 | [MOVing into Assembly](/course/bju/content/cps230/lessons/lec7/) | Ch. 3 (to 3.6) | [Program 1](/course/bju/content/cps230/programs/prog1/) |
 | 9/22 | [Test 1](/course/bju/content/cps230/reviews/test1/) (*) | | |
 | 9/25 | [Flags and Bit Operations](/course/bju/content/cps230/lessons/lec8/) (*) [Video](https://youtu.be/iBXgcRS2FWc) | Ch. 3 (to 3.6.3) | [Lab 4](/course/bju/content/cps230/labs/lab4/) |
-| 9/27 | [JMPing Around](/course/bju/content/cps230/lessons/lec9/) (*) Video | Ch. 3 (to 3.6.5) | |
+| 9/27 | [JMPing Around](/course/bju/content/cps230/lessons/lec9/) (*) [Video](https://youtu.be/X1bFLhThFDA) | Ch. 3 (to 3.6.5) | |
 | 9/29 | While This Then JMP | Ch. 3 (to 3.6.6) |
 | 10/2 | The Stack | Ch. 3 (3.7 to 3.7.4) | [Lab 5](/course/bju/content/cps230/labs/lab5/) |
 | 10/4 | Stack Frames | Ch. 3 (to 3.8) | |
