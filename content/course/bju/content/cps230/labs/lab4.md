@@ -96,7 +96,21 @@ What happens if you enter `fred` instead of a number?
 
 ## Debugging
 
+Remember WinDBG from lab 1? (Well if you did the Extra Credit).  He's back!!
 
+WinDBG is pretty much the only way to debug native assembly files right now (unless you have Visual Studio 2015 or earlier installed in which case Visual Studio should work).  But anyway, WinDBG is what I'll be using in class, so its a good idea to get familiar with it.  Head over to [lab 1](/course/bju/content/cps230/labs/lab1/) to get the instructions for installing it.
+
+Once installed, open it from the start menu.
+
+![Start Menu WinDBG](/course/bju/content/cps230/images/start_menu_windbg.png)
+
+From here, click File > Open Executable, and select the exe you generated.  Ignore the windows that open, and click File > Open Source File, and select your .asm file.  (Note: You'll need to select Assembly Files from the Files of Type dropdown at the bottom of the open window).
+
+Now put your cursor on the first line under `_main:` and press F9.  The line should turn red, and at this point you can click Debug > Go.
+
+F11 allows you to step into function calls, and F10 allows you to step over.
+
+Under view, you'll find several other windows that allow you to open a memory viewer, or a view of the registers. 
 
 ## Personalizing
 
