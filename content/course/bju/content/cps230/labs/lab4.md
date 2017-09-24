@@ -96,21 +96,7 @@ What happens if you enter `fred` instead of a number?
 
 ## Debugging
 
-You can debug your EXE file in Visual Studio by
 
-* Selecting "Open Project" from the File menu...
-* ...and selecting your `lab4.exe` file as the "project".  Unfortunately, this won't open your source code automatically, so...
-* ...open your `lab4.asm` source code file by selecting the `File / Open / File...` menu option.
-
-**Wait!** Don't try to debug it yet.  Visual Studio is pretty clueless about assembly programs (I guess we can't blame it--support for source-debugging of ASM programs is probably not high on their list of requested features...),
-so we need to help it out.  Open the `Debug / Options` menu option, select `Debugging / General` in the list box on the *left*, and find the `Use Native Compatibility Mode` option in the list box on the *right*.  Make sure the
-checkbox next to that option is checked/filled-in!  Like this:
-
-![Turning on debugging support](/course/bju/content/cps230/images/vs_debug_native.png)
-
-*Now* try setting a breakpoint in your `lab4.asm` code and clicking the `Debug` button to kick off your program!
-
-> FWIW, WinDBG does not require any special settings, and it also features nice syntax-highlighting for ASM source code, making it an attractive alternative for debugging NASM-assembled programs... ;-)
 
 ## Personalizing
 
