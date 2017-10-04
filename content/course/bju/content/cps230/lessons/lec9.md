@@ -2,7 +2,7 @@
 title: "CPS 230 Lecture 9"
 ---
 
-# Lecture 9: Control Flow in Assembly (If/Else If/Else Statements
+# Lecture 9: Control Flow in Assembly (If/Else If/Else Statements)
 
 ## Calling Scanf
 

@@ -25,12 +25,12 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 9/22 | [Test 1](/course/bju/content/cps230/reviews/test1/) (*) | | |
 | 9/25 | [Flags and Bit Operations](/course/bju/content/cps230/lessons/lec8/) (*) [Video](https://youtu.be/iBXgcRS2FWc) | Ch. 3 (to 3.6.3) | [Lab 4](/course/bju/content/cps230/labs/lab4/) |
 | 9/27 | [JMPing Around](/course/bju/content/cps230/lessons/lec9/) (*) [Video](https://youtu.be/X1bFLhThFDA) | Ch. 3 (to 3.6.5) | |
-| 9/29 | While This Then JMP | Ch. 3 (to 3.6.6) |
-| 10/2 | The Stack | Ch. 3 (3.7 to 3.7.4) | [Lab 5](/course/bju/content/cps230/labs/lab5/) |
-| 10/4 | Stack Frames | Ch. 3 (to 3.8) | |
-| | Local Variables | | |
-| 10/6 | Stack Frames | | |
-| | Local Variables | | |
+| 9/29 | [While This Then JMP]((/course/bju/content/cps230/lessons/lec10/)) | Ch. 3 (to 3.6.6) |
+| 10/2 | [The Stack](/course/bju/content/cps230/lessons/lec11/) | Ch. 3 (3.7 to 3.7.4) | [Lab 5](/course/bju/content/cps230/labs/lab5/) |
+| 10/4 | [Stack Frames](/course/bju/content/cps230/lessons/lec12/) | Ch. 3 (to 3.8) | |
+| | [Local Variables](/course/bju/content/cps230/lessons/lec12/) | | |
+| 10/6 | [Stack Frames](/course/bju/content/cps230/lessons/lec12/) | | |
+| | [Local Variables](/course/bju/content/cps230/lessons/lec12/) | | |
 | 10/9 | Arrays | Ch. 3 (to 3.8.4; then 3.9.1) | |
 | | Pointers | | |
 | 10/11 | Arrays | | |
