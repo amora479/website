@@ -78,7 +78,7 @@ the stack (when we get to start \_factorial) looks something like this:
 | Address | Value | Register, Pointers | Notes |
 | --- | --- | --- | --- |
 | 0x80000000 | 4 | | The parameter to _factorial |
-| 0x7FFFFFFC | <some address> | ESP | The address of `add esp, 4` |
+| 0x7FFFFFFC | *some address* | ESP | The address of `add esp, 4` |
 
 In order to get to our parameter, we just need to grab `[ESP+4]`.  But wait, what happens if we push or pop anything in the function (which we are guilty of in this case), ESP will change and we'll have to jump around a lot more and we'll have to keep track of the offset.  Or will we?  There is a better way and that is to use the frame pointer.  Since the frame pointer isn't affected by pushes and pops, we can set it to ESP for the duration of the function.  This is accomplished by `mov ebp, esp`.  However, for recursion purposes, we need to save our caller's frame pointer so we can restore it when we're done.  This is accomplished by the push to the stack `push ebp`.
 
@@ -87,8 +87,8 @@ Now our stack looks (when we get to start \_factorial) looks something like this
 | Address | Value | Register, Pointers | Notes |
 | --- | --- | --- | --- |
 | 0x80000000 | 4 | | The parameter to _factorial |
-| 0x7FFFFFFC | <some address> |  | The address of `add esp, 4` |
-| 0x7FFFFFF8 | <some address> | ESP, EBP | Caller's EBP |
+| 0x7FFFFFFC | *some address* |  | The address of `add esp, 4` |
+| 0x7FFFFFF8 | *some address* | ESP, EBP | Caller's EBP |
 
 Finally, we need a place to put our local variables (that isn't global!).  If we just make them all global, the recurive variables will get overwritten, and that is not good.  We can make space on the stack by subtracting (4 * the number of locals we need) from esp, and then mentally making note of which local variables go to which slot.  Note: I generally make the first slot below the Caller's EBP the address for the return variable.
 
@@ -97,8 +97,8 @@ Now our stack looks (when we get to start \_factorial) looks something like this
 | Address | Value | Register, Pointers | Notes |
 | --- | --- | --- | --- |
 | 0x80000000 | 4 | | The parameter to _factorial |
-| 0x7FFFFFFC | <some address> |  | The address of `add esp, 4` |
-| 0x7FFFFFF8 | <some address> | EBP | Caller's EBP |
+| 0x7FFFFFFC | *some address* |  | The address of `add esp, 4` |
+| 0x7FFFFFF8 | *some address* | EBP | Caller's EBP |
 | 0x7FFFFFF4 | 0 | ESP | Return Variable |
 
 Now, we just need to undo all of this before we return.  Also need to put the return variable into EAX.
