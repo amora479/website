@@ -1,5 +1,5 @@
 ---
-title: "CPS 230 Lecture 9"
+title: "CPS 230 Lecture 10"
 ---
 
 # Lecture 9: Control Flow in Assembly (While Statements)
