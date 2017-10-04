@@ -76,7 +76,7 @@ add esp, 4
 the stack (when we get to start \_factorial) looks something like this:
 
 | Address | Value | Register, Pointers | Notes |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | 0x80000000 | 4 | | The parameter to _factorial |
 | 0x7FFFFFFC | <some address> | ESP | The address of `add esp, 4` |
 
@@ -85,7 +85,7 @@ In order to get to our parameter, we just need to grab `[ESP+4]`.  But wait, wha
 Now our stack looks (when we get to start \_factorial) looks something like this:
 
 | Address | Value | Register, Pointers | Notes |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | 0x80000000 | 4 | | The parameter to _factorial |
 | 0x7FFFFFFC | <some address> |  | The address of `add esp, 4` |
 | 0x7FFFFFF8 | <some address> | ESP, EBP | Caller's EBP |
@@ -95,7 +95,7 @@ Finally, we need a place to put our local variables (that isn't global!).  If we
 Now our stack looks (when we get to start \_factorial) looks something like this:
 
 | Address | Value | Register, Pointers | Notes |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | 0x80000000 | 4 | | The parameter to _factorial |
 | 0x7FFFFFFC | <some address> |  | The address of `add esp, 4` |
 | 0x7FFFFFF8 | <some address> | EBP | Caller's EBP |
