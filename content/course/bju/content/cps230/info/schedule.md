@@ -31,10 +31,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | [Local Variables](/course/bju/content/cps230/lessons/lec12/) | | |
 | 10/6 | [Stack Frames](/course/bju/content/cps230/lessons/lec12/) | | |
 | | [Local Variables](/course/bju/content/cps230/lessons/lec12/) | | |
-| 10/9 | Arrays | Ch. 3 (to 3.8.4; then 3.9.1) | |
-| | Pointers | | |
-| 10/11 | Arrays | | |
-| | Pointers | | |
+| 10/9 | [Arrays](/course/bju/content/cps230/lessons/lec13/) | Ch. 3 (to 3.8.4; then 3.9.1) | |
+| | [Pointers](/course/bju/content/cps230/lessons/lec13/) | | |
+| 10/11 | [Arrays](/course/bju/content/cps230/lessons/lec13/) | | |
+| | [Pointers](/course/bju/content/cps230/lessons/lec13/) | | |
 | 10/13 | C Strings | Ch. 3 (3.10 to 3.11) | [HW 3](/course/bju/content/cps230/hws/hw3/) |
 | | | | [Lab 6](/course/bju/content/cps230/labs/lab6/) |
 | 10/16 | Reading Strings | Ch. 3 (3.12 to 3.12.1) | |
