@@ -69,7 +69,7 @@ int main() {
 
 If we were to inspect the memory of this program and look at p, what we would see would be a block of memory 58 bytes long.  The first 50 would be reserved for the string, the next 4 would be for age, and the final 4 would be for weight.
 
-## How do we do this in assembly?
+## Arrays in Assembly
 
 Arrays in assembly are much like you might expect; they are just blocks of memory, and there are two ways of declaring them: initialized and uninitialized.  For initialized arrays, declare your array in the .data section with each value in a comma-separated list.
 
