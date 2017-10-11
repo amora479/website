@@ -168,3 +168,273 @@ _main:
 
 ## Structures in Assembly
 
+Let's make a struct containing information about cats.
+
+``` c
+struct Cat {
+    int legs;
+    int unfriendliness;
+    char liftsWeights;
+    char name[50];
+};
+```
+
+To create the same structure in assembly, we simply need to use the STRUC directive (which is done before any sections are declared).  Note that the `.size:` parameter at the of the struc is important because it gives us an easy way to determine the size (in bytes) of the struc.
+
+``` asm
+STRUC Cat 
+    .legs: resd 1
+    .unfriendliness: resd 1
+    .liftsWeights: resb 1
+    .name: resb 50
+    .size:
+ENDSTRUC
+```
+
+To create an initialized instance of this struct, we need to do the following in the `.data` section.
+
+``` asm
+authur: ISTRUC Cat
+    AT Cat.legs, dd 6
+    AT Cat.unfriendliness, dd 95
+    AT Cat.liftWeights, db 0
+    AT Cat.name, db "Poochkins", 0
+IEND
+```
+
+Referencing the individual properites of a struc is done much the same way as an array.  Load the starting address of the struc and then get the offset, but offsets for strucs don't have to be manually calculated.  You can simply do `[register + Cat.unfriendliness]`.
+
+Let's look at an example program that prints authur.
+
+``` asm
+extern _scanf
+extern _printf
+ 
+STRUC Cat
+    .legs: resd 1
+    .unfriendliness: resd 1
+    .liftWeights: resb 1
+    .name: resb 50
+    .size:
+ENDSTRUC
+ 
+SECTION .bss
+ 
+    cats: resb Cat.size * 500
+ 
+SECTION .data
+ 
+    _printf_fmt: db "Cat %s has %d legs and %d/10 unfriendly but ", 0
+    _printf_fmt1: db "lifts weights", 10, 0
+    _printf_fmt2: db "doesn't lifts weights", 10, 0
+
+    authur: ISTRUC Cat
+        AT Cat.legs, dd 6
+        AT Cat.unfriendliness, dd 95
+        AT Cat.liftWeights, db 0
+        AT Cat.name, db "Poochkins", 0
+    IEND
+ 
+SECTION .text
+ 
+global _print_cat
+_print_cat:
+    push ebp
+    mov ebp, esp
+
+    mov eax, [ebp + 8]
+    push eax
+    push dword [eax + Cat.unfriendliness]
+    push dword [eax + Cat.legs]
+    lea ebx, [eax + Cat.name]
+    push ebx
+    push _printf_fmt
+    call _printf
+    add esp, 16
+    pop eax
+
+    cmp byte [eax + Cat.liftsWeights], 1
+    je _true
+    jmp _false
+_true:
+    push _printf_fmt1
+    call _printf
+    add esp, 4
+    jmp _end
+_false:
+    push _printf_fmt2
+    call _printf
+    add esp, 4
+_end:
+    mov esp, ebp
+    pop ebp
+    ret
+ 
+global _main
+_main:
+    push authur
+    call _print_cat
+    add esp, 4
+    ret
+```
+
+Additionally, here is another example that allows you to write / read a Person struc to and from an array.
+
+``` asm
+extern _scanf
+extern _printf
+
+STRUC Person
+    .first_name: resb 50
+    .last_name: resb 50
+    .age: resd 1
+    .weight: resd 1
+    .size:
+ENDSTRUC
+
+SECTION .data
+
+    p: ISTRUC Person
+        AT Person.first_name, db "John", 0
+        AT Person.last_name, db "Doe", 0
+        AT Person.age, dd 10
+        AT Person.weight, dd 150
+    IEND
+
+    number: dd 0
+
+    scanf_fmt_1: db " %s", 0
+    scanf_fmt_2: db " %d", 0
+    scanf_fmt_3: db " %c", 0
+
+    printf_fmt_1: db "Enter a number (1-5): ", 0
+    printf_fmt_2: db "Enter a first_name: ", 0
+    printf_fmt_3: db "Enter a last_name: ", 0
+    printf_fmt_4: db "Enter an age: ", 0
+    printf_fmt_5: db "Enter a weight: ", 0
+    printf_fmt_6: db "[R]ead or [W]rite? ", 0
+    printf_fmt_7: db "Person (%s %s) is %d years old and weights %d", 10, 0
+
+SECTION .bss
+
+    person_array: resb Person.size * 5
+
+SECTION .text
+
+global _main
+_main:
+    mov ebx, p
+
+    lea ecx, [ebx + Person.weight]
+    push dword [ecx]
+    lea ecx, [ebx + Person.age]
+    push dword [ecx]
+    lea ecx, [ebx + Person.last_name]
+    push ecx
+    lea ecx, [ebx + Person.first_name]
+    push ecx
+    push printf_fmt_7
+    call _printf
+    add esp, 20
+
+    push printf_fmt_6
+    call _printf
+    add esp, 4
+
+    push number
+    push scanf_fmt_3
+    call _scanf
+    add esp, 8
+
+    cmp dword [number], 87
+    je _writing
+    jmp _reading
+_writing:
+    push printf_fmt_1
+    call _printf
+    add esp, 4
+
+    push number 
+    push scanf_fmt_2
+    call _scanf
+    add esp, 8
+
+    mov ebx, person_array
+    mov eax, Person.size
+    imul dword [number]
+    sub eax, Person.size
+    add ebx, eax
+
+    push printf_fmt_2
+    call _printf
+    add esp, 4
+
+    lea ecx, [ebx + Person.first_name]
+    push ecx
+    push scanf_fmt_1
+    call _scanf
+    add esp, 8
+
+    push printf_fmt_3
+    call _printf
+    add esp, 4
+
+    lea ecx, [ebx + Person.last_name]
+    push ecx
+    push scanf_fmt_1
+    call _scanf
+    add esp, 8
+
+    push printf_fmt_4
+    call _printf
+    add esp, 4
+
+    lea ecx, [ebx + Person.age]
+    push ecx
+    push scanf_fmt_2
+    call _scanf
+    add esp, 8
+
+    push printf_fmt_5
+    call _printf
+    add esp, 4
+
+    lea ecx, [ebx + Person.weight]
+    push ecx
+    push scanf_fmt_2
+    call _scanf
+    add esp, 8
+
+    jmp _end
+_reading:
+    push printf_fmt_1
+    call _printf
+    add esp, 4
+
+    push number 
+    push scanf_fmt_2
+    call _scanf
+    add esp, 8
+
+    mov ebx, person_array
+    mov eax, Person.size
+    imul dword [number]
+    sub eax, Person.size
+    add ebx, eax
+
+    mov ecx, ebx
+    lea ecx, [ebx + Person.weight]
+    push dword [ecx]
+    lea ecx, [ebx + Person.age]
+    push dword [ecx]
+    lea ecx, [ebx + Person.last_name]
+    push ecx
+    lea ecx, [ebx + Person.first_name]
+    push ecx
+    push printf_fmt_7
+    call _printf
+    add esp, 20
+    _end:
+    jmp _main
+    ret
+```
