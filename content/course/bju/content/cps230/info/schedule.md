@@ -35,7 +35,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | [Pointers](/course/bju/content/cps230/lessons/lec13/) | | |
 | 10/11 | [Arrays](/course/bju/content/cps230/lessons/lec13/) | | |
 | | [Pointers](/course/bju/content/cps230/lessons/lec13/) | | |
-| 10/13 | C Strings | Ch. 3 (3.10 to 3.11) | [HW 3](/course/bju/content/cps230/hws/hw3/) |
+| 10/13 | [C Strings](/course/bju/content/cps230/lessons/lec14/) | Ch. 3 (3.10 to 3.11) | [HW 3](/course/bju/content/cps230/hws/hw3/) |
 | | | | [Lab 6](/course/bju/content/cps230/labs/lab6/) |
 | 10/16 | Reading Strings | Ch. 3 (3.12 to 3.12.1) | |
 | 10/18 | Printf | Ch. 3 (to 3.13) | |
