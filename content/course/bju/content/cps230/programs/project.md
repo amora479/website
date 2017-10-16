@@ -1,9 +1,10 @@
 ---
-layout: page
 title: "Team Project: Multitasking Kernel"
 ---
 
-# Overview
+# Team Project: Kernel
+
+## Overview
 
 The team project for this semester is the creation of a multi-tasking "kernel" that
 can demonstrate running at least 4 independent threads of execution and a bootloader
@@ -14,11 +15,11 @@ in your final report!
 
 See the overall project grading rubric [here]({{site.baseurl}}/downloads/team_project_rubric.xlsx).
 
-# Milestones
+## Milestones
 
 The project will be broken into 3 milestones: 2 "checkpoints" and the final deliverable.
 
-## Alpha
+### Alpha
 
 Your "kernel" should be packaged in a simple DOS executable (a `.COM` file).  It should
 demonstrate the cooperative multitasking of at least 2 independent tasks.  By "cooperative,"
@@ -45,7 +46,7 @@ later milestones, and planning ahead for:
 
 * `README.txt`: a terse report including a list of any known bugs/issues and how many hours each team member has spent so far
 
-## Beta
+### Beta
 
 In this stage, you will write a bootloader that will load your kernel from sectors on the bootdisk into memory and start it running.
 
@@ -79,8 +80,7 @@ Use any extra time in this stage to get a jump start on any elective features yo
 
 * `README.txt`: a terse report including a list of any known bugs/issues and how many hours each team member has spent so far
 
-
-## Release (Final Deliverable)
+### Release (Final Deliverable)
 
 This is it!  At this point you should already have:
 
@@ -118,7 +118,7 @@ For this final stage you will:
 * `bootdisk.img`
 
 
-# Teamwork
+## Teamwork
 
 You must divide the work between yourselves as evenly as is possible/practical.  Communication is key (and is a component of your grade!).
 
@@ -131,14 +131,14 @@ report in which you will "grade" yourself and your teammate on
 
 * unity (how well the members were able to work together, especially in the face of disagreement [which is inevitable])
 
-# Basic Electives
+## Basic Electives
 
 Assuming no mistakes/bugs/omissions/errors of any kind at any point along the project,
 completing the baseline/required features will earn your team **200** points out of **250**.
 
 *Many* more points are available in the form of *elective* features from which you may pick and choose.  See below...
 
-## Timer Preemption (25 pts)
+### Timer Preemption (25 pts)
 
 Hook the timer interrupt (`INT 8`) vector and use this hook to *preemptively* switch tasks.
 
@@ -156,7 +156,7 @@ This will require several changes to your kernel:
 In particular, debugging will get harder once interrupts are involved.  But it's pretty cool to be able to remove all calls to `yield` from
 your task code and watch the multi-tasking still work!
 
-## RPN Calculator Demo (25 pts)
+### RPN Calculator Demo (25 pts)
 
 Adapt/port your RPN caluclator (Program 2, remember?) to run as a 16-bit demo task inside your kernel.  Obviously, you will need
 to change how you get input (no more `_getchar`) and write output (no more `_putchar` or `_printf`).
@@ -174,7 +174,7 @@ But if you are sticking with *cooperative* multitasking, you will need to
 modify your calculator to *check* for keyboard input (`int 0x16/ah=0x01`) without *waiting* for keyboard input; if no input is available,
 you can immediately *yield* to the next task.
 
-## Graphics Demo (25 pts)
+### Graphics Demo (25 pts)
 
 Have at least one of your demo tasks do something graphical (with either pixels or ASCII art).
 
@@ -194,8 +194,7 @@ Note that several of these rely on "random" numbers, which you will have to gene
 You are free to come up with your own variations/ideas, but whatever you do should be at least as "impressive" as the above sound.
 Consult with the instructor to be safe.
 
-
-## Music Demo (25 pts)
+### Music Demo (25 pts)
 
 Use either the [PC speaker](http://qzx.com/pc-gpe/speaker.txt) or
 [Adlib soundcard](http://qzx.com/pc-gpe/adlib.txt) (if you're a glutton for punishment)
@@ -208,7 +207,7 @@ to give you a faster interrupt frequency (so you can update notes more quickly).
 If you *are* doing timer-preemption, this will be very challenging (you might have to have your timer interrupt hook doing double-duty; both
 switching tasks *and* updating the current music notes).
 
-# Challenge Electives
+## Challenge Electives
 
 These are very challenging "stretch" goals for highly motivated teams that aren't afraid to research topics and solve problems for themselves.
 
@@ -216,11 +215,11 @@ For full credit, these ideas must be beyond the "proof of concept" phase and ful
 
 There is partial credit available for *bona fide* efforts along these lines that do not make it beyond the "proof of concept" phase.
 
-## Real-Mode C (50 pts)
+### Real-Mode C (50 pts)
 
 Figure out how to use a 16-bit, real-mode-compatible C compiler (like OpenWatcom, or Digital Mars) to write at least some of your demo code in C.
 
-## Protected Mode (50 pts)
+### Protected Mode (50 pts)
 
 Figure out how to switch the x86 into *protected mode* (full 32-bit addressing!)
 before running your demos.  You won't be able to access the BIOS anymore (for all practical purposes), and interrupts will work very differently,
