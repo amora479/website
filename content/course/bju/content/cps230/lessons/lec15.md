@@ -64,8 +64,6 @@ In the above program, several things are happening.  First we move string2's add
 
 ## Index Of
 
-Index Of can be done in much the same way as moving, we simply need to call the right opcode and make sure to put the character we are searching for in al.
-
 C:
 
 ``` c
@@ -97,7 +95,7 @@ global _main
 _main:
 	mov edi, string1 ; string to search
 	cld ; direction to search
-	mov al, 'o'
+	mov al, 'o' ; al contains the character we are searching for
 
 	mov ecx, 12 ; indicates when search should stop
 	repne scasb ; execute until al is found or ecx is 0
@@ -148,7 +146,7 @@ _main:
 	mov esi, string1 ; copying from
 
 	mov ecx, 12
-	repe cmpsb
+	repe cmpsb ; execute while they are equal
 	je push_0
 	jmp push_1
 push_0:
@@ -169,13 +167,62 @@ pushed:
 C:
 
 ``` c
+#include "string.h"
+#include "stdio.h"
 
+int main() {
+	char string1[12] = {0};
+	
+	int i = 0;
+	for(i = 0; i < 12 && string[i-1] != '\n'; ++i) {
+		string1[i] = getchar();
+	}
+	string1[11] = 0; // remember to 0 terminate your strings
+	printf("%s\n", string1);
+	return 0;
+}
 ```
 
 Assembly:
 
 ``` asm
+extern _getchar
+extern _printf
 
+SECTION .data
+
+	string1: db 0,0,0,0,0,0,0,0,0,0,0,0
+	count: dd 12
+
+	fmt: db "%s", 10, 0
+
+SECTION .text
+global _main
+_main:
+	mov edi, string1 ; printing to
+	cld
+
+while:
+	cmp dword [count], 0
+	jne continue
+	jmp done
+continue:
+	mov eax, 0
+	call _getchar
+	cmp eax, 10 ; newline
+	jne continue2
+	jmp done
+continue2:
+	stosb
+	sub dword [count], 1
+	jmp while
+done:
+	mov [esp+12], 0 ; don't forget to 0 terminate your strings
+	push string1
+	push fmt
+	call _printf
+	add esp, 8
+	ret
 ```
 
 ## Printing Character By Character
@@ -219,7 +266,7 @@ while:
 	jmp done
 continue:
 	mov eax, 0
-	lodsb
+	lodsb ; al will contain the next character
 	push eax
 	call _putchar
 	add esp, 4
