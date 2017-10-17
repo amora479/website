@@ -58,12 +58,15 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 11/10 | Cooperative Task Switching | | |
 | 11/13 | Booting an IBM PC | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | |
 | | | [HelpPC: MBR](http://stanislavs.org/helppc/boot_sector.html) | |
-| 11/15 | Lab Day | | [Team Project Alpha](/course/bju/content/cps230/programs/project/) |
+| 11/15 | Lab Day | | [Team Project Alpha (Kernel)](/course/bju/content/cps230/programs/project/) |
+| | | | [Team Project Alpha (Pong)](/course/bju/content/cps230/programs/project-pong/) |
 | 11/17 | Interrupt Handlers | | [Lab 9](/course/bju/content/cps230/labs/lab9/) |
-| 11/20 | Lab Day | | [Team Project Beta](/course/bju/content/cps230/programs/project/) |
+| 11/20 | Lab Day | | [Team Project Beta (Kernel)](/course/bju/content/cps230/programs/project/) |
+| | | | [Team Project Beta (Pong)](/course/bju/content/cps230/programs/project-pong/) |
 | 11/22 - 11/27 | _Thanksgiving Break_ | | |
 | 11/29 | Preemptive Task Switching | | [Lab 10](/course/bju/content/cps230/labs/lab10/) |
-| 12/1 | Work Day | | [Team Project Release](/course/bju/content/cps230/programs/project/) |
+| 12/1 | Work Day | | [Team Project Release (Kernel)](/course/bju/content/cps230/programs/project/) |
+| | | | [Team Project Release (Pong)](/course/bju/content/cps230/programs/project-pong/) |
 | 12/4 | IA-32 Protected Mode (*) [Video]() | Ch. 9 (stop at 9.6) |
 | 12/6 | Crash Course in x64 | Ch. 3 (3.13) | |
 | 12/8 | Brief Tour of 32-bit ARM | [ARM Assembly Intro](/course/bju/content/cps230/downloads/ARMAssembly.pdf) | |
