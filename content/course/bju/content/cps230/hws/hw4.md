@@ -113,8 +113,8 @@ plum  dd  _drill
 ```
 
 ### fox.obj
+#### .text Section Bytes/Relocations
 ``` asm
-.text Section Bytes/Relocations
 00000000: CC CC CC 55 89 E5 FF 35  02 00 00 00 E8 00 00 00  ...U...5........
 00000010: 00 83 C4 04 5D C3                                 ....].
 ```
@@ -124,28 +124,24 @@ plum  dd  _drill
 | 8 | DIR32 | **fox.data** |
 | 13 | REL32 | **_chisel** |
 
-
+#### .data Section Bytes/Relocations
 ``` asm
-.data Section Bytes/Relocations}
 00000000: 00 00 64 00 00 00 00 00  00 00 00 00 E1 00 00 00  ..d.............
 ```
 
-| Offset | Kind | Target Symbol |
-| --- | --- | --- |
 *(no relocations for this section)*
-
 
 #### Public/External Symbols
 | Section | Offset | Name |
 | --- | --- | --- |
-| **<external>** | 0 | **_chisel** |
-| **<external>** | 0 | **_wrench** |
+| **&lt;external&gt;** | 0 | **_chisel** |
+| **&lt;external&gt;** | 0 | **_wrench** |
 | **fox.text** | 3 | **_drill** |
 | **fox.data** | 12 | **golf_cart** |
 
 ### Module bat.obj
+#### .text Section Bytes/Relocations
 ``` asm
-.text Section Bytes/Relocations
 00000000: CC CC A1 04 00 00 00 33  05 00 00 00 00 C3 CC CC  .......3........
 00000010: A1 00 00 00 00 03 05 00  00 00 00 C3              ............
 ```
@@ -157,9 +153,8 @@ plum  dd  _drill
 | 17 | DIR32 | **golf_cart** |
 | 23 | DIR32 | **bat.data** |
 
-
+#### .data Section Bytes/Relocations
 ``` asm
-.data Section Bytes/Relocations}
 00000000: DB 01 00 00 00 00 00 00                           ........
 ```
 
@@ -171,7 +166,7 @@ plum  dd  _drill
 #### Public/External Symbols
 | Section | Offset | Name |
 | --- | --- | --- |
-| **<external>** | 0 | **_drill** |
-| **<external>** | 0 | **golf_cart** |
+| **&lt;external&gt;** | 0 | **_drill** |
+| **&lt;external&gt;** | 0 | **golf_cart** |
 | **bat.text** | 2 | **_chisel** |
 | **bat.text** | 16 | **_wrench** |
