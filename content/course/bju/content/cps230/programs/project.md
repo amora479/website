@@ -13,7 +13,7 @@ that can load the kernel from a bootdisk.
 **You should track how much time you each spend on this project.**  Include these totals
 in your final report!
 
-See the overall project grading rubric [here]({{site.baseurl}}/downloads/team_project_rubric.xlsx).
+See the overall project grading rubric [here](/content/bju/content/course/cps230/downloads/team_project_rubric.xlsx).
 
 ## Milestones
 
@@ -40,7 +40,7 @@ later milestones, and planning ahead for:
 
 * Any "elective" features you want to complete (e.g., timer-preemption)
 
-**Submission**: Submit 2 files to your group's BJUOnline Team Alpha dropbox
+**Submission**: Submit 2 files to your group's bitbucket folder
 
 * `kernel.asm`: the code for your Alpha-stage demo (I will assemble it with the command `nasm -fbin -okernel.com kernel.asm`)
 
@@ -70,7 +70,7 @@ we're going to roll...)
 
 Use any extra time in this stage to get a jump start on any elective features you plan to do for the final stage.
 
-**Submission**: Submit 4 files to your group's BJUOnline Team Beta dropbox
+**Submission**: Submit 4 files to your group's bitbucket folder
 
 * `boot.asm`: the code for your bootloader itself
 
@@ -109,7 +109,7 @@ For this final stage you will:
     * Contributions (description of each team member's contributions, including total number of hours worked)
     * Appendix (complete source code printout)
 
-**Submission**: Submit the following files to the Team Release dropbox
+**Submission**: Submit the following files to the bitbucket folder
 
 * `boot.asm`
 
