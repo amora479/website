@@ -38,12 +38,9 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 10/13 | [C Strings](/course/bju/content/cps230/lessons/lec14/) | Ch. 3 (3.10 to 3.11) | [HW 3](/course/bju/content/cps230/hws/hw3/) |
 | | | | [Lab 6](/course/bju/content/cps230/labs/lab6/) |
 | 10/16 | [Strings / Overflow Attacks](/course/bju/content/cps230/lessons/lec15/) | Ch. 3 (3.12 to 3.12.1) | |
-| 10/18 | Printf | Ch. 3 (to 3.13) | |
-| | Scanf | | |
-| | Pointers | | |
-| 10/20 | Separate Compilation | Ch. 7 (to 7.6) | |
-| 10/23 | Symbols | Ch. 7 (to 7.8) | |
-| | Relocations | | |
+| 10/18 | [Variodic Functions](/course/bju/content/cps230/lessons/lec16/) | Ch. 3 (to 3.13) | |
+| 10/20 | [Linking](/course/bju/content/cps230/lessons/lec17/) | Ch. 7 (to 7.6) | |
+| 10/23 | [Linking](/course/bju/content/cps230/lessons/lec17/) | Ch. 7 (to 7.8) | |
 | 10/25 | Multi-Language Programs | | [Program 2](/course/bju/content/cps230/programs/prog2/) |
 | 10/27 | Test 2 | | |
 | 10/30 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | [HW 4](/course/bju/content/cps230/hws/hw4/) | 
