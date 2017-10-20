@@ -52,36 +52,6 @@ Using a *hex editor* of your choice, construct the sequence of bytes produced by
 
 For your reading pleasure, see the NASM source files from which your object files were assembled.  (Just as a real-life linker never looks at the original source code, you don't *need* to see these files to complete this assignment. But comparing the original source to the resulting object file is an enlightening experience.)
 
-### fox.asm
-``` asm
-extern _chisel
-extern _wrench
-
-section .text
-    int3
-    int3
-    int3
-
-global _drill
-_drill:
-    push    ebp
-    mov     ebp, esp
-
-    push    dword [helicopter]
-    call    _chisel
-    add     esp, 4
-
-    pop     ebp
-    ret
-
-section .data
-    db 0,0
-helicopter  dd  0x64
-    db 0,0,0,0,0,0
-global golf_cart
-golf_cart  dd  0xe1
-```
-
 ### bat.asm
 ``` asm
 extern _drill
@@ -112,32 +82,35 @@ pineapple  dd  0x1db
 plum  dd  _drill
 ```
 
-### fox.obj
-#### .text Section Bytes/Relocations
+### fox.asm
 ``` asm
-00000000: CC CC CC 55 89 E5 FF 35  02 00 00 00 E8 00 00 00  ...U...5........
-00000010: 00 83 C4 04 5D C3                                 ....].
+extern _chisel
+extern _wrench
+
+section .text
+    int3
+    int3
+    int3
+
+global _drill
+_drill:
+    push    ebp
+    mov     ebp, esp
+
+    push    dword [helicopter]
+    call    _chisel
+    add     esp, 4
+
+    pop     ebp
+    ret
+
+section .data
+    db 0,0
+helicopter  dd  0x64
+    db 0,0,0,0,0,0
+global golf_cart
+golf_cart  dd  0xe1
 ```
-
-| Offset | Kind | Target Symbol |
-| --- | --- | --- |
-| 8 | DIR32 | **fox.data** |
-| 13 | REL32 | **_chisel** |
-
-#### .data Section Bytes/Relocations
-``` asm
-00000000: 00 00 64 00 00 00 00 00  00 00 00 00 E1 00 00 00  ..d.............
-```
-
-*(no relocations for this section)*
-
-#### Public/External Symbols
-| Section | Offset | Name |
-| --- | --- | --- |
-| **&lt;external&gt;** | 0 | **_chisel** |
-| **&lt;external&gt;** | 0 | **_wrench** |
-| **fox.text** | 3 | **_drill** |
-| **fox.data** | 12 | **golf_cart** |
 
 ### Module bat.obj
 #### .text Section Bytes/Relocations
@@ -170,3 +143,30 @@ plum  dd  _drill
 | **&lt;external&gt;** | 0 | **golf_cart** |
 | **bat.text** | 2 | **_chisel** |
 | **bat.text** | 16 | **_wrench** |
+
+### fox.obj
+#### .text Section Bytes/Relocations
+``` asm
+00000000: CC CC CC 55 89 E5 FF 35  02 00 00 00 E8 00 00 00  ...U...5........
+00000010: 00 83 C4 04 5D C3                                 ....].
+```
+
+| Offset | Kind | Target Symbol |
+| --- | --- | --- |
+| 8 | DIR32 | **fox.data** |
+| 13 | REL32 | **_chisel** |
+
+#### .data Section Bytes/Relocations
+``` asm
+00000000: 00 00 64 00 00 00 00 00  00 00 00 00 E1 00 00 00  ..d.............
+```
+
+*(no relocations for this section)*
+
+#### Public/External Symbols
+| Section | Offset | Name |
+| --- | --- | --- |
+| **&lt;external&gt;** | 0 | **_chisel** |
+| **&lt;external&gt;** | 0 | **_wrench** |
+| **fox.text** | 3 | **_drill** |
+| **fox.data** | 12 | **golf_cart** |
