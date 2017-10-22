@@ -42,16 +42,16 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 10/20 | [Linking](/course/bju/content/cps230/lessons/lec17/) | Ch. 7 (to 7.6) | |
 | 10/23 | [Linking](/course/bju/content/cps230/lessons/lec17/) | Ch. 7 (to 7.8) | |
 | 10/25 | *University Day of Rest* | | [Program 2](/course/bju/content/cps230/programs/prog2/) |
-| 10/27 | Test 2 | | |
-| 10/30 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | [HW 4](/course/bju/content/cps230/hws/hw4/) | 
+| 10/27 | Multi-language Compilation | | [HW 4](/course/bju/content/cps230/hws/hw4/) |
+| 10/30 | Test 2 | | |
+| 11/1 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | | 
 | | | [Intel 8088 CPU](https://en.wikipedia.org/wiki/Intel_8088) | |
 | | | [The 640KB Barrier](https://en.wikipedia.org/wiki/Conventional_memory#640_KB_barrier) | |
 | | | [Aftermath](https://en.wikipedia.org/wiki/Influence_of_the_IBM_PC_on_the_personal_computer_market) | |
-| 11/1 | Using the BIOS API | [HelpPC: BIOS Video](http://stanislavs.org/helppc/int_10.html) | [Lab 7](/course/bju/content/cps230/labs/lab7/) |
+| 11/3 | Using the BIOS API | [HelpPC: BIOS Video](http://stanislavs.org/helppc/int_10.html) | [Lab 7](/course/bju/content/cps230/labs/lab7/) |
 | | | [HelpPC: BIOS Keyboard](http://stanislavs.org/helppc/int_16.html) | |
-| 11/3 | Real Mode Addressing | | [Lab 8](/course/bju/content/cps230/labs/lab8/) |
-| 11/6 | PC VGA Graphics | | |
-| 11/8 | Cooperative Task Switchin | | |
+| 11/6 | Real Mode Addressing | | [Lab 8](/course/bju/content/cps230/labs/lab8/) |
+| 11/8 | PC VGA Graphics | | |
 | 11/10 | Cooperative Task Switching | | |
 | 11/13 | Booting an IBM PC | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | |
 | | | [HelpPC: MBR](http://stanislavs.org/helppc/boot_sector.html) | |
