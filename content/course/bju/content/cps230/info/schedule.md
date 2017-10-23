@@ -43,7 +43,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 10/23 | [Linking](/course/bju/content/cps230/lessons/lec17/) | Ch. 7 (to 7.8) | |
 | 10/25 | *University Day of Rest* | | [Program 2](/course/bju/content/cps230/programs/prog2/) |
 | 10/27 | Multi-language Compilation | | [HW 4](/course/bju/content/cps230/hws/hw4/) |
-| 10/30 | Test 2 | | |
+| 10/30 | [Test 2](/course/bju/content/cps230/reviews/test2/) | | |
 | 11/1 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | | 
 | | | [Intel 8088 CPU](https://en.wikipedia.org/wiki/Intel_8088) | |
 | | | [The 640KB Barrier](https://en.wikipedia.org/wiki/Conventional_memory#640_KB_barrier) | |
