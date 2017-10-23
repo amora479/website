@@ -119,7 +119,7 @@ There also a couple of symbols that we need to relocate.  For example, both file
 | golf_cart | 20 | DIR32 |
 | ape.data | 26 | DIR32 |
 
-### ape.asm .data relocatiosn
+### ape.asm .data relocations
 
 | target | offset | kind |
 | --- | --- | --- |
@@ -132,7 +132,7 @@ There also a couple of symbols that we need to relocate.  For example, both file
 | insect.data | 6 | DIR32 |
 | \_saw | 11 | REL32 |
 
-### insect.asm .data relocatiosn
+### insect.asm .data relocations
 
 (none)
 
