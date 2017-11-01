@@ -48,12 +48,12 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [Intel 8088 CPU](https://en.wikipedia.org/wiki/Intel_8088) | |
 | | | [The 640KB Barrier](https://en.wikipedia.org/wiki/Conventional_memory#640_KB_barrier) | |
 | | | [Aftermath](https://en.wikipedia.org/wiki/Influence_of_the_IBM_PC_on_the_personal_computer_market) | |
-| 11/3 | Using the BIOS API | [HelpPC: BIOS Video](http://stanislavs.org/helppc/int_10.html) | [Lab 7](/course/bju/content/cps230/labs/lab7/) |
+| 11/3 | Using the BIOS API | [HelpPC: BIOS Video](http://stanislavs.org/helppc/int_10.html) | |
 | | | [HelpPC: BIOS Keyboard](http://stanislavs.org/helppc/int_16.html) | |
-| 11/6 | Real Mode Addressing | | [Lab 8](/course/bju/content/cps230/labs/lab8/) |
+| 11/6 | Real Mode Addressing | | [Lab 7](/course/bju/content/cps230/labs/lab7/) |
 | 11/8 | PC VGA Graphics | | |
 | 11/10 | Cooperative Task Switching | | |
-| 11/13 | Booting an IBM PC | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | |
+| 11/13 | Booting an IBM PC | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | [Lab 8](/course/bju/content/cps230/labs/lab8/) |
 | | | [HelpPC: MBR](http://stanislavs.org/helppc/boot_sector.html) | |
 | 11/15 | Lab Day | | [Team Project Alpha (Kernel)](/course/bju/content/cps230/programs/project/) |
 | | | | [Team Project Alpha (Pong)](/course/bju/content/cps230/programs/project-pong/) |
