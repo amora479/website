@@ -161,7 +161,47 @@ So the top of each stack should contain: flags, registers, return address.  Yiel
 And here is that in assembly:
 
 ``` asm
-
+_yield:
+	; push registers
+	pusha
+	; push flags
+	pushf
+	; save current stack pointer
+	mov bx, stack_pointers
+	add bx, [current_task]
+	add bx, [current_task] ; add twice because we have two bytes
+	mov [bx], sp
+	; switch to new stack
+	mov cx, 0
+	mov cl, [current_task]
+	inc cl
+y_check_for_overflow:
+	cmp cl, 31
+	jg y_reset
+	jmp y_check_if_enabled
+y_reset:
+	mov cl, 0
+	jmp y_check_for_overflow
+y_check_if_enabled:
+	mov bx, task_status
+	add bx, cx
+	cmp byte [bx], 1
+	je y_task_available
+	inc cx
+	jmp y_check_for_overflow
+y_task_available:
+	mov bx, cx
+	mov [current_task], bx
+	; update stack pointer
+	mov bx, stack_pointers
+	add bx, [current_task]
+	add bx, [current_task] ; add twice because we have two bytes
+	mov sp, [bx]
+	; pop flags
+	popf
+	; pop registers
+	popa
+	ret
 ```
 
 
