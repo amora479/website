@@ -60,11 +60,12 @@ Let each of the following registers have the specified value: CS = 0x100, DS = 0
 
 One final thing to note.  We are writing COM files for DOS which is a special type of executable.  COM files are unique in two regards.  First, they can only be 65536 bytes long (which means they fit in a single segment).  Second they start with a 0x100 byte header that contains a couple of things (termination code, command line arguments).  The layout looks something like this:
 
-``` text
-0                  0x2                      0x100          0x100 + N           ..                   0x65536
-|                  |                        |              |                                        |
-| Termination Code | Command Line Arguments | Instructions | Global Data =>                <= Stack |
-|                  |                        |              |                                        |
-```
+| Address | Value | 
+| --- | --- |
+| 0x0 | Termination Code | 
+| 0x2 | Command Line Arguments |
+| 0x100 | Instructions|
+| 0x100+N | Global Data (grows up) | 
+| 65536 | Stack (grows down) | 
 
 The size in particular should give you pause.  If the size is maxed at 65536 bytes, that means that CS = DS = SS!  It also means that if you push to much onto the stack, you can overwrite your global variables or even your instructions.  This is the reason why we're passing parameters via registers for now! 
