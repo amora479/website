@@ -10,16 +10,16 @@ There are two ways of drawing onto the screen: Text and VGA.  We've looked brief
 
 In text-mode graphics, the screen's memory map begins at 0xB8000 and each character on the screen is 16 bits.  Each of these 16 bits has a purpose so let's outline them very quickly.
 
-``` text
-
-Bit Position: | 15    | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 |
-Purpose:      | Blink | Bgnd Color   | Fgnd Color      | ASCII Character           |
-
-```
+| Bits | Value |
+| --- | --- |
+| 15 | Blink | 
+| 14 - 12 | Background Color |
+| 11 - 8 | Foreground Color |
+| 7 - 0 | ASCII Value |
 
 Additionally, you'll need to know the color chart :)
 
-| Hex Code | Color | 
+| Hex Code | Color |
 | --- | --- |
 | 0 | Black |
 | 1 | Blue |
@@ -58,7 +58,7 @@ main:
 	mov word [es:bx+0], 0x9F42 ; B dark blue background, white font
 	mov word [es:bx+2], 0x9F4A ; J dark blue background, white font
 	mov word [es:bx+4], 0x9F55 ; U dark blue background, white font
-	mov word [es:bx+6], 0x9F21 ; U dark blue background, white font
+	mov word [es:bx+6], 0x1F21 ; ! dark blue background, white font
 
 	mov ah, 0x0 ; wait for user input
 	int 0x16

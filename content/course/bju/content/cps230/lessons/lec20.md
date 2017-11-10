@@ -35,6 +35,7 @@ Intel wanted something simpler but that also provided more space than the compet
 ## Calculating Addresses
 
 So now that we know how the memory is laid out, time to figure out how to build an address.  To do that, we'll need registers we've used before (at least sorta).  When we did string operations without C, we instroduced the segment offset registers.  The Intel 8088 has 6 of them:
+
 * CS (Code Segment) - this register points to the segment that contains the instructions for the currently executing program
 * DS (Data Segment) - this register points to the segment that contains the data (global variables) for the currently executing program
 * SS (Stack Segment) - this register points to the segment that contains the instructions for the currently executing program
@@ -60,7 +61,7 @@ Let each of the following registers have the specified value: CS = 0x100, DS = 0
 
 One final thing to note.  We are writing COM files for DOS which is a special type of executable.  COM files are unique in two regards.  First, they can only be 65536 bytes long (which means they fit in a single segment).  Second they start with a 0x100 byte header that contains a couple of things (termination code, command line arguments).  The layout looks something like this:
 
-| Address | Value | 
+| Address | Value |
 | --- | --- |
 | 0x0 | Termination Code | 
 | 0x2 | Command Line Arguments |

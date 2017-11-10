@@ -50,8 +50,8 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [Aftermath](https://en.wikipedia.org/wiki/Influence_of_the_IBM_PC_on_the_personal_computer_market) | |
 | 11/3 | [Using the BIOS API](/course/bju/content/cps230/lessons/lec19/) | [HelpPC: BIOS Video](http://stanislavs.org/helppc/int_10.html) | |
 | | | [HelpPC: BIOS Keyboard](http://stanislavs.org/helppc/int_16.html) | |
-| 11/6 | [Real Mode Addressing](/course/bju/content/cps230/lessons/lec20/) (*) [Video]() | | [Lab 7](/course/bju/content/cps230/labs/lab7/) |
-| 11/8 | [PC VGA Graphics](/course/bju/content/cps230/lessons/lec21/) (*) [Video]() | | |
+| 11/6 | [Real Mode Addressing](/course/bju/content/cps230/lessons/lec20/) (*) [Video](https://youtu.be/jE_0sxxW2_U) | | [Lab 7](/course/bju/content/cps230/labs/lab7/) |
+| 11/8 | [PC VGA Graphics](/course/bju/content/cps230/lessons/lec21/) (*) [Video](https://youtu.be/jE_0sxxW2_U) | | |
 | 11/10 | [Cooperative Task Switching](/course/bju/content/cps230/lessons/lec22/) (*) [Video]() | | |
 | 11/13 | Booting an IBM PC | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | [Lab 8](/course/bju/content/cps230/labs/lab8/) |
 | | | [HelpPC: MBR](http://stanislavs.org/helppc/boot_sector.html) | |
