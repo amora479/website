@@ -13,7 +13,7 @@ that can load the kernel from a bootdisk.
 **You should track how much time you each spend on this project.**  Include these totals
 in your final report!
 
-See the overall project grading rubric [here](/content/bju/content/course/cps230/downloads/team_project_rubric.xlsx).
+See the overall project grading rubric [here](/course/bju/content/cps230/downloads/team_project_rubric.xlsx).
 
 ## Milestones
 
