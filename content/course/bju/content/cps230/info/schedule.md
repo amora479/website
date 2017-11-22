@@ -53,11 +53,11 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 11/6 | [Real Mode Addressing](/course/bju/content/cps230/lessons/lec20/) (*) [Video](https://youtu.be/jE_0sxxW2_U) | | [Lab 7](/course/bju/content/cps230/labs/lab7/) |
 | 11/8 | [PC VGA Graphics](/course/bju/content/cps230/lessons/lec21/) (*) [Video](https://youtu.be/jE_0sxxW2_U) | | |
 | 11/10 | [Cooperative Task Switching](/course/bju/content/cps230/lessons/lec22/) (*) [Video](https://youtu.be/sLSnerF4HNM) | | |
-| 11/13 | Booting an IBM PC | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | [Lab 8](/course/bju/content/cps230/labs/lab8/) |
+| 11/13 | [Booting an IBM PC](/course/bju/content/cps230/lessons/lec23/) | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | [Lab 8](/course/bju/content/cps230/labs/lab8/) |
 | | | [HelpPC: MBR](http://stanislavs.org/helppc/boot_sector.html) | |
 | 11/15 | Lab Day | | [Team Project Alpha (Kernel)](/course/bju/content/cps230/programs/project/) |
 | | | | [Team Project Alpha (Pong)](/course/bju/content/cps230/programs/project-pong/) |
-| 11/17 | Interrupt Handlers | | [Lab 9](/course/bju/content/cps230/labs/lab9/) |
+| 11/17 | [Interrupt Handlers](/course/bju/content/cps230/lessons/lec24/) | | [Lab 9](/course/bju/content/cps230/labs/lab9/) |
 | 11/20 | Lab Day | | [Team Project Beta (Kernel)](/course/bju/content/cps230/programs/project/) |
 | | | | [Team Project Beta (Pong)](/course/bju/content/cps230/programs/project-pong/) |
 | 11/22 - 11/27 | _Thanksgiving Break_ | | |
