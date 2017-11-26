@@ -103,7 +103,7 @@ main:
 
 loop_until_q:
 	cmp byte [number], 0
-	je loop_forever
+	je loop_until_q
 
 	cmp byte [number], 0x10
 	jne print_scan_code
@@ -129,7 +129,7 @@ print_scan_code:
 	int 0x10
 
 	mov byte [number], 0
-	jmp loop_forever 
+	jmp loop_until_q 
 
 finish:
 	mov dx, [previous9]
