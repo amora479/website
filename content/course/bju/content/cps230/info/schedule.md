@@ -61,7 +61,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 11/20 | Lab Day | | [Team Project Beta (Kernel)](/course/bju/content/cps230/programs/project/) |
 | | | | [Team Project Beta (Pong)](/course/bju/content/cps230/programs/project-pong/) |
 | 11/22 - 11/27 | _Thanksgiving Break_ | | |
-| 11/29 | Preemptive Task Switching | | [Lab 10](/course/bju/content/cps230/labs/lab10/) |
+| 11/29 | [Preemptive Task Switching](/course/bju/content/cps230/lessons/lec25/) | | [Lab 10](/course/bju/content/cps230/labs/lab10/) |
 | 12/1 | IA-32 Protected Mode | Ch. 9 (stop at 9.6) | |
 | 12/4 | Crash Course in x64 | Ch. 3 (3.13) | |
 | 12/6 | Work Day | | [ Team Project Release (Kernel)](/course/bju/content/cps230/programs/project/) |
