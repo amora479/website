@@ -284,6 +284,10 @@ y_done:
 	popa
 	jmp	far [cs:ivt8_offset]
 
+_yield:
+	int 8
+	ret
+
 ; dx should contain the address of the function to run
 _spawn_new_task:
 	pusha
@@ -356,10 +360,13 @@ pustring_done:
 _mutex:
 	push ax
 	mov ax, 0
+	jmp mutex_loop
+mutex_loop_yield:
+	call _yield
 mutex_loop:
 	xchg [mutex], ax
 	cmp ax, 0
-	je mutex_loop
+	je mutex_loop_yield
 	pop ax
 	ret
 
@@ -368,6 +375,7 @@ _release_mutex:
 	mov ax, 1
 	xchg [mutex], ax
 	pop ax
+	call _yield
 	ret
 
 SECTION .data
@@ -376,6 +384,8 @@ SECTION .data
 	task_b_str: db "I am task B", 13, 10, 0
 
 	mutex: dw 1
+	yield_ret_addr: dw 0
+	real_yield_ret_addr: dw 0
 
 	ivt8_offset	dw 0
 	ivt8_segment dw 0
