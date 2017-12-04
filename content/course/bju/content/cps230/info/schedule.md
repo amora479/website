@@ -67,4 +67,4 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | 12/6 | Work Day | | [ Team Project Release (Kernel)](/course/bju/content/cps230/programs/project/) |
 | | | | [Team Project Release (Pong)](/course/bju/content/cps230/programs/project-pong/) |
 | 12/8 | [Brief Tour of 32-bit ARM](/course/bju/content/cps230/lessons/lec28/) | [ARM Assembly Intro](/course/bju/content/cps230/downloads/ARMAssembly.pdf) | |
-| 12/7 | Final Exam (8:00 - 9:10) | | [Lab 11 (EC)](/course/bju/content/cps230/labs/lab11/) |
+| 12/7 | [Final Exam (8:00 - 9:10)](/course/bju/content/cps230/reviews/final/) | | [Lab 11 (EC)](/course/bju/content/cps230/labs/lab11/) |
