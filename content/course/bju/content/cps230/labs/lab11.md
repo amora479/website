@@ -5,7 +5,7 @@ title: "CPS 230 Lab 11"
 # Lab 11
 ## Overview
 
-In this lab you will return to the protected mode world of Windows and convert your [Lab 6]({{site.baseurl}}/labs/lab6)
+In this lab you will return to the protected mode world of Windows and convert your [Lab 6](/course/bju/content/cps230/labs/lab11)
 Towers of Hanoi implementation into x86-64 assembly code.
 
 ## Example
