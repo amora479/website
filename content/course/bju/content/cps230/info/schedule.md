@@ -9,10 +9,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 
 | DOW | Date | Topic | Reading | Due |
 | --- | --- | --- | --- | --- |
-| W | 1/10 | Policies/Terms | | |
+| W | 1/10 | [Policies/Terms](/course/bju/content/cps230/lessons/lec0) | | |
 | F | 1/12 | Crash Course in C | Ch. 1 |
 | M | 1/15 | *MLK Jr Day* | | |
-| W | 1/17 | Number Systems | Ch. 2 (to 2.1.2) | Lab 1 |
+| W | 1/17 | Number Systems | Ch. 2 (to 2.1.2) | [Lab 1](/course/bju/content/cps230/labs/lab1) |
 | F | 1/19 | Words (and Words) | Ch. 2 (to 2.1.7) | |
 | F | | | [Unicode Article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | |
 | M | 1/22 | Bit Manipulation | Ch. 2 (to 2.2) | |
