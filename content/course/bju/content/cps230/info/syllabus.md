@@ -3,14 +3,14 @@ title: "CPS 230 Syllabus"
 ---
 
 # CPS 230: Computer Systems
-## Fall 2017 Syllabus
+## Spring 2018 Syllabus
 | Key | Value |
 | --- | --- |
 | Instructor | Ethan McGee |
-| Office Hours | 9:00 - 9:45 MWF (by appointment) |
+| Office Hours | MWF 9:00 - 9:45 |
 | Office | Library Offices |
-| Email | emcgee@bju.edu |
-| Phone | 864.201.2635
+| Email | [emcgee@bju.edu](mailto:emcgee@bju.edu) |
+| Phone | 864.201.2635 |
 | Text | _Computer Systems: A Programmer’s Perspective (2nd ed.)_ by Bryant & O’Hallaron |
 | Meets | ML 2A (MWF 8:00 - 8:50 a.m.) |
 | Credit Load | 3/3 |
@@ -46,7 +46,7 @@ This course will provide:
 ## Assignments
 **In-Class Quizzes**: taken and graded in class; closed-book/notes unless otherwise announced. The lowest quiz grade is automatically dropped.
 
-**Tests**: taken in class using machine gradable forms; closed-book/notes unless otherwise announced.
+**Tests**: taken in class; closed-book/notes unless otherwise announced.
 
 **Homework**: take-home written exercises that reinforce key non-programming concepts and skills.
 
@@ -83,9 +83,7 @@ Final grades will be computed on a 10% scale with rounding:
 ## Deadlines and Late Work
 Unless otherwise specified by the instructor, assignments can receive full credit only if **submitted in full by midnight of the due date**. A 25% penalty will be applied if the assignment is not turned in on time and a free late is not used. No credit is possible after one week. If you anticipate trouble on an assignment, see the instructor as soon as possible for assistance.
 
-Students receive **1** free late which can be used, at their discretion, on homeworks and labs, but not programs.  This allows a student to turn the assignment in, up to one week late, with no penalty applied.  After one week, no credit is possible. **The free late may not be used on Lab 11.**
-
-Programs may be submitted late only by approval of the instructor. The instructor will allow this only for students who formally request permission to submit the program late. The request must be made by email, and should report the number of hours invested, summarize the work completed to date, include a description of problems encountered, and include a copy of the program code. The request must be submitted by the original assignment deadline. Requests indicating little effort invested will be denied.
+Students receive **1** free late which can be used, at their discretion.  This allows a student to turn the assignment in, up to one week late, with no penalty applied.  After one week, no credit is possible. **The free late may not be used on Lab 11. For the final project, the extension is 3 days rather than 1 week and all team members must have a free late available.**
 
 There will be no makeup quizzes except for University authorized absences for which the student made prior arrangements with the instructor. Students who are not present for a quiz will receive a 0. The lowest quiz grade will be dropped at the end of the semester.
 

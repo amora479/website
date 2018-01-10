@@ -5,8 +5,7 @@ title: "CPS 230 Tools"
 ## Needed right away
 
 * Microsoft Windows
-    - Preferably Windows 10
-    - If you don't wish to install it natively, you can run it in a VM
+    - Windows 10 (Native of Virtual Machine)
     - Available to you free of charge via MSDNAA (see the CS lab monitors for details)
 
 * Microsoft Visual Studio 2017
