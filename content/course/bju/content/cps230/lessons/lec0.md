@@ -8,7 +8,7 @@ The purpose of this lecture is provide you with a general overview of computer a
 
 ## Data
 
-If I were to ask you what the binary string `1001100` represents, your answers would probably differ?  It could be an integer, part of a string, a machine instruction.  Data is comprised of two elements, bits and context.  You must have both.
+If I were to ask you what the binary string `1001100` represents, your answers would probably differ.  It could be an integer, part of a string, a machine instruction.  Data is comprised of two elements, bits and context.  You must have both.
 
 ## General Computer Architecture
 
@@ -18,10 +18,10 @@ We start our tour of the architecture of a general computer with the below image
 
 There is a lot going on here, so let's break it down:
 
-* CPU (Central Processing Unit) - the "brains" of the computer is where all instructions are executed.  It consists of a couple of subparts
-	* Registers - tiny (for our purpose 32-bit) blocks of memory
+* CPU (Central Processing Unit) - the "brains" of the computer. This is where all instructions are executed.  It consists of a couple of subparts:
+	* Registers - tiny (for our purposes 32-bit) blocks of memory
 	* ALU (Arithmatic Logic Unit) - this is where operations actually occur
-	* Program Counter - a pointer to the instruction currently next instruction (or in some architectures the current one)
+	* Program Counter - a pointer to the next instruction (or in some architectures the current one)
 * Main Memory (RAM) - where programs and their data are stored 
 * Disk - "long-term" storage
 
