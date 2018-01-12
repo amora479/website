@@ -20,7 +20,7 @@ In order to unpack this simple program, we need to know a little more about how 
 
 ![img](/course/bju/content/cps230/images/lec_1_img_1.png)
 
-* Proprocessor - This phase find preprocessor statements and transforms the program based on the statement. These statements always begin a `#` and there are quite a few of them.  For our purposes, we're only going to consider `#include` which is how libraries are referenced.  In this case, `#include "stdio.h"` means include C's standard I/O library.  Note, only references to functions are included, not the actualy functions themselves (this comes later).
+* Proprocessor - This phase find preprocessor statements and transforms the program based on the statement. These statements always begin a `#` and there are quite a few of them.  For our purposes, we're only going to consider `#include` which is how libraries are referenced.  In this case, `#include "stdio.h"` means include C's standard I/O library.  Note, only references to functions are included, not the functions themselves (this comes later).
 * Compiler - This phase converts the transformed program into assembly.
 * Assembler - This phase converts the assembly into an object file.
 * Linker - This is where referenced functions actually get included.  Generally speaking, another object file containing the functions referenced is inserted into the object file(s) containing your code.
@@ -31,7 +31,7 @@ Now that we know a bit about the C compiler, let's unpack the various lines of t
 #include "stdio.h"
 ```
 
-This first line, as we said, is a preprocessor directive telling the compiler to include references to C's standard I/O library and its functions.  In this course, there are two functions in the library that we care very much about: `printf` and `scanf`.  These functions are how we'll handle input and output.
+This first line, as we said, is a preprocessor directive telling the compiler to include references to C's standard I/O library and its functions.  In this course, there are two functions in the library that we care very much about: `printf` and `scanf`.  These functions are how we'll handle input and output, for those most part.  We'll use a couple of the others later.
 
 ```
 int main(int argc, char** argv) {
