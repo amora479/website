@@ -17,7 +17,7 @@ title: "CPS 230 Lab 1"
 
 ## Getting Started
 
-0. Make sure you have installed Visual Studio 2017 (the Community Edition is sufficient) as well as the [Build Tools](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017).
+0. Make sure you have installed Visual Studio 2017 (the Community Edition is sufficient, when installing make sure you check `Desktop Development with C++`) as well as the [Build Tools](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017).
 
 1. [Recommendation] Create a new folder to contain all your Lab 1 work (you could name it, e.g., "lab1")
 
@@ -36,8 +36,8 @@ title: "CPS 230 Lab 1"
 
 ## Command-Line Fun
 
-1. Open a **x86 Native Tools Command Prompt for VS 2017** window (do *not* use the x64 version; it will "work" but not the way you want).  Like this...
-1. ...and use the `cd` command to navigate to your Lab 1 folder. *(don't type the `C> `; that's a placeholder to represent your command prompt)*
+1. Open a **x86 Native Tools Command Prompt for VS 2017** window (do *not* use the x64 version; it will "work" but not the way you want).
+1. Use the `cd` command to navigate to your Lab 1 folder. *(don't type the `C> `; that's a placeholder to represent your command prompt)*
 
     ``` cmd
     C> cd "C:\Users\Ethan McGee\Documents\emcgee\lab1"
@@ -52,11 +52,11 @@ title: "CPS 230 Lab 1"
     That's `cl` as in "cee ell", not "cee one".
     You should see output like the following, culminating in the command prompt appearing again:
 
-        Microsoft (R) C/C++ Optimizing Compiler Version 17.00.61030 for x86
+        Microsoft (R) C/C++ Optimizing Compiler Version 19.12.25834 for x86
         Copyright (C) Microsoft Corporation.  All rights reserved.
 
         hello.c
-        Microsoft (R) Incremental Linker Version 11.00.61030.0
+        Microsoft (R) Incremental Linker Version 14.12.25834.0
         Copyright (C) Microsoft Corporation.  All rights reserved.
 
         /out:hello.exe

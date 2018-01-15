@@ -11,7 +11,7 @@ title: "CPS 230 Tools"
 * Microsoft Visual Studio 2017
     - The free [community edition](https://www.visualstudio.com/downloads/) is fine
     - Or you can get the professional/enterprise versions, also for free, via MSDNAA (see the CS lab monitors for details)
-    - Make sure you install the C++ tools and project templates (which are not enabled by default)
+    - When installing, make sure to check `Desktop Development with C++`
     - [VS 2017 Build Tools](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
 
 ## Needed Before Too Long
