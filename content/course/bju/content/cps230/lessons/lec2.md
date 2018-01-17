@@ -7,7 +7,7 @@ hasMath: true
 
 ## Place / Value Number Systems
 
-If we look at our standard, decimal number system, how do we know that `5` represents 5 1's and not 5 10's or 5 100's?  Its because the 5 is in the 1's place.  Our method of counting assigns each position in a number a value.  This same method carriers over to other number systems such as hexadecimal and binary, but it doesn't carry to number systems like roman numerals.
+If we look at our standard, decimal number system, how do we know that `5` represents 5 1's and not 5 10's or 5 100's?  Its because the 5 is in the 1's place.  Our method of counting assigns each position in a number a value.  This same method carries over to other number systems such as hexadecimal and binary, but it doesn't carry to number systems like roman numerals.
 
 How do we know when we need to add a number to the next place value?  Is it not when we have hit the max in our current place value?
 
@@ -98,7 +98,7 @@ Then our answer is the remainders from bottom to top `10011001`.  This works for
 
 ### Conversion from Any Base to Any Base
 
-Based on the principles above, we can convert from any base to any other base by first converting to base 10 then to the needed base.  Let's do {{< tex "1221_{3}" >}} => {{< tex "?_{7}" >}} as an example.
+Based on the principles above, we can convert from any base to any other base by first converting to base 10 then to the needed base.  Let's do {{< tex "1221_{3}" >}} => {{< tex "?\_{7}" >}} as an example.
 
 ``` text
   1  |  2  |  2  |  1
