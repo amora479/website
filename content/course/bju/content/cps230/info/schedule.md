@@ -15,8 +15,8 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 1/17 | [Number Systems](/course/bju/content/cps230/lessons/lec2) | Ch. 2 (to 2.1.2) | [Lab 1](/course/bju/content/cps230/labs/lab1) |
 | F | 1/19 | [Words (and Words)](/course/bju/content/cps230/lessons/lec3) | Ch. 2 (to 2.1.7) | |
 | F | | | [Unicode Article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | |
-| M | 1/22 | Bit Manipulation | Ch. 2 (to 2.2) | |
-| W | 1/24 | Two’s Complement | Ch. 2 (to 2.3) | HW 1 |
+| M | 1/22 | [Bit Manipulation](/course/bju/content/cps230/lessons/lec4) [Video](https://www.example.com) | Ch. 2 (to 2.2) | |
+| W | 1/24 | Two’s Complement | Ch. 2 (to 2.3) | [HW 1](/course/bju/content/cps230/hws/hw1) |
 | W | | | | Lab 2 |
 | F | 1/26 | Two’s Complement | Ch. 2 (to 2.4) | |
 | M | 1/29 | Floating Point | Ch. 2 (finish) | |
