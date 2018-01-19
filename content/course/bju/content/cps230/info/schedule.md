@@ -17,7 +17,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | | | [Unicode Article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | |
 | M | 1/22 | [Bit Manipulation](/course/bju/content/cps230/lessons/lec4) [Video](https://www.example.com) | Ch. 2 (to 2.2) | |
 | W | 1/24 | Two’s Complement | Ch. 2 (to 2.3) | [HW 1](/course/bju/content/cps230/hws/hw1) |
-| W | | | | Lab 2 |
+| W | | | | [Lab 2](/course/bju/content/cps230/labs/lab2) |
 | F | 1/26 | Two’s Complement | Ch. 2 (to 2.4) | |
 | M | 1/29 | Floating Point | Ch. 2 (finish) | |
 | W | 2/2 | MOVing into Assembly | Ch. 3 (3.2 to 3.4.2) | HW 2 |
