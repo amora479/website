@@ -18,11 +18,11 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 1/22 | [Bit Manipulation](/course/bju/content/cps230/lessons/lec4) [Video](https://www.youtube.com/watch?v=AOc1_1cUoRA) | Ch. 2 (to 2.2) | |
 | W | 1/24 | [Two’s Complement](/course/bju/content/cps230/lessons/lec5) | Ch. 2 (to 2.3) | [HW 1](/course/bju/content/cps230/hws/hw1) |
 | W | | | | [Lab 2](/course/bju/content/cps230/labs/lab2) |
-| F | 1/26 | Two’s Complement | Ch. 2 (to 2.4) | |
+| F | 1/26 | [Two’s Complement](/course/bju/content/cps230/lessons/lec5) | Ch. 2 (to 2.4) | |
 | M | 1/29 | Floating Point | Ch. 2 (finish) | |
-| W | 2/2 | MOVing into Assembly | Ch. 3 (3.2 to 3.4.2) | HW 2 |
-| W | | | | Lab 3 |
-| F | 2/5 | MOVing into Assembly | Ch. 3 (to 3.6) | Program 1 |
+| W | 2/2 | MOVing into Assembly | Ch. 3 (3.2 to 3.4.2) | [HW 2](/course/bju/content/cps230/hws/hw2) |
+| W | | | | [Lab 3](/course/bju/content/cps230/labs/lab3) |
+| F | 2/5 | MOVing into Assembly | Ch. 3 (to 3.6) | [Program 1](/course/bju/content/cps230/programs/prog1) |
 | M | 2/7 | Test 1 | | |
 | W | 2/9 | Flags and Bit Operations | Ch. 3 (to 3.6.3) | Lab 4 |
 | F | 2/12 | JMPing Around | Ch. 3 (to 3.6.5) | |
