@@ -22,10 +22,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 1/29 | Floating Point | Ch. 2 (finish) | |
 | W | 2/2 | MOVing into Assembly | Ch. 3 (3.2 to 3.4.2) | [HW 2](/course/bju/content/cps230/hws/hw2) |
 | W | | | | [Lab 3](/course/bju/content/cps230/labs/lab3) |
-| F | 2/5 | MOVing into Assembly | Ch. 3 (to 3.6) | [Program 1](/course/bju/content/cps230/programs/prog1) |
+| F | 2/5 | MOVing into Assembly | Ch. 3 (to 3.6) | |
 | M | 2/7 | Test 1 | | |
 | W | 2/9 | Flags and Bit Operations | Ch. 3 (to 3.6.3) | Lab 4 |
-| F | 2/12 | JMPing Around | Ch. 3 (to 3.6.5) | |
+| F | 2/12 | JMPing Around | Ch. 3 (to 3.6.5) | [Program 1](/course/bju/content/cps230/programs/prog1) |
 | - | 2/14-2/16 | *Bible Conference* | | |
 | M | 2/19 | While This Then JMP) | Ch. 3 (to 3.6.6) |
 | W | 2/21 | The Stack | Ch. 3 (3.7 to 3.7.4) | Lab 5 |
