@@ -118,7 +118,7 @@ Multiplication in binary is a bit "different" because we take into account that 
 This can lead to some weird problems (like wrong answers!).
 
 ``` text
-    1100 (-8)
+    1100 (-4)
   x 0011 (3)
   ------
     1100
@@ -136,7 +136,7 @@ For this reason, we have to sign extend our operands to match the size of our re
     11111100
    11111100
   ----------
-  1011110100 (we only can keep 8 bits so 11110100 is our answer, or -24)
+  1011110100 (we only can keep 8 bits so 11110100 is our answer, or -12)
 ```
 
 ## Division
