@@ -22,7 +22,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 1/29 | [Floating Point](/course/bju/content/cps230/lessons/lec6) | Ch. 2 (finish) | | |
 | W | 2/2 | [MOVing into Assembly](/course/bju/content/cps230/lessons/lec7) | Ch. 3 (3.2 to 3.4.2) | [HW 2](/course/bju/content/cps230/hws/hw2) | [Video](https://s3.amazonaws.com/230-lecture-videos/assembly_lecture_1.mp4) |
 | W | | | | [Lab 3](/course/bju/content/cps230/labs/lab3) | |
-| F | 2/5 | [MOVing into Assembly](/course/bju/content/cps230/lessons/lec7) | Ch. 3 (to 3.6) | | |
+| F | 2/5 | [MOVing into Assembly](/course/bju/content/cps230/lessons/lec7) | Ch. 3 (to 3.6) | | [Video](https://s3.amazonaws.com/230-lecture-videos/assembly_lecture_2.mp4) |
 | M | 2/7 | [Test 1](/course/bju/content/cps230/reviews/test1) | | | |
 | W | 2/9 | Flags and Bit Operations | Ch. 3 (to 3.6.3) | [Lab 4](/course/bju/content/cps230/labs/lab4) | |
 | F | 2/12 | JMPing Around | Ch. 3 (to 3.6.5) | [Program 1](/course/bju/content/cps230/programs/prog1) | |
