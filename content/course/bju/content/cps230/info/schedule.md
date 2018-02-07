@@ -24,7 +24,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | | | | [Lab 3](/course/bju/content/cps230/labs/lab3) | |
 | F | 2/2 | [MOVing into Assembly](/course/bju/content/cps230/lessons/lec7) | Ch. 3 (to 3.6) | | [Video](https://s3.amazonaws.com/230-lecture-videos/assembly_lecture_2.mp4) |
 | M | 2/5 | [Test 1](/course/bju/content/cps230/reviews/test1) | | | |
-| W | 2/7 | [Flags and Bit Operations](/course/bju/content/cps230/lessons/lec8) | Ch. 3 (to 3.6.3) | [Lab 4](/course/bju/content/cps230/labs/lab4) | |
+| W | 2/7 | [Flags and Bit Operations](/course/bju/content/cps230/lessons/lec8) | Ch. 3 (to 3.6.3) | [Lab 4](/course/bju/content/cps230/labs/lab4) | [Video](https://s3.amazonaws.com/230-lecture-videos/assembly_lecture_3.mp4) |
 | F | 2/9 | JMPing Around | Ch. 3 (to 3.6.5) | [Program 1](/course/bju/content/cps230/programs/prog1) | |
 | M | 2/12 | [ARM Assembly](/course/bju/content/cps230/lessons/lec28) | | | |
 | - | 2/14-2/16 | *Bible Conference* | | | |
