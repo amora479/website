@@ -2,7 +2,7 @@
 title: "CPS 230 Lecture 28"
 ---
 
-# Lecture 28: ARM Assembly
+# Lecture 9.5: ARM Assembly
 
 We've spent this semester covering Intel based assembly (using NASM).  But, lest you think every platform out there uses NASM-based Intel assembly, Intel assembly isn't even the most widely used assembly language anymore.
 
