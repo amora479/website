@@ -38,8 +38,8 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | | Pointers | | |
 | F | 3/2 | Arrays | | |
 | F | | Pointers | | |
-| M | 3/5 | C Strings | Ch. 3 (3.10 to 3.11) | HW 3 |
-| M | | | | Lab 6 |
+| M | 3/5 | C Strings | Ch. 3 (3.10 to 3.11) | [HW 3](/course/bju/content/cps230/hws/hw3) |
+| M | | | | [Lab 6](/course/bju/content/cps230/labs/lab6) |
 | W | 3/7 | Strings / Overflow Attacks | Ch. 3 (3.12 to 3.12.1) | |
 | F | 3/9 | Variodic Functions | Ch. 3 (to 3.13) | |
 | M | 3/12 | Linking | Ch. 7 (to 7.6) | |
