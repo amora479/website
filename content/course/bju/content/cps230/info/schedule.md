@@ -29,7 +29,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 2/12 | [ARM Assembly](/course/bju/content/cps230/lessons/lec28) | | |
 | - | 2/14-2/16 | *Bible Conference* | | |
 | M | 2/19 | While This Then JMP | Ch. 3 (to 3.6.6) | |
-| W | 2/21 | The Stack | Ch. 3 (3.7 to 3.7.4) | Lab 5 |
+| W | 2/21 | The Stack | Ch. 3 (3.7 to 3.7.4) | [Lab 5](/course/bju/content/cps230/labs/lab5) |
 | F | 2/23 | Stack Frames | Ch. 3 (to 3.8) | |
 | F | | Local Variables | | |
 | M | 2/26 | Stack Frames | | |
