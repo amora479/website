@@ -44,7 +44,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 3/9 | Variodic Functions | Ch. 3 (to 3.13) | |
 | M | 3/12 | Linking | Ch. 7 (to 7.6) | |
 | W | 3/14 | Linking | Ch. 7 (to 7.8) | |
-| F | 3/16 | Multi-language Compilation | | HW 4 |
+| F | 3/16 | Multi-language Compilation | | [HW 4](/course/bju/content/cps230/hws/hw4) |
 | M | 3/19 | Test 2 | | |
 | - | 3/21-3/26 | *Spring Break* | | |
 | W | 3/28 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | [Program 2](/course/bju/content/cps230/programs/prog2) | 
