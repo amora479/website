@@ -23,5 +23,5 @@ title: "CPS 230 Tools"
 * DOSBox (with the integrated debugger)
     - *The normal DOSBox installer typically doesn't give you this!*
     - You can build DOSBox from source to get the debugger [have fun!]
-    - Or you can download this [ZIP file](/course/bju/content/cps230/downloads/dbd.zip)
-    - Either way, I will assume you installed the executable at `C:\cps230\bin\dbd.exe` (you're free to put it somewhere else, just remember to translate the instructions appropriately)
+    - Or you can download this [executable](/course/bju/content/cps230/downloads/dosbox-x.exe)
+    - Either way, I will assume you installed the executable at `C:\dosbox\dosbox-x.exe` (you're free to put it somewhere else, just remember to translate the instructions appropriately)
