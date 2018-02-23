@@ -30,10 +30,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | - | 2/14-2/16 | *Bible Conference* | | |
 | M | 2/19 | [While This Then JMP](/course/bju/content/cps230/lessons/lec10) | Ch. 3 (to 3.6.6) | |
 | W | 2/21 | [The Stack](/course/bju/content/cps230/lessons/lec11) | Ch. 3 (3.7 to 3.7.4) | [Lab 5](/course/bju/content/cps230/labs/lab5) |
-| F | 2/23 | Stack Frames | Ch. 3 (to 3.8) | |
-| F | | Local Variables | | |
-| M | 2/26 | Stack Frames | | |
-| M | | Local Variables | | |
+| F | 2/23 | [Stack Frames](/course/bju/content/cps230/lessons/lec12) | Ch. 3 (to 3.8) | |
+| F | | [Local Variables](/course/bju/content/cps230/lessons/lec12) | | |
+| M | 2/26 | [Stack Frames](/course/bju/content/cps230/lessons/lec12) | | |
+| M | | [Local Variables](/course/bju/content/cps230/lessons/lec12) | | |
 | W | 2/28 | Arrays | Ch. 3 (to 3.8.4; then 3.9.1) | |
 | W | | Pointers | | |
 | F | 3/2 | Arrays | | |
