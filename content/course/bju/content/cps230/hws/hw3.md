@@ -55,10 +55,12 @@ mov     [        ], eax  ; Move return value into drill
 
 ## Source Code
 ```
+#include "stdio.h"
+
 int gnu(int kumquat, int orange) {
     int pogo_stick = 7300;
     
-    // ...
+    // ... (line 6)
     
     return orange & pogo_stick;
 }
@@ -70,11 +72,7 @@ int main() {
     int screw_driver = 2700;
     int drill = 5900;
     
-    // ...
-    
-    drill = gnu(rasp, crowbar);
-    
-    // ...
+    drill = gnu(rasp, crowbar); // line 18
     
     return 0;
 }
