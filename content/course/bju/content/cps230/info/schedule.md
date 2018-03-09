@@ -41,10 +41,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 3/5 | [C Strings](/course/bju/content/cps230/lessons/lec14) | Ch. 3 (3.10 to 3.11) | [HW 3](/course/bju/content/cps230/hws/hw3) |
 | M | | | | [Lab 6](/course/bju/content/cps230/labs/lab6) |
 | W | 3/7 | [Strings / Overflow Attacks](/course/bju/content/cps230/lessons/lec15) | Ch. 3 (3.12 to 3.12.1) | |
-| F | 3/9 | Variodic Functions | Ch. 3 (to 3.13) | |
-| M | 3/12 | Linking | Ch. 7 (to 7.6) | |
-| W | 3/14 | Linking | Ch. 7 (to 7.8) | |
-| F | 3/16 | Multi-language Compilation | | [HW 4](/course/bju/content/cps230/hws/hw4) |
+| F | 3/9 | [Variodic Functions](/course/bju/content/cps230/lessons/lec16) | Ch. 3 (to 3.13) | |
+| M | 3/12 | [Linking](/course/bju/content/cps230/lessons/lec17) | Ch. 7 (to 7.6) | |
+| W | 3/14 | [Linking](/course/bju/content/cps230/lessons/lec17) | Ch. 7 (to 7.8) | |
+| F | 3/16 | [Multi-language Compilation](/course/bju/content/cps230/lessons/lec18) | | [HW 4](/course/bju/content/cps230/hws/hw4) |
 | M | 3/19 | Test 2 | | |
 | - | 3/21-3/26 | *Spring Break* | | |
 | W | 3/28 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | [Program 2](/course/bju/content/cps230/programs/prog2) | 
