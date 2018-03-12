@@ -82,7 +82,7 @@ Now, we'll begin walking through the steps required in order to link.  In the en
 
 ## Symbol Location
 
-Symobols for our purposes represent anything included from another obj file (using the `extern` command) or anything made available to another obj file (using the `global` command).  So if look at ape.asm, there are 4 symbols: \_rasp, golf_cart, \_saw, and \_tape_measure.  We also need (for later purposes) to calculate the offsets of these symbols as well as record the section they occurred in, the offset being the byte position that a symbol occurs in the binary representation.  Note 1: for our purposes, we are going to enact an extremely simple counting scheme for .text section.  `int3` represents 1 byte, instructions without addresses represent 2 bytes and instructions with addresses represent 5.  Note 2: extern symbols always have an offset of 0 with a section of extern.
+Symobols for our purposes represent anything included from another obj file (using the `extern` command) or anything made available to another obj file (using the `global` command).  So if look at ape.asm, there are 4 symbols: \_rasp, golf_cart, \_saw, and \_tape_measure.  We also need (for later purposes) to calculate the offsets of these symbols as well as record the section they occurred in, the offset being the byte position that a symbol occurs in the binary representation. Note: extern symbols always have an offset of 0 with a section of extern.
 
 Using the previously mentioned counting scheme, we get the following values for each file.
 
