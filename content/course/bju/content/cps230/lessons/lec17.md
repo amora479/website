@@ -200,7 +200,7 @@ This step is the hardest, but it is the last step before we can generate our fin
 * value: the value currently in site (4 bytes)
 * adjusted value: the value to copied into site (calculation depends on type)
 
-For DIR32, the adjusted value is simple the target address + the value.  For REL32, the adjusted value is the target address - (site address + 4) + 1.
+For DIR32, the adjusted value is simple the target address + the value.  For REL32, the adjusted value is the target address - (site address + 4).
 
 | section | offset | site | kind | target | value | adjusted value |
 | --- | --- | --- | --- | --- | --- | --- |
