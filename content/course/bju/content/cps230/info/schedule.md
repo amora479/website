@@ -45,7 +45,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 3/12 | [Linking](/course/bju/content/cps230/lessons/lec17) | Ch. 7 (to 7.6) | |
 | W | 3/14 | [Linking](/course/bju/content/cps230/lessons/lec17) | Ch. 7 (to 7.8) | |
 | F | 3/16 | [Multi-language Compilation](/course/bju/content/cps230/lessons/lec18) | | |
-| F | 3/16 | [Linking Example 2]((/course/bju/content/cps230/lessons/lec17-2)) | | |
+| F | 3/16 | [Linking Example 2](/course/bju/content/cps230/lessons/lec17-2) | | |
 | M | 3/19 | [Test 2](/course/bju/content/cps230/reviews/test2) | | [HW 4](/course/bju/content/cps230/hws/hw4) |
 | - | 3/21-3/26 | *Spring Break* | | |
 | W | 3/28 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | [Program 2](/course/bju/content/cps230/programs/prog2) | 
