@@ -202,7 +202,7 @@ This step is the hardest, but it is the last step before we can generate our fin
 
 For DIR32, the adjusted value is simple the target address + the value.  For REL32, the adjusted value is the target address - (site address + 4) + 1.
 
-| section | offset | site | target | kind | value | adjusted value |
+| section | offset | site | kind | target | value | adjusted value |
 | --- | --- | --- | --- | --- | --- | --- |
 | ape.text | 6 | 0x3987806 | DIR32 | ape.data | 0x4 | 0x3987844 |
 | ape.text | 12 | 0x398780C | DIR32 | golf_cart | 0x0 | 0x398785E |
