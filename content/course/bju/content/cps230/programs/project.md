@@ -108,6 +108,10 @@ For this final stage you will:
     * Details (brief overviews of your multi-tasking and bootloading logic, along with descriptions of your demo tasks)
     * Contributions (description of each team member's contributions, including total number of hours worked)
 
+If you are not printing a physical copy, make sure to list in the report any help you received as well as a statement that all work is your own.  Help received from the professor does not need to be listed.
+
+If you are printing out your report, staple one of the department honesty sheets to the top listing the help received on the sheet.  Turn this report in at the beginning of the class period after the due date.
+
 **Submission**: Submit the following files to the bitbucket folder
 
 * `boot.asm`
