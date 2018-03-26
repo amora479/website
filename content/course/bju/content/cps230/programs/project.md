@@ -107,7 +107,6 @@ For this final stage you will:
     * Results (list of required and elective features completed, along with any known bugs)
     * Details (brief overviews of your multi-tasking and bootloading logic, along with descriptions of your demo tasks)
     * Contributions (description of each team member's contributions, including total number of hours worked)
-    * Appendix (complete source code printout)
 
 **Submission**: Submit the following files to the bitbucket folder
 
@@ -117,6 +116,7 @@ For this final stage you will:
 
 * `bootdisk.img`
 
+along with a copy of your report.
 
 ## Teamwork
 
