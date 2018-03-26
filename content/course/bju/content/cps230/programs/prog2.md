@@ -196,14 +196,8 @@ Find the floating point instructions (including the supporting ones like convert
 
 ## Report
 
-Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) DOCX file and print it out.
-
-Also print out your source code using a fixed-width font; if the code takes up more than one page, be sure to print it out "two up" (2 logical pages of code printed side-by-side on each physical page of paper).
-
-Visual Studio does a nice job of printing code in a good monospace font with nice touches like page numbers and the name of the file being printed.
+Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) and submit it along with your assembly using Bitbucket.  If you are not printing a physical copy, make sure to list in the report any help you received.  Help received from the professor does not need to be listed.
 
 # Submission
 
 Use the submission system to submit your code in a single NASM source file named `prog2.asm`.
-
-Turn in your printed report in person at the beginning of class on the due date.
