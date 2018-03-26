@@ -142,9 +142,7 @@ int main(int argc, char *argv[]) {
 
 Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) DOCX file and print it out.
 
-Also print out your source code using a fixed-width font; if the code takes up more than one page, be sure to print it out "two up" (2 logical pages of code printed side-by-side on each physical page of paper).
 
-Visual Studio does a nice job of printing code in a good monospace font with nice touches like page numbers and the name of the file being printed.
 
 ## Submission
 
