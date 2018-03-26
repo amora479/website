@@ -28,6 +28,10 @@ Use the [starting code](/course/bju/content/cps230/downloads/lab3.c).  Your job 
 
 Follow the standard template, and make sure you explain how you solved each puzzle (i.e., your thought process, not your code).
 
+If you are not printing a physical copy, make sure to list in the report any help you received as well as a statement that all work is your own.  Help received from the professor does not need to be listed. The electronic report should be submitted along with your code.
+
+If you are printing out your report, staple one of the department honesty sheets to the top listing the help received on the sheet.  Turn this printed report in at the beginning of the class period after the due date.
+
 ## Submission
 
 Submit `report.docx/pdf` and your completed `lab3.c`.
