@@ -101,7 +101,10 @@ For this final stage you will:
     * Results (list of required and elective features completed, along with any known bugs)
     * Details (brief overviews of your multi-tasking and bootloading logic, along with descriptions of your demo tasks)
     * Contributions (description of each team member's contributions, including total number of hours worked)
-    * Appendix (complete source code printout)
+
+If you are not printing a physical copy, make sure to list in the report any help you received as well as a statement that all work is your own.  Help received from the professor does not need to be listed.
+
+If you are printing out your report, staple one of the department honesty sheets to the top listing the help received on the sheet.  Turn this report in at the beginning of the class period after the due date.
 
 **Submission**: Submit the following files to the bitbucket folder
 
@@ -110,6 +113,8 @@ For this final stage you will:
 * `kernel.asm`
 
 * `bootdisk.img`
+
+along with a copy of your report.
 
 AI Notes: The AI for your pong game should be extremely simple, but feel free to get more complex if you desire.  As a baseline, simply have the AI activate once the ball is a certain number of pixels away from paddle (for example, 10 pixels).  Have the paddle move as the ball moves. For example, if the ball moves 1 pixel down, the paddle should move one pixel down.  If the ball moves up one pixel, the paddle should move up one pixel.
 
