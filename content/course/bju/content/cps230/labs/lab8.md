@@ -121,6 +121,9 @@ Document your completion of the lab, including
 * Finishing the program (completing the TODOs)
 * Stepping through the program with the DOSBox debugger
 
+If you are not printing a physical copy, make sure to list in the report any help you received as well as a statement that all work is your own.  Help received from the professor does not need to be listed. The electronic report should be submitted along with your code.
+
+If you are printing out your report, staple one of the department honesty sheets to the top listing the help received on the sheet.  Turn this printed report in at the beginning of the class period after the due date.
 
 ## Submission
 
