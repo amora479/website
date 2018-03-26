@@ -140,12 +140,10 @@ int main(int argc, char *argv[]) {
 
 ## Report
 
-Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) DOCX file and print it out.
+Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) and submit it along with your C code using Bitbucket.  If you are not printing a physical copy, make sure to list in the report any help you received as well as a statement that all work is your own.  Help received from the professor does not need to be listed.
 
-
+If you are printing out your report, staple one of the department honesty sheets to the top listing the help received on the sheet.  Turn this report in at the beginning of the class period after the due date.
 
 ## Submission
 
 Use the submission system to submit your code in a single C file named `prog1.c` by the due date.
-
-Turn in your printed report in person at the beginning of the next class after the due date.
