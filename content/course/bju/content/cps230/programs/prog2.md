@@ -196,7 +196,9 @@ Find the floating point instructions (including the supporting ones like convert
 
 ## Report
 
-Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) and submit it along with your assembly using Bitbucket.  If you are not printing a physical copy, make sure to list in the report any help you received.  Help received from the professor does not need to be listed.
+Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) and submit it along with your assembly using Bitbucket.  If you are not printing a physical copy, make sure to list in the report any help you received as well as a statement that all work is your own.  Help received from the professor does not need to be listed.
+
+If you are printing out your report, staple one of the department honesty sheets to the top listing the help received on the sheet.  Turn this report in at the beginning of the class period after the due date.
 
 # Submission
 
