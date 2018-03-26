@@ -17,7 +17,7 @@ In this lab, you will extend a provided 16-bit assembly program for DOS.
 Before starting, make sure you have the required tools:
 
 * NASM 2.x
-* [DOSBox 0.74 (with integrated system debugger)](/course/bju/content/cps230/downloads/dbd.zip)
+* [DOSBox-X (with integrated system debugger)](/course/bju/content/cps230/downloads/dosbox-x.exe)
 
 ## Orientation
  
@@ -60,23 +60,23 @@ You will use a wonderful open source program called DOSBox to run this and all o
 
 DOSBox's primary purpose is to run vintage DOS games, but it has proven surprisingly useful at keeping ancient business software alive, too.
 
-We will use a version of DOSBox that has an integrated debugger window.  With it you can freeze the entire simulated computer, inspect/edit memory,
-step through code instruction by instruction, and basically control everything (even tricky things like interrupts).
+We will use a version of DOSBox that has an integrated debugger window, DOSBox-X.  With it you can freeze the entire simulated computer, inspect/edit memory, step through code instruction by instruction, and basically control everything (even tricky things like interrupts).
 
 ## Running
 
-In your Windows console, type the following command (if you installed DOSBox somewhere else, change this accordingly):
+Open the dosbox-x.exe file located at `C:\dosbox\`.
 
-        C> \cps230\bin\dbd.exe .
+This should open a new window that looks like a console window (with a command prompt).  The debugger won't open just yet.
 
-        C>
+We need to get your `.com` file inside of DOSBox so we can execute it. Make a note of which drive DOSBox-X is currently using.  You can find out by looking at the letter at the start of the prompt, which usually looks like:
 
-**PAY ATTENTION to the period!**  With it, DOSBox will automatically "mount" the current working directory as the simulated PC's `C:` drive.
-Without, you'll have to arrange that yourself by typing special DOSBox commands at the DOSBox prompt.
+        Z:\>
 
-This should open 2 new windows: one that looks like a console window (with a command prompt), and the other full of cryptic looking text and numbers (that's the debugger).
+This means the Z drive is currently in use so we need to use another one.  Under the drive menu, pick anyone **except the one you just noted**.  (I'll use C)  Select _Mount as Hard Disk_ under that drive and then, in the menu that appears, select the folder containing your `.com` file.
 
-For now, ignore the debugger and focus on the console.  **Inside the DOSBox console**, type the following command:
+Now, we need to switch to this new drive.  To do so, **in DOSBox**, type the drive letter followed by a colon, i.e. `C:`, then press enter. **This should change the letter at the beginning of the prompt**.
+
+You should be able to run your `.com` now by typing the name of the file and the extension in the DOSBox prompt.
 
         C:\>lab8.com
 
@@ -84,19 +84,26 @@ The program should run, print a prompt message, and immediately terminate.
 
 ## Debugging
 
-Now let's turn to debugging.  Type the following into your DOSBox console window:
+Now let's turn to debugging.  There are two debuggers built into DOSBox-X, a very old debugger from the DOS era and a new graphical one.  We'll use the graphical one since it is a bit easier and the layout is more familiar. Type the following into your DOSBox console window:
 
-        C:\>debug lab8.com
+        C:\>debugbox lab8.com
 
-Everything should freeze.  That's because the debugger is waiting for your input!  Select the *other* DOSBox window.  It should look like this:
+Everything should freeze.  That's because the debugger is waiting for your input!  Select the *other* DOSBox window that appeared.  It should look like this:
 
 ![The DOSBox Debugger Window](/course/bju/content/cps230/images/lab8_debugger_annotated.png)
 
 Type `help` and press Enter.  You can see the output in the lower window pane; you can scroll it up and down (to read it all) with the `Home` and `End` keys.
 
-Find the information about how to single step/etc.  Experiment!  In particular, figure out how to display the contents of memory at a given
-address (in the hex-dump pane near the top of the debugger window).
+A few pointers to get you started:
 
+* `Up Arrow / Down Arrow` should change the line of assembly that you are on.
+* `F9` will set a breakpoint
+* `F10` will step over the current instruction
+* `F11` will follow a call statement to the function your are jumping to
+* `F5` will continue execution until termination or the next breakpoint
+* `Page Up / Page Down` will scroll through memory (but memory addresses work differently in DOS)
+
+Experiment!  In particular, figure out how to jump to a specific memory address (in the hex-dump pane near the top of the debugger window).
 
 ## Personalizing
 
