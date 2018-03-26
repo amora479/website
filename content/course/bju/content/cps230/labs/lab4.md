@@ -137,6 +137,10 @@ Document your completion of the lab, including
 * Stepping through the program with a debugger (either VS or WinDBG)
 * Modifying the program to print your name/information
 
+If you are not printing a physical copy, make sure to list in the report any help you received as well as a statement that all work is your own.  Help received from the professor does not need to be listed. The electronic report should be submitted along with your code.
+
+If you are printing out your report, staple one of the department honesty sheets to the top listing the help received on the sheet.  Turn this printed report in at the beginning of the class period after the due date.
+
 ## Submission
 
 Submit your completed `lab4.asm` and your report file, which must be named either:
