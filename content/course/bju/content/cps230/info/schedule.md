@@ -49,10 +49,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 3/19 | [Test 2](/course/bju/content/cps230/reviews/test2) | | [HW 4](/course/bju/content/cps230/hws/hw4) |
 | - | 3/21-3/26 | *Spring Break* | | |
 | W | 3/28 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | [Program 2](/course/bju/content/cps230/programs/prog2) | 
-| W | | | [Intel 8088 CPU](https://en.wikipedia.org/wiki/Intel_8088) | [Lab 7](/course/bju/content/cps230/labs/lab7) |
+| W | | | [Intel 8088 CPU](https://en.wikipedia.org/wiki/Intel_8088) | |
 | W | | | [The 640KB Barrier](https://en.wikipedia.org/wiki/Conventional_memory#640_KB_barrier) | |
 | W | | | [Aftermath](https://en.wikipedia.org/wiki/Influence_of_the_IBM_PC_on_the_personal_computer_market) | |
-| F | 3/30 | Using the BIOS API | [HelpPC: BIOS Video](http://stanislavs.org/helppc/int_10.html) | |
+| F | 3/30 | Using the BIOS API | [HelpPC: BIOS Video](http://stanislavs.org/helppc/int_10.html) | [Lab 7](/course/bju/content/cps230/labs/lab7) |
 | F | | | [HelpPC: BIOS Keyboard](http://stanislavs.org/helppc/int_16.html) | |
 | M | 4/2 | Real Mode Addressing | | |
 | W | 4/4 | PC VGA Graphics | | [Lab 8](/course/bju/content/cps230/labs/lab8) |
