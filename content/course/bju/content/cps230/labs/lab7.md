@@ -23,7 +23,7 @@ several files:
 
 Open the `make.bat` batch script.  Study it briefly--you should recognize all but one of the commands (the `lib` command, which takes several `.obj` files and bundles them into a single `.lib` file for convenience).
 
-Open a NASM command prompt and inject the VS 2017 command line tools like we've done in class with `"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86`. Navigate to your `lab7` folder, and run the `make.bat` batch file to assemble, compile, and link all the pieces of this program.
+Open a NASM command prompt and inject the VS 2017 command line tools like we've done in class with `"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86`. (Note: If you're using the enterprise edition, you'll need to change community to enterprise.) Navigate to your `lab7` folder, and run the `make.bat` batch file to assemble, compile, and link all the pieces of this program.
 
 Run the resulting `demo_uprintf.exe` program.  What does/does not work so far?
 
