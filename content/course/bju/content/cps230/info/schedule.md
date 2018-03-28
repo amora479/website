@@ -60,14 +60,14 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 4/9 | *University Service Day* | | |
 | W | 4/11 | Booting an IBM PC | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | |
 | W | | | [HelpPC: MBR](http://stanislavs.org/helppc/boot_sector.html) | |
-| F | 4/13 | Lab Day | | Team Project Alpha (Kernel) |
-| F | | | | Team Project Alpha (Pong) |
-| M | 4/16 | Interrupt Handlers | | Lab 9 |
-| W | 4/18 | Lab Day | | Team Project Beta (Kernel) |
-| W | | | | Team Project Beta (Pong) |
-| F | 4/20 | Preemptive Task Switching | | Lab 10 |
+| F | 4/13 | Lab Day | | [Team Project Alpha (Kernel)](/course/bju/content/cps230/programs/project) |
+| F | | | | [Team Project Alpha (Pong)](/course/bju/content/cps230/programs/project-pong) |
+| M | 4/16 | Interrupt Handlers | | [Lab 9](/course/bju/content/cps230/labs/lab9) |
+| W | 4/18 | Lab Day | | [Team Project Beta (Kernel)](/course/bju/content/cps230/programs/project) |
+| W | | | | [Team Project Beta (Pong)](/course/bju/content/cps230/programs/project-pong) |
+| F | 4/20 | Preemptive Task Switching | | [Lab 10](/course/bju/content/cps230/labs/lab10) |
 | M | 4/23 | IA-32 Protected Mode | Ch. 9 (stop at 9.6) | |
 | W | 4/25 | Crash Course in x64 | Ch. 3 (3.13) | |
-| F | 4/27 | Work Day | | Team Project Release (Kernel) |
-| F | | | | Team Project Release (Pong) |
-| Th | 5/3 | Final Exam (8:00 - 9:10) | | Lab 11 (EC) |
+| F | 4/27 | Work Day | | [Team Project Release (Kernel)](/course/bju/content/cps230/programs/project) |
+| F | | | | [Team Project Release (Pong)](/course/bju/content/cps230/programs/project-pong) |
+| Th | 5/3 | Final Exam (8:00 - 9:10) | | [Lab 11 (EC)](/course/bju/content/cps230/labs/lab11) |
