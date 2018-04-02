@@ -54,7 +54,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | | | [Aftermath](https://en.wikipedia.org/wiki/Influence_of_the_IBM_PC_on_the_personal_computer_market) | |
 | F | 3/30 | [Using the BIOS API](/course/bju/content/cps230/lessons/lec19) | [HelpPC: BIOS Video](http://stanislavs.org/helppc/int_10.html) | [Lab 7](/course/bju/content/cps230/labs/lab7) |
 | F | | | [HelpPC: BIOS Keyboard](http://stanislavs.org/helppc/int_16.html) | |
-| M | 4/2 | Real Mode Addressing | | |
+| M | 4/2 | [Real Mode Addressing](/course/bju/content/cps230/lessons/lec20) | | |
 | W | 4/4 | PC VGA Graphics | | [Lab 8](/course/bju/content/cps230/labs/lab8) |
 | F | 4/6 | Cooperative Task Switching | | |
 | M | 4/9 | *University Service Day* | | |
