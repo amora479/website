@@ -56,8 +56,8 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | | | [HelpPC: BIOS Keyboard](http://stanislavs.org/helppc/int_16.html) | |
 | M | 4/2 | [Real Mode Addressing](/course/bju/content/cps230/lessons/lec20) | | |
 | W | 4/4 | [PC VGA Graphics](/course/bju/content/cps230/lessons/lec21) | | [Lab 8](/course/bju/content/cps230/labs/lab8) |
-| F | 4/6 | Cooperative Task Switching | | |
-| M | 4/9 | Booting an IBM PC | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | |
+| F | 4/6 | [Cooperative Task Switching](/course/bju/content/cps230/lessons/lec22) | | |
+| M | 4/9 | [Booting an IBM PC](/course/bju/content/cps230/lessons/lec23) | [HelpPC: Booting](http://stanislavs.org/helppc/cold_boot.html) | |
 | W | | | [HelpPC: MBR](http://stanislavs.org/helppc/boot_sector.html) | |
 | W | 4/11 | *University Service Day* | | |
 | F | 4/13 | Lab Day | | [Team Project Alpha (Kernel)](/course/bju/content/cps230/programs/project) |
