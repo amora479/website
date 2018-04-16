@@ -62,7 +62,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 4/11 | *University Service Day* | | |
 | F | 4/13 | Lab Day | | [Team Project Alpha (Kernel)](/course/bju/content/cps230/programs/project) |
 | F | | | | [Team Project Alpha (Pong)](/course/bju/content/cps230/programs/project-pong) |
-| M | 4/16 | Interrupt Handlers | | [Lab 9](/course/bju/content/cps230/labs/lab9) |
+| M | 4/16 | [Interrupt Handlers](/course/bju/content/cps230/lessons/lec24) | | [Lab 9](/course/bju/content/cps230/labs/lab9) |
 | W | 4/18 | Lab Day | | [Team Project Beta (Kernel)](/course/bju/content/cps230/programs/project) |
 | W | | | | [Team Project Beta (Pong)](/course/bju/content/cps230/programs/project-pong) |
 | F | 4/20 | Preemptive Task Switching | | [Lab 10](/course/bju/content/cps230/labs/lab10) |
