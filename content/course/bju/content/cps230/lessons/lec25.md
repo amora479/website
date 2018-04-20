@@ -392,7 +392,7 @@ SECTION .data
 
 	current_task: db 0
 	stacks: times (256 * 31) db 0 ; 31 fake stacks of size 256 bytes
-	task_status: times 32 db 0 ; 0 means inactive, 1 means active
+	task_status: times 32 dw 0 ; 0 means inactive, 1 means active
 	stack_pointers: dw 0 ; the first pointer needs to be to the real stack !
 					dw stacks + (256 * 1)
 					dw stacks + (256 * 2)
