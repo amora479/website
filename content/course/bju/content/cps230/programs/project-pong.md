@@ -162,9 +162,7 @@ your task code and watch the multi-tasking still work!
 
 ### Music Demo (25 pts)
 
-Use either the [PC speaker](http://qzx.com/pc-gpe/speaker.txt) or
-[Adlib soundcard](http://qzx.com/pc-gpe/adlib.txt) (if you're a glutton for punishment)
-to play the melody of the BJU alma mater in the background of your demos.
+Use either the [PC speaker](http://qzx.com/pc-gpe/speaker.txt) to play the melody of the BJU alma mater in the background of your demos.
 
 If you are *not* doing timer-preempted task switching, you will probably want to hook `INT 8` to provide smooth/lag-free music updates.  If you go this
 route, you may even find that you need to [reprogram counter 0 on the PIT](http://stanislavs.org/helppc/8253.html)
@@ -187,7 +185,7 @@ Have your Pong program display using VGA graphics rather than ugly ASCII text.
 
 ### Real-Mode C (50 pts)
 
-Figure out how to use a 16-bit, real-mode-compatible C compiler (like OpenWatcom, or Digital Mars) to write at least some of your demo code in C.
+Figure out how to use a 16-bit, real-mode-compatible C compiler (like TurboC) to write at least some of your demo code in C. See [this tutorial](/course/bju/content/cps230/notes/realmodec) to get started.  Note: If you complete this option, you do NOT need to create a bootable version of the project.  You will deliver an exe version instead.
 
 ### Protected Mode (50 pts)
 

@@ -1,27 +1,90 @@
 # Writing DOS Programs in Real Mode C
 
-## Getting and Building BCC (Bruce's C Compiler)
+## Getting Borland Turbo C for DOS
 
-There aren't many C compilers left that produce native 8086, and there certainly aren't any that support all of the current C standard.
+There aren't many C compilers left that produce native 8086, but the ones from the dos era most certainly do!
 
-However, there are some compilers that support a subset of C (known as K&R C) that produce 8086 and support inline assembly (to write to the screen).
+We'll be using Turbo C, a C compiler from the DOS era.  Download the [TurboC.zip](/course/bju/content/cps230/downloads/TurboC.zip) and extract it into the same folder as DosBox-X. 
 
-[BCC](https://github.com/lkundrak/dev86/) is one such tool, but you'll need to download, compile and install on Windows.
+Inside the `TurboC` folder, there is a `TC` folder, cut / paste this folder to the same  directory as the DosBox-X executable.  You can delete the TurboC directory after doing this.
 
-Here are the steps.
+## Getting Borland Turbo Assembler for DOS
 
-1. Download and install [Cygwin](https://cygwin.com).  During the install process, you are going to be asked which libraries to install.  Select `automake`, `autoconf`, `gcc-g++`, `git` and `make`.
-1. Cygwin's make does not like spaces in directory names so `cd ..` into the `home` folder.  Check to see if there are spaces in your username.  If yes, create another folder within the home folder and use the new directory instead of the one autocreated by Cygwin.
-1. Open a cygwin shell and clone the the bcc compiler using `git clone https://github.com/lkundrak/dev86.git`.
-1. `cd` into the `dev86` directory that was created and run the command `make` to compile and build. When asked which options, just type `quit` as the default are fine.
-1. You might have received an error about strtol missing in the previous step, that's okay, finish installation by running `make install`.
+We'll also need a DOS era assembler to compile C with in-line assembly.  Download the [TASM.zip](/course/bju/content/cps230/downloads/TASM.zip) and extract it into the same folder as DosBox-X. Mount the first image `Disk1.img` as an image (choose Floppy when picking the type) as any drive (I used B:). 
 
-## Writing a Real-Mode C Program
+1. Change to B with `B:`
+1. Run `install.exe`
+1. At some point, the install will fail due to examples, that's fine.  Just abort at that point.
+1. Restart DosBox-X, and remount `C:\DosBox-X` as `C:`
 
-The easiest thing to do is write your C files in the `C:\cygwin[64?]\home\<username>` directory you created a moment ago.  This way you can continue using Cygwin for compilation easily.
+## A Sample C Program
 
-Below is an example real-mode C program that draws a line that bounces at 45 degree angles to the screen using graphics mode.
+Save this C example (I named it `temp.c`) and mount the folder containing it (I used D:).
 
 ```c
+void drawpixel(int x, int y, int color) 
+{
+	asm push ax;
+	asm push bx;
+	asm push cx;
+	asm push dx;
+	asm mov ah, 0x0C
+	asm mov al, [bp + 8]
+	asm mov cx, [bp + 6]
+	asm mov dx, [bp + 4]
+	asm int 0x10
+	asm pop dx;
+	asm pop cx;
+	asm pop bx;
+	asm pop dx;
+}
 
+void drawline() {
+	int x = 0, y = 0;
+	int x_increment = 1, y_increment = 1;
+
+	for(;;) {
+		if(x == 0) {
+			x_increment = 1;
+		} else if (x == 200) { 
+			x_increment = 0;
+		}
+		if(y == 0) {
+			y_increment = 1;
+		} else if (y == 320) { 
+			y_increment = 0; 
+		}
+		if(x_increment) {
+			x = x + 1;
+		} else {
+			x = x - 1;
+		}
+		if(y_increment) {
+			y = y + 1;
+		} else {
+			y = y - 1;
+		}
+		drawpixel(x, y, 7);
+	}
+}
+
+void main() {
+	asm mov ah, 0;
+	asm mov al, 0x13;
+	asm int 0x10;
+
+	drawline();
+}
 ```
+
+Before compiling, we need to put TCC and TASM into the path using the command `SET PATH=%PATH%;C:\TC;C:\TASM`. Type `TCC` and `TASM` at the command line to make sure both are now available. (You will need to do this every time you close and open DosBox-X).
+
+To compile with the command line, change to the D drive with `D:` and run the command `TCC.EXE -B TEMP.C`.  An exe should be created in the same directory.
+
+## Explaining Turbo C Inline Assembly
+
+If you do a Google search, you might see notes that you can use `asm { <assembly instructions> }` with Turbo C.  The cake is a lie, that feature was introduced in 3.0.  We are stuck with 2.1 which requires you to enter your assembly line by line putting `asm` before each line.  Still, its not too terrible.
+
+## Other Notes
+
+This is a very, very old version of C and all of the nice new features you might have enjoyed using earlier in the semester might not exist.  For the authoritative source on what is available and what isn't, see the [Turbo C User Manual](/course/bju/content/cps230/downloads/turbocdoc.pdf).

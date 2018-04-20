@@ -15,5 +15,6 @@ title: "CPS 230 References"
 # Ancient PC/DOS Programming
 
 * [IBM 5150 Technical Reference](/course/bju/content/cps230/downloads/IBM_5150_Technical_Reference.pdf)
+* [TurboC Reference](/course/bju/content/cps230/downloads/turbocdoc.pdf)
 * [HelpPC](http://stanislavs.org/helppc/)
 * [The PC Game Programmer's Encylopedia](http://qzx.com/pc-gpe/)
