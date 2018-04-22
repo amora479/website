@@ -22,7 +22,7 @@ Find the  TODO comments in `lab10.asm`.  I recommend the following approach:
 
 * Follow the comment instructions to *install* the `timer_isr` procedure as the interrupt handler for `INT 8`;
         before you go any farther, assemble and test your program
-    * Launch your program in DOSBox with the `debug` prefix to immediately halt in the DOSBox debugger as soon as the program starts
+    * Launch your program in DOSBox with the `debugbox` prefix to immediately halt in the DOSBox debugger as soon as the program starts
     * Figure out how to place a *breakpoint* on the `jmp far [cs:ivt_offset]` line at the end of `timer_isr` 
     * Resume running the program (the `F5` key)
     * If you installed the hook correctly, you should hit your breakpoint
