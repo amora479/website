@@ -66,7 +66,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 4/18 | Lab Day | | [Team Project Beta (Kernel)](/course/bju/content/cps230/programs/project) |
 | W | | | | [Team Project Beta (Pong)](/course/bju/content/cps230/programs/project-pong) |
 | F | 4/20 | [Preemptive Task Switching](/course/bju/content/cps230/lessons/lec25) | | |
-| M | 4/23 | IA-32 Protected Mode | Ch. 9 (stop at 9.6) | [Lab 10](/course/bju/content/cps230/labs/lab10) |
+| M | 4/23 | [IA-32 Protected Mode](/course/bju/content/cps230/lessons/lec26) | Ch. 9 (stop at 9.6) | [Lab 10](/course/bju/content/cps230/labs/lab10) |
 | W | 4/25 | Crash Course in x64 | Ch. 3 (3.13) | |
 | F | 4/27 | Work Day | | [Team Project Release (Kernel)](/course/bju/content/cps230/programs/project) |
 | F | | | | [Team Project Release (Pong)](/course/bju/content/cps230/programs/project-pong) |
