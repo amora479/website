@@ -200,7 +200,7 @@ Consult with the instructor to be safe.
 
 ### Music Demo (25 pts)
 
-Use either the [PC speaker](http://qzx.com/pc-gpe/speaker.txt) to play the melody of the BJU alma mater in the background of your demos.
+Use either the [PC speaker](http://qzx.com/pc-gpe/speaker.txt) ([tutorial](http://muruganad.com/8086/8086-assembly-language-program-to-play-sound-using-pc-speaker.html)) to play the melody of the BJU alma mater in the background of your demos.
 
 If you are *not* doing timer-preempted task switching, you will probably want to hook `INT 8` to provide smooth/lag-free music updates.  If you go this
 route, you may even find that you need to [reprogram counter 0 on the PIT](http://stanislavs.org/helppc/8253.html)
