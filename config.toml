@@ -26,11 +26,6 @@ theme = "minimal"
     weight = 2
 
 [[menu.main]]
-    url = "/courses"
-    name = "Courses"
-    weight = 3
-
-[[menu.main]]
     url = "/about"
     name = "About"
     weight = 3
