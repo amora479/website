@@ -4,7 +4,7 @@ title = "Ethan McGee"
 theme = "minimal"
 
 [params]
-    author = "Ethan McGee, PhD"
+    author = "Ethan McGee"
     description = "I'm a researcher, teacher and developer. When not in the lab or classroom, I am an avid runner, cyclist and hiker."
     font="Roboto"
     accent = "red"
@@ -24,6 +24,11 @@ theme = "minimal"
     url = "/publications"
     name = "Publications"
     weight = 2
+
+[[menu.main]]
+    url = "https://blog.ethantmcgee.com"
+    name = "Blog"
+    weight = 3
 
 [[menu.main]]
     url = "/about"
