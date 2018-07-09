@@ -24,4 +24,4 @@ Matthew Krugh, Ethan McGee, Stephen McGee, Laine Mears, Andrej Ivanco, K.C. Podd
 
 Ethan T. McGee and John D. McGregor. 2017. A Realization Effort Estimation Model for Dynamic Software Product Lines. _Workshop on Dynamic Software Product Lines_ (DSPL '17).
 
-Ethan T. McGee. 2017. A Decision Support System for Selecting Between Designs for Dynamic Software Product Lines. _Dissertation: accepted by John D. McGregor, Brian Malloy, Murali Sitaraman and Amy Apon)_, Clemson University.
+Ethan T. McGee. 2017. A Decision Support System for Selecting Between Designs for Dynamic Software Product Lines. _Dissertation: accepted by John D. McGregor, Brian Malloy, Murali Sitaraman and Amy Apon_, Clemson University.
