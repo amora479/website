@@ -1,10 +1,10 @@
 ---
-title: "CPS 110 Section 2 Syllabus"
+title: "CPS 105 Syllabus"
 ---
 
-# CPS 110 (Section 2) Syllabus
+# CPS 105 Syllabus
 
-## College of Arts & Science: CPS 110 - Computer Science I
+## College of Arts & Science: CPS 105 - Computer Science Foundations
 
 
 | Instructor | Dr. Ethan McGee |
@@ -15,43 +15,56 @@ title: "CPS 110 Section 2 Syllabus"
 | Office Hours | MTWF: 12 - 1:30 |
 | | Th: 9:30 - 10:50 |
 | | Others by appt / elec |
-| Text(s) | _How to Think Like a Computer Scientist (BJU Edition)_ |
-| Meets | MWF 2:00 - 2:50 in ML 2A |
+| Text(s) | _From the Garden to the City_ (John Dyer) |
+| | _Blown to Bits_ (Hal Abelson, Ken Ledeen, Harry Lewis) |
+| | _Instructor Selected Online Readings_ |
+| Meets | (Section 1) MWF 9:00 - 9:50 in ML 3 |
+| | (Section 2) MWF 10:00 - 10:50 in ML 3 |
 | Credits | 3 |
-| Prerequisites | Ma ACT 26+, SAT 640+, Ma 090, Ma 103 |
+| Prerequisites | Ma ACT 20+, SAT 55+, Ma 090 or Ma 10 |
 
 ## Course Description
 
-Introduction to computer science through use of a high-level programming language as vehicle for
-understanding capabilities and limitations of computers. An emphasis on the object-oriented paradigm, including basic class design principles. Development of problem-solving skills through programming
-exercises.
+This course provides a broad exposure to the field of computer science. It emphasizes the development of computational thinking and problem solving skills, and an understanding of the societal and spiritual impact of computer programming and innovations. Students will write a paper expressing a biblical philosophy of technology; simulate a simple computer; design a web page; perform data analysis; and write, test, and debug a sequence of instructions. Not applicable toward a Computer Science or Information Technology minor. 
 
 ## Course Goals / Objectives
 
-The goals of this course are:
-- To strengthen problem-solving abilities
-- To develop debugging skills
-- To develop an appreciation for the power of abstraction as a tool for managing complexity
-- By learning to create small systems, better appreciate the genius of the Creator of the  Universe
+The goals for this course are that you will: 
+1. understand that a biblical worldview has a significant effect on your use of technology including social, professional and ethical considerations.
+1. understand the underlying principles of how digital technology works. 
+1. engage in sustained reasoning. 
+1. work independently and with others, recognizing the diversity of gifts and abilities of others is essential to producing solutions to problems. 
+1. appreciate the diversity and breadth of computer science. 
 
-The objectives of this course are:
-- Write Python programs to solve problems
-- Analyze and explain the behavior of simple programs involving the fundamental programming constructs covered by this unit
-- Modify and expand short programs that use standard conditional and iterative control structures and functions
-- Organize programs into classes and methods using object-oriented techniques
-- Write programs using standard and third-party libraries 
+The objectives for this course are you will be able to: 
+1. Articulate a biblical philosophy of technology. 
+1. Use standard computer applications to retrieve and analyze data, construct models, solve problems, and present the results. 
+1. Demonstrate an understanding of the fundamentals of computers and networks, the digital representation of information, and the social impact of computers and technology. 
+1. Apply a strategy to test solutions and diagnose problems in information technology.
+1. Exhibit algorithmic thinking to program in an object-based language.
+1. Explain safe computing practices derived from information security principles.
+
+## Assignments
+
+**Office Visit** - For 1 point of extra credit on the student's final grade, the student should visit the instructor's office once before the second test with a question.  Questions about course content are preferred but not required.
+
+**Assignments** - Students will be given a worksheet / template with instructions for completing the assignment. Completing the assignment > 24 hrs before the due date will result in 1 point of extra credit on the assignment.
+
+**Projects** - Projects are longer assignments where the student will apply the principles learned in class to create or analyze a deliverable.  Completing the assignment > 24 hrs before the due date will result in 2 points of extra credit on the project.
+
+**Biblical Philosophy of Technology Paper** - The BPT paper is a semester long project in which the student will develop and author a biblical philosophy of technology using the book of Proverbs.
+
+**Tests** - Tests are in class assignments to test a students understanding of the concepts covered up until that point in the course.
 
 ## Grading
 
-| Assignment Type | # of Assignments | Points Worth | Total Points
-| --- | --- | --- | --- |
-| Quizzes | 9 | 10 | 90 |
-| Labs | 10 | 10 | 100 |
-| Programs | 6 | 60 | 360 |
-| Lab Tests | 2 | 100 | 200 |
-| Tests | 2 | 75 | 150 |
-| Final | 1 | 100 | 100 |
-| Total | | | 1000 |
+| Assignment Type | # of Assignments | Percent of Grade |
+| --- | --- | --- |
+| Office Visit | 1 | 1% (EC) |
+| Assignments | 4 | 15% |
+| Projects | 3 | 20% |
+| Paper | 1 | 15% |
+| Tests | 4 | 50% |
 
 | Grade | Minimum | Maximum |
 | --- | --- | --- |
@@ -61,23 +74,9 @@ The objectives of this course are:
 | D | 59.5 | 69.49 |
 | F | 0 | 59.49 |
 
-### Grading of Programming Assignments
-
-Learning to program requires practice.  Plan on spending several hours each week on programming assignments.  In return for this dedication, you will learn a systematic approach to breaking down and solving complicated problems in manageable pieces.
-
-Writing excellent software is important and is one of the primary goals of this course.  To encourage good habits, programming assignments will be graded as follows:
-- **Correctness: 60%** - The program produces the expected results and runs exactly as specified.
-- **Style: 20%** - The code is written according to the style guidelines.  Consistency and attention to detail are important.  Code should be clear, well formatted and commented so that it is understandable.
-- **Reports: 15%** - In industry, rarely are programs simply handed in.  You must report what you have completed as well as any deviations from specification.  Also report any known flaws or bugs.
-- **Presentation: 5%** - In industry, your projects must be submitted according to the procedures set forth by your employer.
-
-### Quizzes
-
-Except in the case of service absences, quizzes may not be taken late.  I do, however, drop the lowest quiz grade at the end of the semester.
-
 ## Deadlines / Late Work
 
-The instructor reserves the right to change assignment due dates as deemed necessary.  Assignments are due, electronically, by 11:59 pm of the date posted in the [course schedule](https://ethantmcgee.com/courses/cps110/info/schedule) unless otherwise noted.  Assignments, unless otherwise noted, may be turned in up to 1 week after the deadline for a 25% penalty.  After 1 week, the student may still submit the assignment for feedback, however, no credit will be given.
+The instructor reserves the right to change assignment due dates as deemed necessary.  Assignments are due, electronically, by 11:59 pm of the date posted in the [course schedule](https://ethantmcgee.com/courses/cps105/info/schedule) unless otherwise noted.  Assignments, unless otherwise noted, may be turned in up to 1 week after the deadline for a 25% penalty.  After 1 week, the student may still submit the assignment for feedback, however, no credit will be given.
 
 Each student is given 1 free late waiver that allows them to turn in one assignment, at their discretion, up to 1 week after the deadline with no penalty.  In order to use the free late, the student must 1) notify the professor before the deadline that they intend to use the free late, 2) describe the progress that they have made towards completion of the assignment and 3) provide an approximate date of delivery. Due to grading constraints during finals week, the professor reserves the right to shorten the free late period for end of semester projects.
 

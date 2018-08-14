@@ -1,8 +1,8 @@
 ---
-title: "CPS 105 Section 1"
+title: "CPS 105"
 ---
 
-# CPS 105 (Section 1)
+# CPS 105
 
 ## Course Description
 
@@ -16,6 +16,6 @@ _None at this time._
 
 ## Links
 
-[Syllabus](/classes/cps105-1/info/syllabus)
+[Syllabus](/classes/cps105/info/syllabus)
 
-[Schedule](/classes/cps105-1/info/schedule)
+[Schedule](/classes/cps105/info/schedule)

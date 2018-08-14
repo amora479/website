@@ -1,8 +1,8 @@
 ---
-title: "CPS 110 Section 2 Schedule"
+title: "CPS 105 Schedule"
 ---
 
-# CPS 110 (Section 2) Schedule
+# CPS 105 Schedule
 
 Note: Scheduled topics are subject to change without notice. Assignment due date and test date changes will be announced in class as well as reflected here.
 
