@@ -1,8 +1,8 @@
 ---
-title: "BJU CPS 110 Section 2"
+title: "CPS 110 Section 2"
 ---
 
-# BJU CPS 110 (Section 2)
+# CPS 110 (Section 2)
 
 ## Course Description
 
@@ -16,9 +16,9 @@ _None at this time._
 
 ## Links
 
-[Syllabus](/classes/cps110/syllabus)
+[Syllabus](/classes/cps110/info/syllabus)
 
-[Schedule](/classes/cps110/schedule)
+[Schedule](/classes/cps110/info/schedule)
 
 [Lab Page (8:00 - 8:50)](/labs/cps110-1/)
 

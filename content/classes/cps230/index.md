@@ -1,5 +1,5 @@
 ---
-title: "BJU CPS 230"
+title: "CPS 230"
 ---
 
 # CPS 230
@@ -16,6 +16,6 @@ _None at this time._
 
 ## Links
 
-[Syllabus](/classes/cps230/syllabus)
+[Syllabus](/classes/cps230/info/syllabus)
 
-[Schedule](/classes/cps230/schedule)
+[Schedule](/classes/cps230/info/schedule)
