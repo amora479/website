@@ -19,7 +19,7 @@ title: "CPS 105 Syllabus"
 | | _Blown to Bits_ (Hal Abelson, Ken Ledeen, Harry Lewis) |
 | | _Instructor Selected Online Readings_ |
 | Meets | (Section 1) MWF 9:00 - 9:50 in ML 3 |
-| | (Section 2) MWF 10:00 - 10:50 in ML 3 |
+| | (Section 2) MWF 10:00 - 10:50 in ML 2A |
 | Credits | 3 |
 | Prerequisites | Ma ACT 20+, SAT 55+, Ma 090 or Ma 10 |
 
