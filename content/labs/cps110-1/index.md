@@ -10,6 +10,6 @@ _None at this time._
 
 ## Links
 
-[Syllabus](/classes/cps110-1/info/syllabus)
+[Syllabus](/classes/cps110-2/info/syllabus)
 
 [Schedule](/labs/cps110-1/info/schedule)

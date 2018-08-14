@@ -16,9 +16,9 @@ _None at this time._
 
 ## Links
 
-[Syllabus](/classes/cps110/info/syllabus)
+[Syllabus](/classes/cps110-2/info/syllabus)
 
-[Schedule](/classes/cps110/info/schedule)
+[Schedule](/classes/cps110-2/info/schedule)
 
 [Lab Page (8:00 - 8:50)](/labs/cps110-1/)
 
