@@ -18,28 +18,42 @@ title: "CPS 105 Section 1 Syllabus"
 | Text(s) | _From the Garden to the City_ (John Dyer) |
 | | _Blown to Bits_ (Hal Abelson, Ken Ledeen, Harry Lewis) |
 | | _Instructor Selected Online Readings_ |
-| Meets | |
+| Meets | MWF 9:00 - 9:50 in ML 3 |
 | Credits | 3 |
+| Prerequisites | Ma ACT 20+, SAT 55+, Ma 090 or Ma 10
 
 ## Course Description
 
 This course provides a broad exposure to the field of computer science. It emphasizes the development of computational thinking and problem solving skills, and an understanding of the societal and spiritual impact of computer programming and innovations. Students will write a paper expressing a biblical philosophy of technology; simulate a simple computer; design a web page; perform data analysis; and write, test, and debug a sequence of instructions. Not applicable toward a Computer Science or Information Technology minor. 
 
-## Context
+## Course Goals / Objectives
 
-## Learning Objectives
+The goals for this course are that you will: 
+1. understand that a biblical worldview has a significant effect on your use of technology including social, professional and ethical considerations.
+1. understand the underlying principles of how digital technology works. 
+1. engage in sustained reasoning. 
+1. work independently and with others, recognizing the diversity of gifts and abilities of others is essential to producing solutions to problems. 
+1. appreciate the diversity and breadth of computer science. 
+
+The objectives for this course are you will be able to: 
+1. Articulate a biblical philosophy of technology. 
+1. Use standard computer applications to retrieve and analyze data, construct models, solve problems, and present the results. 
+1. Demonstrate an understanding of the fundamentals of computers and networks, the digital representation of information, and the social impact of computers and technology. 
+1. Apply a strategy to test solutions and diagnose problems in information technology.
+1. Exhibit algorithmic thinking to program in an object-based language.
+1. Explain safe computing practices derived from information security principles.
 
 ## Assignments
 
-**Office Visit** - 
+**Office Visit** - For 1 point of extra credit on the student's final grade, the student should visit the instructor's office once before the second test with a question.  Questions about course content are preferred but not required.
 
-**Assignments** - 
+**Assignments** - Students will be given a worksheet / template with instructions for completing the assignment. Completing the assignment > 24 hrs before the due date will result in 1 point of extra credit on the assignment.
 
-**Projects** -
+**Projects** - Projects are longer assignments where the student will apply the principles learned in class to create or analyze a deliverable.  Completing the assignment > 24 hrs before the due date will result in 2 points of extra credit on the project.
 
-**Biblical Philosophy Paper** -
+**Biblical Philosophy of Technology Paper** - The BPT paper is a semester long project in which the student will develop and author a biblical philosophy of technology using the book of Proverbs.
 
-**Tests** -
+**Tests** - Tests are in class assignments to test a students understanding of the concepts covered up until that point in the course.
 
 ## Grading
 
