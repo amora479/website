@@ -9,13 +9,13 @@ title: "CPS 230 Syllabus"
 
 | Instructor | Dr. Ethan McGee |
 | --- | --- |
-| Office | Computer Science Offices |
+| Office | Computer Science Offices (Library Second Floor) |
 | Email | [emcgee@bju.edu](mailto:emcgee@bju.edu) |
 | Phone | 864.201.2635 (texting acceptable) |
 | Office Hours | MTWF: 12 - 1:30 |
 | | Th: 9:30 - 10:50 |
 | | Others by appt / elec |
-| Text(s) | __ () |
+| Text(s) | _Computer Systems: A Programmer’s Perspective (3rd ed.)_ (Bryant & O’Hallaron) |
 | Meets | MWF 8:00 - 8:50 in ML 2A |
 | Credits | 3 |
 | Prerequisites | CPS 110 |
@@ -73,6 +73,7 @@ This course will provide:
 Learning to program requires practice.  Plan on spending several hours each week on programming assignments.  In return for this dedication, you will learn a systematic approach to breaking down and solving complicated problems in manageable pieces.
 
 Writing excellent software is important and is one of the primary goals of this course.  To encourage good habits, programming assignments will be graded as follows:
+
 - **Correctness: 70%** - The program produces the expected results and runs exactly as specified.
 - **Style: 10%** - The code is written according to the style guidelines.  Consistency and attention to detail are important.  Code should be clear, well formatted and commented so that it is understandable.
 - **Reports: 15%** - In industry, rarely are programs simply handed in.  You must report what you have completed as well as any deviations from specification.  Also report any known flaws or bugs.
@@ -93,6 +94,7 @@ Each student is given 1 free late waiver that allows them to turn in one assignm
 Students struggling with an assignment or concepts in the class are encouraged to ask the instructor for assistance either 1) in class, 2) before / after class, 3) during office hours, 4) via email or 5) via text.
 
 In order to maximize your opportunity to receive help and receive the best possible grade on an assignment / in the course:
+
 1. Start assignments early.  This will give you more opportunities to realize you don't fully understand a concept and ask for assistance.
 1. Don't wait until the night before an assignment is due to ask questions.  In general, I try to make myself available on the night an assignment is due to answer questions, however, this should not be counted on as, like you, I have other responsibilities.
 1. Request feedback.  I cannot tell you what grade I would give to your particular solution for an assignment, but I can offer comments for how your solution can be improved.
@@ -142,11 +144,13 @@ Students can view absences and the number of partial attendance marks that they 
 ### Chronic Illness
 
 Students who have a chronic illness (e.g., diabetes, asthma, migraines, etc.) and are absent from classes because of prolonged or recurring symptoms: 
+
 - are to secure a doctor’s note stating that they have a chronic illness; 
 - are to present the note to The Hub in advance or within two business days of returning to classes after an illness-related absence; 
 - are to inform instructors in their courses that they have a chronic condition. 
 
 For future absences because of the same chronic illness, the student is to email The Hub ([hub@bju.edu](mailto:hub@bju.edu)) the following information within 24 hours of a missed class:
+
 - Name and ID #
 - A statement indicating that the reason for the absence is a chronic condition with a doctor’s note already on file 
 - Date and class(es) missed
@@ -162,21 +166,28 @@ Students needing accomodations due to a learning disability (visual, auditory, e
 ## Academic Honesty and Integrity Policy
 
 Cheating on assignments and tests is forbidden. All work is to be done individually unless group work is explicitly permitted. No collaboration is allowed on tests. For regular individual assignments, we expect that the submitted work represents the student’s own intellectual effort, defined as follows: 
+
 1. The program was written primarily by the student. This means that most of the code (aside from starting code provided by the instructor) must have been crafted, not copied, by the student. 
 1. External resources used, whether electronic or from another human, must be documented as follows: 
+
     1. Code snippets copied from online resources must be documented by a comment just above the copied snippet giving the URL of the page containing the source. 
     1. Explanatory help or advice regarding the design or implementation of the solution received from people other than the instructor must be documented in a report accompanying the assignment submission. This report must detail: 
+
         1. Source of information (e.g., name/email of the person who helped)
         1. Relevance (i.e., how this resource helped and/or what it provided) 
+
     1. Note that students must not consult a solution to the assignment as a resource in crafting their own solution, nor share their own solution with another student. Doing so constitutes cheating. 
+
 1. The student must be able to explain, on demand, the entirety of the program on both the syntactic and semantic level. 
 
 Not all kinds of programming assignments require the same demonstration of personal intellectual effort.  In the absence of any specific instructions, students should assume that at a minimum: 
+
 - For individual lab assignments, requirements 1 and 3 apply.
 - For individual programming assignments, all three requirements apply.
 - For group programming projects, only requirement 3 applies. 
 
 Failure to comply with any relevant integrity requirement constitutes cheating. Such incidents will be reported to the academic integrity committee. To avoid trouble:  
+
 - Do not look at another student's program code when seeking assistance. On the other hand, if another student is seeking help from you, never use your own program code as an example. The only acceptable reason another student may look at your code is to help you find a problem in your program.
 - Do not write program code while another student (or lab assistant) is sitting with you. You may work out designs in pseudocode on paper with another student, but you must write program code by yourself.
 - When seeking assistance from another person on a program assignment, always get his/her name so you can fulfill the documentation requirements.

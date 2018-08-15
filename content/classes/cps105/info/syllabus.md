@@ -30,6 +30,7 @@ This course provides a broad exposure to the field of computer science. It empha
 ## Course Goals / Objectives
 
 The goals for this course are that you will: 
+
 1. understand that a biblical worldview has a significant effect on your use of technology including social, professional and ethical considerations.
 1. understand the underlying principles of how digital technology works. 
 1. engage in sustained reasoning. 
@@ -37,6 +38,7 @@ The goals for this course are that you will:
 1. appreciate the diversity and breadth of computer science. 
 
 The objectives for this course are you will be able to: 
+
 1. Articulate a biblical philosophy of technology. 
 1. Use standard computer applications to retrieve and analyze data, construct models, solve problems, and present the results. 
 1. Demonstrate an understanding of the fundamentals of computers and networks, the digital representation of information, and the social impact of computers and technology. 
@@ -76,7 +78,7 @@ The objectives for this course are you will be able to:
 
 ## Deadlines / Late Work
 
-The instructor reserves the right to change assignment due dates as deemed necessary.  Assignments are due, electronically, by 11:59 pm of the date posted in the [course schedule](https://ethantmcgee.com/courses/cps105/info/schedule) unless otherwise noted.  Assignments, unless otherwise noted, may be turned in up to 1 week after the deadline for a 25% penalty.  After 1 week, the student may still submit the assignment for feedback, however, no credit will be given.
+The instructor reserves the right to change assignment due dates as deemed necessary.  Assignments are due, electronically, by 11:59 pm of the date posted in the [course schedule](https://ethantmcgee.com/courses/cps230/info/schedule) unless otherwise noted.  Assignments, unless otherwise noted, may be turned in up to 1 week after the deadline for a 25% penalty.  After 1 week, the student may still submit the assignment for feedback, however, no credit will be given.
 
 Each student is given 1 free late waiver that allows them to turn in one assignment, at their discretion, up to 1 week after the deadline with no penalty.  In order to use the free late, the student must 1) notify the professor before the deadline that they intend to use the free late, 2) describe the progress that they have made towards completion of the assignment and 3) provide an approximate date of delivery. Due to grading constraints during finals week, the professor reserves the right to shorten the free late period for end of semester projects.
 
@@ -85,6 +87,7 @@ Each student is given 1 free late waiver that allows them to turn in one assignm
 Students struggling with an assignment or concepts in the class are encouraged to ask the instructor for assistance either 1) in class, 2) before / after class, 3) during office hours, 4) via email or 5) via text.
 
 In order to maximize your opportunity to receive help and receive the best possible grade on an assignment / in the course:
+
 1. Start assignments early.  This will give you more opportunities to realize you don't fully understand a concept and ask for assistance.
 1. Don't wait until the night before an assignment is due to ask questions.  In general, I try to make myself available on the night an assignment is due to answer questions, however, this should not be counted on as, like you, I have other responsibilities.
 1. Request feedback.  I cannot tell you what grade I would give to your particular solution for an assignment, but I can offer comments for how your solution can be improved.
@@ -134,11 +137,13 @@ Students can view absences and the number of partial attendance marks that they 
 ### Chronic Illness
 
 Students who have a chronic illness (e.g., diabetes, asthma, migraines, etc.) and are absent from classes because of prolonged or recurring symptoms: 
+
 - are to secure a doctor’s note stating that they have a chronic illness; 
 - are to present the note to The Hub in advance or within two business days of returning to classes after an illness-related absence; 
 - are to inform instructors in their courses that they have a chronic condition. 
 
 For future absences because of the same chronic illness, the student is to email The Hub ([hub@bju.edu](mailto:hub@bju.edu)) the following information within 24 hours of a missed class:
+
 - Name and ID #
 - A statement indicating that the reason for the absence is a chronic condition with a doctor’s note already on file 
 - Date and class(es) missed
@@ -154,21 +159,28 @@ Students needing accomodations due to a learning disability (visual, auditory, e
 ## Academic Honesty and Integrity Policy
 
 Cheating on assignments and tests is forbidden. All work is to be done individually unless group work is explicitly permitted. No collaboration is allowed on tests. For regular individual assignments, we expect that the submitted work represents the student’s own intellectual effort, defined as follows: 
+
 1. The program was written primarily by the student. This means that most of the code (aside from starting code provided by the instructor) must have been crafted, not copied, by the student. 
 1. External resources used, whether electronic or from another human, must be documented as follows: 
+
     1. Code snippets copied from online resources must be documented by a comment just above the copied snippet giving the URL of the page containing the source. 
     1. Explanatory help or advice regarding the design or implementation of the solution received from people other than the instructor must be documented in a report accompanying the assignment submission. This report must detail: 
+
         1. Source of information (e.g., name/email of the person who helped)
         1. Relevance (i.e., how this resource helped and/or what it provided) 
+
     1. Note that students must not consult a solution to the assignment as a resource in crafting their own solution, nor share their own solution with another student. Doing so constitutes cheating. 
+
 1. The student must be able to explain, on demand, the entirety of the program on both the syntactic and semantic level. 
 
 Not all kinds of programming assignments require the same demonstration of personal intellectual effort.  In the absence of any specific instructions, students should assume that at a minimum: 
+
 - For individual lab assignments, requirements 1 and 3 apply.
 - For individual programming assignments, all three requirements apply.
 - For group programming projects, only requirement 3 applies. 
 
 Failure to comply with any relevant integrity requirement constitutes cheating. Such incidents will be reported to the academic integrity committee. To avoid trouble:  
+
 - Do not look at another student's program code when seeking assistance. On the other hand, if another student is seeking help from you, never use your own program code as an example. The only acceptable reason another student may look at your code is to help you find a problem in your program.
 - Do not write program code while another student (or lab assistant) is sitting with you. You may work out designs in pseudocode on paper with another student, but you must write program code by yourself.
 - When seeking assistance from another person on a program assignment, always get his/her name so you can fulfill the documentation requirements.
