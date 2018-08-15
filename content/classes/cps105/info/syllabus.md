@@ -9,7 +9,7 @@ title: "CPS 105 Syllabus"
 
 | Instructor | Dr. Ethan McGee |
 | --- | --- |
-| Office | Computer Science Offices |
+| Office | Computer Science Offices (Library Second Floor) |
 | Email | [emcgee@bju.edu](mailto:emcgee@bju.edu) |
 | Phone | 864.201.2635 (texting acceptable) |
 | Office Hours | MTWF: 12 - 1:30 |

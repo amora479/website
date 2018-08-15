@@ -51,4 +51,4 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 12/3 | | | |
 | W | 12/5 | | | |
 | F | 12/7 | | | |
-| | | _Final Exam_ | | |
+| Th | 12/13 | _Final Exam (8:00)_ | | |
