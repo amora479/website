@@ -1,5 +1,7 @@
 ---
 title: "CPS 230 Syllabus"
+date: 2018-08-16T00:00:00-04:00
+draft: false
 ---
 
 # CPS 230 Syllabus

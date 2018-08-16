@@ -1,5 +1,7 @@
 ---
 title: "CPS 105 Schedule"
+date: 2018-08-16T00:00:00-04:00
+draft: false
 ---
 
 # CPS 105 Schedule
@@ -12,7 +14,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 8/31 | Biblical Philosophy of Technology Paper | | |
 | | | Little Man Computer | | |
 | M | 9/3 | Little Man Computer | | Create Account w/ [code.org](https://code.org) |
-| | | | | Join [Unit 1](https://studio.code.org/join/XXXXXX) |
+| | | | | Join [Unit 1](https://studio.code.org/join/TJXNZY) |
 | W | 9/5 | Little Man Computer | Watch [The Internet: Wires, Cables & Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM) | |
 | | | Internet Communications | | |
 | F | 9/7 | FGC Presentations (I) | FGC (pp 1-31) | |
@@ -41,14 +43,14 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Algorithms | | |
 | F | 9/28 | FGC Presentations (IV) | | |
 | | | Algorithms | | |
-| M | 10/1 | Pseudocode | | Join [Unit 2](https://studio.code.org/join/XXXXXX) |
+| M | 10/1 | Pseudocode | | Join [Unit 2](https://studio.code.org/join/TJXNZY) |
 | | | Tracing Algorithms | | |
 | W | 10/3 | Tracing Algorithms | | |
 | F | 10/5 | FGC Presentations (V) | FGC (pp 69-80) | BPT III - Finances |
 | | | Bytes / File Sizes | BB (Chapter 3, pp 88-94) | |
 | | | Compression | Watch [Compression](https://www.youtube.com/watch?v=LCGkcn1f-ms) | |
 | M | 10/8 | Compression | | Algorithms |
-| | | | | Explore [Compression Widget](https://studio.code.org/projects/applab/hxXJIEGg2yza_Q7t9W04xg) |
+| | | | | Explore [Compression Widget](https://studio.code.org/s/csp2-2018/stage/2/puzzle/3) |
 | | | | | Explore [Lossy Compression Widget](https://studio.code.org/projects/applab/hxXJIEGg2yza_Q7t9W04xg) |
 | W | 10/10 | Data Science | Skim [Data Visualization 101](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf) | |
 | | | Visualization Trends | | |
@@ -69,14 +71,14 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Excel Application Development | | |
 | M | 10/29 | Excel Application Development | | |
 | W | 10/31 | Computing Limits | Watch [Traveling Salesman Problem](https://www.youtube.com/watch?v=SC5CX8drAtU) | BPT V - Integrity |
-| | | | | Join [Unit 4](https://studio.code.org/join/XXXXXX) |
+| | | | | Join [Unit 4](https://studio.code.org/join/TJXNZY) |
 | F | 11/2 | FGC Presentations (IX) | FGC (pp 131-143) | Try [Coding](https://asecuritysite.com/coding/mary) |
 | | | Cryptography | BB (Chap 5, pp 174-187) | |
 | | | | Watch [The Internet: Encryption & Public Keys](https://www.youtube.com/watch?v=ZghMPWGXexs) | |
 | M | 11/5 | Cryptography | | Excel Application |
 | W | 11/7 | Test 3 Review | | Experiment w/ [Cypher Widgets](https://studio.code.org/s/cps4) |
 | | | Public Key Cryptography | | |
-| F | 11/9 | FGC Presentations (X) | FGC (pp 144-158) | Join [Unit 3](https://studio.code.org/join/XXXXXX) |
+| F | 11/9 | FGC Presentations (X) | FGC (pp 144-158) | Join [Unit 3](https://studio.code.org/join/TJXNZY) |
 | | | Public Key Cryptography | | |
 | M | 11/12 | Test 3 | | |
 | W | 11/14 | AppLab Programming | Watch [Turtle Programming](https://www.youtube.com/watch?v=i2KHYUhtOlM) | |
