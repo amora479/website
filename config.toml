@@ -21,8 +21,8 @@ theme = "minimal"
     weight = 1
 
 [[menu.main]]
-    url = "/classes"
-    name = "Classes"
+    url = "/courses"
+    name = "Courses"
     weight = 2
 
 [[menu.main]]

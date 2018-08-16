@@ -1,5 +1,6 @@
 ---
 title: "About"
+date: 2018-08-16T00:00:00-04:00
 ---
 
 I'm an assistant professor at Bob Jones University teaching Computer Science and a Software Engineer for AFS Logistics, LLC.  I teach courses covering computer science fundamentals, computer systems, software development / engineering and computer science theory.  At work, I build high-throughput backends for scalable web-applications.  I've also built a couple of robots.
