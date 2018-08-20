@@ -16,7 +16,7 @@ Associating your student email gives you unlimited private repositories for as l
 
 You will be receiving an email from the instructor via [Bitbucket](https://bitbucket.org) letting you know that you have been given access to a repository.
 
-![Bitbucket Signup](bitbucket-git-images/signup.png)
+![Bitbucket Signup](/bju/cps230/info/bitbucket-git-images/signup.png)
 
 If you receive an invitation instead, you have not associated your BJU email with your bitbucket account. You can either associate the email with your account then accept the invitation or just accept the invitation (you are not required to associate your BJU email with the account).
 
@@ -28,7 +28,7 @@ To install command line git, download the installer from [Git SCM](https://git-s
 
 This will install two tools, `Git Bash` and `Git CMD`. Open `Git Bash` and let's associate your git installation with Bitbucket. From within `Git Bash` run the command `ssh-keygen -t rsa` to generate a public / private key pair for submissions.  Simply press enter at each of the prompts unless you just really want to set a passphrase.  Once the command completes and you have the nice QR code looking thing, run the command `cat ~/.ssh/id_rsa.pub` and copy the result. (Crtl-C and Crtl-V don't work in `Git Bash` so stick with right-clicking [Sorry...])
 
-![Git Bash](bitbucket-git-images/ssh.png)
+![Git Bash](/bju/cps230/info/bitbucket-git-images/ssh.png)
 
 Back in Bitbucket, click on the user icon in the lower left corner then Bitbucket Settings. Under SSH Keys, click Add Key. Paste in the key you copied, then give it a nicename.
 
@@ -36,13 +36,13 @@ Back in Bitbucket, click on the user icon in the lower left corner then Bitbucke
 
 Now we're all set.  To get a local copy of the repository, use `cd Documents` to navigate to your documents folder. Back in Bitbucket, click the bucket icon to return home, then click Repositories.  Click on your 230 repository (it will be your BJU username).  In the upper right corner, there will a `Clone` button.  Click it to bring up the following dialog.
 
-![Bitbucket Clone](bitbucket-git-images/dialog.png)
+![Bitbucket Clone](/bju/cps230/info/bitbucket-git-images/dialog.png)
 
 Change the dropdown to HTTPS if it has SSH selected. Copy the command in the window and paste it into `Git Bash`.  After you paste, press enter to execute.
 
 You should have a window appear asking for your credentials.
 
-![Bitbucket Clone](bitbucket-git-images/credentials.png)
+![Bitbucket Clone](/bju/cps230/info/bitbucket-git-images/credentials.png)
 
 Enter your credentials and it should complete the copy (it may request your password one more time depending on which version of windows you are using).
 
@@ -54,7 +54,7 @@ To submit a change, first put your submission into the folder for that assignmen
 
 Use the command `git status` to see what changes are pending.
 
-![Bitbucket Clone](bitbucket-git-images/pending.png)
+![Bitbucket Clone](/bju/cps230/info/bitbucket-git-images/pending.png)
 
 To add folders and files, use the `git add <file or folder name>` command.  Once you have added all of the files and folders you want to add for this submission, use the `git commit -m "<short description of what your submitting>"` command to create a milestone, or a commit.
 
