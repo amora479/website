@@ -53,6 +53,7 @@ This course will provide:
 
 | Assignment Type | # of Assignments | Points Worth | Total Points
 | --- | --- | --- | --- |
+| Office Visit | 1 | 1 | 1% (EC) |
 | In-class Quizzes | 11 | 10 | 100 |
 | Homework | 4 | 20-40 | 100 |
 | Labs | 10 | 10-25 | 150 |
@@ -63,11 +64,11 @@ This course will provide:
 
 | Grade | Minimum | Maximum |
 | --- | --- | --- |
-| A | 89.5 | 100 |
-| B | 79.5 | 89.49 |
-| C | 69.5 | 79.49 |
-| D | 59.5 | 69.49 |
-| F | 0 | 59.49 |
+| A | 90 | 100 |
+| B | 80 | 89.99 |
+| C | 70 | 79.99 |
+| D | 60 | 69.99 |
+| F | 0 | 59.99 |
 
 ### Grading of Programming Assignments
 
