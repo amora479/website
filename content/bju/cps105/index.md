@@ -18,3 +18,5 @@ _None at this time._
 [Syllabus](/bju/cps105/info/syllabus)
 
 [Schedule](/bju/cps105/info/schedule)
+
+[Class Slack](https://bjucps.slack.com)

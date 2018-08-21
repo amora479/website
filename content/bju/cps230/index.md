@@ -19,6 +19,8 @@ _None at this time._
 
 [Schedule](/bju/cps230/info/schedule)
 
+[Class Slack](https://bjucps.slack.com)
+
 [Reference Material](/bju/cps230/info/references)
 
 [Tools](/bju/cps230/info/tools)
