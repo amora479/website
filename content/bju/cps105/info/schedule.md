@@ -26,7 +26,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 9/12 | Protocols Activity (II) | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
 | | | Character Encodings | Watch [Internet Simulator Part 2](https://www.youtube.com/watch?v=cIk2R0QuXkI) | |
 | | | HTML | | |
-| F | 9/14 | FGC Presentations (II) | FGC (pp 32-42) | BPT I - Communications |
+| F | 9/14 | FGC Presentations (II) | FGC (pp 32-42) | [BPT I - Communications](/bju/cps105/homework/BPT/part1) |
 | | | HTML | | |
 | | | Internet Communication | | |
 | | | | | |
@@ -37,7 +37,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Creating a Website | Watch [The Internet: Packets, Routing and Reliability](https://www.youtube.com/watch?v=AYdF7b3nMto) | |
 | | | | Watch [The Internet: HTTP & HTML](https://www.youtube.com/watch?v=kBXQZMmiA4s) | |
 | | | | Watch [Internet Simulator Part 3](https://www.youtube.com/watch?v=x_YTEBRnR1U) | |
-| F | 9/21 | FGC Presentations (III) | FGC (pp 43-54) | BPT II - Friendships |
+| F | 9/21 | FGC Presentations (III) | FGC (pp 43-54) | [BPT II - Friendships](/bju/cps105/homework/BPT/part2) |
 | | | Creating a Website | | |
 | | | Troubleshooting the Internet | | |
 | | | | | |
@@ -50,7 +50,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 10/1 | Pseudocode | | Join [Unit 2](https://studio.code.org/join/TJXNZY) |
 | | | Tracing Algorithms | | |
 | W | 10/3 | Tracing Algorithms | | |
-| F | 10/5 | FGC Presentations (V) | FGC (pp 69-80) | BPT III - Finances |
+| F | 10/5 | FGC Presentations (V) | FGC (pp 69-80) | [BPT III - Finances](/bju/cps105/homework/BPT/part3) |
 | | | Bytes / File Sizes | BB (Chapter 3, pp 88-94) | |
 | | | Compression | Watch [Compression](https://www.youtube.com/watch?v=LCGkcn1f-ms) | |
 | | | | | |
@@ -60,7 +60,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 10/10 | Data Science | Skim [Data Visualization 101](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf) | |
 | | | Visualization Trends | | |
 | | | Excel Visualization Tools | | |
-| F | 10/12 | FGC Presentations (VI) | FGC (pp 81-97) | BPT IV - Diligence |
+| F | 10/12 | FGC Presentations (VI) | FGC (pp 81-97) | [BPT IV - Diligence](/bju/cps105/homework/BPT/part4) |
 | | | Making Data Visualizations | | |
 | | | Test 2 Review | | |
 | | | | | |
@@ -78,7 +78,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Excel Application Development | | |
 | | | | | |
 | M | 10/29 | Excel Application Development | | |
-| W | 10/31 | Computing Limits | Watch [Traveling Salesman Problem](https://www.youtube.com/watch?v=SC5CX8drAtU) | BPT V - Integrity |
+| W | 10/31 | Computing Limits | Watch [Traveling Salesman Problem](https://www.youtube.com/watch?v=SC5CX8drAtU) | [BPT V - Integrity](/bju/cps105/homework/BPT/part5) |
 | | | | | Join [Unit 4](https://studio.code.org/join/TJXNZY) |
 | F | 11/2 | FGC Presentations (IX) | FGC (pp 131-143) | Try [Coding](https://asecuritysite.com/coding/mary) |
 | | | Cryptography | BB (Chap 5, pp 174-187) | |
@@ -98,7 +98,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 11/19 | AppLab Programming | Watch [Boolean Expressions](https://www.youtube.com/watch?v=y3rCKJNOwpA), [If Statements](https://www.youtube.com/watch?v=0oG3Wck2fRU), [If-Else Statements](https://www.youtube.com/watch?v=ZIL_3YRD14s), [If-Else-If Statements](https://www.youtube.com/watch?v=aFssCTE5hs8) | |
 | | 11/21 - 11/26 | _Thanksgiving Break_ | | |
 | W | 11/28 | Information Security | Watch [Cybersecurity & Crime](https://www.youtube.com/watch?v=AuYNXgO_f3Y) | Program |
-| F | 11/30 | FGC Presentations (XII) | FGC (pp 175-179) | BPT - Final |
+| F | 11/30 | FGC Presentations (XII) | FGC (pp 175-179) | [BPT - Final](/bju/cps105/homework/BPT/final) |
 | | | Artificial Intelligence | Watch [Deep Blue](https://www.youtube.com/watch?v=NJarxpYyoFI), [AI-Composed Music](https://www.youtube.com/watch?v=TqH6ionF94I), [AI Art](https://www.youtube.com/watch?v=MwHQx9BrHQc) | |
 | | | | | |
 | M | 12/3 | Artificial Intelligence | Watch [Watson & Jeopardy](https://www.youtube.com/watch?v=P18EdAKuC1U), [Watson](https://www.youtube.com/watch?v=_Xcmh1LQB9I) | |
