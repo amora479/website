@@ -1,5 +1,5 @@
 ---
 title: "CPS 105"
-date: 2018-08-16T00:00:00-04:00
-draft: true
+date: 2018-08-21T00:00:00-04:00
+draft: false
 ---
