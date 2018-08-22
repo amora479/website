@@ -8,7 +8,7 @@ draft: true
 
 ## Getting Started
 
-Download the [resource files](/bju/cps105/LMC/lmc.zip) and extract them.  Inside you will find two html files, `LMC4.html` is the Little Man Computer Simulator you will be using for this assignment.  `AboutLMC.html` is another page which contains additional information about the Little Man Computer; use this page to refresh your memory of the in-class material.  There are also two programs that you copy into the Little Man Computer to try it out.
+Download the [resource files](/bju/cps105/homework/LMC/downloads/lmc.zip) and extract them.  Inside you will find two html files, `LMC4.html` is the Little Man Computer Simulator you will be using for this assignment.  `AboutLMC.html` is another page which contains additional information about the Little Man Computer; use this page to refresh your memory of the in-class material.  There are also two programs that you copy into the Little Man Computer to try it out.
 
 ## Instructions
 
