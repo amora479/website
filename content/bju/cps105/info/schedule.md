@@ -20,7 +20,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 9/7 | FGC Presentations (I) | FGC (pp 1-31) | |
 | | | Protocols Activity (I) | Watch [Internet Simulator](https://www.youtube.com/watch?v=Kn6Fd5uwZno) | |
 | | | | | |
-| M | 9/10 | Protocols | BB (pp 4-13) | LMC |
+| M | 9/10 | Protocols | BB (pp 4-13) | [LMC](/bju/cps105/homework/LMC/) |
 | | | Binary Numbers | | Explore [Binary Odometer](https://studio.code.org/s/cps1/stage/5/puzzle/2) |
 | | | Koans of Bits | | |
 | W | 9/12 | Protocols Activity (II) | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
