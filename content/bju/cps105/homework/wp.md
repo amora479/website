@@ -6,7 +6,7 @@ draft: false
 
 # Web Pages
 
-This assignment will give you familiarity with creating a web page (using a template).  There also a (non-required) portion of the assignment where you can purchase your own domain name and use that instead of the github.io one.
+This assignment will give you familiarity with creating a web page (using a template).  There also a (non-required) portion of the assignment where you can purchase your own domain name and use that instead of the `github.io` one.
 
 ## Getting Started
 
@@ -72,9 +72,7 @@ Create a text document that contains a link to your Github repository (or your G
 
 ## With Your Own URL
 
-It is now very common for people to have their own web address.  For example, this website is hosted at ethantmcgee.com which is a web address that I own.  How do you do that?  First, a fair warning. This portion of the assignment is optional but requires a small amount of money.
-
-Web addresses, depending on the registrar, will cost you anywhere from $1 to $50 per year, and you can cancel at any time.  Once again, you are **not required** to complete this part of the assignment.
+It is now very common for people to have their own web address.  For example, this website is hosted at `ethantmcgee.com` which is a web address that I own.  How do you do that?  First, a fair warning. This portion of the assignment is optional but requires a small amount of money. Web addresses, depending on the registrar, will cost you anywhere from $1 to $50 per year. You can cancel at any time, but the web address you purchased is still yours for the remainder of the period you paid for.  Once again, you are **not required** to complete this part of the assignment.
 
 ### Sign Up with a Registrar
 
