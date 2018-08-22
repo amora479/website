@@ -80,7 +80,7 @@ Create an account with [Namecheap](https://www.namecheap.com).  This registrar i
 
 ![Domain Search](/bju/cps105/homework/wp-downloads/domain-search.png)
 
-Notice that some options (including the one we wanted) is already purchased by someone else.  Don't bother with the `Make Offer`.  Most people owning a domain understandable don't want to sell or will want an unreasonable amount of money for it.  However, Namecheap will offer you alternatives to pick from, or you can search for another domain.
+Notice that some options (including the one we wanted) are already purchased by someone else.  Don't bother with the `Make Offer`.  Most people owning a domain understandably don't want to sell or will want an unreasonable amount of money for it.  However, Namecheap will offer you alternatives to pick from, or you can search for another domain.
 
 When you've found one you like (and you are comfortable the yearly fee for), click `Add to Cart` then `View Cart`.  You don't need any addons since your website is on Github already so click `Confirm Cart` and complete the checkout process.  (You will need a valid Credit / Debit card for this.  If you don't have one, you can purchase a prepaid credit card at Walmart.)
 
@@ -88,7 +88,7 @@ Once you've completed your purchase, go back to your [dashboard](https://ap.www.
 
 ![Domain Manage](/bju/cps105/homework/wp-downloads/domain-manage.png)
 
-Scroll down to the nameservers section and change the nameservers to `Custom DNS`.  Open a new tab and create an account on [Cloudflare](https://www.cloudflare.com).
+Scroll down to the nameservers section and change the nameservers to `Custom DNS`. (We don't know what we need to put in the nameservers just yet.)  Open a new tab and create an account on [Cloudflare](https://www.cloudflare.com).
 
 Once logged in, click the `Add Site` button.
 
@@ -98,7 +98,7 @@ Enter the domain name you just purchased, and when asked which plan you would li
 
 ![Custom DNS](/bju/cps105/homework/wp-downloads/custom-dns.png)
 
-Back on Cloudflare, there are likely going to be a lot of junk records from Namecheap. Delete all the existing records by clicking the `X` off to the side.
+Back on Cloudflare, complete the setup and let it scan for existing records. There are likely going to be a lot of junk records from Namecheap. Delete all the existing records by clicking the `X` off to the side.
 
 ![Domain Records](/bju/cps105/homework/wp-downloads/domain-record.png)
 
