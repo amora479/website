@@ -72,7 +72,7 @@ but do not run it right away.  Instead:
         + Then, print out a "hex dump" of all the bytes from "start" to "start + length"
         + A picture is worth 2048 bytes:
 
-            ![bbc hexdump](/course/bju/content/cps230/images/prog1_hexdump.png)
+            ![bbc hexdump](/bju/cps230/homework/program1-images/hexdump.png)
 
     - If `e`, edit a single byte of `RAM` to contain a new value
         + First, read 2 hex integers, "address" and "value", without printing any further prompts
@@ -120,6 +120,6 @@ int main(int argc, char *argv[]) {
 
 ## Submission
 
-Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) DOCX file. Submit the report and your `prog1.c` to the program 1 folder in your Bitbucket repository.
+Fill out the [standard program report template](/bju/cps230/downloads/report_template.docx) DOCX file. Submit the report and your `prog1.c` to the program 1 folder in your Bitbucket repository.
 
 Submit a signed honesty sheet at the beginning of the next class period.
