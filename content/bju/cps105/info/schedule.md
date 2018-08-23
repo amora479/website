@@ -100,7 +100,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | 11/21 - 11/26 | _Thanksgiving Break_ | | |
 | W | 11/28 | Information Security | Watch [Cybersecurity & Crime](https://www.youtube.com/watch?v=AuYNXgO_f3Y) | Program |
 | F | 11/30 | FGC Presentations (XII) | FGC (pp 175-179) | [BPT - Final](/bju/cps105/homework/bpt/final) |
-| | | Artificial Intelligence | Watch [Deep Blue](https://www.youtube.com/watch?v=NJarxpYyoFI), [AI-Composed Music](https://www.youtube.com/watch?v=TqH6ionF94I), [AI Art](https://www.youtube.com/watch?v=MwHQx9BrHQc) | |
+| | | Artificial Intelligence | Watch [Deep Blue](https://www.youtube.com/watch?v=NJarxpYyoFI), [AI-Composed Music](https://www.youtube.com/watch?v=TqH6ionF94I), [AI Art](https://news.artnet.com/market/artificial-intelligence-christies-1335170) | |
 | | | | | |
 | M | 12/3 | Artificial Intelligence | Watch [Watson & Jeopardy](https://www.youtube.com/watch?v=P18EdAKuC1U), [Watson](https://www.youtube.com/watch?v=_Xcmh1LQB9I) | |
 | W | 12/5 | Artificial Intelligence | | |

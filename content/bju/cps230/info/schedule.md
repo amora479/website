@@ -11,20 +11,20 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | DOW | Date | Topic | Reading | Due |
 | --- | --- | --- | --- | --- |
 | W | 8/29 | Policies/Terms | | |
-| F | 8/31 | Number Systems | Ch. 2 (to 2.1.2) | Lab 1 |
+| F | 8/31 | Number Systems | Ch. 2 (to 2.1.2) | [Lab 1](/bju/cps230/homework/lab1) |
 | | | | | |
 | M | 9/3 | Words (and Words) | Ch. 2 (to 2.1.7) | |
 | | | | [Unicode Article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | |
 | W | 9/5 | Bit Manipulation | Ch. 2 (to 2.2) | |
-| F | 9/7 | Two’s Complement | Ch. 2 (to 2.3) | HW 1 |
-| | | | | Lab 2 |
+| F | 9/7 | Two’s Complement | Ch. 2 (to 2.3) | [HW 1](/bju/cps230/homework/hw1) |
+| | | | | [Lab 2](/bju/cps230/homework/lab2) |
 | | | | | |
 | M | 9/10 | Two’s Complement | Ch. 2 (to 2.4) | |
 | W | 9/12 | Floating Point | Ch. 2 (finish) | |
-| F | 9/14 | MOVing into Assembly | Ch. 3 (3.2 to 3.4.2) | HW 2 |
-| | | | | Lab 3 |
+| F | 9/14 | MOVing into Assembly | Ch. 3 (3.2 to 3.4.2) | [HW 2](/bju/cps230/homework/hw2) |
+| | | | | [Lab 3](/bju/cps230/homework/lab3) |
 | | | | | |
-| M | 9/17 | MOVing into Assembly | Ch. 3 (to 3.6) | Program 1 |
+| M | 9/17 | MOVing into Assembly | Ch. 3 (to 3.6) | [Program 1](/bju/cps230/homework/program1) |
 | W | 9/19 | Test 1 Review | | |
 | F | 9/21 | Test 1 | | |
 | | | | | |

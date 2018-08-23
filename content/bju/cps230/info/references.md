@@ -11,7 +11,7 @@ draft: false
 
 # IA-32 Assembly
 
-* [Intel IA-32/Intel64 Instruction Set Architecture Reference](/bju/cps230/downloads/64ia32_isa_ref.pdf) *(cached copy from Intel's website)*
+* [Intel IA-32/Intel64 Instruction Set Architecture Reference](/bju/cps230/downloads/isa_ref.pdf) *(cached copy from Intel's website)*
 * [NASM Reference Manual](/bju/cps230/downloads/nasmdoc.pdf) *(cached copy from NASM's official website)*
 
 # Ancient PC/DOS Programming
