@@ -40,9 +40,11 @@ In a word document, or using a text editor like notepad, neatly type your answer
     | 15 | 902 | | |
     | 16 | 0 | | |
     | 17 | 1 | | |
+
 1. Copy the program from question 1 into the Little Man Computer (use the `Enter Program` box) then click `Load`.  Put `7 4` into the `Input Tray` then click `Run`. (You can alternatively click `Step` a bunch of times to watch the Little Man Computer execute each instruction individually.) What value is in the `Output` box at the end of the program?
 1. What mathematical task is the program from question 1 doing? (Be sure to try multiple inputs before you give your answer.)
 1. Give what instruction (Raw and Name / Mailbox) would accomplish what is described.
+
     | Mailbox | Instruction | Instruction Name / Mailbox | Description |
     | --- | --- | --- | --- |
     | 0 | | | Remove a number from the `Input Tray` and put it into the `Calc` box |
@@ -56,7 +58,9 @@ In a word document, or using a text editor like notepad, neatly type your answer
     | 8 | | | Copy the number in Mailbox 21 to the `Calc` box |
     | 9 | | | Copy the number in the `Calc` box to the `Output Tray` |
     | 10 | | | Halt |
+
 1. Using the following table, trace, using the program from question 4, what would happen with an `Input Tray` of 2 and 9.  Note, you may not need all mailboxes or rows.
+
     | Mailbox Executed | Instruction Location | Calc | Input Tray | Output Tray | Mailbox 20 | Mailbox 21 |
     | --- | --- | --- | --- | --- | --- | --- |
     | _Start_ | 0 | 0 | 2 9 | ? | ? | ? |
@@ -69,7 +73,9 @@ In a word document, or using a text editor like notepad, neatly type your answer
     | ? | | | | | | |
     | ? | | | | | | |
     | ? | | | | | | |
+
 1. Using the following table, trace, using the program from question 4, what would happen with an `Input Tray` of 8 and 3.  Note, you may not need all mailboxes or rows.
+
     | Mailbox Executed | Instruction Location | Calc | Input Tray | Output Tray | Mailbox 20 | Mailbox 21 |
     | --- | --- | --- | --- | --- | --- | --- |
     | _Start_ | 0 | 0 | 8 3 | ? | ? | ? |
@@ -82,11 +88,14 @@ In a word document, or using a text editor like notepad, neatly type your answer
     | ? | | | | | | |
     | ? | | | | | | |
     | ? | | | | | | |
+
 1. _CHALLENGE_ Create a Little Man Computer program that will swap two numbers.  The basic steps you will need are:
+
     1. Read a number from the `Input Tray` and store it.
     1. Read a number from the `Input Tray` and store it.
     1. Output the second number to the `Output Tray`.
     1. Output the first number to the `Output Tray`.
+
 1. _ADVANCED_ Write a Little Man Computer program that will triple a number from the `Input Tray` only if it is >= 0.  Put the tripled or negative value into the `Output Tray`.
 
 ## Submission
