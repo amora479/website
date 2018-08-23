@@ -16,9 +16,7 @@ The extra credit version will require you to explore features of C and its stand
 
 ## Background
 
-BBC (Big Boy Computer) is a bits-and-bytes oriented spinoff of the venerable
-[Little Man Computer](https://en.wikipedia.org/wiki/Little_man_computer).  BBC consists of the components
-listed on your [handout](/bju/cps230/downloads/bbc_handout.pdf); a single "step" of execution consists of
+BBC (Big Boy Computer) is a bits-and-bytes oriented spinoff of the venerable [Little Man Computer](https://en.wikipedia.org/wiki/Little_man_computer).  BBC consists of the components listed on your [handout](/bju/cps230/downloads/bbc_handout.pdf); a single "step" of execution consists of:
 
 * "fetching" 2 bytes from `RAM` starting at the address currently held in `PC`
     * so read byte `PC` and byte `PC + 1`
@@ -54,26 +52,9 @@ Implement a C program that simulates the components of BBC and its fetch/decode/
 * Write a `run` function that calls `step` in a loop until a `hlt` is fetched
 * Have `main` load a predetermined program (see below) int `RAM` and call `run`
 
-You must load/run the following BBC program (listed below as 16-bit numbers in hex;
-you will have to perform Endian conversion yourself):
+You must load/run the following BBC program (listed below as 16-bit numbers in hex; you will have to perform Endian conversion yourself):
 
-* `0x801c`
-* `0xc01e`
-* `0x9006`
-* `0x0000`
-* `0xb020`
-* `0x7016`
-* `0xe002`
-* `0x801c`
-* `0x4000`
-* `0x901c`
-* `0x6000`
-* `0x0000`
-* `0x4241`
-* `0x0043`
-* `0x0018`
-* `0x8000`
-* `0x00ff`
+    801cc01e90060000b0207016e002801c4000901c60000000424100430018800000ff
 
 Try to work out on paper what the above program should do before you try running it in your BBC simulator.
 
@@ -108,13 +89,9 @@ but do not run it right away.  Instead:
 ## Extra Credit Version
 
 Enhance your BBC debugger/simulator to load its program from a
-user-specified binary file using the C standard library's `fopen` and `fread`
-functions.  Take the filename from the command-line arguments passed to the program.
-If no arguments are specified, print out a brief and helpful "usage guide" message
-and terminate without doing anything else.
+user-specified binary file using the C standard library's `fopen` and `fread` functions.  Take the filename from the command-line arguments passed to the program. If no arguments are specified, print out a brief and helpful "usage guide" message and terminate without doing anything else.
 
-To get you started on using command line arguments in C, see the following snippet (notice
-the change made to the "normal" `main` function):
+To get you started on using command line arguments in C, see the following snippet (notice the change made to the "normal" `main` function):
 
 ```
 int main(int argc, char *argv[]) {
@@ -141,16 +118,8 @@ int main(int argc, char *argv[]) {
 * Bit manipulation is your friend; e.g., an easy way to force a potentially large integer
     into the range \[`0x000`, `0xfff`\] is an `AND` operation: `value & 0xfff` *(in C notation)*
 
-## Report
-
-Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) DOCX file and print it out.
-
-Also print out your source code using a fixed-width font; if the code takes up more than one page, be sure to print it out "two up" (2 logical pages of code printed side-by-side on each physical page of paper).
-
-Visual Studio does a nice job of printing code in a good monospace font with nice touches like page numbers and the name of the file being printed.
-
 ## Submission
 
-Use the submission system to submit your code in a single C file named `prog1.c` by the due date.
+Fill out the [standard program report template](/course/bju/content/cps230/downloads/report_template.docx) DOCX file. Submit the report and your `prog1.c` to the program 1 folder in your Bitbucket repository.
 
-Turn in your printed report in person at the beginning of the next class after the due date.
+Submit a signed honesty sheet at the beginning of the next class period.
