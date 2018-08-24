@@ -37,7 +37,7 @@ As you move higher into the memory hierarchy, the cost of producing the memory i
 
 When a program is executed, it is fetched from disk into RAM where the program has a specific layout.
 
-![img](/bju/cps230/lectures/lec0-images/_img_3.png)
+![img](/bju/cps230/lectures/lec0-images/img_3.png)
 
 At the lowest possible memory address, we have the program itself (or rather a binary representation of its instructions) followed by the read / write data (think variables or data reserved in the program that can be mutated).  Next we have our heap which grows up in memory and at the top of our memory space, we have our stack.  (In between, sometimes there is a protected space.  For our purposes, we'll say this protected space contains shared libraries.  However, this space isn't always there.)
 
