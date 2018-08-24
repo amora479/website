@@ -26,6 +26,23 @@ draft: false
 
 Assembler language, interrupts, registers, memory addressing techniques, parameter passing mechanisms and the relationship between high-level languages and the computer.
 
+## Course Context
+
+This course addresses the following learning outcomes of the computer science major:
+
+* CS1 - Design and implement efficient solutions to problems in various domains.
+* CS2 - Demonstrate understanding of fundamental concepts in computer science; including:
+	* language translation
+	* limitations of computers
+	* von Neumann architecture
+	* memory hierarchy
+	* quality data representation
+
+This course further addresses the following learning outcomes of the engineering major:
+
+* 1.3.12 - Write programs.
+* 1.4.1 - Apply additional depth of knowledge in engineering topics of interest to the student.
+
 ## Course Goals / Objectives
 
 This course will provide:
@@ -38,7 +55,7 @@ This course will provide:
 
 ## Assignments
 
-**In-Class Quizzes**: taken and graded in class; closed-book/notes unless otherwise announced. The lowest quiz grade is automatically dropped.
+**Office Visit** - For 1 point of extra credit on the student's final grade, the student should visit the instructor's office once before the second test with a question.  Questions about course content are preferred but not required.
 
 **Tests**: taken in class; closed-book/notes unless otherwise announced.
 
@@ -55,13 +72,12 @@ This course will provide:
 | Assignment Type | # of Assignments | Points Worth | Total Points
 | --- | --- | --- | --- |
 | Office Visit | 1 | 1 | 1% (EC) |
-| In-class Quizzes | 11 | 10 | 100 |
 | Homework | 4 | 20-40 | 100 |
 | Labs | 10 | 10-25 | 150 |
 | Programs | 2 | 50 | 100 |
 | Team Project | 1 | 250 | 250 |
 | Tests | 3 | 100 | 300 |
-| Total |  | | 1010 |
+| Total |  | | 900 |
 
 | Grade | Minimum | Maximum |
 | --- | --- | --- |
@@ -82,10 +98,6 @@ Writing excellent software is important and is one of the primary goals of this 
 - **Reports: 15%** - In industry, rarely are programs simply handed in.  You must report what you have completed as well as any deviations from specification.  Also report any known flaws or bugs.
 - **Presentation: 5%** - In industry, your projects must be submitted according to the procedures set forth by your employer.
 
-### Quizzes
-
-Except in the case of service absences, quizzes may not be taken late.  I do, however, drop the lowest quiz grade at the end of the semester.
-
 ## Deadlines / Late Work
 
 The instructor reserves the right to change assignment due dates as deemed necessary.  Assignments are due, electronically, by 11:59 pm of the date posted in the [course schedule](https://ethantmcgee.com/bju/cps230/info/schedule) unless otherwise noted.  Assignments, unless otherwise noted, may be turned in up to 1 week after the deadline for a 25% penalty.  After 1 week, the student may still submit the assignment for feedback, however, no credit will be given.
@@ -101,6 +113,10 @@ In order to maximize your opportunity to receive help and receive the best possi
 1. Start assignments early.  This will give you more opportunities to realize you don't fully understand a concept and ask for assistance.
 1. Don't wait until the night before an assignment is due to ask questions.  In general, I try to make myself available on the night an assignment is due to answer questions, however, this should not be counted on as, like you, I have other responsibilities.
 1. Request feedback.  I cannot tell you what grade I would give to your particular solution for an assignment, but I can offer comments for how your solution can be improved.
+
+## Handbook Policies
+
+Compliance with student handbook policies is expected during class.
 
 ## Attendance 
 

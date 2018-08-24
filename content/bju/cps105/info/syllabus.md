@@ -29,6 +29,28 @@ draft: false
 
 This course provides a broad exposure to the field of computer science. It emphasizes the development of computational thinking and problem solving skills, and an understanding of the societal and spiritual impact of computer programming and innovations. Students will write a paper expressing a biblical philosophy of technology; simulate a simple computer; design a web page; perform data analysis; and write, test, and debug a sequence of instructions. Not applicable toward a Computer Science or Information Technology minor. 
 
+## Course Context
+
+This course supports the following institutional goals: 
+
+- To direct students toward a biblical life view that integrates God’s truth into practical Christian living. 
+- To prepare students to excel intellectually and vocationally by offering diverse academic programs rooted in biblical truth and centered on a liberal arts core. 
+ 
+This course supports the following goals of the BJU Core: 
+
+- Demonstrate essential communication skills in reading, writing, listening, and speaking.  
+- Understand the essential features of human experience.  
+    - Understand the physical world as God’s creation, as a stewardship given to man, and as the physical expression of His glory. 
+- Demonstrate critical thinking in analyzing, evaluating, and synthesizing information and ideas. 
+- Develop solutions to problems, working independently and with others, through critical and creative thinking. 
+- Integrate all of life in a Biblical worldview.   
+ 
+This course supports the following computer science program learning objectives: 
+- Design and implement efficient solutions to problems in various domains. 
+- Demonstrate an ability to work effectively in teams. 
+- Demonstrate an ability to communicate technological information effectively both in written and oral forms. 
+- Demonstrate an understanding of social, professional and ethical considerations related to computing
+
 ## Course Goals / Objectives
 
 The goals for this course are that you will: 
@@ -93,6 +115,10 @@ In order to maximize your opportunity to receive help and receive the best possi
 1. Start assignments early.  This will give you more opportunities to realize you don't fully understand a concept and ask for assistance.
 1. Don't wait until the night before an assignment is due to ask questions.  In general, I try to make myself available on the night an assignment is due to answer questions, however, this should not be counted on as, like you, I have other responsibilities.
 1. Request feedback.  I cannot tell you what grade I would give to your particular solution for an assignment, but I can offer comments for how your solution can be improved.
+
+## Handbook Policies
+
+Compliance with student handbook policies is expected during class.
 
 ## Attendance 
 

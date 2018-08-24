@@ -1,7 +1,7 @@
 ---
 title: "CPS 230"
 date: 2018-08-21T00:00:00-04:00
-draft: true
+draft: false
 ---
 
 # Lecture 0: Terms
@@ -16,7 +16,7 @@ If I were to ask you what the binary string `1001100` represents, your answers w
 
 We start our tour of the architecture of a general computer with the below image.
 
-![img](/course/bju/content/cps230/images/lec_0_img_1.png)
+![img](/bju/cps230/lectures/lec0-images/img_1.png)
 
 There is a lot going on here, so let's break it down:
 
@@ -29,7 +29,7 @@ There is a lot going on here, so let's break it down:
 
 Main Memory and Disk access are slow (think thousands of clock cycles) so in order to speed up access, caches have been added over time.  There are three main caches in modern architectures and their names are pretty easy: L1, L2 and L3.  (Computer scientists aren't always creative namers.)
 
-![img](/course/bju/content/cps230/images/lec_0_img_2.png)
+![img](/bju/cps230/lectures/lec0-images/img_2.png)
 
 As you move higher into the memory hierarchy, the cost of producing the memory increases dramatically, but its time to access decreases.
 
@@ -37,7 +37,7 @@ As you move higher into the memory hierarchy, the cost of producing the memory i
 
 When a program is executed, it is fetched from disk into RAM where the program has a specific layout.
 
-![img](/course/bju/content/cps230/images/lec_0_img_3.png)
+![img](/bju/cps230/lectures/lec0-images/_img_3.png)
 
 At the lowest possible memory address, we have the program itself (or rather a binary representation of its instructions) followed by the read / write data (think variables or data reserved in the program that can be mutated).  Next we have our heap which grows up in memory and at the top of our memory space, we have our stack.  (In between, sometimes there is a protected space.  For our purposes, we'll say this protected space contains shared libraries.  However, this space isn't always there.)
 

@@ -10,7 +10,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 
 | DOW | Date | Topic | Reading | Due |
 | --- | --- | --- | --- | --- |
-| W | 8/29 | Policies/Terms | | |
+| W | 8/29 | [Policies/Terms](/bju/cps230/lectures/lec0) | | |
 | F | 8/31 | Number Systems | Ch. 2 (to 2.1.2) | [Lab 1](/bju/cps230/homework/lab1) |
 | | | | | |
 | M | 9/3 | Words (and Words) | Ch. 2 (to 2.1.7) | |
