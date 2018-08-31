@@ -11,7 +11,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | DOW | Date | Topic | Reading | Due |
 | --- | --- | --- | --- | --- |
 | W | 8/29 | [Introduction](/bju/cps105/lectures/lec0) | | |
-| F | 8/31 | Biblical Philosophy of Technology Paper | | |
+| F | 8/31 | [Biblical Philosophy of Technology Paper](/bju/cps105/lectures/ppt-downloads/lec1a.pptx) | | |
 | | | Little Man Computer | | |
 | | | | | |
 | M | 9/3 | Little Man Computer | | Create Account w/ [code.org](https://code.org) |

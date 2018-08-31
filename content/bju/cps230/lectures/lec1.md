@@ -1,7 +1,7 @@
 ---
 title: "CPS 230"
 date: 2018-08-21T00:00:00-04:00
-draft: true
+draft: false
 ---
 
 # Lecture 1: C Introduction
@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 
 In order to unpack this simple program, we need to know a little more about how the C processor works.  The compiler is split into 4 phases.
 
-![img](/course/bju/content/cps230/images/lec_1_img_1.png)
+![img](/bju/cps230/lectures/lec1-images/compiler.png)
 
 * Proprocessor - This phase find preprocessor statements and transforms the program based on the statement. These statements always begin a `#` and there are quite a few of them.  For our purposes, we're only going to consider `#include` which is how libraries are referenced.  In this case, `#include "stdio.h"` means include C's standard I/O library.  Note, only references to functions are included, not the actualy functions themselves (this comes later).
 * Compiler - This phase converts the transformed program into assembly.
@@ -88,22 +88,37 @@ int z = 4, aa; //two variables, one pre-defined and one not
 
 char a; // number with a value of -128 to 127
 unsigned char b; // number with a value of 0 to 255
-int c; // number with a value of -2,147,483,648 to 2,147,483,647
-unsigned int d; // number with a value of 0 to 4,294,967,295
-short e; // number with a value of -32,768 to 32,767
-unsigned short f; // number with a value of 0 to 65,535
+int c; // number with a value of -9,223,372,036,854,775,808 to -9,223,372,036,854,775,807
+       // note that many 64-bit compilers treat ints as 32-bit for 
+	   // backwards compatibility of programs thus their range is
+	   // -2,147,483,648 to 2,147,483,647 instead
+unsigned int d; // number with a value of 0 to 18,446,744,073,709,551,616
+				// note that many 64-bit compilers treat ints as 32-bit for 
+				// backwards compatibility of programs thus their range is
+	   			// 0 to 4,294,967,295 instead
+long e; // number with a value of -9,223,372,036,854,775,808 to -9,223,372,036,854,775,807
+unsigned long f; // number with a value of 0 to 18,446,744,073,709,551,616
+short g; // number with a value of -32,768 to 32,767
+unsigned short h; // number with a value of 0 to 65,535
+
+// if you want to explicitly use a 32-bit or 64-bit int there also exist
+
+int32_t i;
+uint32_t j;
+int64_t k;
+uint64_t l;
 
 // float types
 
-float g; // about 6 decimal places
-double h; // about 15 decimal places
-long double i; // about 19 decimal places
+float m; // about 6 decimal places
+double n; // about 15 decimal places
+long double o; // about 19 decimal places
 
 // array / string types
 
-char* j; // an array of chars (or a string)
-char k[]; // same as k, just different notation
-char l[10]; // same as j and k, but with a size of 10
+char* p; // an array of chars (or a string)
+char q[]; // same as k, just different notation
+char r[10]; // same as j and k, but with a size of 10
 
 ```
 
