@@ -12,7 +12,17 @@ This course provides a broad exposure to the field of computer science. It empha
 
 # Announcements
 
-_None at this time._
+- Presentation Signups
+
+	During this semester, you will be reading *From the Garden to the City* by John Dyer. On select class days, students will present the chapter to the class during a 5-10 minute presentation.  Each presentation must include a powerpoint and 1) an overview of the chapter as well as 2) what you learned from the chapter.
+	
+	Presentations should include one image and an example (original to you).  Place the image source(s) in the footer of the slide containing the image.  Presentations are worth 25 points on your final grade.
+	
+	To signup, click the link for your section below.  If an empty slot is available, you are required to pick the empty slot.  If no empty slots are available, you may pick your presentation partner. No more than 2 presenters per slot.
+
+	[9:00 am Section](https://www.signupgenius.com/go/10c0b4aadaf29a0fb6-presentations)
+	
+	[10:00 am Section](https://www.signupgenius.com/go/10c0b4aadaf29a0fb6-presentations1)
 
 # Course Information
 
