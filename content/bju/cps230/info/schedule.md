@@ -11,12 +11,12 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | DOW | Date | Topic | Reading | Due |
 | --- | --- | --- | --- | --- |
 | W | 8/29 | [Policies/Terms](/bju/cps230/lectures/lec0) | | |
-| F | 8/31 | [Number Systems](/bju/cps230/lectures/lec1) | Ch. 2 (to 2.1.2) | |
+| F | 8/31 | [Introduction to C](/bju/cps230/lectures/lec1) | Ch. 2 (to 2.1.2) | |
 | | | | | |
-| M | 9/3 | Words (and Words) | Ch. 2 (to 2.1.7) | [Lab 1](/bju/cps230/homework/lab1) |
+| M | 9/3 | [Number Systems](/bju/cps230/lectures/lec2) | Ch. 2 (to 2.1.7) | [Lab 1](/bju/cps230/homework/lab1) |
+| W | 9/5 | Words (and Words) | Ch. 2 (to 2.2) | |
 | | | | [Unicode Article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | |
-| W | 9/5 | Bit Manipulation | Ch. 2 (to 2.2) | |
-| F | 9/7 | Two’s Complement | Ch. 2 (to 2.3) | [Lab 2](/bju/cps230/homework/lab2) |
+| F | 9/7 | Bit Manipulation | [Lab 2](/bju/cps230/homework/lab2) |
 | | | | | |
 | M | 9/10 | Two’s Complement | Ch. 2 (to 2.4) | [HW 1](/bju/cps230/homework/hw1) |
 | W | 9/12 | Floating Point | Ch. 2 (finish) | |

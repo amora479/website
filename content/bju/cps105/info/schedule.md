@@ -13,7 +13,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 8/29 | [Introduction](/bju/cps105/lectures/lec0) | | |
 | F | 8/31 | [Biblical Philosophy of Technology Paper](/bju/cps105/lectures/ppt-downloads/lec1a.pptx) | | |
 | | | | | |
-| M | 9/3 | Little Man Computer | | Create Account w/ [code.org](https://code.org) |
+| M | 9/3 | [Little Man Computer](/bju/cps105/lectures/ppt-downloads/lec2.pptx) | | Create Account w/ [code.org](https://code.org) |
 | | | | | Join [Unit 1](https://studio.code.org/join/TJXNZY) |
 | W | 9/5 | Little Man Computer | Watch [The Internet: Wires, Cables & Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM) | |
 | | | Internet Communications | | |
