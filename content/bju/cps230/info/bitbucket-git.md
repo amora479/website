@@ -28,11 +28,7 @@ There are multiple ways to go about installing git.  To really become familiar w
 
 To install command line git, download the installer from [Git SCM](https://git-scm.com/) and follow the instructions in the installer.  When asked how your want to checkout and commit, select "Checkout As Is, Commit Unix-Style". All other defaults are fine.
 
-This will install two tools, `Git Bash` and `Git CMD`. Open `Git Bash` and let's associate your git installation with Bitbucket. From within `Git Bash` run the command `ssh-keygen -t rsa` to generate a public / private key pair for submissions.  Simply press enter at each of the prompts unless you just really want to set a passphrase.  Once the command completes and you have the nice QR code looking thing, run the command `cat ~/.ssh/id_rsa.pub` and copy the result. (Crtl-C and Crtl-V don't work in `Git Bash` so stick with right-clicking [Sorry...])
-
-![Git Bash](/bju/cps230/info/bitbucket-git-images/ssh.png)
-
-Back in Bitbucket, click on the user icon in the lower left corner then Bitbucket Settings. Under SSH Keys, click Add Key. Paste in the key you copied, then give it a nicename.
+This will install two tools, `Git Bash` and `Git CMD`.
 
 ## Getting a Local Copy of your Repository
 
