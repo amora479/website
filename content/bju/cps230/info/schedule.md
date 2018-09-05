@@ -14,7 +14,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 8/31 | [Introduction to C](/bju/cps230/lectures/lec1) | Ch. 2 (to 2.1.2) | |
 | | | | | |
 | M | 9/3 | [Number Systems](/bju/cps230/lectures/lec2) | Ch. 2 (to 2.1.7) | [Lab 1](/bju/cps230/homework/lab1) |
-| W | 9/5 | Words (and Words) | Ch. 2 (2.3 - 2.4) | |
+| W | 9/5 | [Words (and Words)](/bju/cps230/lectures/lec3) | Ch. 2 (2.3 - 2.4) | |
 | | | | [Unicode Article](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) | |
 | F | 9/7 | Bit Manipulation | Ch .2 (to 2.2) | [Lab 2](/bju/cps230/homework/lab2) |
 | | | | | |

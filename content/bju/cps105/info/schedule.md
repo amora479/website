@@ -15,22 +15,22 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | | | |
 | M | 9/3 | [Little Man Computer](/bju/cps105/lectures/ppt-downloads/lec2.pptx) | | Create Account w/ [code.org](https://code.org) |
 | | | | | Join [Unit 1](https://studio.code.org/join/TJXNZY) |
-| W | 9/5 | Little Man Computer | Watch [The Internet: Wires, Cables & Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM) | |
-| | | Internet Communications | | |
+| W | 9/5 | [Little Man Computer](/bju/cps105/lectures/ppt-downloads/lec3.pptx) | Watch [The Internet: Wires, Cables & Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM) | |
 | F | 9/7 | FGC Presentations (I) | FGC (pp 1-31) | |
-| | | Protocols Activity (I) | Watch [Internet Simulator](https://www.youtube.com/watch?v=Kn6Fd5uwZno) | |
+| | | [Little Man Computer](/bju/cps105/lectures/ppt-downloads/lec3.pptx) | Watch [Internet Simulator](https://www.youtube.com/watch?v=Kn6Fd5uwZno) | |
+| | | Internet Communications | | |
 | | | | | |
-| M | 9/10 | Protocols | BB (pp 4-13) | [LMC](/bju/cps105/homework/lmc/) |
-| | | Binary Numbers | | Explore [Binary Odometer](https://studio.code.org/s/cps1/stage/5/puzzle/2) |
+| M | 9/10 | Protocols | BB (pp 4-13) | Explore [Binary Odometer](https://studio.code.org/s/cps1/stage/5/puzzle/2) |
+| | | Binary Numbers | | |
 | | | Koans of Bits | | |
-| W | 9/12 | Protocols Activity (II) | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
+| W | 9/12 | Protocols Activity (I/II) | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
 | | | Character Encodings | Watch [Internet Simulator Part 2](https://www.youtube.com/watch?v=cIk2R0QuXkI) | |
 | | | HTML | | |
 | F | 9/14 | FGC Presentations (II) | FGC (pp 32-42) | [BPT I - Communications](/bju/cps105/homework/bpt/part1) |
 | | | HTML | | |
 | | | Internet Communication | | |
 | | | | | |
-| M | 9/17 | Internet Communication | BB (pp 73-88) | [Web Page](/bju/cps105/homework/wp/) |
+| M | 9/17 | Internet Communication | BB (pp 73-88) | [LMC](/bju/cps105/homework/lmc/) |
 | | | Implications of Digital | Watch [What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M) | |
 | | | Test 1 Review | Watch [The Internet: IP Addresses & DNS](https://www.youtube.com/watch?v=5o8CwafCxnU) | |
 | W | 9/19 | Internet Communication | BB (appendix) | |
@@ -42,7 +42,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Troubleshooting the Internet | | |
 | | | | | |
 | M | 9/24 | Test 1 | | |
-| W | 9/26 | Troubleshooting the Internet | FGC (pp 55-68) | |
+| W | 9/26 | Troubleshooting the Internet | FGC (pp 55-68) | [Web Page](/bju/cps105/homework/wp/) |
 | | | Algorithms | | |
 | F | 9/28 | FGC Presentations (IV) | | |
 | | | Algorithms | | |
