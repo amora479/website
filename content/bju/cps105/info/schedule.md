@@ -20,7 +20,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 9/7 | FGC Presentations (I) | FGC Intro & Chapter 1 | |
 | | | Protocols Activity (I) | Watch [Internet Simulator](https://www.youtube.com/watch?v=Kn6Fd5uwZno) | |
 | | | | | |
-| M | 9/10 | Protocols | BB (pp 4-13) | [LMC](/bju/cps105/homework/lmc/) |
+| M | 9/10 | Protocols | BB (_Koans of Bits_ Section Chapter 1) | [LMC](/bju/cps105/homework/lmc/) |
 | | | Binary Numbers | | Explore [Binary Odometer](https://studio.code.org/s/cps1/stage/5/puzzle/2) |
 | | | Koans of Bits | | |
 | W | 9/12 | Protocols Activity (II) | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
@@ -30,7 +30,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | HTML | | |
 | | | Internet Communication | | |
 | | | | | |
-| M | 9/17 | Internet Communication | BB (pp 73-88) | [Web Page](/bju/cps105/homework/wp/) |
+| M | 9/17 | Internet Communication | BB (_What You See Is Not What the Computer Knows_ and _Representation, Reality, and Illusion_ Sections Chapter 3) | [Web Page](/bju/cps105/homework/wp/) |
 | | | Implications of Digital | Watch [What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M) | |
 | | | Test 1 Review | Watch [The Internet: IP Addresses & DNS](https://www.youtube.com/watch?v=5o8CwafCxnU) | |
 | W | 9/19 | Internet Communication | BB (appendix) | |
@@ -51,7 +51,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Tracing Algorithms | | |
 | W | 10/3 | Tracing Algorithms | | |
 | F | 10/5 | FGC Presentations (V) | FGC Chapter 5 | [BPT III - Finances](/bju/cps105/homework/bpt/part3) |
-| | | Bytes / File Sizes | BB (Chapter 3, pp 88-94) | |
+| | | Bytes / File Sizes | BB (_Representation, Reality, and Illusion_ Section Chapter 3) | |
 | | | Compression | Watch [Compression](https://www.youtube.com/watch?v=LCGkcn1f-ms) | |
 | | | | | |
 | M | 10/8 | Compression | | Algorithms |
@@ -81,7 +81,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 10/31 | Computing Limits | Watch [Traveling Salesman Problem](https://www.youtube.com/watch?v=SC5CX8drAtU) | [BPT V - Integrity](/bju/cps105/homework/bpt/part5) |
 | | | | | Join [Unit 4](https://studio.code.org/join/TJXNZY) |
 | F | 11/2 | FGC Presentations (IX) | FGC Chapter 8 | Try [Coding](https://asecuritysite.com/coding/mary) |
-| | | Cryptography | BB (Chap 5, pp 174-187) | |
+| | | Cryptography | BB (_Lessons for the Internet Age_ and _Secrecy Changes Forever_ Sections Chapter 5) | |
 | | | | Watch [The Internet: Encryption & Public Keys](https://www.youtube.com/watch?v=ZghMPWGXexs) | |
 | | | | | |
 | M | 11/5 | Cryptography | | Excel Application |
