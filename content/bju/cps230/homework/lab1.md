@@ -177,6 +177,7 @@ Follow the format established by the standard lab report template, available in:
 ## Submission
 
 Submit the following files to your Lab 1 folder in your Bitbucket repository:
+
 - `report.docx` or `report.pdf`
 - `hello.c` (with any/all modifications made)
 
