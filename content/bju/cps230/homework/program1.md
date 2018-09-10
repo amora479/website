@@ -54,7 +54,7 @@ Implement a C program that simulates the components of BBC and its fetch/decode/
 
 You must load/run the following BBC program (listed below as 16-bit numbers in hex; you will have to perform Endian conversion yourself):
 
-    801cc01e90060000b0207016e002801c4000901c60000000424100430018800000ff
+    1c801ec00690000020b0167002e01c8000401c90006000004142430018000080ff00
 
 Try to work out on paper what the above program should do before you try running it in your BBC simulator.
 
