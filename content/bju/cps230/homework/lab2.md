@@ -61,7 +61,7 @@ int main() {
     
     * Change the `%d` on **line 13** to `%c` and re-test; what happens if you enter -1?  -1001?
     
-    * Remove the `, &max` from **line 9** and re-test; what happens now?  Can you use the debugger to gain some insight into why?
+    * Remove the `, &max` from **line 9** and re-test; what happens now?  
 
 3. Write a *new* program (from scratch) named `lab2.c` that:
 
