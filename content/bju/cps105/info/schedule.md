@@ -20,9 +20,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [Little Man Computer](/bju/cps105/lectures/ppt-downloads/lec3.pptx) | Watch [Internet Simulator](https://www.youtube.com/watch?v=Kn6Fd5uwZno) | |
 | | | [Internet Communications](/bju/cps105/lectures/ppt-downloads/lec4.pptx) | | |
 | | | | | |
-| M | 9/10 | Protocols | BB (_Koans of Bits_ Section Chapter 1) | Explore [Binary Odometer](https://studio.code.org/s/cps1/stage/5/puzzle/2) |
-| | | Binary Numbers | | |
-| | | Koans of Bits | | |
+| M | 9/10 | [Bits](/bju/cps105/lectures/ppt-downloads/lec5.pptx) | BB (_Koans of Bits_ Section Chapter 1) | Explore [Binary Odometer](https://studio.code.org/s/cps1/stage/5/puzzle/2) |
 | W | 9/12 | Protocols Activity | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
 | | | Character Encodings | Watch [Internet Simulator Part 2](https://www.youtube.com/watch?v=cIk2R0QuXkI) | |
 | | | HTML | | |
