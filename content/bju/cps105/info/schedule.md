@@ -16,14 +16,14 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 9/3 | [Little Man Computer](/bju/cps105/lectures/ppt-downloads/lec2.pptx) | | Create Account w/ [code.org](https://code.org) |
 | | | | | Join [Unit 1](https://studio.code.org/join/TJXNZY) |
 | W | 9/5 | [Little Man Computer](/bju/cps105/lectures/ppt-downloads/lec3.pptx) | Watch [The Internet: Wires, Cables & Wifi](https://www.youtube.com/watch?v=ZhEf7e4kopM) | |
-| F | 9/7 | FGC Presentations (I) | FGC Intro & Chapter 1 | |
+| F | 9/7 | [FGC Presentations (I)](/bju/cps105/lectures/ppt-downloads/fgc-demo.pptx) | FGC Intro & Chapter 1 | |
 | | | [Little Man Computer](/bju/cps105/lectures/ppt-downloads/lec3.pptx) | Watch [Internet Simulator](https://www.youtube.com/watch?v=Kn6Fd5uwZno) | |
-| | | Internet Communications | | |
+| | | [Internet Communications](/bju/cps105/lectures/ppt-downloads/lec4.pptx) | | |
 | | | | | |
 | M | 9/10 | Protocols | BB (_Koans of Bits_ Section Chapter 1) | Explore [Binary Odometer](https://studio.code.org/s/cps1/stage/5/puzzle/2) |
 | | | Binary Numbers | | |
 | | | Koans of Bits | | |
-| W | 9/12 | Protocols Activity (I/II) | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
+| W | 9/12 | Protocols Activity | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
 | | | Character Encodings | Watch [Internet Simulator Part 2](https://www.youtube.com/watch?v=cIk2R0QuXkI) | |
 | | | HTML | | |
 | F | 9/14 | FGC Presentations (II) | FGC Chapter 2 | [BPT I - Communications](/bju/cps105/homework/bpt/part1) |
