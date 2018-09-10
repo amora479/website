@@ -21,7 +21,7 @@ Use the [starting code](/bju/cps230/homework/lab3-downloads/lab3.c).  Your job i
 * Fill out the function bodies (i.e., replace the `/* TODO */` comments)
 * Add a few more tests for each function implemented (see the existing comments in the code for more)
 
-**Be sure to follow the rules specified on p. 120!**  Among other things, these rules *prohibit loops* (since you don't need them).
+**Be sure to follow the rules specified on p. 165!**  Among other things, these rules *prohibit loops* (since you don't need them).
 
 ## Hints
 
