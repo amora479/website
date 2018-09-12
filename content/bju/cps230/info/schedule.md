@@ -19,11 +19,11 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 9/7 | [Bit Manipulation](/bju/cps230/lectures/lec4) | Ch .2 (to 2.2) | [Lab 2](/bju/cps230/homework/lab2) |
 | | | | | |
 | M | 9/10 | [Two’s Complement](/bju/cps230/lectures/lec5) | Ch. 2 (to 2.4) | [HW 1](/bju/cps230/homework/hw1) |
-| W | 9/12 | Floating Point | Ch. 2 (finish) | |
+| W | 9/12 | [Floating Point](/bju/cps230/lectures/lec6) | Ch. 2 (finish) | |
 | F | 9/14 | MOVing into Assembly | Ch. 3 (3.2 to 3.4.2) | [Lab 3](/bju/cps230/homework/lab3) |
 | | | | | |
 | M | 9/17 | MOVing into Assembly | Ch. 3 (to 3.6) | [HW 2](/bju/cps230/homework/hw2) |
-| W | 9/19 | Test 1 Review | | |
+| W | 9/19 | [Test 1 Review](/bju/cps230/reviews/test1) | | |
 | F | 9/21 | Test 1 | | |
 | | | | | |
 | M | 9/24 | Flags and Bit Operations | Ch. 3 (to 3.6.3) | [Program 1](/bju/cps230/homework/program1) |

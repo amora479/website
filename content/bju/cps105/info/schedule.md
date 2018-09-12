@@ -21,16 +21,14 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [Internet Communications](/bju/cps105/lectures/ppt-downloads/lec4.pptx) | | |
 | | | | | |
 | M | 9/10 | [Bits](/bju/cps105/lectures/ppt-downloads/lec5.pptx) | BB (_Koans of Bits_ Section Chapter 1) | Explore [Binary Odometer](https://studio.code.org/s/cps1/stage/5/puzzle/2) |
-| W | 9/12 | Protocols Activity | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
-| | | Character Encodings | Watch [Internet Simulator Part 2](https://www.youtube.com/watch?v=cIk2R0QuXkI) | |
-| | | HTML | | |
+| W | 9/12 | [Displaying Bits](/bju/cps105/lectures/ppt-downloads/lec6.pptx) | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
+| | | | Watch [Internet Simulator Part 2](https://www.youtube.com/watch?v=cIk2R0QuXkI) | |
 | F | 9/14 | FGC Presentations (II) | FGC Chapter 2 | [BPT I - Communications](/bju/cps105/homework/bpt/part1) |
-| | | HTML | | |
-| | | Internet Communication | | |
+| | | [Displaying Bits](/bju/cps105/lectures/ppt-downloads/lec6.pptx) | | |
 | | | | | |
 | M | 9/17 | Internet Communication | BB (_What You See Is Not What the Computer Knows_ and _Representation, Reality, and Illusion_ Sections Chapter 3) | [LMC](/bju/cps105/homework/lmc/) |
 | | | Implications of Digital | Watch [What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M) | |
-| | | Test 1 Review | Watch [The Internet: IP Addresses & DNS](https://www.youtube.com/watch?v=5o8CwafCxnU) | |
+| | | [Test 1 Review](/bju/cps105/reviews/test1) | Watch [The Internet: IP Addresses & DNS](https://www.youtube.com/watch?v=5o8CwafCxnU) | |
 | W | 9/19 | Internet Communication | BB (appendix) | |
 | | | Creating a Website | Watch [The Internet: Packets, Routing and Reliability](https://www.youtube.com/watch?v=AYdF7b3nMto) | |
 | | | | Watch [The Internet: HTTP & HTML](https://www.youtube.com/watch?v=kBXQZMmiA4s) | |

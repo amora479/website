@@ -1,18 +1,26 @@
 ---
 title: "CPS 230"
 date: 2018-08-21T00:00:00-04:00
-draft: true
+draft: false
 hasMath: true
 ---
 
 # Lecture 6: Floating Point
 
-Floating point numbers in 32-bit architectures are the same size as signed / unsigned integers (32-bits), but the layout of the bits is quite a bit different! There are three parts:
+Floating point numbers in 64-bit architectures are the same size as signed / unsigned integers (64-bits), but the layout of the bits is quite a bit different! There are three parts:
+
+``` text
+0 00000000000 0000000000000000000000000000000000000000000000000000
+^           ^                                                    ^
+Sign        Exponent                                      Mantissa
+```
+
+This is true unless they are single precision, in which case they are only 32-bit.
 
 ``` text
 0 00000000 00000000000000000000000
 ^        ^                       ^
-Sign.    Exponent         Mantissa
+Sign     Exponent         Mantissa
 ```
 
 Floating point numbers are written in scientific notation, so let's review that for a moment.
@@ -35,6 +43,6 @@ Binary is the same.  So if we wanted to represent {{< tex "\frac{1}{2}" >}} in b
 
 ## Floating Point Representation in Memory
 
-Now back to floating points (32-bit edition).  In floating point, we are representing a number using binary scientific notation.  The mantissa represents the part following the decimal (we can store up to 23 bits before truncation occurs).  Note: the leading one before the decimal is thrown out.  The exponent represents the exponent in the scientific notation representation, but it is biased at 127 (more on that in a bit).  Finally, the sign bit tells if the number is negative or positive.
+Now back to floating points.  In floating point, we are representing a number using binary scientific notation.  The mantissa represents the part following the decimal (we can store up to 53 bits before truncation occurs or 22 bits in single precision).  Note: the leading one before the decimal is thrown out.  The exponent represents the exponent in the scientific notation representation, but it is biased at 1023 (127 for single precision, more on this in a bit).  Finally, the sign bit tells if the number is negative or positive.
 
-So the floating point representation for 0.5 would be `01111111100000000000000000000000`, or 1 x 2^-1, right?  Not quite, we need to talk about biases for a bit.  An exponent of 0xFF and 0x00 are reserved for special values.  0xFF represents infinitity with the sign bit telling you which infinity.  0x00 and a mantissa of 0 represent 0, but 0x00 with a non-0 mantissa represents NaN.  This means that an exponent of 0 is not 0x00 but 0x7F.  So in reality 0.5 would be `00111111000000000000000000000000` or `(0 126 0)`.
+So the floating point representation for 0.5 would be `0111111111110000000000000000000000000000000000000000000000000000`, or 1 x 2^-1, right?  Not quite, we need to talk about biases.  An exponent of 0x7FF (0xFF for single precision) and 0x0 are reserved for special values. 0x7FF / 0xFF represents infinitity with the sign bit telling you which infinity. 0x0 and a mantissa of 0 represent 0, but 0x0 with a non-0 mantissa represents NaN.  This means that an exponent of 0 is not 0x0 but 0x3FF / 0x7F.  So in reality 0.5 would be `0011111111100000000000000000000000000000000000000000000000000000` or `(0 1022 0)`.
