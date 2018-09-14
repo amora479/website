@@ -39,11 +39,6 @@ section .text                        ; Code section.
 
 global main                          ; the standard gcc entry point
 main:                                ; the program label for the entry point
-    push    rbp                      ; setup the stack frame
-    push    rdi  
-    sub     rsp, 0E8h                ; reserve shadow space
-    lea     rbp, [rsp+20h]           ; reserve shadow space 
-
     mov     rax, [a]                 ; put a from store into register
     add     rax, 2                   ; a+2
     mov     r8, rax                  ; 3rd parameter, value of rax
@@ -51,9 +46,6 @@ main:                                ; the program label for the entry point
     mov     rcx, fmt                 ; 1st parameter, value of fmt
     call    printf                   ; Call C function
     
-    lea     rsp, [rbp+0C8h]          ; pop shadow space
-    pop     rdi  
-    pop     rbp
     mov     rax, 0                   ; normal, no error, return value
     ret                              ; return
 ```
@@ -82,4 +74,4 @@ Labels, section, and global instructions are always all the way over as well as 
 
 ## Warnings
 
-Googling for help with NASM will yield a large number of 32-bit articles.  Most of time these solutions will work provided you change the register names.  However, calling printf and scanf will be utterly different.  Also, do not forget the `bits 64` and `default rel` at the top of your assembly files.  The linker errors will spew forth in abundance for your sin of leaving these two out.
+Googling for help with NASM will yield a large number of 32-bit articles.  Most of time these solutions will work provided you change the register names.  However, calling printf and scanf will be utterly different.  Also, do not forget the `default rel` at the top of your assembly files.  The linker errors will spew forth in abundance for your sin of leaving that out.

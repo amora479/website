@@ -26,7 +26,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 9/19 | [Test 1 Review](/bju/cps230/reviews/test1) | | [Lab 3](/bju/cps230/homework/lab3) |
 | F | 9/21 | Test 1 | | |
 | | | | | |
-| M | 9/24 | Flags and Bit Operations | Ch. 3 (to 3.6.3) | [Program 1](/bju/cps230/homework/program1) |
+| M | 9/24 | [Flags and Bit Operations](/bju/cps230/lectures/lec8) | Ch. 3 (to 3.6.3) | [Program 1](/bju/cps230/homework/program1) |
 | W | 9/26 | JMPing Around | Ch. 3 (to 3.6.5) | |
 | F | 9/28 | While This Then JMP) | Ch. 3 (to 3.6.6) | Lab 4 |
 | | | | | |
