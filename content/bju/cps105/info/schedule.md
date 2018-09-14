@@ -20,10 +20,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [Little Man Computer](/bju/cps105/lectures/ppt-downloads/lec3.pptx) | Watch [Internet Simulator](https://www.youtube.com/watch?v=Kn6Fd5uwZno) | |
 | | | [Internet Communications](/bju/cps105/lectures/ppt-downloads/lec4.pptx) | | |
 | | | | | |
-| M | 9/10 | [Bits](/bju/cps105/lectures/ppt-downloads/lec5.pptx) | BB (_Koans of Bits_ Section Chapter 1) | Explore [Binary Odometer](https://studio.code.org/s/cps1/stage/5/puzzle/2) |
+| M | 9/10 | [Bits](/bju/cps105/lectures/ppt-downloads/lec5.pptx) | BB (_Koans of Bits_ Section Chapter 1) | Explore [Binary Odometer](https://studio.code.org/s/csp1-2018/stage/5/puzzle/2) |
 | W | 9/12 | [Displaying Bits](/bju/cps105/lectures/ppt-downloads/lec6.pptx) | Watch [Circle Triangle Square](https://www.youtube.com/watch?v=91HLBUjCHbs) | |
 | | | | Watch [Internet Simulator Part 2](https://www.youtube.com/watch?v=cIk2R0QuXkI) | |
-| F | 9/14 | FGC Presentations (II) | FGC Chapter 2 | [BPT I - Communications](/bju/cps105/homework/bpt/part1) |
+| F | 9/14 | FGC Presentations (II) [9](/bju/cps105/lectures/presentations/fgc-2-9.pptx) [10](/bju/cps105/lectures/presentations/fgc-2-10.pptx) | FGC Chapter 2 | [BPT I - Communications](/bju/cps105/homework/bpt/part1) |
 | | | [Displaying Bits](/bju/cps105/lectures/ppt-downloads/lec6.pptx) | | |
 | | | | | |
 | M | 9/17 | Internet Communication | BB (_What You See Is Not What the Computer Knows_ and _Representation, Reality, and Illusion_ Sections Chapter 3) | [LMC](/bju/cps105/homework/lmc/) |
