@@ -10,10 +10,10 @@ At this point, we have covered all of the major data representations used by the
 
 ``` nasm
 ; printf1.asm   print an integer from storage and from a register
-; Assemble:	nasm -f elf -l printf.lst  printf1.asm
-; Link:		gcc -o printf1  printf1.o
-; Run:		printf1
-; Output:	a=5, eax=7
+; Assemble:    nasm -f elf -l printf.lst  printf1.asm
+; Link:        gcc -o printf1  printf1.o
+; Run:        printf1
+; Output:    a=5, eax=7
 
 ; Equivalent C code
 ; /* printf1.c  print an int and an expression */
@@ -25,36 +25,37 @@ At this point, we have covered all of the major data representations used by the
 ;   return 0;
 ; }
 
-; Declare some external functions
-;
-extern	_printf	; the C function, to be called
+bits 64                              ; tell nasm this is 64-bit assembly
+default rel                          ; use relative addresses
 
-SECTION .data	; Data section, initialized variables
+extern printf                        ; the C function, to be called
 
-	a:		dd	5					 ; int a=5;
-	fmt:    db "a=%d, eax=%d", 10, 0 ; The printf format, "\n",'0'
+section .data                        ; Data section, initialized variables
 
+    a:      dq    5                  ; int a=5;
+    fmt:    db "a=%d, rax=%d",10, 0  ; The printf format, "\n",'0'
 
-SECTION .text   ; Code section.
+section .text                        ; Code section.
 
-global _main			; the standard gcc entry point
-_main:					; the program label for the entry point
-    push    ebp			; set up stack frame
-    mov     ebp,esp
+global main                          ; the standard gcc entry point
+main:                                ; the program label for the entry point
+    push    rbp                      ; setup the stack frame
+    push    rdi  
+    sub     rsp, 0E8h                ; reserve shadow space
+    lea     rbp, [rsp+20h]           ; reserve shadow space 
 
-	mov	eax, [a]		; put a from store into register
-	add	eax, 2			; a+2
-	push	eax			; value of a+2
-    push    dword [a]	; value of variable a
-    push    dword fmt	; address of ctrl string
-    call    _printf		; Call C function
-    add     esp, 12		; pop stack 3 push times 4 bytes
-
-    mov     esp, ebp	; takedown stack frame
-    pop     ebp			; same as "leave" op
-
-	mov	eax,0			;  normal, no error, return value
-	ret					; return
+    mov     rax, [a]                 ; put a from store into register
+    add     rax, 2                   ; a+2
+    mov     r8, rax                  ; 3rd parameter, value of rax
+    mov     rdx, [a]                 ; 2nd parameter, value of a
+    mov     rcx, fmt                 ; 1st parameter, value of fmt
+    call    printf                   ; Call C function
+    
+    lea     rsp, [rbp+0C8h]          ; pop shadow space
+    pop     rdi  
+    pop     rbp
+    mov     rax, 0                   ; normal, no error, return value
+    ret                              ; return
 ```
 
 For right now, I'm only going to over the very basics of assembly and its structure.  What the individual lines mean, we'll discuss later.
@@ -78,3 +79,7 @@ Also notice that some lines begin with a name followed by a colon.  This is call
 ## Good Habits
 
 Labels, section, and global instructions are always all the way over as well as comments that are on their own line (comments start with a `;` in assembly).  Everything is one tab over.  This makes your assembly easier to read for both you and those trying to assist you.
+
+## Warnings
+
+Googling for help with NASM will yield a large number of 32-bit articles.  Most of time these solutions will work provided you change the register names.  However, calling printf and scanf will be utterly different.  Also, do not forget the `bits 64` and `default rel` at the top of your assembly files.  The linker errors will spew forth in abundance for your sin of leaving these two out.
