@@ -38,12 +38,15 @@ solely on Proverbs. We will limit our study of Proverbs for this class to these 
 
 1. Make Tables
 
-    For each topic, choose at least 10 of the provided subtopics, including at least 2 positive and 2 negative subcategories. (See Paper sections below for the lists of subtopics.) Create a nicely-formatted, singlespaced table with 1) the chronological number 2) a subtopic, 3) a Proverbs chapter, verse, and text of the verse, 4) an example of that subtopic in technology, and 5) whether it is positive or negative, and a different background color for negative examples. Unless you are an ESL student, you should quote from a literal translation: KJV, NKJV, ESV, or NASB. Any another translation, including one used by an ESL student, must be approved by the teacher prior to its usage. Your example of technology should be concise—just a sentence fragment. Here as an example using verses (outside of Proverbs):
+    For each topic, choose 10 of the provided subtopics. At least 2 subtopics should be positive and at least 2 should be negative. (See below for the subtopics available for communication.  Subtopics for the other 4 main topics are listed on the schedule.)  For each subtopic, find 2 verses in Proverbs that apply to that subtopic.
+    
+    Create a nicely-formatted, single-spaced table with 1) whether the subtopic is positive or negative 2) the subtopic, 3) a Proverbs chapter, verse, and text of the verse, 4) an example of that subtopic in technology. 
+    
+    Unless you are an ESL student, you should quote from a literal translation: KJV, NKJV, ESV, or NASB. Any another translation, including one used by an ESL student, must be approved by the teacher prior to its usage. Your example of technology should be concise—just a sentence fragment. Here is an example table for the Communications topic:
 
     | Type | Subtopic | Verse | Example |
     | --- | --- | --- | --- |
-    | N | Cursing Leaders | Ecc 10:20 "Furthermore, in your bedchamber do not curse a king, and in your sleeping rooms do not curse a rich man, for a bird of the heavens will carry the sound and the winged creature will make the matter known." | Texting a friend that you wish bad things would happen to a politician. |
-    | P | Gracious Speech | Col 4:6 "– Let your speech always be with grace, as though seasoned with salt, so that you will know how you should respond to each person. | Leaving a kind message on voicemail for someone. |
+    | | | |
 
 1. Listen and Think
 
