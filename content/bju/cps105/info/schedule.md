@@ -26,11 +26,11 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 9/14 | FGC Presentations (II) [9](/bju/cps105/lectures/presentations/fgc-2-9.pptx) [10](/bju/cps105/lectures/presentations/fgc-2-10.pptx) | FGC Chapter 2 | [BPT I - Communications](/bju/cps105/homework/bpt/part1) |
 | | | [Displaying Bits](/bju/cps105/lectures/ppt-downloads/lec6.pptx) | | |
 | | | | | |
-| M | 9/17 | Ghosts in the Machine | BB (_What You See Is Not What the Computer Knows_ and _Representation, Reality, and Illusion_ Sections Chapter 3) | [LMC](/bju/cps105/homework/lmc/) |
-| | | [Test 1 Review](/bju/cps105/reviews/test1) | Watch [What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M) | |
+| M | 9/17 | [Ghosts in the Machine](/bju/cps105/lectures/ppt-downloads/lec7.pptx) | BB (_What You See Is Not What the Computer Knows_ and _Representation, Reality, and Illusion_ Sections Chapter 3) | [LMC](/bju/cps105/homework/lmc/) |
+| | | [Internet Communication](/bju/cps105/lectures/ppt-downloads/lec8.pptx) | Watch [What is the Internet?](https://www.youtube.com/watch?v=Dxcc6ycZ73M) | |
 | | | | Watch [The Internet: IP Addresses & DNS](https://www.youtube.com/watch?v=5o8CwafCxnU) | |
-| W | 9/19 | Internet Communication | BB (appendix) | |
-| | | | Watch [The Internet: Packets, Routing and Reliability](https://www.youtube.com/watch?v=AYdF7b3nMto) | |
+| W | 9/19 | [Internet Communication](/bju/cps105/lectures/ppt-downloads/lec8.pptx) | BB (appendix) | |
+| | | [Test 1 Review](/bju/cps105/reviews/test1) | Watch [The Internet: Packets, Routing and Reliability](https://www.youtube.com/watch?v=AYdF7b3nMto) | |
 | | | | Watch [The Internet: HTTP & HTML](https://www.youtube.com/watch?v=kBXQZMmiA4s) | |
 | F | 9/21 | FGC Presentations (III) | FGC Chapter 3 | [BPT II - Friendships](/bju/cps105/homework/bpt/part2) |
 | | | Troubleshooting the Internet | | |
