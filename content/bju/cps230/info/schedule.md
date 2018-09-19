@@ -31,9 +31,9 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 9/28 | While This Then JMP) | Ch. 3 (to 3.6.6) | Lab 4 |
 | | | | | |
 | M | 10/1 | The Stack | Ch. 3 (3.7 to 3.7.4) | |
-| W | 10/3 | Stack Frames | Ch. 3 (to 3.8) | Lab 5 |
+| W | 10/3 | Stack Frames | Ch. 3 (to 3.8) | |
 | | | Local Variables | | |
-| F | 10/5 | Stack Frames | | |
+| F | 10/5 | Stack Frames | | Lab 5 |
 | | | Local Variables | | |
 | | | | | |
 | M | 10/8 | Arrays | Ch. 3 (to 3.8.4; then 3.9.1) | |
@@ -51,7 +51,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 10/24 | Test 2 Review | | |
 | F | 10/26 | Test 2 | | HW 4 |
 | | | | | |
-| M | 10/29 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | | 
+| M | 10/29 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | Program 2 | 
 | | | | [Intel 8088 CPU](https://en.wikipedia.org/wiki/Intel_8088) | |
 | | | | [The 640KB Barrier](https://en.wikipedia.org/wiki/Conventional_memory#640_KB_barrier) | |
 | | | | [Aftermath](https://en.wikipedia.org/wiki/Influence_of_the_IBM_PC_on_the_personal_computer_market) | |
