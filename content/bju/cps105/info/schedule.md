@@ -32,19 +32,19 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 9/19 | [Internet Communication](/bju/cps105/lectures/ppt-downloads/lec8.pptx) | BB (appendix) | |
 | | | [Test 1 Review](/bju/cps105/reviews/test1) | Watch [The Internet: Packets, Routing and Reliability](https://www.youtube.com/watch?v=AYdF7b3nMto) | |
 | | | | Watch [The Internet: HTTP & HTML](https://www.youtube.com/watch?v=kBXQZMmiA4s) | |
-| F | 9/21 | FGC Presentations (III) | FGC Chapter 3 | [BPT II - Friendships](/bju/cps105/homework/bpt/part2) |
+| F | 9/21 | FGC Presentations (III) | FGC Chapter 3 | |
 | | | Troubleshooting the Internet | | |
 | | | | | |
 | M | 9/24 | Test 1 | | |
 | W | 9/26 | Troubleshooting the Internet | FGC Chapter 4 | [Web Page](/bju/cps105/homework/wp/) |
 | | | Algorithms | | |
-| F | 9/28 | FGC Presentations (IV) | | |
+| F | 9/28 | FGC Presentations (IV) | | [BPT II - Friendships](/bju/cps105/homework/bpt/part2) |
 | | | Algorithms | | |
 | | | | | |
 | M | 10/1 | Pseudocode | | Join [Unit 2](https://studio.code.org/join/TJXNZY) |
 | | | Tracing Algorithms | | |
 | W | 10/3 | Tracing Algorithms | | |
-| F | 10/5 | FGC Presentations (V) | FGC Chapter 5 | [BPT III - Finances](/bju/cps105/homework/bpt/part3) |
+| F | 10/5 | FGC Presentations (V) | FGC Chapter 5 | |
 | | | Bytes / File Sizes | BB (_Representation, Reality, and Illusion_ Section Chapter 3) | |
 | | | Compression | Watch [Compression](https://www.youtube.com/watch?v=LCGkcn1f-ms) | |
 | | | | | |
@@ -54,7 +54,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 10/10 | Data Science | Skim [Data Visualization 101](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf) | |
 | | | Visualization Trends | | |
 | | | Excel Visualization Tools | | |
-| F | 10/12 | FGC Presentations (VI) | FGC Chapter 6 | [BPT IV - Diligence](/bju/cps105/homework/bpt/part4) |
+| F | 10/12 | FGC Presentations (VI) | FGC Chapter 6 | [BPT III - Finances](/bju/cps105/homework/bpt/part3) |
 | | | Making Data Visualizations | | |
 | | | Test 2 Review | | |
 | | | | | |
@@ -68,12 +68,11 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Documenting Bugs | | |
 | T | 10/23 | _Day of Rest_ | | |
 | W | 10/24 | Excel Application Development | | |
-| F | 10/26 | FGC Presentations (VIII) | FGC Chapter 7 (Rest) | Testing & Debugging |
-| | | Excel Application Development | | |
+| F | 10/26 | FGC Presentations (VIII) | FGC Chapter 7 (Rest) | [BPT IV - Diligence](/bju/cps105/homework/bpt/part4) |
+| | | Excel Application Development | | Testing & Debugging |
 | | | | | |
 | M | 10/29 | Excel Application Development | | |
-| W | 10/31 | Computing Limits | Watch [Traveling Salesman Problem](https://www.youtube.com/watch?v=SC5CX8drAtU) | [BPT V - Integrity](/bju/cps105/homework/bpt/part5) |
-| | | | | Join [Unit 4](https://studio.code.org/join/TJXNZY) |
+| W | 10/31 | Computing Limits | Watch [Traveling Salesman Problem](https://www.youtube.com/watch?v=SC5CX8drAtU) | Join [Unit 4](https://studio.code.org/join/TJXNZY) |
 | F | 11/2 | FGC Presentations (IX) | FGC Chapter 8 | Try [Coding](https://asecuritysite.com/coding/mary) |
 | | | Cryptography | BB (_Lessons for the Internet Age_ and _Secrecy Changes Forever_ Sections Chapter 5) | |
 | | | | Watch [The Internet: Encryption & Public Keys](https://www.youtube.com/watch?v=ZghMPWGXexs) | |
@@ -81,8 +80,8 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 11/5 | Cryptography | | Excel Application |
 | W | 11/7 | Test 3 Review | | Experiment w/ [Cypher Widgets](https://studio.code.org/s/cps4) |
 | | | Public Key Cryptography | | |
-| F | 11/9 | FGC Presentations (X) | FGC Chapter 9 | Join [Unit 3](https://studio.code.org/join/TJXNZY) |
-| | | Public Key Cryptography | | |
+| F | 11/9 | FGC Presentations (X) | FGC Chapter 9 | [BPT V - Integrity](/bju/cps105/homework/bpt/part5) |
+| | | Public Key Cryptography | | Join [Unit 3](https://studio.code.org/join/TJXNZY) |
 | | | | | |
 | M | 11/12 | Test 3 | | |
 | W | 11/14 | AppLab Programming | Watch [Turtle Programming](https://www.youtube.com/watch?v=i2KHYUhtOlM) | |
