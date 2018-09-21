@@ -1,12 +1,12 @@
 ---
-title: "CPS 105"
+title: "CPS 110"
 date: 2018-08-21T00:00:00-04:00
 draft: false
 ---
 
 # Syllabus
 
-## College of Arts & Science: CPS 105 - Computer Science Foundations
+## College of Arts & Science: CPS 110 - Computer Science I
 
 
 | Instructor | Dr. Ethan McGee |
@@ -17,80 +17,34 @@ draft: false
 | Office Hours | MTWF: 12 - 1:30 |
 | | Th: 9:30 - 10:50 |
 | | Others by appt / elec |
-| Text(s) | _From the Garden to the City_ (John Dyer) |
-| | _Blown to Bits_ (Hal Abelson, Ken Ledeen, Harry Lewis) |
-| | _Instructor Selected Online Readings_ |
-| Meets | (Section 1) MWF 9:00 - 9:50 in ML 3 |
-| | (Section 2) MWF 10:00 - 10:50 in ML 2A |
+| Text(s) | |
+| Meets | MWF 1:00 - 1:50 in AL 201 |
 | Credits | 3 |
-| Prerequisites | Ma ACT 20+, SAT 55+, Ma 090 or Ma 10 |
+| Prerequisites | Ma ACT 26+, SAT 640+, CpS 109, or Ma 103 |
 
 ## Course Description
 
-This course provides a broad exposure to the field of computer science. It emphasizes the development of computational thinking and problem solving skills, and an understanding of the societal and spiritual impact of computer programming and innovations. Students will write a paper expressing a biblical philosophy of technology; simulate a simple computer; design a web page; perform data analysis; and write, test, and debug a sequence of instructions. Not applicable toward a Computer Science or Information Technology minor. 
+Introduction to computer science through use of a high-level programming language as vehicle for understanding capabilities and limitations of computers. An emphasis on the object-oriented paradigm, including basic class design principles. Development of problem-solving skills through programming exercises. 
 
 ## Course Context
 
-This course supports the following institutional goals: 
 
-- To direct students toward a biblical life view that integrates God’s truth into practical Christian living. 
-- To prepare students to excel intellectually and vocationally by offering diverse academic programs rooted in biblical truth and centered on a liberal arts core. 
- 
-This course supports the following goals of the BJU Core: 
-
-- Demonstrate essential communication skills in reading, writing, listening, and speaking.  
-- Understand the essential features of human experience.  
-    - Understand the physical world as God’s creation, as a stewardship given to man, and as the physical expression of His glory. 
-- Demonstrate critical thinking in analyzing, evaluating, and synthesizing information and ideas. 
-- Develop solutions to problems, working independently and with others, through critical and creative thinking. 
-- Integrate all of life in a Biblical worldview.   
- 
-This course supports the following computer science program learning objectives: 
-- Design and implement efficient solutions to problems in various domains. 
-- Demonstrate an ability to work effectively in teams. 
-- Demonstrate an ability to communicate technological information effectively both in written and oral forms. 
-- Demonstrate an understanding of social, professional and ethical considerations related to computing
 
 ## Course Goals / Objectives
 
-The goals for this course are that you will: 
 
-1. understand that a biblical worldview has a significant effect on your use of technology including social, professional and ethical considerations.
-1. understand the underlying principles of how digital technology works. 
-1. engage in sustained reasoning. 
-1. work independently and with others, recognizing the diversity of gifts and abilities of others is essential to producing solutions to problems. 
-1. appreciate the diversity and breadth of computer science. 
-
-The objectives for this course are you will be able to: 
-
-1. Articulate a biblical philosophy of technology. 
-1. Use standard computer applications to retrieve and analyze data, construct models, solve problems, and present the results. 
-1. Demonstrate an understanding of the fundamentals of computers and networks, the digital representation of information, and the social impact of computers and technology. 
-1. Apply a strategy to test solutions and diagnose problems in information technology.
-1. Exhibit algorithmic thinking to program in an object-based language.
-1. Explain safe computing practices derived from information security principles.
 
 ## Assignments
 
 **Office Visit** - For 1 point of extra credit on the student's final grade, the student should visit the instructor's office once before the second test with a question.  Questions about course content are preferred but not required.
 
-**Assignments** - Students will be given a worksheet / template with instructions for completing the assignment. Completing the assignment > 24 hrs before the due date will result in 1 point of extra credit on the assignment.
 
-**Projects** - Projects are longer assignments where the student will apply the principles learned in class to create or analyze a deliverable.  Completing the assignment > 24 hrs before the due date will result in 2 points of extra credit on the project.
-
-**Biblical Philosophy of Technology Paper** - The BPT paper is a semester long project in which the student will develop and author a biblical philosophy of technology using the book of Proverbs.
-
-**Tests** - Tests are in class assignments to test a students understanding of the concepts covered up until that point in the course.
 
 ## Grading
 
 | Assignment Type | # of Assignments | Percent of Grade |
 | --- | --- | --- |
 | Office Visit | 1 | 1% (EC) |
-| Assignments | 4 | 15% |
-| Projects | 3 | 20% |
-| Paper | 1 | 15% |
-| Tests | 4 | 50% |
 
 | Grade | Minimum | Maximum |
 | --- | --- | --- |
@@ -102,7 +56,7 @@ The objectives for this course are you will be able to:
 
 ## Deadlines / Late Work
 
-The instructor reserves the right to change assignment due dates as deemed necessary.  Assignments are due, electronically, by 11:59 pm of the date posted in the [course schedule](https://ethantmcgee.com/bju/cps105/info/schedule) unless otherwise noted.  Assignments, unless otherwise noted, may be turned in up to 1 week after the deadline for a 25% penalty.  After 1 week, the student may still submit the assignment for feedback, however, no credit will be given.
+The instructor reserves the right to change assignment due dates as deemed necessary.  Programming assignments are due, electronically, by 11:59 pm of the date posted in the [course schedule](https://ethantmcgee.com/bju/cps110/info/schedule) unless otherwise noted. Program reports are due at the beginning of the class period following submission of your assignment.  Assignments, unless otherwise noted, may be turned in up to 1 week after the deadline for a 25% penalty.  After 1 week, the student may still submit the assignment for feedback, however, no credit will be given.
 
 Each student is given 1 free late waiver that allows them to turn in one assignment, at their discretion, up to 1 week after the deadline with no penalty.  In order to use the free late, the student must 1) notify the professor before the deadline that they intend to use the free late, 2) describe the progress that they have made towards completion of the assignment and 3) provide an approximate date of delivery. Due to grading constraints during finals week, the professor reserves the right to shorten the free late period for end of semester projects.
 
