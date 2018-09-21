@@ -32,8 +32,8 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 9/19 | [Internet Communication](/bju/cps105/lectures/ppt-downloads/lec8.pptx) | BB (appendix) | |
 | | | [Test 1 Review](/bju/cps105/reviews/test1) | Watch [The Internet: Packets, Routing and Reliability](https://www.youtube.com/watch?v=AYdF7b3nMto) | |
 | | | | Watch [The Internet: HTTP & HTML](https://www.youtube.com/watch?v=kBXQZMmiA4s) | |
-| F | 9/21 | FGC Presentations (III) | FGC Chapter 3 | |
-| | | Troubleshooting the Internet | | |
+| F | 9/21 | FGC Presentations (III) [9](/bju/cps105/lectures/presentations/fgc-3-9.pdf) [10](/bju/cps105/lectures/presentations/fgc-3-10.pptx) | FGC Chapter 3 | |
+| | | [Troubleshooting the Internet](/bju/cps105/lectures/ppt-downloads/lec9.pptx) | | |
 | | | | | |
 | M | 9/24 | Test 1 | | |
 | W | 9/26 | Troubleshooting the Internet | FGC Chapter 4 | [Web Page](/bju/cps105/homework/wp/) |
