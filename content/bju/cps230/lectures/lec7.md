@@ -39,12 +39,14 @@ section .text                        ; Code section.
 
 global main                          ; the standard gcc entry point
 main:                                ; the program label for the entry point
+    sub     rsp, 32                  ; create shadow space
     mov     rax, [a]                 ; put a from store into register
     add     rax, 2                   ; a+2
     mov     r8, rax                  ; 3rd parameter, value of rax
     mov     rdx, [a]                 ; 2nd parameter, value of a
     mov     rcx, fmt                 ; 1st parameter, value of fmt
     call    printf                   ; Call C function
+    add     rsp, 32                  ; remove shadow space
     
     mov     rax, 0                   ; normal, no error, return value
     ret                              ; return
