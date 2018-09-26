@@ -36,8 +36,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [Troubleshooting the Internet](/bju/cps105/lectures/ppt-downloads/lec9.pptx) | | |
 | | | | | |
 | M | 9/24 | Test 1 | | |
-| W | 9/26 | Troubleshooting the Internet | FGC Chapter 4 | [Web Page](/bju/cps105/homework/wp/) |
-| | | Algorithms | | |
+| W | 9/26 | Algorithms | FGC Chapter 4 | [Web Page](/bju/cps105/homework/wp/) |
 | F | 9/28 | FGC Presentations (IV) | | [BPT II - Friendships](/bju/cps105/homework/bpt/part2) |
 | | | Algorithms | | |
 | | | | | |
