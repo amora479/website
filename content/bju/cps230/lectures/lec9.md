@@ -27,13 +27,17 @@ SECTION .text
 
 global main
 main:
+        sub rsp, 32
 	mov rdx, a ; pass the address of a
 	mov rcx, fmt1
 	call scanf
+	add rsp, 32
 	
+	sub rsp, 32
 	mov rdx, [a] ; copy the actual value of a
 	mov rcx, fmt2
 	call printf
+	add rsp, 32
 	ret
 ```
 
