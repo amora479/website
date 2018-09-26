@@ -1,7 +1,7 @@
 ---
 title: "CPS 230"
 date: 2018-08-21T00:00:00-04:00
-draft: true
+draft: false
 ---
 
 # Lecture 9: Control Flow in Assembly (If/Else If/Else Statements)
@@ -11,28 +11,29 @@ draft: true
 We need to take one more side trip into the land of functions to talk about how scanf is called.  Remember, with scanf, we are really just passing the address of the location we want scanf to store the value it reads.  So the pushes and pops are more or less the same.  The only thing that isn't is the parameter.
 
 ``` asm
-extern _scanf
-extern _printf
+bits 64
+default rel
+
+extern scanf
+extern printf
 
 SECTION .data
 
-	a: dd 0
+	a: dq 0
 	fmt1: db "%d\n", 0
 	fmt2: db "%d", 10, 0
 
 SECTION .text
 
-global _main
-_main:
-	push a ; pass the address of a
-	push fmt1
-	call _scanf
-	add esp, 8
-	mov eax, [a] ; copy the actual value of a
-	push eax
-	push fmt2
-	call _printf
-	add esp, 8
+global main
+main:
+	mov rdx, a ; pass the address of a
+	mov rcx, fmt1
+	call scanf
+	
+	mov rdx, [a] ; copy the actual value of a
+	mov rcx, fmt2
+	call printf
 	ret
 ```
 
