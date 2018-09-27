@@ -30,4 +30,6 @@ This course provides a broad exposure to the field of computer science. It empha
 
 [Schedule](/bju/cps105/info/schedule)
 
+[Student Websites](/bju/cps105/info/websites)
+
 [Class Slack](https://bjucps.slack.com)
