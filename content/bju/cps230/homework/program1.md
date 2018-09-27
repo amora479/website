@@ -121,5 +121,3 @@ int main(int argc, char *argv[]) {
 ## Submission
 
 Fill out the [standard program report template](/bju/cps230/downloads/report_template.docx) DOCX file. Submit the report and your `prog1.c` to the program 1 folder in your Bitbucket repository.
-
-Submit a signed honesty sheet at the beginning of the next class period.
