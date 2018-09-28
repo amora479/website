@@ -120,7 +120,7 @@ main:
     sub     rsp, 32
     mov     r9, 3
     mov     r8, 2
-   	mov     rdx, 1
+    mov     rdx, 1
     mov     rcx, fmt
     call    printf
     add     rsp, 56 ; 8 bytes (64 bits) * 3 + 32
@@ -149,18 +149,20 @@ extern printf
 
 SECTION .data
 
-	fmt:    db "%x", 10, 0
+    fmt:    db "%x", 10, 0
 
 SECTION .text
 
 global main
 main:
-    mov 	rax, 0xFF00
-	mov 	rbx, 0x00FF
-	and 	rbx, rax
-   	mov	    rdx, rbx
+    mov     rax, 0xFF00
+    mov     rbx, 0x00FF
+    and     rbx, rax
+    sub     rsp, 32
+    mov	    rdx, rbx
     mov     rcx, fmt
     call    printf
+    add     rsp, 32
     
     mov     rax, 0
     ret
@@ -190,19 +192,21 @@ extern printf
 
 SECTION .data
 
-	fmt:    db "%x", 10, 0
+    fmt:    db "%x", 10, 0
 
 SECTION .text
 
 global main
 main:
     mov     rax, 0d
-	mov 	al, 4d
-	mov 	bl, 3d
-	mul     bl
-   	mov	    rdx, rax
+    mov     al, 4d
+    mov     bl, 3d
+    mul     bl
+    sub     rsp, 32
+    mov	    rdx, rax
     mov     rcx, fmt
     call    printf
+    add     rsp, 32
     
     mov     rax, 0
     ret
