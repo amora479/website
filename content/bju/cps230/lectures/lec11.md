@@ -20,25 +20,23 @@ Stacks grow "up", meaning that each newly pushed item sits on top of the last it
 
 ## The Assembly (Program) Stack
 
-The stack available to assembly programs allows you to push and pop 32-bit integers.  (Side note:  You can actually push and pop smaller quantities, and there are specific assembly instructions to accomplish this.  Don't use these unless you are absolutely sure what you are doing.  Mixing these alternative push / pop commands with traditional 32-bit push / pops can wreak havoc on your program's ability to execute properly.)
+The stack available to assembly programs allows you to push and pop 64-bit integers.  (Side note:  You can actually push and pop smaller quantities, and there are specific assembly instructions to accomplish this.  Don't use these unless you are absolutely sure what you are doing.  Mixing these alternative push / pop commands with traditional 64-bit push / pops can wreak havoc on your program's ability to execute properly.)
 
-The stack in assembly starts at the highest level of memory and grows down.  This means that new items are actually inserted below the old ones (which can be confusing at first).  The address of the top of the stack is referenced by `ESP` register.
-
-![img](/course/bju/content/cps230/images/lec_0_img_3.png)
+The stack in assembly starts at the highest level of memory and grows down.  This means that new items are actually inserted below the old ones (which can be confusing at first).  The address of the top of the stack is referenced by `RSP` register.
 
 The push and pop commands are really just aliases for a set of simpler commands.
 
 ``` asm
 push: register / memory: param
-  sub esp, 4
-  mov [esp], param
+  sub rsp, 8
+  mov [rsp], param
 
 pop: register / memory: param
-  mov param, [esp]
-  add esp, 4
+  mov param, [rsp]
+  add rsp, 8
 ```
 
-This is why it is possible to pop several things at once by adding a multiple of 4 to ESP.  With this being said, it should be fairly obvious, but still should be stated.  *DO NOT EVER MANUALLY SET ESP.* You can add and subtract ESP without incident, but manually overriding to another value can cause serious issues as the top of your stack will now be elsewhere and there will be no way to restore it.
+This is why it is possible to pop several things at once by adding a multiple of 8 to RSP.  With this being said, it should be fairly obvious, but still should be stated.  *DO NOT EVER MANUALLY SET RSP.* You can add and subtract RSP without incident, but manually overriding to another value can cause serious issues as the top of your stack will now be elsewhere with possibly no way to restore it.
 
 ## Using the Stack for Expressions
 
@@ -53,40 +51,40 @@ push [x]
 ; 3
 push 3
 ; *
-pop ebx ; 3
-pop eax ; x
-imul ebx
-push eax ; 3 * x
+pop rbx ; 3
+pop rax ; x
+imul rbx
+push rax ; 3 * x
 ; 45
 push 45
 ; /
-pop ebx ; 45
-pop eax ; 3 * x
+pop rbx ; 45
+pop rax ; 3 * x
 cdq ; remember, we have to extend eax into edx so our dividend is twice the size of the divisor
-idiv ebx
-push eax ; 3 * x / 45
+idiv rbx
+push rax ; 3 * x / 45
 ; y
 push [y]
 ; +
-pop ebx ; y
-pop eax ; 3 * x / 45
-add eax, ebx
-push eax ; 3 * x / 45 + y
+pop rbx ; y
+pop rax ; 3 * x / 45
+add rax, rbx
+push rax ; 3 * x / 45 + y
 ; z
 push [z]
 ; a
 push [a]
 ; %
-pop ebx ; a
-pop eax ; z
+pop rbx ; a
+pop rax ; z
 cdq ; remember, we have to extend eax into edx so our dividend is twice the size of the divisor
-idiv ebx
-push edx ; remember, edx contains the divisor
+idiv rbx
+push rdx ; remember, edx contains the divisor
 ; -
-pop ebx ; z % a
-pop eax ; 3 * x / 45 + y
-sub eax, ebx
-push eax ; 3 * x / 45 + y - z % a
+pop rbx ; z % a
+pop rax ; 3 * x / 45 + y
+sub rax, rbx
+push rax ; 3 * x / 45 + y - z % a
 ```
 
 ## Converting to RPN (The Shunting-Yard Method)

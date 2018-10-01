@@ -30,7 +30,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 9/26 | [JMPing Around](/bju/cps230/lectures/lec9) | Ch. 3 (to 3.6.5) | |
 | F | 9/28 | [While This Then JMP](/bju/cps230/lectures/lec10) | Ch. 3 (to 3.6.6) | [Lab 4](/bju/cps230/homework/lab4) |
 | | | | | |
-| M | 10/1 | The Stack | Ch. 3 (3.7 to 3.7.4) | |
+| M | 10/1 | [The Stack](/bju/cps230/lectures/lec11) | Ch. 3 (3.7 to 3.7.4) | |
 | W | 10/3 | Stack Frames | Ch. 3 (to 3.8) | |
 | | | Local Variables | | |
 | F | 10/5 | Stack Frames | | [Lab 5](/bju/cps230/homework/lab5) |
