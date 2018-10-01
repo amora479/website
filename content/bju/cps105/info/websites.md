@@ -46,7 +46,7 @@ Megan Hendrick
 
 [Issac Abrahamson](https://isaacabrahamson.com/about/)
 
-Stone Champion
+[Stone Champion](http://scham978.pythonanywhere.com)
 
 [Nathaniel Colegrove](https://ncole27.github.io/)
 
@@ -58,7 +58,7 @@ Stone Champion
 
 [Dasha King](https://daryaking.github.io/)
 
-Benjamin Koestner
+[Benjamin Koestner](http://bkoes993.pythonanywhere.com/)
 
 [Yoseph Lee](https://ylee420.github.io/)
 
