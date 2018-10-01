@@ -37,10 +37,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | | | |
 | M | 9/24 | Test 1 | | |
 | W | 9/26 | [Algorithms](/bju/cps105/lectures/ppt-downloads/lec10.pptx) | FGC Chapter 4 | [Web Page](/bju/cps105/homework/wp/) |
-| F | 9/28 | FGC Presentations (IV) [9](/bju/cps105/lectures/presentations/fgc-4-9.pdf) [10](/bju/cps105/lectures/presentations/fgc-4-10.pptx) | | [BPT II - Friendships](/bju/cps105/homework/bpt/part2) |
+| F | 9/28 | FGC Presentations (IV) [9](/bju/cps105/lectures/presentations/fgc-4-9.pdf) 10 | | [BPT II - Friendships](/bju/cps105/homework/bpt/part2) |
 | | | Algorithms | | |
 | | | | | |
-| M | 10/1 | Pseudocode | | Join [Unit 2](https://studio.code.org/join/TJXNZY) |
+| M | 10/1 | Algorithms | | Join [Unit 2](https://studio.code.org/join/TJXNZY) |
 | | | Tracing Algorithms | | |
 | W | 10/3 | Tracing Algorithms | | |
 | F | 10/5 | FGC Presentations (V) | FGC Chapter 5 | |

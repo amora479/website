@@ -17,34 +17,47 @@ draft: false
 | Office Hours | MTWF: 12 - 1:30 |
 | | Th: 9:30 - 10:50 |
 | | Others by appt / elec |
-| Text(s) | |
+| Text(s) | _How to Think Like a Computer Scientist_ (BJU Edition) |
 | Meets | MWF 1:00 - 1:50 in AL 201 |
 | Credits | 3 |
 | Prerequisites | Ma ACT 26+, SAT 640+, CpS 109, or Ma 103 |
 
 ## Course Description
 
-Introduction to computer science through use of a high-level programming language as vehicle for understanding capabilities and limitations of computers. An emphasis on the object-oriented paradigm, including basic class design principles. Development of problem-solving skills through programming exercises. 
-
-## Course Context
-
-
+Introduction to computer science through use of a high-level programming language as vehicle for understanding capabilities and limitations of computers. An emphasis on the object-oriented paradigm, including basic class design principles. Development of problem-solving skills through programming exercises.
 
 ## Course Goals / Objectives
 
+The goals this semester are:
 
+- To strengthen problem-solving abilities
+- To develop debugging skills
+- To develop an appreciation for the power of abstraction as a tool for managing complexity
+- By learning to create small systems, better appreciate the genius of the Creator of the Universe
 
 ## Assignments
 
 **Office Visit** - For 1 point of extra credit on the student's final grade, the student should visit the instructor's office once before the second test with a question.  Questions about course content are preferred but not required.
 
+**Quizzes** - Quizzes cover topics that have been recently introduced in class to check student comprehension of the presented materials. Quizzes last approximately 10 minutes and are graded in class.
 
+**Labs** - Lab assignments are small to medium program exercises to give you practical experience with the algorithms and theory discussed in class.
+
+**Lab Tests** - Lab tests are given in conjunction with traditional written exams.  Lab tests check your comprehension of the practical applications of the topics covered in class.
+
+**Tests** - Tests cover all theoretical and practical topics covered in class.  In general, tests are 50 questions and take approximately 50 minutes.  Students should expect a variety of questions covering theory, practical application and programming questions.
 
 ## Grading
 
 | Assignment Type | # of Assignments | Percent of Grade |
 | --- | --- | --- |
 | Office Visit | 1 | 1% (EC) |
+| Quizzes | 9 | 9% |
+| Labs | 10 | 10% |
+| Programs | 6 | 36% |
+| Lab Tests | 2 | 20% |
+| Tests | 2 | 15% |
+| Final | 1 | 10% |
 
 | Grade | Minimum | Maximum |
 | --- | --- | --- |
