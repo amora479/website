@@ -46,7 +46,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Bytes / File Sizes | BB (_Representation, Reality, and Illusion_ Section Chapter 3) | |
 | | | Compression | Watch [Compression](https://www.youtube.com/watch?v=LCGkcn1f-ms) | |
 | | | | | |
-| M | 10/8 | Compression | | Algorithms |
+| M | 10/8 | Compression | | [Algorithms](/bju/cps105/homework/algorithms) |
 | | | | | Explore [Compression Widget](https://studio.code.org/s/csp2-2018/stage/2/puzzle/3) |
 | | | | | Explore [Lossy Compression Widget](https://studio.code.org/projects/applab/hxXJIEGg2yza_Q7t9W04xg) |
 | W | 10/10 | Data Science | Skim [Data Visualization 101](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf) | |
