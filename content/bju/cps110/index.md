@@ -12,7 +12,7 @@ Introduction to computer science through use of a high-level programming languag
 
 # Announcements
 
-_None at this time._
+- Welcome to CpS 110! Read [Getting Started](https://protect.bju.edu/cps/courses/cps110/docs/GettingStarted.html) for information on the course software and textbook.
 
 # Course Information
 
