@@ -10,48 +10,48 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 
 | DOW | Date | Topic | Reading | Due |
 | --- | --- | --- | --- | --- |
-| W | 8/29 | Course Intro | | |
-| F | 8/31 | Data Types / Expressions | Chapter 1 | |
+| W | 8/29 | [Course Intro](/bju/cps110/lectures/lec0) | | |
+| F | 8/31 | [Data Types / Expressions](/bju/cps110/lectures/lec1) | Chapter 1 | |
 | | | | | |
-| M | 9/3 | Flow Control I | 2.1 - 2.11, 7.4 - 7.7| |
+| M | 9/3 | [Flow Control I](/bju/cps110/lectures/lec2) | 2.1 - 2.11, 7.4 - 7.7| |
 | T | 9/2 | [Lab 1](https://protect.bju.edu/cps/courses/cps110/labs/lab1.html) | Chapter 4 | |
-| W | 9/5 | Software Development | Chapter 3 | |
-| | | Basics Quiz | | |
-| F | 9/7 | Flow Control II | 8.1 - 8.3 | [Lab 1](https://protect.bju.edu/cps/courses/cps110/labs/lab1.html) |
-| | | Debugging | | |
+| W | 9/5 | [Software Development](/bju/cps110/lectures/lec3) | Chapter 3 | |
+| | | _Basics Quiz_ | | |
+| F | 9/7 | [Flow Control II](/bju/cps110/lectures/lec4) | 8.1 - 8.3 | [Lab 1](https://protect.bju.edu/cps/courses/cps110/labs/lab1.html) |
+| | | [Debugging](/bju/cps110/lectures/lec4a) | | |
 | | | | | |
-| M | 9/10 | Using Modules | Chapter 5 | |
+| M | 9/10 | [Using Modules](/bju/cps110/lectures/lec5) | Chapter 5 | |
 | T | 9/11 | [Lab 2](https://protect.bju.edu/cps/courses/cps110/labs/lab2.html) | | |
-| W | 9/12 | Functions | Chapter 6 | [Program 1](https://protect.bju.edu/cps/courses/cps110/programs/program1.html) |
-| F | 9/14 | String Processing | Chapter 9 | [Program 1 Report](https://protect.bju.edu/cps/courses/cps110/programs/program1report.html) |
+| W | 9/12 | [Functions](/bju/cps110/lectures/lec6) | Chapter 6 | [Program 1](https://protect.bju.edu/cps/courses/cps110/programs/program1.html) |
+| F | 9/14 | [String Processing](/bju/cps110/lectures/lec7) | Chapter 9 | [Program 1 Report](https://protect.bju.edu/cps/courses/cps110/programs/program1report.html) |
 | | | | | |
-| M | 9/17 | Unit Testing | | |
+| M | 9/17 | [Unit Testing](/bju/cps110/lectures/lec8) | | |
 | T | 9/18 | [Lab 3](https://protect.bju.edu/cps/courses/cps110/labs/lab3.html) | | [Lab 2](https://protect.bju.edu/cps/courses/cps110/labs/lab2.html) |
-| W | 9/19 | Unit Testing | | |
-| | | Functions Quiz | | |
-| F | 9/21 | Boolean Logic | 7.1 - 7.3, 7.8 | |
-| | | Testing Quiz | | |
+| W | 9/19 | [Unit Testing](/bju/cps110/lectures/lec8) | | |
+| | | _Functions Quiz_ | | |
+| F | 9/21 | [Boolean Logic](/bju/cps110/lectures/lec9) | 7.1 - 7.3, 7.8 | |
+| | | _Testing Quiz_ | | |
 | | | | | |
-| M | 9/24 | Functions | 6.3 | |
-| | | Local / Global Variables | | |
+| M | 9/24 | [Functions](/bju/cps110/lectures/lec10) | 6.3 | |
+| | | [Local / Global Variables](/bju/cps110/lectures/lec11) | | |
 | T | 9/25 | Lab Test 1 | | [Lab 3](https://protect.bju.edu/cps/courses/cps110/labs/lab3.html) |
-| W | 9/26 | Test 1 Review | | [Program 2](https://protect.bju.edu/cps/courses/cps110/programs/program2.html) |
+| W | 9/26 | [Test 1 Review](https://protect.bju.edu/cps/courses/cps110/docs/Test1Review.html) | | [Program 2](https://protect.bju.edu/cps/courses/cps110/programs/program2.html) |
 | F | 9/28 | Test 1 | | |
 | | | | | |
-| M | 10/1 | Lists | 10.1 - 10.9 | [Program 2 Report](https://protect.bju.edu/cps/courses/cps110/programs/program2report.html) |
+| M | 10/1 | [Lists](/bju/cps110/lectures/lec12) | 10.1 - 10.9 | [Program 2 Report](https://protect.bju.edu/cps/courses/cps110/programs/program2report.html) |
 | T | 10/2 | Lab 4 | | |
 | W | 10/3 | References | 10.10 - 10.24 | |
 | F | 10/5 | Tuples | 10.26 - 10.28 | |
 | | | | | |
 | M | 10/8 | Web Applications | 12.1 - 12.7 | |
-| | | Lists Quiz | | |
+| | | _Lists Quiz_ | | |
 | T | 10/9 | Lab 5 | | Lab 4 |
 | W | 10/10 | Web Forms | 12.8 | |
 | F | 10/12 | Exception Handling | 11.1 - 11.6 | Program 3 |
 | | | Text File Processing | | |
 | | | | | |
 | M | 10/15 | Dictionaries | 13.1 - 13.5 | Program 3 Report |
-| | | Web Apps Quiz | | |
+| | | _Web Apps Quiz_ | | |
 | | | CSV File Processing | | |
 | T | 10/16 | Lab 6 | | Lab 5 |
 | | | Command Line Basics | | |
@@ -69,7 +69,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 11/2 | Classes | | |
 | | | | | |
 | M | 11/5 | Object Design | | |
-| | | Objects Quiz | | |
+| | | _Objects Quiz_ | | |
 | T | 11/6 | Lab 7 | | |
 | W | 11/7 | Introducing Program 5 | | Object Exercise |
 | F | 11/9 | Lists of Objects | | |
@@ -81,18 +81,18 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Static Variables | | |
 | | | | | |
 | M | 11/19 | Inheritance | | Program 5 Report |
-| | | Inheritance Quiz | | |
+| | | _Inheritance Quiz_ | | |
 | T | 11/20 | Lab 9 | | Lab 8 |
 | | 11/21 - 11/26 | _Thanksgiving Break_ | | |
 | T | 11/29 | Giant Brains | | |
 | W | 11/28 | Searching | | |
 | F | 11/30 | Sorting | | Lab 9 |
 | | | Algorithm Analysis | | |
-| | | Searching Quiz | | |
+| | | _Searching Quiz_ | | |
 | | | | | |
 | M | 12/3 | Recursion | | |
-| | | Sorting Quiz | | |
+| | | _Sorting Quiz_ | | |
 | T | 12/4 | Lab Test 3 | | |
 | W | 12/5 | Recursion | | Program 6 |
-| | | Recursion Quiz | | |
+| | | _Recursion Quiz_ | | |
 | F | 12/7 | Final Review | | Program 6 Report |

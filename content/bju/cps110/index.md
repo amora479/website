@@ -20,4 +20,6 @@ _None at this time._
 
 [Schedule](/bju/cps110/info/schedule)
 
+[Student Websites](/bju/cps110/info/websites)
+
 [Class Slack](https://bjucps.slack.com)
