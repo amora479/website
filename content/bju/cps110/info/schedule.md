@@ -39,13 +39,13 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 9/28 | Test 1 | | |
 | | | | | |
 | M | 10/1 | [Lists](/bju/cps110/lectures/lec12) | 10.1 - 10.9 | [Program 2 Report](https://protect.bju.edu/cps/courses/cps110/programs/program2report.html) |
-| T | 10/2 | Lab 4 | | |
+| T | 10/2 | [Lab 4](https://protect.bju.edu/cps/courses/cps110/labs/lab4.html) | | |
 | W | 10/3 | References | 10.10 - 10.24 | |
 | F | 10/5 | Tuples | 10.26 - 10.28 | |
 | | | | | |
 | M | 10/8 | Web Applications | 12.1 - 12.7 | |
 | | | _Lists Quiz_ | | |
-| T | 10/9 | Lab 5 | | Lab 4 |
+| T | 10/9 | Lab 5 | | [Lab 4](https://protect.bju.edu/cps/courses/cps110/labs/lab4.html) |
 | W | 10/10 | Web Forms | 12.8 | |
 | F | 10/12 | Exception Handling | 11.1 - 11.6 | Program 3 |
 | | | Text File Processing | | |
