@@ -95,8 +95,26 @@ Thank you for visiting Earth.  We hope you make it home safely.
 
 ## Maximum 100%
 
+For the 100%, we will add 26 variables to the grok calculator (lowercase a - z).  To assign a variable, enter `=<letter>` on a line by itself and the previous result will be placed into the variable.  All variables have a default value of 0.
 
+To use a variable simply place it into a calculation as usual.
+
+```
+> +a b 2
+2
+> =a
+> +a b 2
+4
+>
+Thank you for visiting Earth.  We hope you make it home safely.
+```
+
+Note: like operators, spacing between variables is not required since we know they will be one character only.
 
 ## Extra Credit (+10%)
 
 For the truely brave (or bored), explore the world of floating point operations in the Intel manual.  Then rework your calculator so that all numbers are stored as 64-bit floating point numbers and all operations occur as floating point operations.  For simplicity, keep your calculator input as integers only.
+
+## Submission
+
+Turn in your `grok.asm` file as well as a copy of your report (either `.docx` or `.pdf`) with an electronic signature using the [template](/bju/cps230/downloads/report_template.docx).
