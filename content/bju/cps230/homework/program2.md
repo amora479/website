@@ -44,14 +44,14 @@ So for example, reversing `+ * 5 7 3` would yield `3 7 5 * +`. The first item is
 ## Hints
 
 1. While we do have direct stack manipulation instructions, `push` and `pop`.  It might be more beneficial to write your own stack using an array with wrapper `push` and `pop` values.  This will free up the real stack for operations and recursion if you need them.
-1. `scanf` is a beautiful lie for this assignment since spacing can vary wildly.  For example, you are guaranteed a space between numbers.  You are not guaranteed a space between operators.  Use `getchar` instead.
+1. `scanf` is a beautiful lie for this assignment since spacing can vary wildly.  For example, you are guaranteed a space between numbers.  You are not guaranteed a space between operators.  Use `gets` instead.  Lines are capped at 80 characters so no need to prevent a buffer overflow.
 1. The `neg` instruction is your friend for `~`.
 
 ## Maximum 80%
 
 For this level, you are guaranteed valid inputs and each number will consist of only a single digit.  You only have to support 3 operators: `+`, `-` and `~`.  Remember that Groks due use base 19 so you will need helper methods to convert to / from base 19 so that you can perform that math operations correctly.
 
-1. Users will enter a line of input.  Process the input, in reverse, character by character using `getchar`.
+1. Users will enter a line of input.  Process the input, in reverse, character by character.
 
     1. If the character is a base 19 digit, convert it to decimal and push.
     1. If the character is an operator, perform the operation popping items off the stack and pushing the result back on.
