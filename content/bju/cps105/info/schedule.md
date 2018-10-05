@@ -43,8 +43,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 10/1 | [Algorithms](/bju/cps105/lectures/ppt-downloads/lec11.pptx) | | Join [Unit 2](https://studio.code.org/join/TJXNZY) |
 | W | 10/3 | [Graph Algorithms](/bju/cps105/lectures/ppt-downloads/lec12.pptx) | | |
 | F | 10/5 | FGC Presentations (V) | FGC Chapter 5 | |
-| | | Bytes / File Sizes | BB (_Representation, Reality, and Illusion_ Section Chapter 3) | |
-| | | Compression | Watch [Compression](https://www.youtube.com/watch?v=LCGkcn1f-ms) | |
+| | | [Graph Algorithms](/bju/cps105/lectures/ppt-downloads/lec13.pptx) | Watch [Compression](https://www.youtube.com/watch?v=LCGkcn1f-ms) | |
 | | | | | |
 | M | 10/8 | Compression | | [Algorithms](/bju/cps105/homework/algorithms) |
 | | | | | Explore [Compression Widget](https://studio.code.org/s/csp2-2018/stage/2/puzzle/3) |
