@@ -61,6 +61,7 @@ ENDWHILE # end of Loop 1
 1.	Which stack contains the sorted trays when the Algorithm 2 completes? _______________ (1 point)
 2.	Show a trace of the values of the three stacks, given the starting value of stack1 shown below. (4 points)
 
+
 | Location | currentColor | stack1 | stack2 | stack3 | 
 | --- | --- | --- | --- | --- |
 | Before Loop 1 | - | G R B R G B | - | - |
