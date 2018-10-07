@@ -59,6 +59,7 @@ ENDWHILE # end of Loop 1
 ```
 
 `1.` Which stack contains the sorted trays when the Algorithm 2 completes? _______________ (1 point)
+
 `2.` Show a trace of the values of the three stacks, given the starting value of stack1 shown below. (4 points)
 
 | Location | currentColor | stack1 | stack2 | stack3 |
@@ -157,6 +158,7 @@ report number
 | After 6th Iteration | | | |
 
 `7.` What is the correct value for MCXLV? (Check online if you need to.) _____________________ (1 point)
+
 `8.` Suppose you wish to write a corrected Roman numeral converter. Assume the surrounding loop has been written, and you are tasked with writing the if statement for testing for the special situation illustrated by #7 above. Fill in the blanks to correctly handle “subtractive notation.” (4 points)
 
 If you process one numeral each time through the loop, there are a couple ways to handle subtractive notation: looking forward to the next number or looking back at the previous number. For this exercise, you should look forward to the next number. For instance, with the input “LIV,” the value of number at the end of each loop will be 50, 49, and 54. 
