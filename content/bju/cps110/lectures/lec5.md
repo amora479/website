@@ -62,3 +62,37 @@ There are many functions built into Python that you don't even need a module to 
 
 ## Classes / Objects
 
+Data values in Python are objects.  Classes are the definition of these objects, and objects are instances of the class.  Each class contains variables as well as functions.  The variables of a class are called attributes, and the functions are called methods.  The value of each of the attributes combined forms what is known as an object's state, and methods typically modify this state.
+
+We've already seen some classes like the Turtle class...
+
+```
+Turtle attributes:
+- Location
+- Heading
+- Shape
+- Whether pen is up or down
+- Pen color
+Turtle methods:
+- forward
+- left
+- right
+- ...
+```
+
+Objects are easy to create.  You simply create a variable with any data type!
+
+```py
+x = 10
+y = "Hello"
+```
+
+But what about those custom ones that aren't default data types.  For those you use the module name dot class name.
+
+```py
+import turtle
+
+alex = turtle.Turtle()
+```
+
+The standard library contains more information about each class and which attributes and methods are present. Especially check out the [string class](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str).
