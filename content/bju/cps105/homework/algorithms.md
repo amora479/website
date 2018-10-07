@@ -58,8 +58,8 @@ WHILE stack1 is !empty:				 # Loop 1
 ENDWHILE # end of Loop 1
 ```
 
-1.	Which stack contains the sorted trays when the Algorithm 2 completes? _______________ (1 point)
-2.	Show a trace of the values of the three stacks, given the starting value of stack1 shown below. (4 points)
+`1.` Which stack contains the sorted trays when the Algorithm 2 completes? _______________ (1 point)
+`2.` Show a trace of the values of the three stacks, given the starting value of stack1 shown below. (4 points)
 
 | Location | currentColor | stack1 | stack2 | stack3 |
 | --- | --- | --- | --- | --- |
@@ -92,7 +92,7 @@ ENDWHILE
 
 Algorithm 3 works correctly for some pairs of words, but for other pairs, it gives no result. 
 
-3.	Fill out the table for Algorithm 3. If the algorithm does not provide an answer, put “(unknown).” (3 points)
+`3.` Fill out the table for Algorithm 3. If the algorithm does not provide an answer, put “(unknown).” (3 points)
 
 | queue1 | queue2 | Queue Reported to be Lower | Number of Loop Iterations |
 | --- | --- | --- | --- |
@@ -102,7 +102,7 @@ Algorithm 3 works correctly for some pairs of words, but for other pairs, it giv
 | e s c a p e | e s c a p e d | | |
 | p e n | p e n | | |
 
-4.	Add a few lines after the end of the algorithm to give the appropriate responses for all 5 example word pairs. If the words are the same, either queue may be reported to contain the lexicographically lower word. (4 points)
+`4.` Add a few lines after the end of the algorithm to give the appropriate responses for all 5 example word pairs. If the words are the same, either queue may be reported to contain the lexicographically lower word. (4 points)
 
 ```
 
@@ -116,7 +116,7 @@ ELSE ________________________________________________________________:
 
 ENDIF
 ```
-5.	Complete the table after you've corrected the algorithm.
+`5.` Complete the table after you've corrected the algorithm.
 
 | queue1 | queue2 | Queue Reported to be Lower |
 | --- | --- | --- |
@@ -144,7 +144,7 @@ ENDWHILE
 report number 
 ```
 
-6.	Show a trace of Algorithm 4 with MCXLII in the stack (3 points):
+`6.` Show a trace of Algorithm 4 with MCXLII in the stack (3 points):
 
 | Location | Stack | numeral | number |
 | --- | --- | --- | --- |
@@ -156,8 +156,8 @@ report number
 | After 5th Iteration | | | |
 | After 6th Iteration | | | |
 
-7.	What is the correct value for MCXLV? (Check online if you need to.) _____________________ (1 point)
-8.	Suppose you wish to write a corrected Roman numeral converter. Assume the surrounding loop has been written, and you are tasked with writing the if statement for testing for the special situation illustrated by #7 above. Fill in the blanks to correctly handle “subtractive notation.” (4 points)
+`7.` What is the correct value for MCXLV? (Check online if you need to.) _____________________ (1 point)
+`8.` Suppose you wish to write a corrected Roman numeral converter. Assume the surrounding loop has been written, and you are tasked with writing the if statement for testing for the special situation illustrated by #7 above. Fill in the blanks to correctly handle “subtractive notation.” (4 points)
 
 If you process one numeral each time through the loop, there are a couple ways to handle subtractive notation: looking forward to the next number or looking back at the previous number. For this exercise, you should look forward to the next number. For instance, with the input “LIV,” the value of number at the end of each loop will be 50, 49, and 54. 
 
@@ -182,7 +182,7 @@ __________________________________________________________________ :
 
 ENDIF
 ```
-9.	Complete this table for MCMXLIV using the corrected algorithm: (4 pts)
+`9.` Complete this table for MCMXLIV using the corrected algorithm: (4 pts)
 
 | Location | Stack | number | numeral | numValue | nextRN | nextValue |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ ENDIF
 | After 6th Iteration | | | I | | | |
 | After 7th Iteration | | | V | | | |
 
-10.	ADVANCED EXERCISE: Write out the entire Roman numeral converter algorithm, incorporating your changes to Algorithm 4. You may not need all the blanks. (1 point if nearly correct. 2 points if completely correct.)
+`10.` ADVANCED EXERCISE (EC): Write out the entire Roman numeral converter algorithm, incorporating your changes to Algorithm 4. You may not need all the blanks. (1 point if nearly correct. 2 points if completely correct.)
 
 Tricky aspects:
 a.	You will need to devise a way to retrieve nextRN, but still make it available to be numeral the next time through the loop. You may assume that if there are no more numerals, “end” is returned from the stack.
