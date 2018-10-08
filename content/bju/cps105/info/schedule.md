@@ -42,10 +42,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | | | |
 | M | 10/1 | [Algorithms](/bju/cps105/lectures/ppt-downloads/lec11.pptx) | | Join [Unit 2](https://studio.code.org/join/TJXNZY) |
 | W | 10/3 | [Graph Algorithms](/bju/cps105/lectures/ppt-downloads/lec12.pptx) | | |
-| F | 10/5 | FGC Presentations (V) | FGC Chapter 5 | |
+| F | 10/5 | FGC Presentations (V) [9](/bju/cps105/lectures/presentations/fgc-5-9.pdf) [10](/bju/cps105/lectures/presentations/fgc-5-10.pptx) | FGC Chapter 5 | |
 | | | [Graph Algorithms](/bju/cps105/lectures/ppt-downloads/lec13.pptx) | Watch [Compression](https://www.youtube.com/watch?v=LCGkcn1f-ms) | |
 | | | | | |
-| M | 10/8 | Compression | | [Algorithms](/bju/cps105/homework/algorithms) |
+| M | 10/8 | [Compression](/bju/cps105/lectures/ppt-downloads/lec14.pptx) | | [Algorithms](/bju/cps105/homework/algorithms) |
 | | | | | Explore [Compression Widget](https://studio.code.org/s/csp2-2018/stage/2/puzzle/3) |
 | | | | | Explore [Lossy Compression Widget](https://studio.code.org/projects/applab/hxXJIEGg2yza_Q7t9W04xg) |
 | W | 10/10 | Data Science | Skim [Data Visualization 101](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf) | |

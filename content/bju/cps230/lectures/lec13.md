@@ -77,94 +77,96 @@ Arrays in assembly are much like you might expect; they are just blocks of memor
 
 ``` asm
 SECTION .data
-	array: dd 0,0,0,0,0,0,0,0,0,0
+	array: dq 0,0,0,0,0,0,0,0,0,0
 ```
 
 The above generates an array of ints (10 long) with each set to 0.  If we just want a block of memory and don't care about initialization, then we use the .bss section instead.
 
 ``` asm
 SECTION .bss
-	array: resd 10
+	array: resq 10
 ```
 
-`resd` is the counterpart to `dd`.  Both request 32-bit blocks of memory, but rather than request the value of the blocks like `dd`, `resd` just asks how many blocks you want.
+`resq` is the counterpart to `dq`.  Both request 32-bit blocks of memory, but rather than request the value of the blocks like `dq`, `resq` just asks how many blocks you want.
 
 Let's use this to translate our C stack to assembly.
 
 ``` asm
-extern _scanf
-extern _printf
+bits 64
+default rel
+
+extern scanf
+extern printf
  
 SECTION .bss
-    stack: resd 9001
+    stack: resq 9001
 SECTION .data
-    number: dd 0
+    number: dq 0
     fmt: db "%d", 0
-    top_of_stack: dd 0
+    top_of_stack: dq 0
 SECTION .text
  
 global _push
 _push:
-    push ebp
-    mov ebp, esp
+    push rbp
+    mov rbp, rsp
 
-    mov eax, dword [ebp + 8] ; value to be pushed
-    mov ecx, dword [top_of_stack]
-    mov dword [stack + ecx * 4], eax
-    inc dword [top_of_stack]
+    mov rax, rcx
+    mov rcx, dword [top_of_stack]
+    mov qword [stack + rcx * 4], rax
+    inc qword [top_of_stack]
 
-    mov esp, ebp
-    pop ebp
+    mov rsp, rbp
+    pop rbp
     ret
  
 global _pop
 _pop:
-    push ebp
-    mov ebp, esp
+    push rbp
+    mov rbp, rsp
 
     dec dword [top_of_stack]
-    mov ecx, dword [top_of_stack]
-    mov eax, dword [stack + ecx * 4]
+    mov rcx, dword [top_of_stack]
+    mov rax, dword [stack + rcx * 4]
 
-    mov esp, ebp
-    pop ebp
+    mov rsp, rbp
+    pop rbp
     ret
  
 global _peek
 _peek:
-    push ebp
-    mov ebp, esp
+    push rbp
+    mov rbp, esp
 
-    mov ecx, dword [top_of_stack]
-    sub ecx, 1
-    mov eax, dword [stack + ecx * 4]
+    mov rcx, dword [top_of_stack]
+    sub rcx, 1
+    mov rax, dword [stack + rcx * 4]
 
-    mov esp, ebp
-    pop ebp
+    mov rsp, rbp
+    pop rbp
     ret
  
-global _main
-_main:
-    push ebp
-    mov ebp, esp
+global main
+main:
+    push rbp
+    mov rbp, rsp
 
-    push number
-    push fmt
-    call _scanf
-    add esp, 8
+    sub rsp, 32
+    mov rdx, number
+    mov rcx, fmt
+    call scanf
+    add rsp, 32
 
-    push dword [number]
+    mov rcx, [number]
     call _push
-    add esp, 4
 
     call _peek
-    push eax
-    push fmt
-    call _printf
-    add esp, 8
+    mov rdx, eax
+    mov rcx, fmt
+    call printf
 
-    mov esp, ebp
-    pop ebp
+    mov rsp, rbp
+    pop rbp
     ret
 ```
 
