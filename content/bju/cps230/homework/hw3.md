@@ -18,6 +18,8 @@ Fill out the following table so that it reflects the values on the stack at the 
 * The ``description'' column should contain
     1. the name of the parameter/local variable stored in that slot, or
     1. a description of its special role (e.g., `saved RBP', `return address')
+    
+**We've discussed two methods of representing the stack.  One method involved creating shadow space and putting the first four params in registers. The second method involved just pushing all the parameters onto the stack.  You may use either method.**
 
 | Address | Value | Description |
 | --- | --- | --- |
@@ -35,7 +37,29 @@ Fill out the following table so that it reflects the values on the stack at the 
 
 ## Instruction Operands
 
-Provide the missing operands for the following assembly instructions. Remember: in real life you will not know in advance the actual addresses at which parameters and local variables live, so you must use frame-pointer-relative addressing (i.e., _RBP + nn_ or _RBP - nn_).
+Provide the missing operands for the following assembly instructions. Remember: in real life you will not know in advance the actual addresses at which local variables live, so reference them using a frame pointer or the stack pointer.  For the parameters, you may either consider them to be in registers or pushed to the stack.  **Complete only one of the sections below**
+
+### Parameters in Registers Version
+
+```
+; Implementing line 6
+mov     rax,             ; Get orange
+and     rax, [        ]  ; Combine with pogo_stick
+add     rsp, 8           ; Release local variable storage
+pop     rbp              ; Restore previous frame pointer
+ret                      ; Return to caller
+```
+
+```
+; Implementing line 18
+mov     rdx, [        ]  ; Pass crowbar
+mov     rcx, [        ]  ; Pass rasp
+call    _gnu
+add     rsp, 8           ; Remove parameters from stack
+mov     [        ], rax  ; Move return value into drill
+```
+
+### Push Parameters to the Stack Version
 
 ```
 ; Implementing line 6
