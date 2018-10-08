@@ -12,6 +12,8 @@ This course provides a broad exposure to the field of computer science. It empha
 
 # Announcements
 
+- Mid-Term Course Survey is Live: [9 AM SurveyMonkey](https://www.surveymonkey.com/r/8PBG6GB)
+- Mid-Term Course Survey is Live: [10 AM SurveyMonkey](https://www.surveymonkey.com/r/86SZX7Z)
 - Presentation Signups
 
 	During this semester, you will be reading *From the Garden to the City* by John Dyer. On select class days, students will present the chapter to the class during a 5-10 minute presentation.  Each presentation must include a powerpoint and 1) an overview of the chapter as well as 2) what you learned from the chapter.

@@ -12,6 +12,7 @@ Introduction to computer science through use of a high-level programming languag
 
 # Announcements
 
+- Mid-Term Course Survey is Live: [SurveyMonkey](https://www.surveymonkey.com/r/8Z7BJV2)
 - Welcome to CpS 110! Read [Getting Started](https://protect.bju.edu/cps/courses/cps110/docs/GettingStarted.html) for information on the course software and textbook.
 
 # Course Information

@@ -12,7 +12,7 @@ Assembler language, interrupts, registers, memory addressing techniques, paramet
 
 # Announcements
 
-_None at this time._
+* Mid-Term Course Survey is Live: [SurveyMonkey](https://www.surveymonkey.com/r/8HPQ5L5)
 
 # Course Information
 
