@@ -44,7 +44,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 10/5 | Tuples | 10.26 - 10.28 | |
 | | | [References](/bju/cps110/lectures/lec13) | | |
 | | | | | |
-| M | 10/8 | Web Applications | 12.1 - 12.7 | |
+| M | 10/8 | [Web Applications](/bju/cps110/lectures/lec14) | 12.1 - 12.7 | |
 | | | _Lists Quiz_ | | |
 | T | 10/9 | Lab 5 | | [Lab 4](https://protect.bju.edu/cps/courses/cps110/labs/lab4.html) |
 | W | 10/10 | Web Forms | 12.8 | |
