@@ -8,6 +8,7 @@ draft: false
 
 * [ASCII Chart](/bju/cps230/downloads/ascii.pdf) *(cached copy from CTAN)*
 * [Big Boy Computer Datasheet](/bju/cps230/downloads/bbc_handout.pdf)
+* [NASM Cheat Sheet](/bju/cps230/info/cheatsheet)
 
 # IA-32 Assembly
 
