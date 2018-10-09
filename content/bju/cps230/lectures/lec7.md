@@ -9,15 +9,14 @@ draft: false
 At this point, we have covered all of the major data representations used by the computer, and we've learned C.  Now it's time to move into Assembly.
 
 ``` nasm
-; printf1.asm   print an integer from storage and from a register
-; Assemble:    nasm -f elf -l printf.lst  printf1.asm
-; Link:        gcc -o printf1  printf1.o
-; Run:        printf1
-; Output:    a=5, eax=7
+; Assemble:     nasm -f win64 <filename>.asm
+; Link:         cl /Zi <filename>.obj msvrt.lib legacy_stdio_definitions.lib
+; Run:          <filename>
+; Output:       a=5, eax=7
 
 ; Equivalent C code
-; /* printf1.c  print an int and an expression */
-; #include 
+; #include "stdio.h"
+;
 ; int main()
 ; {
 ;   int a=5;
@@ -25,31 +24,30 @@ At this point, we have covered all of the major data representations used by the
 ;   return 0;
 ; }
 
-bits 64                              ; tell nasm this is 64-bit assembly
-default rel                          ; use relative addresses
+default rel                         ; use relative addresses
 
-extern printf                        ; the C function, to be called
+extern printf                       ; the C function, to be called
 
-section .data                        ; Data section, initialized variables
+section .data                       ; Data section, initialized variables
 
-    a:      dq    5                  ; int a=5;
-    fmt:    db "a=%d, rax=%d",10, 0  ; The printf format, "\n",'0'
+    a:      dq 5                    ; int a=5;
+    fmt:    db "a=%d, rax=%d",10, 0 ; The printf format, "\n",'0'
 
-section .text                        ; Code section.
+section .text                       ; Code section.
 
-global main                          ; the standard gcc entry point
-main:                                ; the program label for the entry point
-    sub     rsp, 32                  ; create shadow space
-    mov     rax, [a]                 ; put a from store into register
-    add     rax, 2                   ; a+2
-    mov     r8, rax                  ; 3rd parameter, value of rax
-    mov     rdx, [a]                 ; 2nd parameter, value of a
-    mov     rcx, fmt                 ; 1st parameter, value of fmt
-    call    printf                   ; Call C function
-    add     rsp, 32                  ; remove shadow space
+global main                         ; the standard gcc entry point
+main:                               ; the program label for the entry point
+    sub     rsp, 32                 ; create shadow space
+    mov     rax, [a]                ; put a from store into register
+    add     rax, 2                  ; a+2
+    mov     r8, rax                 ; 3rd parameter, value of rax
+    mov     rdx, [a]                ; 2nd parameter, value of a
+    lea     rcx, [fmt]              ; 1st parameter, value of fmt
+    call    printf                  ; Call C function
+    add     rsp, 32                 ; remove shadow space
     
-    mov     rax, 0                   ; normal, no error, return value
-    ret                              ; return
+    mov     rax, 0                  ; normal, no error, return value
+    ret                             ; return
 ```
 
 For right now, I'm only going to over the very basics of assembly and its structure.  What the individual lines mean, we'll discuss later.
