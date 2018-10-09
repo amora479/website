@@ -4,7 +4,7 @@ date: 2018-08-21T00:00:00-04:00
 draft: false
 ---
 
-# Lecture 9: Control Flow in Assembly (While Statements)
+# Lecture 10: Control Flow in Assembly (While Statements)
 
 ## While Statements
 
