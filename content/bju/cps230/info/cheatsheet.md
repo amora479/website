@@ -229,3 +229,43 @@ mov     rcx, <param 1>
 call    function
 add     rsp, 8 * (number of parameters - 4) + 32
 ```
+
+## Unsigned Division / Modulus
+
+```
+mov     rdx, 0
+mov     rax, <divisor>
+mov     <other register>, <dividend>
+div     <other register>
+; rax has the result of the division
+; rdx has the modulus
+```
+
+## Signed Division / Modulus
+
+```
+mov     rax, <divisor>
+cdq
+mov     <other register>, <dividend>
+idiv    <other register>
+; rax has the result of the division
+; rdx has the modulus
+```
+
+## Unsigned Multiplication
+
+```
+mov     rax, <operand>
+mov     <other register>, <operand>
+mul     <other register>
+; result split across rdx and rax
+```
+
+## Signed Multiplication
+
+```
+mov     rax, <operand>
+mov     <other register>, <operand>
+imul    <other register>
+; result split across rdx and rax
+```
