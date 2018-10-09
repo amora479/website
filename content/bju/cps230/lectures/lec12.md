@@ -45,7 +45,7 @@ _factorial:
 	dec 	rcx			; param is still in rcx, so just decrement it
 	call 	_factorial
 	add 	rsp, 32			; remove local shadow space
-	mov 	rcx, dword [rbp + 16]	; load saved parameter into rcx (we clobbered it with recursion)
+	mov 	rcx, qword [rbp + 16]	; load saved parameter into rcx (we clobbered it with recursion)
 	imul 	rcx			; multiply (x-1)! by x; (x-1)! is already in rax, sets rax up for return
 	mov	[rbp - 8], rax
 .end_if:
@@ -122,8 +122,93 @@ Now our stack looks (after `sub rsp, 8` in \_factorial) looks something like thi
 Now, we just need to undo all of this before we return.  Also need to put the return variable into RAX.
 
 ``` asm
-mov 	rax, dword [rbp-8]	; put the return value in rax
-mov 	rsp, rbp		; pop off locals / return value
-pop 	rbp			; restore caller's frame
+mov 	rax, [rbp-8]	; put the return value in rax
+mov 	rsp, rbp	; pop off locals / return value
+pop 	rbp		; restore caller's frame
+ret
+```
+
+## Using Just the Stack
+
+Before 64-bit assembly became popular, 32-bit assembly used just the stack for parameters.  You'll still see a lot of people who write 64-bit assembly, but they write their such that parameters are always on the stack. So let's take a look at that method, just so you are familiar with it.
+
+``` asm
+global _factorial
+_factorial:
+	push	rbp			; save old frame pointer
+	mov  	rbp, rsp		; make a new frame
+	sub	rsp, 8			; create a local variable to hold result
+	cmp 	[rbp + 16], 2		; parameter is in rcx 
+	je 	.true_part
+	jmp 	.false_part
+.true_part:
+	mov 	[rbp - 8], 2		; result is 2
+	jmp 	.end_if
+.false_part:
+	mov	rcx, [rbp + 16]		; grab the original parameter off the stack
+	dec	rcx			; decrement it
+	push	rcx			; push the new parameter for the recursive call
+	call 	_factorial
+	add	rsp, 8			; pop the parameter off
+	mov 	rcx, qword [rbp + 16]	; grab the parameter again
+	imul 	rcx			; multiply (x-1)! by x; (x-1)! is already in rax, sets rax up for return
+	mov	[rbp - 8], rax
+.end_if:
+	mov	rax, [rbp - 8]
+	mov 	rsp, rbp		; pop off locals / return value
+	pop 	rbp			; restore caller's frame
+	ret
+```
+
+This time the opening just needs the creation of the frame pointer, the parameter is already on the stack so no need to shove it into shadow space.
+
+``` asm
+push 	rbp		; save the caller's frame
+mov 	rbp, rsp	; make a new frame
+```
+
+The way the function would be called from main does change some. A typical function main which calls our stack-only factorial function might look something like this...
+
+``` asm
+global main
+main:
+	push	4		; parameter goes on the stack
+	call 	_factorial
+	add	rsp, 8		; remove the parameter
+	ret
+```
+
+the stack (when we get to the start or \_factorial) looks something like this:
+
+| Address | Value | Register, Pointers | Notes |
+| --- | --- | --- | --- |
+| 0x80000000 | 4 | | parameter |
+| 0x7FFFFFF8 | *some address* | RSP | The address of `add rsp, 32` |
+
+Once again, creating a frame pointer allows us to have a non-changing reference the stack (especially the parameters since they aren't in registers anymore), but we need to save the current frame pointer first thus the `push rbp`. `mov rbp, rsp` creates a new frame pointer which points to the top of the stack (or the old base pointer).
+
+Now our stack looks (after the `mov rbp, rsp` in \_factorial) looks something like this:
+
+| Address | Value | Register, Pointers | Notes |
+| --- | --- | --- | --- |
+| 0x80000000 | 4 | | parameter |
+| 0x7FFFFFF8 | *some address* |  | The address of `add rsp, 8` |
+| 0x7FFFFFF0 | *some address* | RSP, RBP | Caller's RBP |
+
+Once again, we do need to create a space for a return value. Now our stack looks (after `sub rsp, 8` in \_factorial) looks something like this:
+
+| Address | Value | Register, Pointers | Notes |
+| --- | --- | --- | --- |
+| 0x80000000 | 4 | | parameter |
+| 0x7FFFFFF8 | *some address* |  | The address of `add rsp, 4` |
+| 0x7FFFFFF0 | *some address* | RBP | Caller's RBP |
+| 0x7FFFFFE8 | ? | RSP | Return Variable |
+
+Now, we just need to undo all of this before we return.  Also need to put the return variable into RAX.
+
+``` asm
+mov 	rax, [rbp-8]	; put the return value in rax
+mov 	rsp, rbp	; pop off locals / return value
+pop 	rbp		; restore caller's frame
 ret
 ```
