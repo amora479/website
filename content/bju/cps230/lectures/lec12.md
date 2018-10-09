@@ -37,7 +37,7 @@ _factorial:
 	je 	.true_part
 	jmp 	.false_part
 .true_part:
-	mov 	[rbp - 8], 2			; result is 2
+	mov 	[rbp - 8], 2		; result is 2
 	jmp 	.end_if
 .false_part:
 	sub	rsp, 32			; create shadow space for recursive call (not shared since this is the only
