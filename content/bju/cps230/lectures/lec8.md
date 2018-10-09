@@ -101,7 +101,6 @@ Flags in assembly are stored in a special register, and there are quite a few of
 Let's take a short side trip to talk about how functions are called in C.  First, the four parameters are passed via registers (rcx, rdx, r8, r9), and anything after that is pushed in reverse order onto the stack.  This way, the fifth parameter is at the top of the stack, and other parameters follow.  Also anytime you are using c standard library functions, the shadow space creation and removal are absolutely required.
 
 ``` asm
-bits 64
 default rel
 
 extern printf
@@ -155,15 +154,16 @@ SECTION .text
 
 global main
 main:
+    sub     rsp, 32
+    
     mov     rax, 0xFF00
     mov     rbx, 0x00FF
     and     rbx, rax
-    sub     rsp, 32
     mov	    rdx, rbx
     mov     rcx, fmt
     call    printf
-    add     rsp, 32
     
+    add     rsp, 32
     mov     rax, 0
     ret
 ```
@@ -185,7 +185,6 @@ Second, remember how when we did binary division and multiplication, the sizes o
 Let's look at multiplication first.  If you look at the definition of `mul` in the Intel manual, there are several definitions. We are really only concerned with the first few.  To multiply two 8 bit numbers, we copy one into AL and the second somewhere else.  We then call `mul` with the second location and the result is stored in AX.
 
 ``` asm
-bits 64
 default rel
 
 extern printf
@@ -198,11 +197,13 @@ SECTION .text
 
 global main
 main:
+    sub     rsp, 32
+
     mov     rax, 0d
     mov     al, 4d
     mov     bl, 3d
     mul     bl
-    sub     rsp, 32
+
     mov	    rdx, rax
     mov     rcx, fmt
     call    printf
