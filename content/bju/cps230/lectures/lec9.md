@@ -11,7 +11,6 @@ draft: false
 We need to take one more side trip into the land of functions to talk about how scanf is called.  Remember, with scanf, we are really just passing the address of the location we want scanf to store the value it reads.  So the pushes and pops are more or less the same.  The only thing that isn't is the parameter.
 
 ``` asm
-bits 64
 default rel
 
 extern scanf
@@ -31,9 +30,7 @@ main:
 	mov rdx, a ; pass the address of a
 	mov rcx, fmt1
 	call scanf
-	add rsp, 32
 	
-	sub rsp, 32
 	mov rdx, [a] ; copy the actual value of a
 	mov rcx, fmt2
 	call printf
