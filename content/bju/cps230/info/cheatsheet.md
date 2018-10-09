@@ -101,12 +101,12 @@ call  scanf
 
 ```
     cmp   [variable], value or register   ; this cannot be two memory addresses
-    je    .if_1_true_part                 ; have more than 1 if in the function, increment the 1s
+    je    .if\_1\_true\_part                 ; have more than 1 if in the function, increment the 1s
                                           ; other conditional jumps map apply
-    jmp   .end_if_1                       ; unconditional jump for the label that is potentially far away
-.if_1_true_part:
+    jmp   .end\_if\_1                       ; unconditional jump for the label that is potentially far away
+.if\_1\_true\_part:
     ; true statements go here
-.end_if_1:
+.end\_if\_1:
 ```
 
 ## Conditional Jumps
@@ -128,57 +128,57 @@ jle - jump if less than or equal to
 
 ```
     cmp   [variable], value or register   ; this cannot be two memory addresses
-    je    .if_1_true_part                 ; have more than 1 if in the function, increment the 1s
+    je    .if\_1\_true\_part                 ; have more than 1 if in the function, increment the 1s
                                           ; other conditional jumps map apply
-    jmp   .if_1_false_part                ; unconditional jump for the label that is potentially far away
-.if_1_true_part:
+    jmp   .if\_1\_false\_part                ; unconditional jump for the label that is potentially far away
+.if\_1\_true\_part:
     ; true statements go here
-    jmp .end_if_1
-.if_1_false_part:
+    jmp .end\_if\_1
+.if\_1\_false\_part:
     ; false statements go here
-.end_if_1:
+.end\_if\_1:
 ```
 
 ## If-Else If-Else Statement
 
 ```
     cmp   [variable], value or register   ; this cannot be two memory addresses
-    je    .if_1_true_part                 ; have more than 1 if in the function, increment the 1s
+    je    .if\_1\_true\_part                 ; have more than 1 if in the function, increment the 1s
                                           ; other conditional jumps map apply
-    jmp   .if_1_else_if_1                 ; unconditional jump for the label that is potentially far away
-.if_1_true_part:
+    jmp   .if\_1\_else\_if\_1                 ; unconditional jump for the label that is potentially far away
+.if\_1\_true\_part:
     ; true statements go here
-    jmp .end_if_1
-.if_1_else_if_1:                          ; you could potentially have n of these else if blocks
+    jmp .end\_if\_1
+.if\_1\_else\_if\_1:                          ; you could potentially have n of these else if blocks
     cmp   [variable], value or register
-    je    .if_1_else_if_1_true
-    jmp   .if_1_false_part                ; would jump to if_1_else_if_n if you had more else ifs
-.if_1_else_if_1_true:
+    je    .if\_1\_else\_if\_1\_true
+    jmp   .if\_1\_false\_part                ; would jump to if\_1\_else\_if\_n if you had more else ifs
+.if\_1\_else\_if\_1\_true:
     ; else if 1 statements go here
-    jmp   .end_if_1                       ; end else if block
-.if_1_false_part:
+    jmp   .end\_if\_1                       ; end else if block
+.if\_1\_false\_part:
     ; else statements go here
-.end_if_1:
+.end\_if\_1:
 ```
 
 ## While Loop
 
 ```
-.while_1                                  ; have more than 1 if while the function, increment the 1s
+.while\_1:                                 ; have more than 1 if while the function, increment the 1s
     cmp   [variable], value or register   ; this cannot be two memory addresses
-    jne   .while_1_true                   ; other conditional jumps may apply
-    jmp   .while_1_false                  ; unconditional jump for the label that is potentially far away
-.while_1_true:
+    jne   .while\_1\_true                   ; other conditional jumps may apply
+    jmp   .while\_1\_false                  ; unconditional jump for the label that is potentially far away
+.while\_1\_true:
     ; while statements go here
-    jmp .while_1
-.while_1_false:
+    jmp .while\_1
+.while\_1\_false:
 ```
 
 ## Basic Function Template
 
 ```
-global function_name:
-function_name:
+global function\_name:
+function\_name:
     ; have paramters, save them in the shadow space
     push   rbp          ; not needed if not doing recursion
     mov    rbp, rsp     ; not needed if not doing recursion
@@ -202,12 +202,12 @@ function_name:
 ; bits 64 
 default rel             ; default memory access to relative mode (need /LARGEADDRESSAWARE:YES with cl if you don't do this)
 
-extern printf           ; is _printf for *nix users, don't need if not using printf
-extern scanf            ; is _scanf for *nix users, don't need if not using scanf
+extern printf           ; is \_printf for *nix users, don't need if not using printf
+extern scanf            ; is \_scanf for *nix users, don't need if not using scanf
 
 section .text           ; convention is instructions first, data at end, you can put data first though
 
-global main             ; is _main for *nix users
+global main             ; is \_main for *nix users
 main:
     sub     rsp, 32     ; shared shadow space for all function calls
     
