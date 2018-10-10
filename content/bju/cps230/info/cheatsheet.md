@@ -269,3 +269,52 @@ mov     <other register>, <operand>
 imul    <other register>
 ; result split across rdx and rax
 ```
+## Accessing an Array
+
+```
+section .bss
+
+    array: resq 100                 ; 100 quad words
+
+section .text
+
+global main
+main:
+    lea     rax, [array]            ; get the starting address of the array
+    mov     rcx, <index>            ; the position in the array to access
+    mov     rdx, [rax + rcx * 8]    ; 8 is the size of an int, this changes if you are using a different data type
+```
+
+## Structures in NASM
+
+```
+STRUC Person
+    .firstName: resb 50
+    .lastName: resb 50
+    .age: resq 0
+    .size:                          ; this is needed by the assembler for auto byte offset calculation
+ENDSTRUC
+```
+
+## Initialized Structures in NASM
+
+```
+section .data
+
+    bob: ISTRUC Person
+        AT Person.firstName, db "Brody", 0
+        AT Person.lastName, db "Bruin", 0
+        AT Person.age, dq 3
+    IEND
+```
+
+## Accessing a Struct Property
+
+```
+section .text
+
+global main
+main:
+    lea     rax, [bob]              ; get address of bob (or start of structure)
+    mov     rbx, [rax + Person.age] ; go age's offset from the start of bob and put it in a register
+```
