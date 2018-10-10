@@ -216,7 +216,7 @@ SECTION .bss
  
 SECTION .data
  
-    _printf_fmt: db "Cat %s has %d legs and %d/10 unfriendly but ", 0
+    _printf_fmt: db "Cat %s has %lld legs and %lld/10 unfriendly but ", 0
     _printf_fmt1: db "lifts weights", 10, 0
     _printf_fmt2: db "doesn't lifts weights", 10, 0
 
@@ -283,17 +283,10 @@ ENDSTRUC
 
 SECTION .data
 
-    p: ISTRUC Person
-        AT Person.first_name, db "John", 0
-        AT Person.last_name, db "Doe", 0
-        AT Person.age, dq 10
-        AT Person.weight, dq 150
-    IEND
-
     number: dq 0
 
     scanf_fmt_1: db " %s", 0
-    scanf_fmt_2: db " %d", 0
+    scanf_fmt_2: db " %lld", 0
     scanf_fmt_3: db " %c", 0
 
     printf_fmt_1: db "Enter a number (1-5): ", 0
@@ -316,15 +309,6 @@ main:
 .continue_loop:
     lea     rax, [p]                        ; load address of p (or John Doe)
 
-    push    qword [rax + Person.weight]     ; oh noes, we have 5 things to print and only 4 registers, push value of weight
-    sub     rsp, 32                         ; for things that have more than 4 parameters, they get their own shadow space
-    mov     r9, [rax + Person.age]          ; value of page
-    lea     r8, [rax + Person.last_name]    ; address of last name
-    lea     rdx, [rax + Person.first_name]  ; address of first name
-    lea     rcx, [printf_fmt_7]             ; address of "Person (%s %s) is %d years old and weights %d"
-    call    printf
-    add     rsp, 40                         ; pop off personal shadow space and 5th parameter
-
     lea     rcx, [printf_fmt_6]             ; address of "[R]ead or [W]rite? "
     call    printf
 
@@ -340,7 +324,7 @@ main:
     call    printf
 
     lea     rdx, [number]                   ; address of number
-    lea     rcx, [scanf_fmt_2]              ; address of " %d"
+    lea     rcx, [scanf_fmt_2]              ; address of " %lld"
     call    scanf
 
     lea     rbx, [person_array]             ; we can't use fancy address calculation so manual it is
@@ -367,14 +351,14 @@ main:
     call    printf
 
     lea     rdx, [rbx + Person.age]         ; address of age
-    lea     rcx, [scanf_fmt_2]              ; address of " %d"
+    lea     rcx, [scanf_fmt_2]              ; address of " %lld"
     call    scanf
 
     lea     rcx, [printf_fmt_5]             ; address of "Enter a weight: "
     call    printf
 
     lea     rdx, [rbx + Person.weight]      ; address of weight
-    lea     rcx, [scanf_fmt_2]              ; address of " %d"
+    lea     rcx, [scanf_fmt_2]              ; address of " %lld"
     call    scanf
 
     jmp .end
@@ -383,7 +367,7 @@ main:
     call    printf
 
     lea     rdx, [number]                   ; address of number
-    lea     rcx, [scanf_fmt_2]              ; address of " %d"
+    lea     rcx, [scanf_fmt_2]              ; address of " %lld"
     call    scanf
 
     lea     rbx, [person_array]             ; we can't use fancy address calculation so manual it is
