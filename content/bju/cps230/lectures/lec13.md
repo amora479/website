@@ -87,86 +87,72 @@ SECTION .bss
 	array: resq 10
 ```
 
-`resq` is the counterpart to `dq`.  Both request 32-bit blocks of memory, but rather than request the value of the blocks like `dq`, `resq` just asks how many blocks you want.
+`resq` is the counterpart to `dq`.  Both request 64-bit blocks of memory, but rather than request the value of the blocks like `dq`, `resq` just asks how many blocks you want.
 
 Let's use this to translate our C stack to assembly.
 
 ``` asm
-bits 64
 default rel
 
 extern scanf
 extern printf
  
-SECTION .bss
+section .bss
     stack: resq 9001
-SECTION .data
+
+section  .data
     number: dq 0
-    fmt: db "%d", 0
-    top_of_stack: dq 0
-SECTION .text
+    fmt: db "%lld", 0               ; %lld is always 64-bit regardless of compiler
+    top_of_stack: dq 0              ; always is the location of where we insert the next item
+
+section .text
  
+; item to be pushed is in rcx
 global _push
 _push:
-    push rbp
-    mov rbp, rsp
+    mov     rdx, rcx                ; we need the counting register (rcx) below so save our value into an unused register
+    mov     rcx, [top_of_stack]     ; top of stack is a counter of how many items are on the stack
+    lea     rax, [stack]            ; put the address of the beginning of the stack into rax
+    mov     [rax + rcx * 8], rdx    ; calculate the location of where we should insert the value, and insert it
+    inc     qword [top_of_stack]    ; we put something on the stack so increment the counter
 
-    mov rax, rcx
-    mov rcx, dword [top_of_stack]
-    mov qword [stack + rcx * 4], rax
-    inc qword [top_of_stack]
-
-    mov rsp, rbp
-    pop rbp
     ret
  
 global _pop
 _pop:
-    push rbp
-    mov rbp, rsp
+    dec     qword [top_of_stack]    ; we are taking something off the stack so decrement the counter
+    mov     rcx, [top_of_stack]     ; get the new counter value
+    lea     rax, [stack]            ; put the address of the beginning of the stack into rax 
+    mov     rax, [rax + rcx * 8]    ; move the item we popped off into the return register
 
-    dec dword [top_of_stack]
-    mov rcx, dword [top_of_stack]
-    mov rax, dword [stack + rcx * 4]
-
-    mov rsp, rbp
-    pop rbp
     ret
  
 global _peek
 _peek:
-    push rbp
-    mov rbp, esp
+    mov     rcx, [top_of_stack]     ; we want the top of the stack but not to pop, so grab the location of the next insert
+    sub     rcx, 1                  ; then decrement it
+    lea     rax, [stack]            ; put the address of the beginning of the stack into rax
+    mov     rax, [rax + rcx * 8]    ; move the item at the top of our stack into the return register
 
-    mov rcx, dword [top_of_stack]
-    sub rcx, 1
-    mov rax, dword [stack + rcx * 4]
-
-    mov rsp, rbp
-    pop rbp
     ret
  
 global main
 main:
-    push rbp
-    mov rbp, rsp
+    sub     rsp, 32                 ; just share the shadow space with everybody rather than recreate it each time
+    
+    lea     rdx, [number]           ; address of number
+    lea     rcx, [fmt]              ; address of format string
+    call    scanf
+    
+    mov     rcx, [number]           ; value of number into rcx
+    call    _push
 
-    sub rsp, 32
-    mov rdx, number
-    mov rcx, fmt
-    call scanf
-    add rsp, 32
+    call    _peek
+    mov     rdx, rax                ; print takes the actual value not an address like scanf
+    lea     rcx, [fmt]              ; address of format string
+    call    printf
 
-    mov rcx, [number]
-    call _push
-
-    call _peek
-    mov rdx, eax
-    mov rcx, fmt
-    call printf
-
-    mov rsp, rbp
-    pop rbp
+    add     rsp, 32
     ret
 ```
 
@@ -187,8 +173,8 @@ To create the same structure in assembly, we simply need to use the STRUC direct
 
 ``` asm
 STRUC Cat 
-    .legs: resd 1
-    .unfriendliness: resd 1
+    .legs: resq 1
+    .unfriendliness: resq 1
     .liftsWeights: resb 1
     .name: resb 50
     .size:
@@ -199,8 +185,8 @@ To create an initialized instance of this struct, we need to do the following in
 
 ``` asm
 authur: ISTRUC Cat
-    AT Cat.legs, dd 6
-    AT Cat.unfriendliness, dd 95
+    AT Cat.legs, dq 6
+    AT Cat.unfriendliness, dq 95
     AT Cat.liftWeights, db 0
     AT Cat.name, db "Poochkins", 0
 IEND
@@ -211,13 +197,15 @@ Referencing the individual properites of a struc is done much the same way as an
 Let's look at an example program that prints authur.
 
 ``` asm
-extern _scanf
-extern _printf
+default rel
+
+extern scanf
+extern printf
  
 STRUC Cat
-    .legs: resd 1
-    .unfriendliness: resd 1
-    .liftWeights: resb 1
+    .legs: resq 1
+    .unfriendliness: resq 1
+    .liftsWeights: resb 1
     .name: resb 50
     .size:
 ENDSTRUC
@@ -233,9 +221,9 @@ SECTION .data
     _printf_fmt2: db "doesn't lifts weights", 10, 0
 
     authur: ISTRUC Cat
-        AT Cat.legs, dd 6
-        AT Cat.unfriendliness, dd 95
-        AT Cat.liftWeights, db 0
+        AT Cat.legs, dq 6
+        AT Cat.unfriendliness, dq 95
+        AT Cat.liftsWeights, db 0
         AT Cat.name, db "Poochkins", 0
     IEND
  
@@ -243,56 +231,53 @@ SECTION .text
  
 global _print_cat
 _print_cat:
-    push ebp
-    mov ebp, esp
+    mov     [rsp + 8], rcx                          ; store rcx in the shadow space, we'll need it later
+    sub     rsp, 32                                 ; shared shadow space
 
-    mov eax, [ebp + 8]
-    push eax
-    push dword [eax + Cat.unfriendliness]
-    push dword [eax + Cat.legs]
-    lea ebx, [eax + Cat.name]
-    push ebx
-    push _printf_fmt
-    call _printf
-    add esp, 16
-    pop eax
-
-    cmp byte [eax + Cat.liftsWeights], 1
-    je _true
-    jmp _false
-_true:
-    push _printf_fmt1
-    call _printf
-    add esp, 4
-    jmp _end
-_false:
-    push _printf_fmt2
-    call _printf
-    add esp, 4
-_end:
-    mov esp, ebp
-    pop ebp
+    mov     rax, rcx                                ; put the address of the cat to print in rax
+    mov     r9, qword [rax + Cat.unfriendliness]    ; grab the cat's unfriendliness
+    mov     r8, qword [rax + Cat.legs]              ; grab the cat's leg count
+    lea     rdx, [rax + Cat.name]                   ; grab the address of the cat's name
+    lea     rcx, [_printf_fmt]                      ; grab the address of the format string
+    call    printf
+    
+    mov     rax, [rsp + 40]                         ; told you we would the original rcx later
+    cmp     byte [rax + Cat.liftsWeights], 1        ; the liftsWeights variable is a single byte so make sure we only grab that much
+    je      .true                                   ; conditional jump to local label .true
+    jmp     .false                                  ; jump to local label .false
+.true:
+    lea     rcx, [_printf_fmt1]                     ; address of "does lift weights"
+    call    printf
+    jmp     .end                                    ; jump to local label .end
+.false:
+    lea     rcx, [_printf_fmt2]                     ; address of "doesn't lift weights"
+    call    printf
+.end:
+    add     rsp, 32                                 ; drop shared shadow space
     ret
  
-global _main
-_main:
-    push authur
-    call _print_cat
-    add esp, 4
+global main
+main:
+    sub     rsp, 32                                 ; shared shadow space
+    lea     rcx, [authur]                           ; address of authur
+    call    _print_cat
+    add     rsp, 32                                 ; remove shared shadow space
     ret
 ```
 
 Additionally, here is another example that allows you to write / read a Person struc to and from an array.
 
 ``` asm
-extern _scanf
-extern _printf
+default rel
+
+extern scanf
+extern printf
 
 STRUC Person
     .first_name: resb 50
     .last_name: resb 50
-    .age: resd 1
-    .weight: resd 1
+    .age: resq 1
+    .weight: resq 1
     .size:
 ENDSTRUC
 
@@ -301,11 +286,11 @@ SECTION .data
     p: ISTRUC Person
         AT Person.first_name, db "John", 0
         AT Person.last_name, db "Doe", 0
-        AT Person.age, dd 10
-        AT Person.weight, dd 150
+        AT Person.age, dq 10
+        AT Person.weight, dq 150
     IEND
 
-    number: dd 0
+    number: dq 0
 
     scanf_fmt_1: db " %s", 0
     scanf_fmt_2: db " %d", 0
@@ -325,120 +310,96 @@ SECTION .bss
 
 SECTION .text
 
-global _main
-_main:
-    mov ebx, p
+global main
+main:
+    sub     rsp, 32
+.continue_loop:
+    lea     rax, [p]                        ; load address of p (or John Doe)
 
-    lea ecx, [ebx + Person.weight]
-    push dword [ecx]
-    lea ecx, [ebx + Person.age]
-    push dword [ecx]
-    lea ecx, [ebx + Person.last_name]
-    push ecx
-    lea ecx, [ebx + Person.first_name]
-    push ecx
-    push printf_fmt_7
-    call _printf
-    add esp, 20
+    push    qword [rax + Person.weight]     ; oh noes, we have 5 things to print and only 4 registers, push value of weight
+    sub     rsp, 32                         ; for things that have more than 4 parameters, they get their own shadow space
+    mov     r9, [rax + Person.age]          ; value of page
+    lea     r8, [rax + Person.last_name]    ; address of last name
+    lea     rdx, [rax + Person.first_name]  ; address of first name
+    lea     rcx, [printf_fmt_7]             ; address of "Person (%s %s) is %d years old and weights %d"
+    call    printf
+    add     rsp, 40                         ; pop off personal shadow space and 5th parameter
 
-    push printf_fmt_6
-    call _printf
-    add esp, 4
+    lea     rcx, [printf_fmt_6]             ; address of "[R]ead or [W]rite? "
+    call    printf
 
-    push number
-    push scanf_fmt_3
-    call _scanf
-    add esp, 8
+    lea     rdx, [number]                   ; address of number variable
+    lea     rcx, [scanf_fmt_3]              ; address of " %c"
+    call    scanf
 
-    cmp dword [number], 87
-    je _writing
-    jmp _reading
-_writing:
-    push printf_fmt_1
-    call _printf
-    add esp, 4
+    cmp     qword [number], 'W'             ; compare read value against W
+    je      .writing                        ; local writing label
+    jmp     .reading                        ; local reading label
+.writing:
+    lea     rcx, [printf_fmt_1]             ; address of "Enter a number (1-5): "
+    call    printf
 
-    push number 
-    push scanf_fmt_2
-    call _scanf
-    add esp, 8
+    lea     rdx, [number]                   ; address of number
+    lea     rcx, [scanf_fmt_2]              ; address of " %d"
+    call    scanf
 
-    mov ebx, person_array
-    mov eax, Person.size
-    imul dword [number]
-    sub eax, Person.size
-    add ebx, eax
+    lea     rbx, [person_array]             ; we can't use fancy address calculation so manual it is
+    mov     rax, Person.size
+    imul    qword [number]
+    sub     rax, Person.size                ; we force the user to start at 1, but we start counting at 0
+    add     rbx, rax
+    
+    lea     rcx, [printf_fmt_2]             ; address of "Enter a first_name: "
+    call    printf
 
-    push printf_fmt_2
-    call _printf
-    add esp, 4
+    lea     rdx, [rbx + Person.first_name]  ; address of first name
+    lea     rcx, [scanf_fmt_1]              ; address of " %s"
+    call    scanf
 
-    lea ecx, [ebx + Person.first_name]
-    push ecx
-    push scanf_fmt_1
-    call _scanf
-    add esp, 8
+    lea     rcx, [printf_fmt_3]             ; address of "Enter a last_name: "
+    call    printf
 
-    push printf_fmt_3
-    call _printf
-    add esp, 4
+    lea     rdx, [rbx + Person.last_name]   ; address of last name
+    lea     rcx, [scanf_fmt_1]              ; address of " %s"
+    call    scanf
 
-    lea ecx, [ebx + Person.last_name]
-    push ecx
-    push scanf_fmt_1
-    call _scanf
-    add esp, 8
+    lea     rcx, [printf_fmt_4]             ; address of "Enter an age: "
+    call    printf
 
-    push printf_fmt_4
-    call _printf
-    add esp, 4
+    lea     rdx, [rbx + Person.age]         ; address of age
+    lea     rcx, [scanf_fmt_2]              ; address of " %d"
+    call    scanf
 
-    lea ecx, [ebx + Person.age]
-    push ecx
-    push scanf_fmt_2
-    call _scanf
-    add esp, 8
+    lea     rcx, [printf_fmt_5]             ; address of "Enter a weight: "
+    call    printf
 
-    push printf_fmt_5
-    call _printf
-    add esp, 4
+    lea     rdx, [rbx + Person.weight]      ; address of weight
+    lea     rcx, [scanf_fmt_2]              ; address of " %d"
+    call    scanf
 
-    lea ecx, [ebx + Person.weight]
-    push ecx
-    push scanf_fmt_2
-    call _scanf
-    add esp, 8
+    jmp .end
+.reading:
+    lea     rcx, [printf_fmt_1]             ; address of "Enter a number (1-5): "
+    call    printf
 
-    jmp _end
-_reading:
-    push printf_fmt_1
-    call _printf
-    add esp, 4
+    lea     rdx, [number]                   ; address of number
+    lea     rcx, [scanf_fmt_2]              ; address of " %d"
+    call    scanf
 
-    push number 
-    push scanf_fmt_2
-    call _scanf
-    add esp, 8
+    lea     rbx, [person_array]             ; we can't use fancy address calculation so manual it is
+    mov     rax, Person.size
+    imul    qword [number]
+    sub     rax, Person.size                ; we force the user to start at 1, but we start counting at 0
+    add     rbx, rax
 
-    mov ebx, person_array
-    mov eax, Person.size
-    imul dword [number]
-    sub eax, Person.size
-    add ebx, eax
-
-    mov ecx, ebx
-    lea ecx, [ebx + Person.weight]
-    push dword [ecx]
-    lea ecx, [ebx + Person.age]
-    push dword [ecx]
-    lea ecx, [ebx + Person.last_name]
-    push ecx
-    lea ecx, [ebx + Person.first_name]
-    push ecx
-    push printf_fmt_7
-    call _printf
-    add esp, 20
-    _end:
-    jmp _main
+    push    qword [rbx + Person.weight]     ; value of weight
+    sub     rsp, 32                         ; personal shadow space because > 4 params
+    mov     r9, [rbx + Person.age]          ; value of age
+    lea     r8, [rbx + Person.last_name]    ; address of last name
+    lea     rdx, [rbx + Person.first_name]  ; address of first name
+    lea     rcx, [printf_fmt_7]             ; address of "Person (%s %s) is %d years old and weights %d"
+    call    printf
+.end:
+    jmp .continue_loop
     ret
 ```

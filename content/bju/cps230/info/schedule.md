@@ -36,10 +36,10 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 10/5 | [Stack Frames](/bju/cps230/lectures/lec12) | | [Lab 5](/bju/cps230/homework/lab5) |
 | | | [Local Variables](/bju/cps230/lectures/lec12) | | |
 | | | | | |
-| M | 10/8 | Arrays | Ch. 3 (to 3.8.4; then 3.9.1) | |
-| | | Pointers | | |
-| W | 10/10 | Arrays | | |
-| | | Pointers | | |
+| M | 10/8 | [Arrays](/bju/cps230/lectures/lec13) | Ch. 3 (to 3.8.4; then 3.9.1) | |
+| | | [Pointers](/bju/cps230/lectures/lec13) | | |
+| W | 10/10 | [Arrays](/bju/cps230/lectures/lec13) | | |
+| | | [Pointers](/bju/cps230/lectures/lec13) | | |
 | F | 10/12 | C Strings | Ch. 3 (3.10 to 3.11) | [Lab 6](/bju/cps230/homework/lab6) |
 | | | | | |
 | M | 10/15 | Strings / Overflow Attacks | Ch. 3 (3.12 to 3.12.1) | [HW 3](/bju/cps230/homework/hw3) |
