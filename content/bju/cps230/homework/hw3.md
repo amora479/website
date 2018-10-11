@@ -55,7 +55,6 @@ ret                      ; Return to caller
 mov     rdx, [        ]  ; Pass crowbar
 mov     rcx, [        ]  ; Pass rasp
 call    _gnu
-add     rsp, 8           ; Remove parameters from stack
 mov     [        ], rax  ; Move return value into drill
 ```
 
@@ -65,7 +64,7 @@ mov     [        ], rax  ; Move return value into drill
 ; Implementing line 6
 mov     rax, [        ]  ; Get orange
 and     rax, [        ]  ; Combine with pogo_stick
-add     rsp, 8           ; Release local variable storage
+add     rsp, 16          ; Release local variable storage
 pop     rbp              ; Restore previous frame pointer
 ret                      ; Return to caller
 ```
