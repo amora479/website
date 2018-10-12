@@ -50,7 +50,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | | | Explore [Lossy Compression Widget](https://studio.code.org/projects/applab/hxXJIEGg2yza_Q7t9W04xg) |
 | W | 10/10 | [Data Science](/bju/cps105/lectures/ppt-downloads/lec15.pptx) | Skim [Data Visualization 101](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf) | |
 | | | [Visualization Trends](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf ) | | |
-| F | 10/12 | FGC Presentations (VI) | FGC Chapter 6 | [BPT III - Finances](/bju/cps105/homework/bpt/part3) |
+| F | 10/12 | FGC Presentations (VI) [9](/bju/cps105/lectures/presentations/fgc-6-9.pdf) [10](/bju/cps105/lectures/presentations/fgc-6-10.pptx) | FGC Chapter 6 | [BPT III - Finances](/bju/cps105/homework/bpt/part3) |
 | | | Making Data Visualizations | | |
 | | | [Test 2 Review](/bju/cps105/reviews/test2) | | |
 | | | | | |
