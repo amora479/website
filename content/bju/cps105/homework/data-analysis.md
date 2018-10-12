@@ -2,6 +2,7 @@
 title: "CPS 105"
 date: 2018-08-21T00:00:00-04:00
 draft: false
+hasMath: true
 ---
 
 # Data Analysis
@@ -22,7 +23,7 @@ Turn in the assignment a full 24 hours early to receive 2 points extra credit.
 1. Create three (3) frequency tables, each based on one variable (column) from your data set.
 
     - One of the frequency tables is to be on qualitative (non-numeric) data.
-    - Two of the frequency tables are to be on quantitative (numerical) data. Follow the 2K rule (The number of classes is k, where 2k > the number of data points. The interval between classes should be at least (highest value-lowest value)/k). 
+    - Two of the frequency tables are to be on quantitative (numerical) data. Follow the {{< tex "2^{k}" >}} rule (The number of classes is k, where {{< tex "2^{k}" >}} > the number of data points. The interval between classes should be at least (highest value-lowest value)/k). 
     - For each frequency table, create either a bar chart or a pie chart. 
     - You must have at least one bar chart and one pie chart. If necessary, you may create a fourth frequency table to provide data better suited to a pie chart.
 
