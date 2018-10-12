@@ -49,125 +49,109 @@ memset(char* block, int value, int bytesToSet); // writes value to bytesToSet by
 We can use the functions from the C string library in assembly as well, just like printf and scanf.  Let's say we wanted to create a local string variable of user-defined size then 0 it out before having the user enter a string.  We'll then print that string back to the user.
 
 ``` asm
-extern _malloc
-extern _memset
-extern _gets
-extern _puts
-extern _printf
-extern _scanf
+default rel
+
+extern malloc
+extern memset
+extern gets
+extern puts
+extern printf
+extern scanf
  
 SECTION .data
+    
     prompt: db "Enter the size of the string you need: ", 0
-    scanf_format: db "%d", 0
+    scanf_format: db "%lld", 0
                
 SECTION .text
  
-global _main
-_main:
-    push ebp
-    mov ebp, esp
-    sub esp, 8 ; two local variables (1 is the size of the string, 2 is the address of the string)
+global main
+main:
+    push    rbp                     ; save old base pointer
+    mov     rbp, rsp                ; create a new base pointer (we do lots of stack access here)
+    sub     rsp, 48                 ; shadow space + two local variables (1 is the size of the string, 2 is the address of the string)
 
-    push prompt
-    call _printf
-    add esp, 4
+    lea     rcx, [prompt]           ; load address of prompt
+    call    printf
    
-    lea eax, [ebp - 4]
-    push eax
-    push scanf_format
-    call _scanf ; set the size variable
-    add esp, 8
+    lea     rdx, [rbp - 8]          ; address of place to store size
+    lea     rcx, [scanf_format]     ; load address of format string
+    call    scanf                   ; set the size variable
+    
+    mov     rcx, [rbp - 8]          ; pass malloc the size of the string we need to allocate
+    call    malloc
+    mov     [rbp - 16], rax         ; store the address of the string
    
-    push dword [ebp - 4]
-    call _malloc
-    add esp, 4
-    mov [ebp - 8], eax ; set the string variable
-   
-    push dword [ebp - 4]; size of string
-    push 0
-    push dword [ebp - 8]; address of string
-    call _memset
-    add esp, 12
-
-    push dword [ebp - 8]
-    call _gets ; first call gets the newline from number entry
-    add esp, 4
-   
-    push dword [ebp - 8]
-    call _gets ; second call gets the string
-    add esp, 4
-   
-    push dword [ebp - 8]
-    call _puts
-    add esp, 4
-   
-    mov esp, ebp
-    pop ebp
+    mov     r8, [rbp - 8]           ; size of string
+    mov     rdx, 0
+    mov     rcx, [rbp - 16]         ; address of string
+    call    memset
+    
+    mov     rcx, [rbp - 16]         ; address of string
+    call    gets                    ; first call gets the newline from number entry
+    
+    mov     rcx, [rbp - 16]         ; address of string
+    call    gets                    ; second call gets the string
+    
+    mov     rcx, [rbp - 16]         ; address of string
+    call    puts
+    
+    mov     rsp, rbp                ; pop everything off the stack (shadow space included)
+    pop     rbp                     ; restore whatever base pointer existed before me
     ret
 ```
 
 Let's look at another example.  Here we create a string dynamically, and store that string as a local variable, before having the user enter a value into the local string.  We then compare the local string to a global string printing a value based on if they match.
 
 ``` asm
-; create a local string variable
-; read into the string using gets
-; compare the string to "make america great again"
-; if equal print trump
-; else print hillary
+default rel
  
-extern _gets
-extern _printf
-extern _malloc
-extern _strcmp
-extern _strlen
+extern gets
+extern printf
+extern malloc
+extern strcmp
+extern strlen
  
 SECTION .data
+
     electionString: db "make america great again", 0
     trump: db "trump", 10, 0
     hillary: db "hillary", 10, 0
-    format: db "%s", 0
- 
+   
 SECTION .text
  
-global _main
-_main:
-    push ebp
-    mov ebp, esp
-    sub esp, 4
+global main
+main:
+    push    rbp
+    mov     rbp, rsp
+    sub     rsp, 40                 ; 1 local variable + shadow space
 
-    push electionString
-    call _strlen
-    add esp, 4
-    push eax
-    call _malloc
-    add esp, 4
-    mov [ebp - 4], eax
+    lea     rcx, [electionString]   ; address of election string
+    call    strlen
+    
+    mov     rcx, rax                ; pass malloc how many bytes to allocate
+    call    malloc
+    mov     [rbp - 8], rax          ; store the address for later
 
-    push eax
-    call _gets
-    add esp, 4
-
-    push dword [ebp - 4]
-    push electionString
-    call _strcmp
-    add esp, 8
-
-    cmp eax, 0
-    je _true
-    jmp _false
-_true:
-    push trump
-    push format
-    call _printf
-    add esp, 8
-    jmp _end
-_false:
-    push hillary
-    push format
-    call _printf
-    add esp, 8
-_end:
-    mov esp, ebp
-    pop ebp
+    mov     rcx, rax                ; we need to ask the user for something
+    call    gets
+    
+    mov     rdx, qword [rbp - 8]    ; address of second string
+    lea     rcx, [electionString]   ; address of first string
+    call    strcmp
+    
+    cmp     eax, 0                  ; compare the return of strcmp to 0
+    je      .true                   ; jump to local .true label
+    jmp     .false                  ; jump to local .false label
+.true:
+    lea     rcx, [trump]            ; load address of trump
+    call    printf
+    jmp     .end                    ; jump to local .end label
+.false:
+    lea     rcx, [hillary]          ; load address of hillary
+    call    printf
+.end:
+    mov     rsp, rbp                ; pop everything off the stack (shadow space included)
+    pop     rbp                     ; restore whatever base pointer existed before me
     ret
 ```
