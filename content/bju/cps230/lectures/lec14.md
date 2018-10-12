@@ -1,7 +1,7 @@
 ---
 title: "CPS 230"
 date: 2018-08-21T00:00:00-04:00
-draft: true
+draft: false
 ---
 
 # Lecture 14: C Strings
@@ -104,7 +104,6 @@ _main:
     mov esp, ebp
     pop ebp
     ret
-
 ```
 
 Let's look at another example.  Here we create a string dynamically, and store that string as a local variable, before having the user enter a value into the local string.  We then compare the local string to a global string printing a value based on if they match.
