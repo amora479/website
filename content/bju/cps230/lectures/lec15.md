@@ -4,7 +4,7 @@ date: 2018-08-21T00:00:00-04:00
 draft: true
 ---
 
-# Lecture 14: Strings / Overflow Attacks
+# Lecture 15: Strings / Overflow Attacks
 
 Last class, we looked at some basic string operations in C, using the C string library.  However, what happens if we don't have, or can't use, said library.  The instructions for manipulating strings in raw assembly (or manipulating arrays) are a bit more complex than in C, but they can also be signifigantly faster.  Let's look at several examples of standard string operations in just assembly.
 
@@ -49,7 +49,7 @@ SECTION .data
 SECTION .text
 global main
 main:
-	sub     rsp, 32
+	sub     rsp, 32		; shadow space
 
 	mov     rdi, string2    ; copying to
 	mov     rsi, string1    ; copying from
@@ -58,11 +58,11 @@ main:
 	mov     rcx, 12         ; indicate how many bytes to copy
 	rep     movsb           ; execute movsb edi, esi until ecx is 0
 
-	lea     rdx, [string2]
-	lea     rcx, [fmt]
+	lea     rdx, [string2]	; load address of string 2
+	lea     rcx, [fmt]	; load address of fmt
 	call    printf
 
-    	add     rsp, 32
+    	add     rsp, 32		; drop shadow space
 	ret
 ```
 
@@ -101,23 +101,23 @@ SECTION .data
 SECTION .text
 global main
 main:
-    	sub     rsp, 32
+    	sub     rsp, 32		; shadow space
 
    	mov     rdi, string1    ; string to search
-	cld     ; direction to search
+	cld     		; direction to search
 	mov     al, 'o'         ; al contains the character we are searching for
 
 	mov     rcx, 12         ; indicates when search should stop
 	repne   scasb           ; execute until al is found or ecx is 0
 
-	mov     rax, 12
-	sub     rax, rcx
-	sub     rax, 1
-	lea     rdx, [rax]
-	lea     rcx, [fmt]
+	mov     rax, 12		; max index to rax so we can calculate where we stopped
+	sub     rax, rcx	; rcx contains where we stopped
+	sub     rax, 1		; sub 1 to get index
+	mov     rdx, rax	; setup for printf 
+	lea     rcx, [fmt]	; setup for printf
 	call    printf
 	
-    	add     rsp, 32
+    	add     rsp, 32		; drop shadow space
 	ret
 ```
 
@@ -155,7 +155,7 @@ SECTION .text
 
 global main
 main:
-    	sub     rsp, 32
+    	sub     rsp, 32		; shadow space
 
 	mov     rdi, string2    ; copying to
 	mov     rsi, string1    ; copying from
@@ -165,15 +165,15 @@ main:
 	je      .push_0
 	jmp     .push_1
 .push_0:
-	mov     rdx, 0
+	mov     rdx, 0		; print 0 if equal
 	jmp     .pushed
 .push_1:
-	mov     rdx, 1
+	mov     rdx, 1		; print 1 if not
 .pushed:
-	lea     rcx, [fmt]
+	lea     rcx, [fmt]	; load format string
 	call    printf
 
-    	add     rsp, 32
+    	add     rsp, 32		; drop shadow space
 	ret
 ```
 
@@ -216,32 +216,32 @@ SECTION .data
 SECTION .text
 global main
 main:
-    	sub     rsp, 32
+    	sub     rsp, 32			; shadow space
 
-	mov     rdi, string1        ; printing to
-	cld
+	mov     rdi, string1        	; printing to
+	cld				; clear direction flag
 
 .while:
-	cmp     qword [count], 0
+	cmp     qword [count], 0	; only get a char while counter is > 0
 	jne     .continue
 	jmp     .done
 .continue:
-	mov     rax, 0
+	mov     rax, 0			; clear rax before we get a char
 	call    getchar
-	cmp     eax, 10 ; newline
-	jne     .continue2
+	cmp     eax, 10 		; newline
+	jne     .continue2		; stop collecting on new lines
 	jmp     .done
 .continue2:
-	stosb
+	stosb				; puts al into [rdi] and then increments rdi
 	sub     qword [count], 1
 	jmp     .while
 .done:
-	mov     byte [rdi+1], 0     ; don't forget to 0 terminate your strings
-	lea     rdx, [string1]
+	mov     byte [rdi+1], 0     	; don't forget to 0 terminate your strings
+	lea     rdx, [string1]		; load the address of our string
 	lea     rcx, [fmt]
 	call    printf
     
-    	add     rsp, 32
+    	add     rsp, 32			; drop shadow space
 	ret
 ```
 
@@ -278,25 +278,25 @@ SECTION .data
 SECTION .text
 global main
 main:
-    	sub     rsp, 32
+    	sub     rsp, 32			; shadow space
 
-	mov     rsi, string1 ; printing from
+	mov     rsi, string1 		; printing from
 	cld
 .while:
-	cmp     qword [count], 0
+	cmp     qword [count], 0	; only print while count > 0
 	jne     .continue
 	jmp     .done
 .continue:
-	mov     rax, 0
-	lodsb                       ; al will contain the next character
-	mov     rcx, 0
-    	mov     cl, al 
+	mov     rax, 0			; clear rax
+	lodsb                       	; copy byte [rsi] into al then increment rsi
+	mov     rcx, 0			; get ready to print the character using rcx
+    	mov     cl, al 			; copy the character
 	call    putchar
 	
-    	dec     qword [count]
+    	dec     qword [count]		; decrement our counter
 	jmp     .while
 .done:
-    	add     rsp, 32
+    	add     rsp, 32			; drop shadow space
 	ret
 ```
 
