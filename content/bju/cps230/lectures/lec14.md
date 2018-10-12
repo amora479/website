@@ -8,6 +8,35 @@ draft: false
 
 Strings in C are, as we've said before, just a block of ASCII characters in memory (at least, if you're not using unicode).  Up until now, we've been delcaring our assembly strings globally, but what happens if that isn't possible?  Can we put them on the stack as a local variable?  How about dynamically sized strings?
 
+## Register Purposes
+
+Before we hop into C strings, now that you've had some exposure to the basics of assembly, you might have noticed that sometimes registers don't get preserved after a function call, like printf or scanf.  What's up with that?  There are two sets of registers in assembly, registers that functions are free to "clobber" and registers that must be contractually preserved.
+
+The registers RAX, RCX, RDX, R8, R9, R10, R11 are considered volitale, you're not guaranteed they will be preserved across calls.
+
+The registers RBX, RBP, RDI, RSI, RSP, R12, R13, R14, and R15 are considered nonvolatile, functions should preserve / restore their original value if they change them.  Each of these registers typically serves some purpose (usually in referencing memory).
+
+Each register also has a purpose (for the most part) and know that purpose can help you get hints about whether a function might clobber it.
+
+| Register | Purpose | Volitale? |
+| --- | --- | --- |
+| RAX | Return Value | Y |
+| RBX | Base Register, often used for storing the start of an array | N |
+| RCX | Counting Register, first param | Y |
+| RDX | second param | Y |
+| RSI | Source Index, used for memory movement instructions | N |
+| RDI | Destination Index, used for memory movement instructions | N |
+| RSP | Stack Pointer | N |
+| RBP | Frame Pointer | N |
+| R8 | third param | Y |
+| R9 | fourth param | Y |
+| R10 | - | Y |
+| R11 | - | Y |
+| R12 | - | N |
+| R13 | - | N |
+| R14 | - | N |
+| R15 | - | N |
+
 ## String Operations in C
 
 Before we get into the fun stuff, let's talk about how you do things in C first.  First, creating a dynamically sized array, struct or string is done with the malloc command (or one of its derivatives, like calloc).  malloc takes the size (in bytes) you need and returns an address to a block of that size.  calloc does the same thing, except is 0s out the block before giving you the address.  malloc leaves whatever gibberish was there before.
