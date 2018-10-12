@@ -36,7 +36,9 @@ int main() {
 For raw assembly, things are a bit different.  First, since we are producting win32 objects with nasm, we don't have to worry about ESI and EDI.  We will later when we get to raw hardware!
 
 ``` asm
-extern _printf
+default rel
+
+extern printf
 
 SECTION .data
 
@@ -45,20 +47,22 @@ SECTION .data
 	fmt: db "%s", 10, 0
 
 SECTION .text
-global _main
-_main:
-	mov edi, string2 ; copying to
-	mov esi, string1 ; copying from
-	cld ; direction to copy
+global main
+main:
+	sub     rsp, 32
 
-	mov ecx, 12 ; indicate how many bytes to copy
-	rep movsb ; execute movsb edi, esi until ecx is 0
+	mov     rdi, string2    ; copying to
+	mov     rsi, string1    ; copying from
+	cld                     ; direction to copy
 
-	push string2
-	push fmt
-	call _printf
-	add esp, 8
+	mov     rcx, 12         ; indicate how many bytes to copy
+	rep     movsb           ; execute movsb edi, esi until ecx is 0
 
+	lea     rdx, [string2]
+	lea     rcx, [fmt]
+	call    printf
+
+    	add     rsp, 32
 	ret
 ```
 
@@ -85,7 +89,9 @@ int main() {
 Assembly:
 
 ``` asm
-extern _printf
+default rel
+
+extern printf
 
 SECTION .data
 
@@ -93,23 +99,25 @@ SECTION .data
 	fmt: db "%d", 10, 0
 
 SECTION .text
-global _main
-_main:
-	mov edi, string1 ; string to search
-	cld ; direction to search
-	mov al, 'o' ; al contains the character we are searching for
+global main
+main:
+    	sub     rsp, 32
 
-	mov ecx, 12 ; indicates when search should stop
-	repne scasb ; execute until al is found or ecx is 0
+   	mov     rdi, string1    ; string to search
+	cld     ; direction to search
+	mov     al, 'o'         ; al contains the character we are searching for
 
-	mov eax, 12
-	sub eax, ecx
-	sub eax, 1
-	push eax
-	push fmt
-	call _printf
-	add esp, 8
+	mov     rcx, 12         ; indicates when search should stop
+	repne   scasb           ; execute until al is found or ecx is 0
 
+	mov     rax, 12
+	sub     rax, rcx
+	sub     rax, 1
+	lea     rdx, [rax]
+	lea     rcx, [fmt]
+	call    printf
+	
+    	add     rsp, 32
 	ret
 ```
 
@@ -133,7 +141,9 @@ int main() {
 Assembly:
 
 ``` asm
-extern _printf
+default rel
+
+extern printf
 
 SECTION .data
 
@@ -142,25 +152,28 @@ SECTION .data
 	fmt: db "%d", 10, 0
 
 SECTION .text
-global _main
-_main:
-	mov edi, string2 ; copying to
-	mov esi, string1 ; copying from
 
-	mov ecx, 12
-	repe cmpsb ; execute while they are equal
-	je push_0
-	jmp push_1
-push_0:
-	push 0
-	jmp pushed
-push_1:
-	push 1
-pushed:
-	push fmt
-	call _printf
-	add esp, 8
+global main
+main:
+    	sub     rsp, 32
 
+	mov     rdi, string2    ; copying to
+	mov     rsi, string1    ; copying from
+
+	mov     rcx, 12
+	repe    cmpsb           ; execute while they are equal
+	je      .push_0
+	jmp     .push_1
+.push_0:
+	mov     rdx, 0
+	jmp     .pushed
+.push_1:
+	mov     rdx, 1
+.pushed:
+	lea     rcx, [fmt]
+	call    printf
+
+    	add     rsp, 32
 	ret
 ```
 
@@ -188,42 +201,47 @@ int main() {
 Assembly:
 
 ``` asm
-extern _getchar
-extern _printf
+default rel
+
+extern getchar
+extern printf
 
 SECTION .data
 
 	string1: db 0,0,0,0,0,0,0,0,0,0,0,0
-	count: dd 12
+	count: dq 12
 
 	fmt: db "%s", 10, 0
 
 SECTION .text
-global _main
-_main:
-	mov edi, string1 ; printing to
+global main
+main:
+    	sub     rsp, 32
+
+	mov     rdi, string1        ; printing to
 	cld
 
-while:
-	cmp dword [count], 0
-	jne continue
-	jmp done
-continue:
-	mov eax, 0
-	call _getchar
-	cmp eax, 10 ; newline
-	jne continue2
-	jmp done
-continue2:
+.while:
+	cmp     qword [count], 0
+	jne     .continue
+	jmp     .done
+.continue:
+	mov     rax, 0
+	call    getchar
+	cmp     eax, 10 ; newline
+	jne     .continue2
+	jmp     .done
+.continue2:
 	stosb
-	sub dword [count], 1
-	jmp while
-done:
-	mov [esp+12], 0 ; don't forget to 0 terminate your strings
-	push string1
-	push fmt
-	call _printf
-	add esp, 8
+	sub     qword [count], 1
+	jmp     .while
+.done:
+	mov     byte [rdi+1], 0     ; don't forget to 0 terminate your strings
+	lea     rdx, [string1]
+	lea     rcx, [fmt]
+	call    printf
+    
+    	add     rsp, 32
 	ret
 ```
 
@@ -248,33 +266,37 @@ int main() {
 
 Assembly:
 
-``` asm
-extern _putchar
+``` asmdefault rel
+
+extern putchar
 
 SECTION .data
 
 	string1: db "hello world", 0
-	count: dd 12
+	count: dq 12
 
 SECTION .text
-global _main
-_main:
-	mov esi, string1 ; printing from
-	cld
+global main
+main:
+    	sub     rsp, 32
 
-while:
-	cmp dword [count], 0
-	jne continue
-	jmp done
-continue:
-	mov eax, 0
-	lodsb ; al will contain the next character
-	push eax
-	call _putchar
-	add esp, 4
-	sub dword [count], 1
-	jmp while
-done:
+	mov     rsi, string1 ; printing from
+	cld
+.while:
+	cmp     qword [count], 0
+	jne     .continue
+	jmp     .done
+.continue:
+	mov     rax, 0
+	lodsb                       ; al will contain the next character
+	mov     rcx, 0
+    	mov     cl, al 
+	call    putchar
+	
+    	dec     qword [count]
+	jmp     .while
+.done:
+    	add     rsp, 32
 	ret
 ```
 
