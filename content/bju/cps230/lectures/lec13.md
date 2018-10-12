@@ -307,8 +307,6 @@ global main
 main:
     sub     rsp, 32
 .continue_loop:
-    lea     rax, [p]                        ; load address of p (or John Doe)
-
     lea     rcx, [printf_fmt_6]             ; address of "[R]ead or [W]rite? "
     call    printf
 
