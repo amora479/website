@@ -52,14 +52,14 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [Visualization Trends](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf ) | | |
 | F | 10/12 | FGC Presentations (VI) | FGC Chapter 6 | [BPT III - Finances](/bju/cps105/homework/bpt/part3) |
 | | | Making Data Visualizations | | |
-| | | Test 2 Review | | |
+| | | [Test 2 Review](/bju/cps105/reviews/test2) | | |
 | | | | | |
 | M | 10/15 | Making data Visualizations | | |
 | | | Summary Tables | | |
 | W | 10/17 | Summary Tables | | |
 | F | 10/19 | Test 2 | | |
 | | | | | |
-| M | 10/22 | FGC Presentations (VII) | FGC Chapter 7 (stop before Tablet Revolution) | Excel Data Analysis |
+| M | 10/22 | FGC Presentations (VII) | FGC Chapter 7 (stop before Tablet Revolution) | [Excel Data Analysis](/bju/cps105/homework/data-analysis) |
 | | | Specification / Testing | | |
 | | | Documenting Bugs | | |
 | T | 10/23 | _Day of Rest_ | | |

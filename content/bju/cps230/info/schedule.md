@@ -40,7 +40,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [Pointers](/bju/cps230/lectures/lec13) | | |
 | W | 10/10 | [Arrays](/bju/cps230/lectures/lec13) | | |
 | | | [Pointers](/bju/cps230/lectures/lec13) | | |
-| F | 10/12 | C Strings | Ch. 3 (3.10 to 3.11) | [Lab 6](/bju/cps230/homework/lab6) |
+| F | 10/12 | [C Strings](/bju/cps230/lectures/lec14) | Ch. 3 (3.10 to 3.11) | [Lab 6](/bju/cps230/homework/lab6) |
 | | | | | |
 | M | 10/15 | Strings / Overflow Attacks | Ch. 3 (3.12 to 3.12.1) | [HW 3](/bju/cps230/homework/hw3) |
 | W | 10/17 | Variodic Functions | Ch. 3 (to 3.13) | |

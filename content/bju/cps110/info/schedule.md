@@ -47,7 +47,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | M | 10/8 | [Web Applications](/bju/cps110/lectures/lec14) | 12.1 - 12.7 | |
 | | | _Lists Quiz_ | | |
 | T | 10/9 | Lab 5 | | [Lab 4](https://protect.bju.edu/cps/courses/cps110/labs/lab4.html) |
-| W | 10/10 | Web Forms | 12.8 | |
+| W | 10/10 | [Web Forms](/bju/cps110/lectures/lec15) | 12.8 | |
 | F | 10/12 | Exception Handling | 11.1 - 11.6 | Program 3 |
 | | | Text File Processing | | |
 | | | | | |
