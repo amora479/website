@@ -17,7 +17,7 @@ Turn in the assignment a full 24 hours early to receive 2 points extra credit.
 	- International Health & Wealth Data: Do not use Country.
 	- Movie Rating Data:  Do not use movie id. 
     - Personality Test Data: (no restrictions).
-	- Twitter Data: Do not use text, id, created at, entities__user_mentions__screen_name, quoted_status__id, quoted_status__favorite_count, quoted_status__retweet_count, quoted_status__user__id, quoted_status__created_at, retweeted_status__id, retweeted_status__user__id, retweeted_status__created_at, or user__id.
+	- Twitter Data: Do not use text, id, created at, entities_user_mentions_screen_name, quoted_status_id, quoted_status_favorite_count, quoted_status_retweet_count, quoted_status_user_id, quoted_status_created_at, retweeted_status_id, retweeted_status_user_id, retweeted_status_created_at, or user_id.
 
 1. Save the file you selected in Excel as an “Excel Workbook (*.xlsx).”
 1. Create three (3) frequency tables, each based on one variable (column) from your data set.
@@ -49,6 +49,6 @@ In a Word document,
 
 [Movie Ratings](/bju/cps105/homework/data-analysis-datasets/movie.xlsx)
 
-[Movie Ratings](/bju/cps105/homework/data-analysis-datasets/personality.xlsx)
+[Personality Test](/bju/cps105/homework/data-analysis-datasets/personality.xlsx)
 
 [Twitter](/bju/cps105/homework/data-analysis-datasets/twitter.xlsx)
