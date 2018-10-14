@@ -345,16 +345,18 @@ int main() {
 Converted to assembly, this would (with a few optimizations) become:
 
 ``` asm
-extern _gets
-extern _printf
-extern _strcmp
+default rel
+
+extern gets
+extern printf
+extern strcmp
 
 SECTION .data
 
 	username: db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 	password: db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-	login_successful: dd 0
-	is_root: dd 0
+	login_successful: dq 0
+	is_root: dq 0
 
 	real_username: db "emcgee", 0
 	real_password: db "password", 0
@@ -370,74 +372,64 @@ SECTION .data
 
 SECTION .text
 
-global _main
-_main:
-	push username
-	call _gets
-	add esp, 4
+global main
+main:
+    sub     rsp, 32                         ; create shadow space
 
-	push password
-	call _gets
-	add esp, 4
+	lea     rcx, [username]                 ; ask for username (no prompt)
+	call    gets
 
-	push username
-	push real_username
-	call _strcmp
-	add esp, 8
+	lea     rcx, [password]                 ; ask for password (no prompt)
+	call    gets
 
-	cmp eax, 0
-	je username_correct
-	jmp username_incorrect
-username_correct:
-	push password
-	push real_password
-	call _strcmp
-	add esp, 8
+	lea     rdx, [username]                 ; address of user entered username
+	lea     rcx, [real_username]            ; address of our not so secret username
+	call    strcmp
+	
+	cmp     rax, 0                          ; if username == real_username
+	je      .username_correct               ; compare was true
+	jmp     .username_incorrect             ; compare was false
+.username_correct:
+	lea     rdx, [password]                 ; address of user entered password
+	lea     rcx, [real_password]            ; address of our not so secret password
+	call    strcmp
 
-	cmp eax, 0
-	je password_correct
-	jmp password_incorrect
-password_correct:
-	push login_successful_str
-	call _printf
-	add esp, 4
+	cmp     rax, 0                          ; if password == real_password
+	je      .password_correct               ; compare was true
+	jmp     .password_incorrect             ; compare was false
+.password_correct:
+	mov     qword [login_successful], 1     ; the user is able to do stuff
+	mov     qword [is_root], 1              ; and they can be admin to boot after all they knew the password!
 
-	mov dword [login_successful], 1
-	mov dword [is_root], 1
-
-	jmp continue
-password_incorrect:
-username_incorrect:
-	push login_unsuccessful_str
-	call _printf
-	add esp, 4
-continue:
-	cmp dword [login_successful], 0
-	jne login_was_successful
-	jmp login_was_not_successful
-login_was_successful:
-	push you_are_logged_in
-	call _printf
-	add esp, 4
-	jmp continue1
-login_was_not_successful:
-	push you_are_not_logged_in
-	call _printf
-	add esp, 4
-continue1:
-	cmp dword [is_root], 0
-	jne root_was_successful
-	jmp root_was_not_successful
-root_was_successful:
-	push you_are_root
-	call _printf
-	add esp, 4
-	jmp continue2
-root_was_not_successful:
-	push you_are_groot
-	call _printf
-	add esp, 4
-continue2:
+	jmp     .continue
+.password_incorrect:
+.username_incorrect:
+	lea     rcx, [login_unsuccessful_str]   ; the user didn't get in, no admin for you haha!
+	call    printf
+.continue:
+	cmp     qword [login_successful], 0     ; if login_successful == 0
+	je      .login_was_not_successful       ; compare was not true
+	jmp     .login_was_successful           ; compare was false
+.login_was_not_successful:
+	lea     rcx, [you_are_not_logged_in]    ; tell the user they didn't get ins
+	call    printf
+    jmp     .check_root
+.login_was_successful:
+	lea     rcx, [you_are_logged_in]        ; tell the user they got in
+	call    printf
+.check_root:
+	cmp     qword [is_root], 0              ; if is_root == 0
+	je      .root_was_not_successful        ; compare was true
+	jmp     .root_was_successful            ; compare was false
+.root_was_not_successful:
+	lea     rcx, [you_are_groot]            ; let the user know they are not root
+	call    printf
+    jmp     .end
+.root_was_successful:
+	lea     rcx, [you_are_root]             ; let the user know they are root
+	call    printf
+.end:
+    add     rsp, 32
 	ret
 ```
 
