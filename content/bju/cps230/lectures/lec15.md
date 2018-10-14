@@ -1,7 +1,7 @@
 ---
 title: "CPS 230"
 date: 2018-08-21T00:00:00-04:00
-draft: true
+draft: false
 ---
 
 # Lecture 15: Strings / Overflow Attacks

@@ -51,13 +51,11 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 10/10 | [Data Science](/bju/cps105/lectures/ppt-downloads/lec15.pptx) | Skim [Data Visualization 101](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf) | |
 | | | [Visualization Trends](http://content.visage.co/hs-fs/hub/424038/file-2094950163-pdf ) | | |
 | F | 10/12 | FGC Presentations (VI) [9](/bju/cps105/lectures/presentations/fgc-6-9.pdf) [10](/bju/cps105/lectures/presentations/fgc-6-10.pptx) | FGC Chapter 6 | [BPT III - Finances](/bju/cps105/homework/bpt/part3) |
-| | | Making Data Visualizations | | |
+| | | [Excel](/bju/cps105/lectures/ppt-downloads/lec16.pptx) | | |
 | | | [Test 2 Review](/bju/cps105/reviews/test2) | | |
 | | | | | |
-| M | 10/15 | Making data Visualizations | | |
-| | | Summary Tables | | |
-| W | 10/17 | Summary Tables | | |
-| F | 10/19 | Test 2 | | |
+| M | 10/15 | [Excel](/bju/cps105/lectures/ppt-downloads/lec16.pptx) | | ||
+| W | 10/17 | [Excel](/bju/cps105/lectures/ppt-downloads/lec16.pptx) | | |
 | | | | | |
 | M | 10/22 | FGC Presentations (VII) | FGC Chapter 7 (stop before Tablet Revolution) | [Excel Data Analysis](/bju/cps105/homework/data-analysis) |
 | | | Specification / Testing | | |

@@ -48,12 +48,12 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | _Lists Quiz_ | | |
 | T | 10/9 | Lab 5 | | [Lab 4](https://protect.bju.edu/cps/courses/cps110/labs/lab4.html) |
 | W | 10/10 | [Web Forms](/bju/cps110/lectures/lec15) | 12.8 | |
-| F | 10/12 | [Exception Handling](/bju/cps110/lectures/lec16) | 11.1 - 11.6 | Program 3 |
+| F | 10/12 | [Exception Handling](/bju/cps110/lectures/lec16) | 11.1 - 11.6 | [Program 3](https://protect.bju.edu/cps/courses/cps110/programs/program3.html) |
 | | | [Text File Processing](/bju/cps110/lectures/lec16) | | |
 | | | | | |
-| M | 10/15 | Dictionaries | 13.1 - 13.5 | Program 3 Report |
+| M | 10/15 | [Dictionaries](/bju/cps110/lectures/lec17) | 13.1 - 13.5 | [Program 3 Report](https://protect.bju.edu/cps/courses/cps110/programs/program3report.html) |
+| | | [CSV File Processing](/bju/cps110/lectures/lec17) | | |
 | | | _Web Apps Quiz_ | | |
-| | | CSV File Processing | | |
 | T | 10/16 | Lab 6 | | Lab 5 |
 | | | Command Line Basics | | |
 | W | 10/17 | Consuming Web Services | ATBS Chapter 14 | |
