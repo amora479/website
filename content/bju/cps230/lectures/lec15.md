@@ -436,3 +436,97 @@ main:
 If we look at both programs, both look relatively sane.  If the user enters the user/pass incorrectly, they reject him, and if he enters the info correctly, they accept.  However, these programs have a rather insidious bug.  If we look at the memory layout of `login_successful` and `is_root`, we see they come immediately after the password field.  Since gets doesn't prevent us from entering more than 15 characters, if we enter 23 h's as the password, the login fails but we are still authenticated and we get root access to boot.  Compile this program yourself, and try it out.
 
 Why does this work with the Assembly program but not the C program?  Most C compilers nowadays auto inject checks to prevent attackers from executing buffer overflow attacks.  That doesn't mean that you can't, but it is definitely much harder than it used to be.  Assemblers do not insert checks for you.
+
+## Stack Smashing
+
+```
+default rel
+
+extern gets, puts, printf
+
+STRUC User
+    .username: resb 50
+    .password: resb 50
+    .is_admin: resb 1
+    .size:
+ENDSTRUC
+
+section .data
+
+    admin: dq 0
+    regular_user: dq 0
+
+    user_is_admin: db "user is admin", 10, 0
+    user_is_not_admin: db "user is not admin", 10, 0
+    user_is_regular_user: db "user is regular user", 10, 0
+    user_is_not_regular_user: db "user is not regular user", 10, 0
+
+    address: db "%llx", 10, 0
+
+section .text
+
+times 4000 int 3                    ; pad 0s to the start of the binary
+
+global auth
+auth:
+    sub     rsp, 40                         ; 40 bytes for username
+    sub     rsp, 40                         ; 40 bytes for password
+    sub     rsp, 32                         ; oh yeah and shadow space too
+
+    lea     rcx, [rsp + 72]                 ; read username
+    call    gets
+    lea     rcx, [rsp + 32]                 ; read password
+    call    gets
+
+    ; do some logic here for comparing username and password
+    ; if the user is a regular user call make user regular user
+    ; if the user is an admin call make user admin
+    ; this isn't important for the example, the bad stuff has already
+    ; happened at this point
+
+    add     rsp, 112                        ; pop all the things off
+    ret
+
+global main
+main:
+    sub     rsp, 32                         ; create shadow space
+
+    call    auth                            ; authenticate!
+
+    cmp     qword [admin], 1                ; if admin == 1
+    je      .yes_admin                      ; compare was true
+    jmp     .no_admin                       ; compare was not
+.yes_admin:
+    lea     rcx, [user_is_admin]            ; user is admin
+    call    puts
+    jmp     .end_admin_check                ; skip false
+.no_admin:
+    lea     rcx, [user_is_not_admin]        ; print user isn't admin
+    call    puts
+.end_admin_check:
+
+    cmp     qword [regular_user], 1         ; if regular_user == 1
+    je      .yes_regular_user               ; compare was true
+    jmp     .no_regular_user                ; compare was false
+.yes_regular_user:
+    lea     rcx, [user_is_regular_user]     ; print user is regular user
+    call    puts
+    jmp     .end_admin_check
+.no_regular_user:
+    lea     rcx, [user_is_not_regular_user] ; print user is not regular user
+    call    puts
+.end_regular_user_check:
+
+    add     rsp, 32                         ; remove shadow space
+    ret
+
+global make_user_admin
+make_user_admin:
+    mov     qword [admin], 1                ; helper function for elevating to admin
+    ret
+
+global make_user_regular_user
+make_user_regular_user:
+    mov     qword [regular_user], 1         ; helper function for elevating to admin
+    ret
+```
