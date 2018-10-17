@@ -49,20 +49,20 @@ SECTION .data
 SECTION .text
 global main
 main:
-	sub     rsp, 32		; shadow space
+	sub		rsp, 32			; shadow space
 
-	mov     rdi, string2    ; copying to
-	mov     rsi, string1    ; copying from
-	cld                     ; direction to copy
+	mov		rdi, string2	; copying to
+	mov		rsi, string1	; copying from
+	cld						; direction to copy
 
-	mov     rcx, 12         ; indicate how many bytes to copy
-	rep     movsb           ; execute movsb edi, esi until ecx is 0
+	mov		rcx, 12			; indicate how many bytes to copy
+	rep		movsb			; execute movsb edi, esi until ecx is 0
 
-	lea     rdx, [string2]	; load address of string 2
-	lea     rcx, [fmt]	; load address of fmt
-	call    printf
+	lea		rdx, [string2]	; load address of string 2
+	lea		rcx, [fmt]		; load address of fmt
+	call	printf
 
-    	add     rsp, 32		; drop shadow space
+	add		rsp, 32			; drop shadow space
 	ret
 ```
 
@@ -101,23 +101,23 @@ SECTION .data
 SECTION .text
 global main
 main:
-    	sub     rsp, 32		; shadow space
+	sub		rsp, 32			; shadow space
 
-   	mov     rdi, string1    ; string to search
-	cld     		; direction to search
-	mov     al, 'o'         ; al contains the character we are searching for
+	mov		rdi, string1	; string to search
+	cld						; direction to search
+	mov		al, 'o'			; al contains the character we are searching for
 
-	mov     rcx, 12         ; indicates when search should stop
-	repne   scasb           ; execute until al is found or ecx is 0
+	mov		rcx, 12			; indicates when search should stop
+	repne	scasb			; execute until al is found or ecx is 0
 
-	mov     rax, 12		; max index to rax so we can calculate where we stopped
-	sub     rax, rcx	; rcx contains where we stopped
-	sub     rax, 1		; sub 1 to get index
-	mov     rdx, rax	; setup for printf 
-	lea     rcx, [fmt]	; setup for printf
-	call    printf
+	mov		rax, 12			; max index to rax so we can calculate where we stopped
+	sub		rax, rcx		; rcx contains where we stopped
+	sub		rax, 1			; sub 1 to get index
+	mov		rdx, rax		; setup for printf 
+	lea		rcx, [fmt]		; setup for printf
+	call	printf
 	
-    	add     rsp, 32		; drop shadow space
+	add		rsp, 32			; drop shadow space
 	ret
 ```
 
@@ -155,25 +155,25 @@ SECTION .text
 
 global main
 main:
-    	sub     rsp, 32		; shadow space
+	sub		rsp, 32			; shadow space
 
-	mov     rdi, string2    ; copying to
-	mov     rsi, string1    ; copying from
+	mov		rdi, string2	; copying to
+	mov		rsi, string1	; copying from
 
-	mov     rcx, 12
-	repe    cmpsb           ; execute while they are equal
-	je      .push_0
-	jmp     .push_1
+	mov		rcx, 12
+	repe	cmpsb			 ; execute while they are equal
+	je		.push_0
+	jmp		.push_1
 .push_0:
-	mov     rdx, 0		; print 0 if equal
-	jmp     .pushed
+	mov		rdx, 0			; print 0 if equal
+	jmp		.pushed
 .push_1:
-	mov     rdx, 1		; print 1 if not
+	mov		rdx, 1			; print 1 if not
 .pushed:
-	lea     rcx, [fmt]	; load format string
-	call    printf
+	lea		rcx, [fmt]		; load format string
+	call	printf
 
-    	add     rsp, 32		; drop shadow space
+	add		rsp, 32			; drop shadow space
 	ret
 ```
 
@@ -216,32 +216,32 @@ SECTION .data
 SECTION .text
 global main
 main:
-    	sub     rsp, 32			; shadow space
+	sub		rsp, 32				; shadow space
 
-	mov     rdi, string1        	; printing to
-	cld				; clear direction flag
+	mov		rdi, string1		; printing to
+	cld							; clear direction flag
 
 .while:
-	cmp     qword [count], 0	; only get a char while counter is > 0
-	jne     .continue
-	jmp     .done
+	cmp		qword [count], 0	; only get a char while counter is > 0
+	jne		.continue
+	jmp		.done
 .continue:
-	mov     rax, 0			; clear rax before we get a char
-	call    getchar
-	cmp     eax, 10 		; newline
-	jne     .continue2		; stop collecting on new lines
-	jmp     .done
+	mov		rax, 0				; clear rax before we get a char
+	call	getchar
+	cmp		eax, 10 			; newline
+	jne		.continue2			; stop collecting on new lines
+	jmp		.done
 .continue2:
-	stosb				; puts al into [rdi] and then increments rdi
-	sub     qword [count], 1
-	jmp     .while
+	stosb						; puts al into [rdi] and then increments rdi
+	sub		qword [count], 1
+	jmp		.while
 .done:
-	mov     byte [rdi+1], 0     	; don't forget to 0 terminate your strings
-	lea     rdx, [string1]		; load the address of our string
-	lea     rcx, [fmt]
-	call    printf
-    
-    	add     rsp, 32			; drop shadow space
+	mov		byte [rdi+1], 0	 	; don't forget to 0 terminate your strings
+	lea		rdx, [string1]		; load the address of our string
+	lea		rcx, [fmt]
+	call	printf
+	
+	add		rsp, 32				; drop shadow space
 	ret
 ```
 
@@ -279,25 +279,25 @@ SECTION .data
 SECTION .text
 global main
 main:
-    	sub     rsp, 32			; shadow space
+	sub		rsp, 32				; shadow space
 
-	mov     rsi, string1 		; printing from
+	mov		rsi, string1 		; printing from
 	cld
 .while:
-	cmp     qword [count], 0	; only print while count > 0
-	jne     .continue
-	jmp     .done
+	cmp		qword [count], 0	; only print while count > 0
+	jne		.continue
+	jmp		.done
 .continue:
-	mov     rax, 0			; clear rax
-	lodsb                       	; copy byte [rsi] into al then increment rsi
-	mov     rcx, 0			; get ready to print the character using rcx
-    	mov     cl, al 			; copy the character
-	call    putchar
+	mov		rax, 0				; clear rax
+	lodsb						; copy byte [rsi] into al then increment rsi
+	mov		rcx, 0				; get ready to print the character using rcx
+	mov		cl, al				; copy the character
+	call	putchar
 	
-    	dec     qword [count]		; decrement our counter
-	jmp     .while
+	dec		qword [count]		; decrement our counter
+	jmp		.while
 .done:
-    	add     rsp, 32			; drop shadow space
+	add		rsp, 32				; drop shadow space
 	ret
 ```
 
@@ -374,62 +374,62 @@ SECTION .text
 
 global main
 main:
-    	sub     rsp, 32                         ; create shadow space
+	sub		rsp, 32							; create shadow space
 
-	lea     rcx, [username]                 ; ask for username (no prompt)
-	call    gets
+	lea		rcx, [username]					; ask for username (no prompt)
+	call	gets
 
-	lea     rcx, [password]                 ; ask for password (no prompt)
-	call    gets
+	lea		rcx, [password]					; ask for password (no prompt)
+	call	gets
 
-	lea     rdx, [username]                 ; address of user entered username
-	lea     rcx, [real_username]            ; address of our not so secret username
-	call    strcmp
+	lea		rdx, [username]					; address of user entered username
+	lea		rcx, [real_username]			; address of our not so secret username
+	call	strcmp
 	
-	cmp     rax, 0                          ; if username == real_username
-	je      .username_correct               ; compare was true
-	jmp     .username_incorrect             ; compare was false
+	cmp		rax, 0							; if username == real_username
+	je		.username_correct				; compare was true
+	jmp		.username_incorrect				; compare was false
 .username_correct:
-	lea     rdx, [password]                 ; address of user entered password
-	lea     rcx, [real_password]            ; address of our not so secret password
-	call    strcmp
+	lea		rdx, [password]					; address of user entered password
+	lea		rcx, [real_password]			; address of our not so secret password
+	call	strcmp
 
-	cmp     rax, 0                          ; if password == real_password
-	je      .password_correct               ; compare was true
-	jmp     .password_incorrect             ; compare was false
+	cmp		rax, 0							; if password == real_password
+	je		.password_correct				; compare was true
+	jmp		.password_incorrect				; compare was false
 .password_correct:
-	mov     qword [login_successful], 1     ; the user is able to do stuff
-	mov     qword [is_root], 1              ; and they can be admin to boot after all they knew the password!
+	mov		qword [login_successful], 1		; the user is able to do stuff
+	mov		qword [is_root], 1				; and they can be admin to boot after all they knew the password!
 
-	jmp     .continue
+	jmp		.continue
 .password_incorrect:
 .username_incorrect:
-	lea     rcx, [login_unsuccessful_str]   ; the user didn't get in, no admin for you haha!
-	call    printf
+	lea		rcx, [login_unsuccessful_str]	; the user didn't get in, no admin for you haha!
+	call	printf
 .continue:
-	cmp     qword [login_successful], 0     ; if login_successful == 0
-	je      .login_was_not_successful       ; compare was not true
-	jmp     .login_was_successful           ; compare was false
+	cmp		qword [login_successful], 0		; if login_successful == 0
+	je		.login_was_not_successful		; compare was not true
+	jmp		.login_was_successful			; compare was false
 .login_was_not_successful:
-	lea     rcx, [you_are_not_logged_in]    ; tell the user they didn't get ins
-	call    printf
-    	jmp     .check_root
+	lea		rcx, [you_are_not_logged_in]	; tell the user they didn't get ins
+	call	printf
+	jmp		.check_root
 .login_was_successful:
-	lea     rcx, [you_are_logged_in]        ; tell the user they got in
-	call    printf
+	lea		rcx, [you_are_logged_in]		; tell the user they got in
+	call	printf
 .check_root:
-	cmp     qword [is_root], 0              ; if is_root == 0
-	je      .root_was_not_successful        ; compare was true
-	jmp     .root_was_successful            ; compare was false
+	cmp		qword [is_root], 0				; if is_root == 0
+	je		.root_was_not_successful		; compare was true
+	jmp		.root_was_successful			; compare was false
 .root_was_not_successful:
-	lea     rcx, [you_are_groot]            ; let the user know they are not root
-	call    printf
-    	jmp     .end
+	lea		rcx, [you_are_groot]			; let the user know they are not root
+	call	printf
+	jmp		.end
 .root_was_successful:
-	lea     rcx, [you_are_root]             ; let the user know they are root
-	call    printf
+	lea		rcx, [you_are_root]				; let the user know they are root
+	call	printf
 .end:
-    	add     rsp, 32
+	add		rsp, 32
 	ret
 ```
 
@@ -445,88 +445,88 @@ default rel
 extern gets, puts, printf
 
 STRUC User
-    .username: resb 50
-    .password: resb 50
-    .is_admin: resb 1
-    .size:
+	.username: resb 50
+	.password: resb 50
+	.is_admin: resb 1
+	.size:
 ENDSTRUC
 
 section .data
 
-    admin: dq 0
-    regular_user: dq 0
+	admin: dq 0
+	regular_user: dq 0
 
-    user_is_admin: db "user is admin", 10, 0
-    user_is_not_admin: db "user is not admin", 10, 0
-    user_is_regular_user: db "user is regular user", 10, 0
-    user_is_not_regular_user: db "user is not regular user", 10, 0
+	user_is_admin: db "user is admin", 10, 0
+	user_is_not_admin: db "user is not admin", 10, 0
+	user_is_regular_user: db "user is regular user", 10, 0
+	user_is_not_regular_user: db "user is not regular user", 10, 0
 
-    address: db "%llx", 10, 0
+	address: db "%llx", 10, 0
 
 section .text
 
-times 4000 int 3                    ; pad 0s to the start of the binary
+times 4000 int 3							; pad 0s to the start of the binary
 
 global auth
 auth:
-    sub     rsp, 40                         ; 40 bytes for username
-    sub     rsp, 40                         ; 40 bytes for password
-    sub     rsp, 32                         ; oh yeah and shadow space too
+	sub		rsp, 40							; 40 bytes for username
+	sub		rsp, 40							; 40 bytes for password
+	sub		rsp, 32							; oh yeah and shadow space too
 
-    lea     rcx, [rsp + 72]                 ; read username
-    call    gets
-    lea     rcx, [rsp + 32]                 ; read password
-    call    gets
+	lea		rcx, [rsp + 72]					; read username
+	call	gets
+	lea		rcx, [rsp + 32]					; read password
+	call	gets
 
-    ; do some logic here for comparing username and password
-    ; if the user is a regular user call make user regular user
-    ; if the user is an admin call make user admin
-    ; this isn't important for the example, the bad stuff has already
-    ; happened at this point
+	; do some logic here for comparing username and password
+	; if the user is a regular user call make user regular user
+	; if the user is an admin call make user admin
+	; this isn't important for the example, the bad stuff has already
+	; happened at this point
 
-    add     rsp, 112                        ; pop all the things off
-    ret
+	add		rsp, 112						; pop all the things off
+	ret
 
 global main
 main:
-    sub     rsp, 32                         ; create shadow space
+	sub		rsp, 32							; create shadow space
 
-    call    auth                            ; authenticate!
+	call	auth							; authenticate!
 
-    cmp     qword [admin], 1                ; if admin == 1
-    je      .yes_admin                      ; compare was true
-    jmp     .no_admin                       ; compare was not
+	cmp		qword [admin], 1				; if admin == 1
+	je		.yes_admin						; compare was true
+	jmp		.no_admin						; compare was not
 .yes_admin:
-    lea     rcx, [user_is_admin]            ; user is admin
-    call    puts
-    jmp     .end_admin_check                ; skip false
+	lea		rcx, [user_is_admin]			; user is admin
+	call	puts
+	jmp		.end_admin_check				; skip false
 .no_admin:
-    lea     rcx, [user_is_not_admin]        ; print user isn't admin
-    call    puts
+	lea		rcx, [user_is_not_admin]		; print user isn't admin
+	call	puts
 .end_admin_check:
 
-    cmp     qword [regular_user], 1         ; if regular_user == 1
-    je      .yes_regular_user               ; compare was true
-    jmp     .no_regular_user                ; compare was false
+	cmp		qword [regular_user], 1			; if regular_user == 1
+	je		.yes_regular_user				; compare was true
+	jmp		.no_regular_user				; compare was false
 .yes_regular_user:
-    lea     rcx, [user_is_regular_user]     ; print user is regular user
-    call    puts
-    jmp     .end_admin_check
+	lea		rcx, [user_is_regular_user]		; print user is regular user
+	call	puts
+	jmp		.end_admin_check
 .no_regular_user:
-    lea     rcx, [user_is_not_regular_user] ; print user is not regular user
-    call    puts
+	lea		rcx, [user_is_not_regular_user]	; print user is not regular user
+	call	puts
 .end_regular_user_check:
 
-    add     rsp, 32                         ; remove shadow space
-    ret
+	add		rsp, 32							; remove shadow space
+	ret
 
 global make_user_admin
 make_user_admin:
-    mov     qword [admin], 1                ; helper function for elevating to admin
-    ret
+	mov		qword [admin], 1				; helper function for elevating to admin
+	ret
 
 global make_user_regular_user
 make_user_regular_user:
-    mov     qword [regular_user], 1         ; helper function for elevating to admin
-    ret
+	mov		qword [regular_user], 1			; helper function for elevating to admin
+	ret
 ```

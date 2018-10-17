@@ -1,14 +1,14 @@
 ---
 title: "CPS 230"
 date: 2018-08-21T00:00:00-04:00
-draft: true
+draft: false
 ---
 
-# Lecture 16: Variodic Functions
+# Lecture 16: Variadic Functions
 
 In C, there is sometimes a need to have parameters that support an unlimited number of parameters.  One of these special cases are the printf and scanf functions, and there are occasionally others.  Such functions are called variadic functions, and let's look at a simple example of how to write one.
 
-First, include the stdargs library.  This imports several macros that allow us to access the varying number of parameters.  Second, the variodic function should have one required parameter.  Ideally, this parameter will contain the number of arguments provided by the user.  For printf and scanf, this count is embedded in the format string.  The remaining parameter(s) are represented by `...`.
+First, include the stdargs library.  This imports several macros that allow us to access the varying number of parameters.  Second, the variadic function should have one required parameter.  Ideally, this parameter will contain the number of arguments provided by the user.  For printf and scanf, this count is embedded in the format string.  The remaining parameter(s) are represented by `...`.
 
 ``` c
 #include "stdarg.h"

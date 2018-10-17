@@ -43,7 +43,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 10/12 | [C Strings](/bju/cps230/lectures/lec14) | Ch. 3 (3.10 to 3.11) | [Lab 6](/bju/cps230/homework/lab6) |
 | | | | | |
 | M | 10/15 | [Strings / Overflow Attacks](/bju/cps230/lectures/lec15) | Ch. 3 (3.12 to 3.12.1) | [HW 3](/bju/cps230/homework/hw3) |
-| W | 10/17 | Variodic Functions | Ch. 3 (to 3.13) | |
+| W | 10/17 | [Variadic Functions](/bju/cps230/lectures/lec16) | Ch. 3 (to 3.13) | |
 | F | 10/19 | Linking | Ch. 7 (to 7.6) | |
 | | | | | |
 | M | 10/22 | Linking | Ch. 7 (to 7.8) | |
@@ -57,7 +57,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | | [Aftermath](https://en.wikipedia.org/wiki/Influence_of_the_IBM_PC_on_the_personal_computer_market) | |
 | W | 10/31 | Using the BIOS API | [HelpPC: BIOS Video](http://stanislavs.org/helppc/int_10.html) | |
 | | | | [HelpPC: BIOS Keyboard](http://stanislavs.org/helppc/int_16.html) | |
-| F | 11/2 | Real Mode Addressing | | Lab 7 |
+| F | 11/2 | Real Mode Addressing | | [Lab 7](/bju/cps230/homework/lab7) |
 | | | | | |
 | M | 11/5 | PC VGA Graphics | | |
 | W | 11/7 | Cooperative Task Switching | | |
