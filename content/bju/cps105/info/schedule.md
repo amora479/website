@@ -54,8 +54,9 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [Excel](/bju/cps105/lectures/ppt-downloads/lec16.pptx) | | |
 | | | [Test 2 Review](/bju/cps105/reviews/test2) | | |
 | | | | | |
-| M | 10/15 | [Excel](/bju/cps105/lectures/ppt-downloads/lec16.pptx) | | ||
+| M | 10/15 | [Excel](/bju/cps105/lectures/ppt-downloads/lec16.pptx) | | |
 | W | 10/17 | [Excel](/bju/cps105/lectures/ppt-downloads/lec16.pptx) | | |
+| F | 10/19 | _Test 2_ | | |
 | | | | | |
 | M | 10/22 | FGC Presentations (VII) | FGC Chapter 7 (stop before Tablet Revolution) | [Excel Data Analysis](/bju/cps105/homework/data-analysis) |
 | | | Specification / Testing | | |
