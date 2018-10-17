@@ -44,158 +44,187 @@ int sum(int count, ...) {
 }
 ```
 
+And translated to 64-bit assembly, we would have...
+
+```
+default rel
+
+extern printf
+
+section .data
+
+    fmt: db "%d", 10, 0
+
+section .text
+
+global sum
+sum:
+    ; put the registers into the shadow space so we can do stack walking
+    mov     [rsp + 32], r9
+    mov     [rsp + 24], r8
+    mov     [rsp + 16], rdx
+    mov     [rsp + 8], rcx
+    push    rbp                     ; this requires more than a bit of stack access so frame pointer
+    mov     rbp, rsp                ; create the new frame pointer
+    mov     rax, 0                  ; rather than a local variable, we'll just use a register
+.while:
+    cmp     qword [rbp + 16], 0     ; we will decrement the first parameter and treat it as an index
+    jge     .while_body
+    jmp     .while_end
+.while_body:
+    mov     rcx, [rbp + 16]         ; get the current value of our index (the first parameter)
+    lea     r10, [rbp + 16]         ; get the start of the arguments array
+    add     rax, [r10 + rcx * 8]    ; add directly to rax from the stack
+    dec     qword [rbp + 16]        ; decrement our counter (the first parameter)
+    jmp     .while
+.while_end:
+    mov     rsp, rbp                ; return value already in rax so just get rid of the frame pointer
+    pop     rbp                     ; restore the old frame pointer if there was one
+    ret
+
+global main
+main:
+    sub     rsp, 40                 ; we need a 5th parameter here, so just increase the size of the shadow space
+    mov     qword [rsp + 32], 4     ; shove the 5th parameter into the shadow space the others into registers
+    mov     r9, 3
+    mov     r8, 2
+    mov     rdx, 1
+    mov     rcx, 4
+    call    sum                     ; invoke sum
+    
+    mov     rdx, rax                ; standard printing
+    lea     rcx, [fmt]
+    call    printf
+    
+    add     rsp, 40                 ; remove the slightly larger than normal shadow space
+    ret
+```
+
 ## Simple scanf Implementation
 
 In lab9, you'll be implementing variadic functions to write a simple version of printf.  For your reference and general amusement, I present a simple scanf with some random changes.  Note that we are going to stick with integers only (which we'll also do with printf) to keep things simple, and we'll support the following format specifiers.
 
 | specifier | int type |
 | --- | --- |
+| %g | grok |
+| %x | hex |
 | %d | decimal |
-| %u | unsigned decimal |
-| %g | hex |
-| %c | octal |
-| %3 | ternary |
+| %b | binary |
 
 ``` c
 #include "stdarg.h"
+#include "string.h"
 #include "stdio.h"
- 
-char c;
- 
-int readDecimal(int allowNegatives) {
-    int decimal = 0, negative = 0;
-    while((c >= '0' && c <= '9') || c == '-') {
+
+// readUntilNotInRange
+// params:
+//      - c - the character starting the string
+//      - min1 - which part of the range from 0 to 9 is desired
+//      - max1 - which part of the range from 0 to 9 is desired
+//      - base1 - what is the base value of the min1 - max1 range
+//      - min@ - which part of the range from A to Z is desired
+//      - max2 - which part of the range from A to Z is desired
+//      - base2 - what is the base value of the min2 - max2 range
+//      - multiplier - what is the number's base
+int readUntilNotInRange(char c, char min1, char max1, int base1, char min2, char max2, int base2, int multiplier) {
+    int result = 0, negative = 0, no_more_negatives = 0;
+    while((c >= min1 && c <= max1) || (c >= min2 && c <= max2) || (!no_more_negatives && c == '-')) { // we are in range
         if(c != '-') {
-            decimal *= 10;
-            decimal += (c - '0');
-        } else {
-            if(allowNegatives) {
-                negative = !negative;
-            } else {
-                printf("Please enter an unsigned number\n");
+            no_more_negatives = 1; // do not allow any more negative signs because we have our first digit
+            if((c >= min1 && c <= max1)) { // figure out the range
+                result *= multiplier; // multiply by the base
+                result += (c - min1) + base1; // do a bit of math to figure out the digit's decimal representation
+            } else if((c >= min2 && c <= max2)) {
+                result *= multiplier;
+                result += (c - min2) + base2;
             }
-        }
-        c = getchar();
-    }
-    return decimal * (negative ? -1 : 1);
-}
- 
-int readOctal() {
-    int octal = 0, negative = 0;
-    while((c >= '0' && c <= '7') || c == '-') {
-        if(c != '-') {
-            octal *= 8;
-            octal += (c - '0');
         } else {
-            negative = !negative;
+            negative = !negative; // flip the sign of the number
         }
         c = getchar();
     }
-    return octal;
+    return result * (negative ? -1 : 1);
 }
 
-int readTernary() {
-    int octal = 0, negative = 0;
-    while((c >= '0' && c <= '2') || c == '-') {
-        if(c != '-') {
-            octal *= 3;
-            octal += (c - '0');
-        } else {
-            negative = !negative;
-        }
-        c = getchar();
-    }
-    return octal;
+int readAsGrok(char c) {
+    return readUntilNotInRange(c, '0', '9', 0, 'A', 'I', 10, 19);
 }
- 
-int readHex() {
-    int hex = 0, negative = 0;
-    while((c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') || (c >= 'a' && c <= 'f') || c == '-') {
-        if(c != '-') {
-            hex *= 16;
-            if(c >= '0' && c <= '9') {
-                hex += (c - '0');
-            } else if(c >= 'A' || c <= 'F') {
-                hex += (c - 'A') + 10;
-            } else if(c >= 'a' || c <= 'f') {
-                hex += (c - 'a') + 10;
-            }
-        } else {
-            negative = !negative;
-        }
-        c = getchar();
-    }
-    return hex;
+
+int readAsHex(char c) {
+    return readUntilNotInRange(c, '0', '9', 0, 'A', 'F', 10, 16);
 }
- 
-void myScanf(char* fmtString, ...) {
-    va_list args;
-    va_start(args, fmtString);
- 
-    c = getchar();
-    //%d - decimal
-    //%u - unsigned decimal
-    //%g - hex
-    //%c - octal
-    //%3 - ternary
-    int i = 0;
-    for(i = 0; fmtString[i] != 0; ++i) {
-        if(fmtString[i] == '%') {
+
+int readAsDecimal(char c) {
+    return readUntilNotInRange(c, '0', '9', 0, '0', '9', 0, 10);
+}
+
+int readAsBinary(char c) {
+    return readUntilNotInRange(c, '0', '1', 0, '0', '1', 0, 2);
+}
+
+// scanf
+// params:
+//      - fmtString - a format string
+//                  - only %g (grok), %d (decimal) and %b (binary) are supported
+//      - ... - a list of addresses to read into
+// returns: the number of items we read successfully
+int myScanf(char *fmtString, ...) {
+    va_list args; // declare a variable argument list
+    va_start(args, fmtString); // tell the variable argument list where to start
+                               // this is almost always the last named parameter
+
+    char c = getchar(); //read one character from the user to start
+    int lenOfFmtString = strlen(fmtString), itemsRead = 0;
+    for(int i = 0; i < lenOfFmtString; ++i) {
+        if(fmtString[i] == '%' && i + 1 < lenOfFmtString) { // did we get a percent symbol
             ++i;
-            switch(fmtString[i]) {
-                case 'd':
-                case 'D':
-                    int *ptr1 = va_arg(args, int*);
-                    *ptr1 = readDecimal(1);
-                    break;
-                case 'u':
-                case 'U':
-                    int *ptr2 = va_arg(args, int*);
-                    *ptr2 = readDecimal(0);
-                    break;
-                case 'c':
-                case 'C':
-                    int *ptr3 = va_arg(args, int*);
-                    *ptr3 = readOctal();
-                    break;
-                case '3':
-                    int *ptr4 = va_arg(args, int*);
-                    *ptr4 = readTernary();
-                    break;
+            switch(fmtString[i]) { // yes, check the format specifier
                 case 'g':
                 case 'G':
-                    int *ptr5 = va_arg(args, int*);
-                    *ptr5 = readHex();
+                    *va_arg(args, int*) = readAsGrok(c);
+                    ++itemsRead;
+                    break;
+                case 'x':
+                case 'X':
+                    *va_arg(args, int*) = readAsHex(c);
+                    ++itemsRead;
+                    break;
+                case 'd':
+                case 'D':
+                    *va_arg(args, int*) = readAsDecimal(c);
+                    ++itemsRead;
+                    break;
+                case 'b':
+                case 'B':
+                    *va_arg(args, int*) = readAsBinary(c);
+                    ++itemsRead;
+                    break;
+                case '%':
+                    if(c != '%') {
+                        printf("expected a %% but read a %c\n", c);
+                        return -1;
+                    }
                     break;
                 default:
-                    printf("invalid input\n");
-                    return;
+                    printf("%c is not a recognized format specifier.\n", fmtString[i]);
+                    break;
             }
         } else {
-            if(c != fmtString[i]) {
-                printf("please enter a %c\n", fmtString[i]);
-                return;
+            if(c != fmtString[i]) { // the character we read didn't match what scanf said it should be
+                printf("expected a %c but read a %c\n", fmtString[i], c);
+                return -1;
             } else {
-                c = getchar();
+                c = getchar(); //read a character from the user
             }
         }
     }
- 
-    va_end(args);
+    va_end(args); // end the variable argument list (cleanup)
+    return itemsRead;
 }
- 
+
 int main() {
-    int hexVar;
-    int udecVar;
-    int decVar;
-    int octVar;
-    int terVar;
-    myScanf("%g %u %d %c %3", &hexVar, &udecVar, &decVar, &octVar, &terVar);
-    printf("%d\n", hexVar);
-    printf("%d\n", udecVar);
-    printf("%d\n", decVar);
-    printf("%d\n", octVar);
-    printf("%d\n", terVar);
-    return 0;
+    int num;
+    myScanf("%g", &num);
+    printf("%d", num);
 }
 ```
