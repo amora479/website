@@ -55,11 +55,11 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | [CSV File Processing](/bju/cps110/lectures/lec17) | | |
 | | | _Web Apps Quiz_ | | |
 | T | 10/16 | Lab 6 | | Lab 5 |
-| | | Command Line Basics | | |
-| W | 10/17 | Consuming Web Services | ATBS Chapter 14 | |
-| F | 10/19 | Spreadsheet Processing | ATBS Chapter 12 | |
+| | | [Command Line Basics](/bju/cps110/lectures/lec18) | | |
+| W | 10/17 | [Consuming Web Services](/bju/cps110/lectures/lec19) | [ATBS](https://automatetheboringstuff.com/) Chapter 14 | |
+| F | 10/19 | Spreadsheet Processing | [ATBS](https://automatetheboringstuff.com/) Chapter 12 | |
 | | | | | |
-| M | 10/22 | File System Processing | ATBS Chapter 9 | |
+| M | 10/22 | File System Processing | [ATBS](https://automatetheboringstuff.com/) Chapter 9 | |
 | T | 10/23 | _Day of Rest_ | | Lab 6 |
 | W | 10/24 | Test 2 Review | | Program 4 |
 | F | 10/26 | Test 2 | | |

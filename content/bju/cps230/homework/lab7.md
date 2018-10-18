@@ -28,6 +28,8 @@ Open the `make.bat` batch script.  Study it briefly--you should recognize all bu
 
 Open a NASM command prompt, navigate to your `lab7` folder, and run the `make.bat` batch file to assemble, compile, and link all the pieces of this program.
 
+> Note: You may need to change the line that calls the vc 64 command if you are using the Enterprise version of visual studio 2017.  Just change the word Community to Enterprise.
+
 Run the resulting `demo_uprintf.exe` program.  What does/does not work so far?
 
 ## Background
@@ -55,7 +57,7 @@ onto the stack in right-to-left order.  The advantage is that **the format strin
 
 ## Approach
 
-The basic rule is that the only standard library function you may use is `putchar` (`extern _putchar`).
+The basic rule is that the only standard library function you may use is `putchar` (`extern putchar`).
 
 ### The Parameter Walk
 
