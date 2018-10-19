@@ -33,8 +33,8 @@ section .text
 
 global _saw
 _saw:
-    mov eax, [banana]
-    xor eax, [golf_cart]
+    mov rax, [banana]
+    xor rax, [golf_cart]
     ret
 
     int3
@@ -42,8 +42,8 @@ _saw:
 
 global _tape_measure
 _tape_measure:
-    mov eax, [golf_cart]
-    add eax, [plum]
+    mov rax, [golf_cart]
+    add rax, [plum]
     ret
 
 
@@ -62,14 +62,13 @@ section .text
 
 global _rasp
 _rasp:
-    push    ebp
-    mov     ebp, esp
+    push    rbp
+    mov     rbp, rsp
 
-    push    dword [helicopter]
+    mov     rcx, [helicopter]
     call    _saw
-    add     esp, 4
-
-    pop     ebp
+    
+    pop     rbp
     ret
 
 section .data

@@ -47,7 +47,7 @@ For each relocation (in order of "site"), indicate the source section, offset in
 
 ## Generate Final Image (10 pts)
 
-Using a *hex editor* of your choice, construct the sequence of bytes produced by linking the given given object files, saving it as **image.bin** and submitting it electronically.  **image.bin** should be exactly 96 bytes long and should have an MD5 checksum of **8c000ff2879e019a24f262da4000ee8e**.
+Using a *hex editor* of your choice, construct the sequence of bytes produced by linking the given given object files, saving it as **image.bin** and submitting it electronically.  **image.bin** should be exactly 96 bytes long and should have an MD5 checksum of ****.
 
 ## Source Files
 
@@ -64,8 +64,8 @@ section .text
 
 global _chisel
 _chisel:
-    mov eax, [plum]
-    xor eax, [golf_cart]
+    mov rax, [plum]
+    xor rax, [golf_cart]
     ret
 
     int3
@@ -73,14 +73,14 @@ _chisel:
 
 global _wrench
 _wrench:
-    mov eax, [golf_cart]
-    add eax, [pineapple]
+    mov rax, [golf_cart]
+    add rax, [pineapple]
     ret
 
 
 section .data
-pineapple  dd  0x1db
-plum  dd  _drill
+pineapple  dq  0x1db
+plum  dq  _drill
 ```
 
 ### fox.asm
@@ -95,47 +95,46 @@ section .text
 
 global _drill
 _drill:
-    push    ebp
-    mov     ebp, esp
+    push    rbp
+    mov     rbp, rsp
 
-    push    dword [helicopter]
+    mov     rcx, [helicopter]
     call    _chisel
-    add     esp, 4
 
-    pop     ebp
+    pop     rbp
     ret
 
 section .data
     db 0,0
-helicopter  dd  0x64
+helicopter  dq  0x64
     db 0,0,0,0,0,0
 global golf_cart
-golf_cart  dd  0xe1
+golf_cart  dq  0xe1
 ```
 
 ### Module bat.obj
 #### .text Section Bytes/Relocations
 ``` asm
-00000000: CC CC A1 04 00 00 00 33  05 00 00 00 00 C3 CC CC  .......3........
-00000010: A1 00 00 00 00 03 05 00  00 00 00 C3              ............
+00000000: CC CC A1 04 00 00 00 00  00 00 00 33 05 00 00 00
+00000010: 00 00 00 00 00 C3 CC CC  A1 00 00 00 00 00 00 00
+00000010: 00 03 05 00 00 00 00 00  00 00 00 C3              
 ```
 
 | Offset | Kind | Target Symbol |
 | --- | --- | --- |
-| 3 | DIR32 | **bat.data** |
-| 9 | DIR32 | **golf_cart** |
-| 17 | DIR32 | **golf_cart** |
-| 23 | DIR32 | **bat.data** |
+| 3 | DIR64 | **bat.data** |
+| 13 | DIR64 | **golf_cart** |
+| 25 | DIR64 | **golf_cart** |
+| 35 | DIR64 | **bat.data** |
 
 #### .data Section Bytes/Relocations
 ``` asm
-00000000: DB 01 00 00 00 00 00 00                           ........
+00000000: DB 01 00 00 00 00 00 00  00 00 00 00 00 00 00 00
 ```
 
 | Offset | Kind | Target Symbol |
 | --- | --- | --- |
-| 4 | DIR32 | **_drill** |
-
+| 8 | DIR64 | **_drill** |
 
 #### Public/External Symbols
 | Section | Offset | Name |
@@ -143,23 +142,24 @@ golf_cart  dd  0xe1
 | **&lt;external&gt;** | 0 | **_drill** |
 | **&lt;external&gt;** | 0 | **golf_cart** |
 | **bat.text** | 2 | **_chisel** |
-| **bat.text** | 16 | **_wrench** |
+| **bat.text** | 24 | **_wrench** |
 
 ### fox.obj
 #### .text Section Bytes/Relocations
 ``` asm
-00000000: CC CC CC 55 89 E5 FF 35  02 00 00 00 E8 00 00 00  ...U...5........
-00000010: 00 83 C4 04 5D C3                                 ....].
+00000000: CC CC CC 55 89 E5 FF 35  02 00 00 00 00 00 00 00
+00000010: E8 00 00 00 00 00 00 00  00 83 C4 04 5D C3
 ```
 
 | Offset | Kind | Target Symbol |
 | --- | --- | --- |
-| 8 | DIR32 | **fox.data** |
-| 13 | REL32 | **_chisel** |
+| 8 | DIR64 | **fox.data** |
+| 17 | REL64 | **_chisel** |
 
 #### .data Section Bytes/Relocations
 ``` asm
-00000000: 00 00 64 00 00 00 00 00  00 00 00 00 E1 00 00 00  ..d.............
+00000000: 00 00 64 00 00 00 00 00  00 00 00 00 00 00 00 00
+00000010: E1 00 00 00 00 00 00 00  
 ```
 
 *(no relocations for this section)*
@@ -170,4 +170,4 @@ golf_cart  dd  0xe1
 | **&lt;external&gt;** | 0 | **_chisel** |
 | **&lt;external&gt;** | 0 | **_wrench** |
 | **fox.text** | 3 | **_drill** |
-| **fox.data** | 12 | **golf_cart** |
+| **fox.data** | 16 | **golf_cart** |
