@@ -134,7 +134,7 @@ golf_cart  dq  0xe1
 
 | Offset | Kind | Target Symbol |
 | --- | --- | --- |
-| 8 | DIR32 | **_drill** |
+| 8 | DIR64 | **_drill** |
 
 #### Public/External Symbols
 | Section | Offset | Name |
