@@ -201,7 +201,7 @@ This step is the hardest, but it is the last step before we can generate our fin
 * value: the value currently in site (4 bytes)
 * adjusted value: the value to copied into site (calculation depends on type)
 
-For ADDR32 / ADDR64, the adjusted value is simple, its just the target address + the value.  For REL64, the adjusted value is the target address - (site address + 4).
+For ADDR32 / ADDR64, the adjusted value is simple, its just the target address + the value.  For REL32, the adjusted value is the target address - (site address + 4).
 
 | section | offset | site | target | kind | value | adjusted value |
 | --- | --- | --- | --- | --- | --- | --- |
