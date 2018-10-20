@@ -44,9 +44,9 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | | | |
 | M | 10/15 | [Strings / Overflow Attacks](/bju/cps230/lectures/lec15) | Ch. 3 (3.12 to 3.12.1) | [HW 3](/bju/cps230/homework/hw3) |
 | W | 10/17 | [Variadic Functions](/bju/cps230/lectures/lec16) | Ch. 3 (to 3.13) | |
-| F | 10/19 | Linking | Ch. 7 (to 7.6) | |
+| F | 10/19 | [Linking](/bju/cps230/lectures/lec17) | Ch. 7 (to 7.6) | |
 | | | | | |
-| M | 10/22 | Linking | Ch. 7 (to 7.8) | |
+| M | 10/22 | [Linking](/bju/cps230/lectures/lec17) | Ch. 7 (to 7.8) | |
 | T | 10/23 | _Day of Rest_ | | |
 | W | 10/24 | Test 2 Review | | |
 | F | 10/26 | Test 2 | | [HW 4](/bju/cps230/homework/hw4) |
