@@ -13,14 +13,14 @@ When coding in C and Assembly, it is possible to interleave the languages progra
 It is possible, and actually very easy, to just embed assembly directly into your C file.  To do so simply use an `__asm` block like so:
 
 ``` c
-int sum(int a, int b, int c) {
+long long int sum(long long int a, long long int b, long long int c) {
 	int result = 0;
 
 	__asm {
-		mov eax, a
-		add eax, b
-		add eax, c
-		mov result, eax
+		mov rax, a
+		add rax, b
+		add rax, c
+		mov result, rax
 	};
 
 	return result;
