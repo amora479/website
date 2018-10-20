@@ -21,8 +21,8 @@ I find that the linking process is easier to follow if we have a real example, s
 
 ``` asm
 ; ape.asm
-extern _rasp
-extern golf_cart
+extern _chisel
+extern _level
 
 section .text
     int3
@@ -33,53 +33,52 @@ section .text
 
 global _saw
 _saw:
-    mov rax, [banana]
-    xor rax, [golf_cart]
-    ret
-
-    int3
-    int3
-
-global _tape_measure
-_tape_measure:
-    mov rax, [golf_cart]
-    add rax, [plum]
-    ret
-
-
-section .data
-plum  dq  0x39d
-banana  dq  _rasp
-```
-
-``` asm
-; insect.asm
-extern _saw
-extern _tape_measure
-
-section .text
-    int3
-
-global _rasp
-_rasp:
     push    rbp
     mov     rbp, rsp
 
-    mov     rcx, [helicopter]
-    call    _saw
-    
+    mov     rcx, [automobile]
+    call    _chisel
+
     pop     rbp
     ret
 
 section .data
     db 0,0,0,0
-helicopter  dq  0x258
+automobile  dq  0x271
     db 0,0,0,0,0,0
-global golf_cart
-golf_cart  dq  0x258
+global bicycle
+bicycle  dq  0x1c2
 ```
 
-Now, we'll begin walking through the steps required in order to link.  In the end, if everything is correct, our executable binary will have the md5 hash `55E13C51A46C700BDC59721A02F6B1DA`.
+``` asm
+; insect.asm
+extern _saw
+extern bicycle
+
+section .text
+    int3
+
+global _chisel
+_chisel:
+    mov rax, [apple]
+    xor rax, [bicycle]
+    ret
+
+    int3
+
+global _level
+_level:
+    mov rax, [bicycle]
+    add rax, [plum]
+    ret
+
+
+section .data
+plum  dq  0x307
+apple  dq  _saw
+```
+
+Now, we'll begin walking through the steps required in order to link.  In the end, if everything is correct, our executable binary will have the md5 hash `a5e19066db8bc53df26f85a19bca063c`.
 
 ## Symbol Location
 
@@ -89,80 +88,82 @@ Symobols for our purposes represent anything included from another obj file (usi
 
 | symbol | offset | location |
 | --- | --- | --- |
-| \_rasp | 0 | extern | 
-| \_golf_cart | 0 | extern | 
-| \_saw | 5 | ape.text | 
-| \_tape_measure | 27 | ape.text | 
+| _chisel | 0 | extern | 
+| _level | 0 | extern | 
+| _saw | 5 | ape.text | 
+| bicycle | 18 | ape.data | 
 
 ### insect.asm Symbols
 
 | symbol | offset | location |
 | --- | --- | --- |
-| \_saw | 0 | extern |
-| \_tape_measure | 0 | extern |
-| \_rasp | 1 | insect.text |
-| golf_cart | 18 | insect.data |
+| _saw | 0 | extern |
+| bicycle | 0 | extern |
+| _chisel | 1 | insect.text |
+| _level | 19 | insect.text |
 
-For the final symbol, remember that dd represents 4 bytes.
+For the final symbol, remember that dq represents 8 bytes.
 
 ## Relocation Needs
 
-There also a couple of symbols that we need to relocate.  For example, both files have references for items in other files.  Also, some .text sections have references to .data sections (remember, they will get split up at some point).  There are two types of relocations (which have differing calculation formulas) Direct (DIR64) and Relative (REL64).  For our purposes, REL64 only happens if the relocation is associated with a call.  Once again, the linker gives us the offsets of each relocation.
+There also a couple of symbols that we need to relocate.  For example, both files have references for items in other files.  Also, some .text sections have references to .data sections (remember, they will get split up at some point).  There are two types of relocations (which have differing calculation formulas) Direct (ADDR32 / ADDR64) and Relative (REL32).  For our purposes, REL32 only happens if the relocation is associated with a call.  Once again, the linker gives us the offsets of each relocation.
+
+What's with the 32 stuff? I thought we were writing 64-bit!  We are, but nasm automatically translates some stuff, especially addresses to 32-bit instead because the 32-bit instructions are an order of magnitude faster.
 
 ### ape.asm .text relocations
 
 | target | offset | kind |
 | --- | --- | --- |
-| ape.data | 6 | DIR64 |
-| golf_cart | 16 | DIR64 |
-| golf_cart | 28 | DIR64 |
-| ape.data | 38 | DIR64 |
+| ape.data | 13 | ADDR32 |
+| _chisel | 18 | REL32 |
 
 ### ape.asm .data relocations
 
-| target | offset | kind |
-| --- | --- | --- |
-| \_rasp | 8 | DIR64 |
+(none)
 
 ### insect.asm .text relocations
 
 | target | offset | kind |
 | --- | --- | --- |
-| insect.data | 6 | DIR64 |
-| \_saw | 15 | REL64 |
+| insect.data | 5 | ADDR32 |
+| bicycle | 13 | ADDR32 |
+| bicycle | 23 | ADDR32 |
+| insect.data | 31 | ADDR32 |
 
 ### insect.asm .data relocations
 
-(none)
+| target | offset | kind |
+| --- | --- | --- |
+| _saw | 8 | ADDR64 |
 
 ## Relocating
 
-First things first, we'll need an address (the address where the exe will reside in memory) to complete this task all the way.  We'll assume `0x3987800` is the address for this program.  There are two tables that we'll need to complete this task.  This first is the section summary table and the second is the symbol summary table.
+First things first, we'll need an address (the address where the exe will reside in memory) to complete this task all the way.  We'll assume `0xc91f000` is the address for this program.  There are two tables that we'll need to complete this task.  This first is the section summary table and the second is the symbol summary table.
 
 We're also going to need the binary represetation of each section:
 
 ``` asm
 ; ape.asm .text
-00000000: CC CC CC CC CC A1 08 00  00 00 00 00 00 00 33 05
-00000010: 00 00 00 00 00 00 00 00  C3 CC CC A1 00 00 00 00
-00000020: 00 00 00 00 03 05 00 00  00 00 00 00 00 00 C3
+00000000: CC CC CC CC CC 55 48 89  E5 48 8B 0C 25 04 00 00
+00000010: 00 E8 00 00 00 00 5D C3
 ```
 
 ``` asm
 ; ape.asm .data
-00000000: 9D 03 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+00000000: 00 00 00 00 71 02 00 00  00 00 00 00 00 00 00 00
+00000010: 00 00 C2 01 00 00 00 00  00 00
 ```
 
 ``` asm
 ; insect.asm .text
-00000000: CC 55 89 E5 FF 35 04 00  00 00 00 00 00 00 E8 00
-00000010: 00 00 00 00 00 00 00 83  C4 04 5D C3
+00000000: CC 48 8B 04 25 08 00 00  00 48 33 04 25 00 00 00
+00000010: 00 C3 CC 48 8B 04 25 00  00 00 00 48 03 04 25 00
+00000020: 00 00 00 C3
 ```
 
 ``` asm
 ; insect.asm .data
-00000000: 00 00 00 00 58 02 00 00  00 00 00 00 00 00 00 00
-00000010: 00 00 58 02 00 00 00 00  00 00
+00000000: 07 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 ```
 
 ### Section Summary Table
@@ -171,10 +172,10 @@ Linkers often pad each section (before concatenation) with 0s so that it is a mu
 
 | section | offset | memory address |
 | --- | --- | --- |
-| ape.text | 0 | 0x3987800 |
-| insect.text | 48 | 0x3987830 |
-| ape.data | 80 | 0x3987850 |
-| insect.data | 96 | 0x3987860 |
+| ape.text | 0 | 0xc91f000 |
+| insect.text | 32 | 0xc91f020 |
+| ape.data | 80 | 0xc91f050 |
+| insect.data | 112 | 0xc91f070 |
 
 ### Symbol Summary Table
 
@@ -182,10 +183,10 @@ The memory address of each section helps us determine what the memory address of
 
 | symbol | from | offset | memory address |
 | --- | --- | --- | --- |
-| \_saw | ape.text | 5 | 0x3987805 | 
-| \_tape_measure | ape.text | 27 | 0x398781B | 
-| \_rasp | insect.text | 1 | 0x3987831 |
-| golf_cart | insect.data | 18 | 0x3987872 |
+| _saw | ape.text | 5 | 0xc91f005 | 
+| bicycle | ape.data | 18 | 0xc91f062 | 
+| _chisel | insect.text | 1 | 0xc91f021 |
+| _level | insect.text | 19 | 0xc91f033 |
 
 Finally, we have enough information to generate the relocation summary table.
 
@@ -200,17 +201,17 @@ This step is the hardest, but it is the last step before we can generate our fin
 * value: the value currently in site (4 bytes)
 * adjusted value: the value to copied into site (calculation depends on type)
 
-For DIR64, the adjusted value is simple the target address + the value.  For REL64, the adjusted value is the target address - (site address) + 1.
+For ADDR32 / ADDR64, the adjusted value is simple, its just the target address + the value.  For REL64, the adjusted value is the target address - (site address + 4).
 
 | section | offset | site | target | kind | value | adjusted value |
 | --- | --- | --- | --- | --- | --- | --- |
-| ape.text | 6 | 0x3987806 | ape.data | DIR64 | 0x8 | 0x3987858 |
-| ape.text | 16 | 0x3987810 | golf_cart | DIR64 | 0x0 | 0x3987872 |
-| ape.text | 28 | 0x398781B | golf_cart | DIR64 | 0x0 | 0x3987872 |
-| ape.text | 38 | 0x3987826 | ape.data | DIR64 | 0x0 | 0x3987850 |
-| insect.text | 6 | 0x3987836 | insect.data | DIR64 | 0x4 | 0x3987864 |
-| insect.text | 15 | 0x398783F  | \_saw | REL64 | 0x0 | 0xffffffffffffffc7 |
-| ape.data | 8 | 0x3987858 | \_rasp | DIR64 | 0x0 | 0x3987831 |
+| ape.text | 13 | 0xc91f00d | ape.data | ADDR32 | 0x4 | 0xc91f054 |
+| ape.text | 18 | 0xc91f012 | _chisel | REL32 | 0x0 | 0xB |
+| insect.text | 5 | 0xc91f025 | insect.data | ADDR32 | 0x8 | 0xc91f078 |
+| insect.text | 13 | 0xc91f02d | bicycle | ADDR32 | 0x0 | 0xc91f062 |
+| insect.text | 23 | 0xc91f037 | bicycle | ADDR32 | 0x0 | 0xc91f062 |
+| insect.text | 31 | 0xc91f03f | insect.data | ADDR32 | 0x0 | 0xc91f070 |
+| insect.data | 8 | 0xc91f078 | _saw | ADDR64 | 0x0 | 0xc91f005 |
 
 Finally, we have enough to generate the final image.
 
@@ -219,27 +220,27 @@ Finally, we have enough to generate the final image.
 First, concatenate all of the sections together (in the right order with padding):
 
 ``` asm
-3987800: CC CC CC CC CC A1 08 00  00 00 00 00 00 00 33 05
-3987810: 00 00 00 00 00 00 00 00  C3 CC CC A1 00 00 00 00
-3987820: 00 00 00 00 03 05 00 00  00 00 00 00 00 00 C3 00
-3987830: CC 55 89 E5 FF 35 04 00  00 00 00 00 00 00 E8 00
-3987840: 00 00 00 00 00 00 00 83  C4 04 5D C3 00 00 00 00
-3987850: 9D 03 00 00 00 00 00 00  00 00 00 00 00 00 00 00
-3987860: 00 00 00 00 58 02 00 00  00 00 00 00 00 00 00 00
-3987870: 00 00 58 02 00 00 00 00  00 00
+00000000: CC CC CC CC CC 55 48 89  E5 48 8B 0C 25 04 00 00
+00000010: 00 E8 00 00 00 00 5D C3  00 00 00 00 00 00 00 00
+00000020: CC 48 8B 04 25 08 00 00  00 48 33 04 25 00 00 00
+00000030: 00 C3 CC 48 8B 04 25 00  00 00 00 48 03 04 25 00
+00000040: 00 00 00 C3 00 00 00 00  00 00 00 00 00 00 00 00
+00000050: 00 00 00 00 71 02 00 00  00 00 00 00 00 00 00 00
+00000060: 00 00 C2 01 00 00 00 00  00 00 00 00 00 00 00 00
+00000070: 07 03 00 00 00 00 00 00  05 F0 91 0C 00 00 00 00
 ```
 
 Now, for each entry in the relocation table, enter the adjusted value into the site address (in little endian).
 
 ``` asm
-3987800: CC CC CC CC CC A1 58 78  98 03 00 00 00 00 33 05
-3987810: 72 78 98 03 00 00 00 00  C3 CC CC A1 72 78 98 03
-3987820: 00 00 00 00 03 05 50 78  98 03 00 00 00 00 C3 00
-3987830: CC 55 89 E5 FF 35 64 78  98 03 00 00 00 00 E8 C7
-3987840: FF FF FF FF FF FF FF 83  C4 04 5D C3 00 00 00 00
-3987850: 9D 03 00 00 00 00 00 00  31 78 98 03 00 00 00 00
-3987860: 00 00 00 00 58 02 00 00  00 00 00 00 00 00 00 00
-3987870: 00 00 58 02 00 00 00 00  00 00
+00000000: CC CC CC CC CC 55 48 89  E5 48 8B 0C 25 54 F0 91
+00000010: 0C E8 0B 00 00 00 5D C3  00 00 00 00 00 00 00 00
+00000020: CC 48 8B 04 25 78 F0 91  0C 48 33 04 25 62 F0 91
+00000030: 0C C3 CC 48 8B 04 25 62  F0 91 0C 48 03 04 25 70
+00000040: F0 91 0C C3 00 00 00 00  00 00 00 00 00 00 00 00
+00000050: 00 00 00 00 71 02 00 00  00 00 00 00 00 00 00 00
+00000060: 00 00 C2 01 00 00 00 00  00 00 00 00 00 00 00 00
+00000070: 07 03 00 00 00 00 00 00  00 00 00 00 00 00 00 00
 ```
 
 Now, we just simply load this file into a hex editor and check its md5 sum using [Online MD5](http://onlinemd5.com).
