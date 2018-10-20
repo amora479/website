@@ -48,7 +48,8 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | | | |
 | M | 10/22 | [Linking](/bju/cps230/lectures/lec17) | Ch. 7 (to 7.8) | |
 | T | 10/23 | _Day of Rest_ | | |
-| W | 10/24 | Test 2 Review | | |
+| W | 10/24 | [Test 2 Review](/bju/cps230/reviews/test2) | | |
+| | | [Multi-Language-Compilation](/bju/cps230/lectures/lec18) | | |
 | F | 10/26 | Test 2 | | [HW 4](/bju/cps230/homework/hw4) |
 | | | | | |
 | M | 10/29 | IBM Model 5150 | [IBM PC: Open Standards](https://en.wikipedia.org/wiki/IBM_Personal_Computer#Open_standards) | [Program 2](/bju/cps230/homework/program2) | 
