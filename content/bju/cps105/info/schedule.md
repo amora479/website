@@ -65,7 +65,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | F | 10/26 | FGC Presentations (VIII) | FGC Chapter 7 (Rest) | [BPT IV - Diligence](/bju/cps105/homework/bpt/part4) |
 | | | Excel Application Development | | |
 | | | | | |
-| M | 10/29 | Excel Application Development | | [Testing & Debugging](/bju/cps105/homework/testing) |
+| M | 10/29 | Excel Application Development | | [Testing & Debugging](/bju/cps105/homework/debugging) |
 | W | 10/31 | Computing Limits | Watch [Traveling Salesman Problem](https://www.youtube.com/watch?v=SC5CX8drAtU) | Join [Unit 4](https://studio.code.org/join/TJXNZY) |
 | F | 11/2 | FGC Presentations (IX) | FGC Chapter 8 | Try [Coding](https://asecuritysite.com/coding/mary) |
 | | | Cryptography | BB (_Lessons for the Internet Age_ and _Secrecy Changes Forever_ Sections Chapter 5) | |

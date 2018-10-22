@@ -24,10 +24,10 @@ Your spreadsheet must contain the following sheets:
 | Analysis | See Reporting Results below |
 
 ### Timesheet
-Import the data for this sheet from a file named [timesheet.csv](/bju/cps105/homework/excel-application/timesheet.csv). Do not add any extra columns or computations.
+Import the data for this sheet from a file named [timesheet.csv](/bju/cps105/homework/excel-application-assets/timesheet.csv). Do not add any extra columns or computations.
 
 ### Employees
-Import the data for this sheet from a file named [employees.csv](/bju/cps105/homework/excel-application/employees.csv). 
+Import the data for this sheet from a file named [employees.csv](/bju/cps105/homework/excel-application-assets/employees.csv). 
 
 ### Pay Stub
 

@@ -9,7 +9,7 @@ draft: false
 Decide on teams.  This is a group project!  It is preferred to have groups be a CS person and a non-CS person if possible so that you get some experience seeing things from someone else's viewpoint.  Your partner does not have to be in your section!  Use the #cps105 channel in slack to communicate with students who are not in your section.
 
 ## Get Started
-Download a copy of the [starting code](/bju/cps105/homework/testing/testing.zip).  This contains a copy of the instructions below as well as a copy of the answer sheet.  Inside the zip file, `ttt_testing.html` is the sample program that you are testing.  Note, the tic-tac-toe is broken, it is supposed to be!  Note any problems you find through testing on the answer sheet.
+Download a copy of the [starting code](/bju/cps105/homework/testing-assets/testing.zip).  This contains a copy of the instructions below as well as a copy of the answer sheet.  Inside the zip file, `ttt_testing.html` is the sample program that you are testing.  Note, the tic-tac-toe is broken, it is supposed to be!  Note any problems you find through testing on the answer sheet.
 
 ## Overview
 For this assignment, you (and a partner) will be working with a web-based, two-player tic-tac-toe game. You will be provided with a precise description of how the program is supposed to work, and your job will be to formulate and execute a plan for testing the program thoroughly. Your goal is to either verify that the program works exactly as it is specified or to find the bugs by identifying exactly how and when the program goes wrong.
