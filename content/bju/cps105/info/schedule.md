@@ -72,7 +72,7 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | | | Cryptography | BB (_Lessons for the Internet Age_ and _Secrecy Changes Forever_ Sections Chapter 5) | |
 | | | | Watch [The Internet: Encryption & Public Keys](https://www.youtube.com/watch?v=ZghMPWGXexs) | |
 | | | | | |
-| M | 11/5 | Cryptography | | Excel Application |
+| M | 11/5 | Cryptography | | [Excel Application](/bju/cps105/homework/excel-application) |
 | W | 11/7 | Test 3 Review | | Experiment w/ [Cypher Widgets](https://studio.code.org/s/cps4) |
 | | | Public Key Cryptography | | |
 | F | 11/9 | FGC Presentations (X) | FGC Chapter 9 | [BPT V - Integrity](/bju/cps105/homework/bpt/part5) |
