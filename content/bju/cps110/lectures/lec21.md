@@ -74,7 +74,7 @@ dir *.py
 ls *.py
 ```
 
-> Note: The start here is a substitute for anything.  This command would find chicken.py, turkey.py, pizza.py or <anything>.py in the current directory.  We will see the star again shortly.
+> Note: The star here is a substitute for anything.  This command would find chicken.py, turkey.py, pizza.py or <anything>.py in the current directory.  We will see the star again shortly.
 
 ## Enter Python
 

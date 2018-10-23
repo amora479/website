@@ -106,16 +106,16 @@ Based on the principles above, we can convert from any base to any other base by
   1  |  2  |  2  |  1
  3^3 | 3^2 | 3^1 | 3^0 
 ----------------------
-  27 +  18 +  6  +  1  = 53
+  27 +  18 +  6  +  1  = 52
 ```
 
 ``` text
-53 / 7 = 7 r 4
+52 / 7 = 7 r 3
  7 / 7 = 1 r 0
  1 / 7 = 0 r 1
 ```
 
-{{< tex "1221_{3}" >}} => {{< tex "104_{7}" >}}
+{{< tex "1221_{3}" >}} => {{< tex "103_{7}" >}}
 
 ### Special Cases
 
