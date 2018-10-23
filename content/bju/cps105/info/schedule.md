@@ -58,21 +58,20 @@ Note: Scheduled topics are subject to change without notice. Assignment due date
 | W | 10/17 | [Excel](/bju/cps105/lectures/ppt-downloads/lec16.pptx) | | |
 | F | 10/19 | _Test 2_ | | |
 | | | | | |
-| M | 10/22 | FGC Presentations (VII) | FGC Chapter 7 (stop before Tablet Revolution) | [Excel Data Analysis](/bju/cps105/homework/data-analysis) |
-| | | Specification / Testing | | |
-| | | Documenting Bugs | | |
+| M | 10/22 | FGC Presentations (VII) [9](/bju/cps105/lectures/presentations/fgc-7a-9.pdf) [10](/bju/cps105/lectures/presentations/fgc-7a-10.pptx) | FGC Chapter 7 (stop before Tablet Revolution) | [Excel Data Analysis](/bju/cps105/homework/data-analysis) |
+| | | Testing | | |
 | T | 10/23 | _Day of Rest_ | | |
 | W | 10/24 | Excel Application Development | | |
 | F | 10/26 | FGC Presentations (VIII) | FGC Chapter 7 (Rest) | [BPT IV - Diligence](/bju/cps105/homework/bpt/part4) |
-| | | Excel Application Development | | Testing & Debugging |
+| | | Excel Application Development | | |
 | | | | | |
-| M | 10/29 | Excel Application Development | | |
+| M | 10/29 | Excel Application Development | | [Testing & Debugging](/bju/cps105/homework/debugging) |
 | W | 10/31 | Computing Limits | Watch [Traveling Salesman Problem](https://www.youtube.com/watch?v=SC5CX8drAtU) | Join [Unit 4](https://studio.code.org/join/TJXNZY) |
 | F | 11/2 | FGC Presentations (IX) | FGC Chapter 8 | Try [Coding](https://asecuritysite.com/coding/mary) |
 | | | Cryptography | BB (_Lessons for the Internet Age_ and _Secrecy Changes Forever_ Sections Chapter 5) | |
 | | | | Watch [The Internet: Encryption & Public Keys](https://www.youtube.com/watch?v=ZghMPWGXexs) | |
 | | | | | |
-| M | 11/5 | Cryptography | | Excel Application |
+| M | 11/5 | Cryptography | | [Excel Application](/bju/cps105/homework/excel-application) |
 | W | 11/7 | Test 3 Review | | Experiment w/ [Cypher Widgets](https://studio.code.org/s/cps4) |
 | | | Public Key Cryptography | | |
 | F | 11/9 | FGC Presentations (X) | FGC Chapter 9 | [BPT V - Integrity](/bju/cps105/homework/bpt/part5) |
