@@ -72,7 +72,7 @@ Thank you for visiting Earth.  We hope you make it home safely.
 
 ## Maximum 90%
 
-For this level, you are not guaranteed valid inputs and you must support multi-digit numbers. For example, a user could input `+23` which will result in an error because there are not enough operators for the operand (called a stack underflow).
+For this level, you are not guaranteed valid inputs and you must support multi-digit numbers. For example, a user could input `+23` which will result in an error because there are not enough operators for the operand (called a stack underflow).  You must also add support for multiplication `*` and division `/`.
 
 1. Users will still enter input line by line.
 
